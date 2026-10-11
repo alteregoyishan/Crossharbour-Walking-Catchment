@@ -13,6 +13,7 @@
     <div class="nav-inner">
       <a class="brand" href="#top">Crossharbour GIS</a>
       <div class="nav-links">
+        <a href="#brief">Brief</a>
         <a href="#results">Results</a>
         <a href="#method">Method</a>
         <a href="#schools">Schools</a>
@@ -30,7 +31,7 @@
       <div class="actions">
         <a class="button" href="#results">View findings</a>
         <a class="button secondary" href="assets/downloads/catchment-10min.pdf">Download primary map</a>
-        <a class="button secondary" href="https://github.com/alteregoyishan/alteregoyishan.github.io">View repository</a>
+        <a class="button secondary" href="https://github.com/alteregoyishan/Crossharbour-Walking-Catchment">View repository</a>
       </div>
     </div>
     <div class="hero-note">
@@ -50,12 +51,32 @@
   </section>
 
   <main>
+    <section class="section" id="brief">
+      <div class="section-head">
+        <div class="kicker">Answer to the brief</div>
+        <div>
+          <h2>Each requested decision is explicit and auditable</h2>
+          <p class="measure">The assessment separates source-data correction, network routing, catchment polygonisation and interpretation so each result can be reproduced or challenged independently.</p>
+        </div>
+      </div>
+      <ol class="brief-grid">
+        <li><strong>Check the data</strong><span>Validated fields, CRS, spatial position, geometry and attributes; removed a duplicate LSOA, repaired one self-intersection, and logged school exclusions.</span></li>
+        <li><strong>Get the network</strong><span>Downloaded an OSMnx <code>walk</code> graph, reviewed topology and pedestrian tags, then retained only explicitly reviewed connectivity changes.</span></li>
+        <li><strong>Define the catchment</strong><span>Used two reviewed planning-proxy origins, 4.8 km/h and multi-source shortest paths. The 10-minute scenario is primary; 5 and 15 minutes show sensitivity.</span></li>
+        <li><strong>Estimate density</strong><span>Allocated Census 2021 residents by the share of each LSOA inside the analytical land polygon: 8,016 residents, or 117.8 residents per hectare.</span></li>
+        <li><strong>Find the schools</strong><span>Retained 42 cleaned open schools. Three address points lie inside the 10-minute polygon, but no accessibility count is claimed without verified public entrances.</span></li>
+        <li><strong>Make maps</strong><span>Produced consistent 5-, 10- and 15-minute maps, a combined view, origin and school context maps, and population sensitivity QA.</span></li>
+        <li><strong>Write the note</strong><span>The workshop note below is under 200 words and distinguishes findings from assumptions and unresolved access evidence.</span></li>
+        <li><strong>Provide code and AI record</strong><span>Numbered Python scripts, tests, method files and the AI usage record are included in the public repository.</span></li>
+      </ol>
+    </section>
+
     <section class="section" id="results">
       <div class="section-head">
         <div class="kicker">01 / Spatial result</div>
         <div>
           <h2>Network reach translated into a defensible land catchment</h2>
-          <p class="measure">The selected C1 surface interpolates travel time over the reviewed pedestrian network, removes mapped water and preserves narrow verified crossing corridors for cartographic continuity. The analytical land geometry remains separate from display-only bridge corridors.</p>
+          <p class="measure">The selected surface interpolates travel time over the reviewed pedestrian network, removes mapped water and preserves narrow verified crossing corridors for cartographic continuity. The analytical land geometry remains separate from display-only bridge corridors.</p>
         </div>
       </div>
       <figure class="figure">
@@ -82,7 +103,7 @@
         <div class="step"><div class="step-index">02</div><h3>Review the pedestrian graph</h3><p>An OSMnx <code>walk</code> network was inspected for components, dead ends, restrictions, geometry and local connectivity. Original downloads remain unchanged.</p></div>
         <div class="step"><div class="step-index">03</div><h3>Select site access</h3><p>Origins A and B are planning proxies where two distinct public footways cross the northern site boundary. They do not claim to be future building entrances.</p></div>
         <div class="step"><div class="step-index">04</div><h3>Route by travel time</h3><p>Multi-source Dijkstra uses edge length and a constant 4.8 km/h walking speed. Partially reachable terminal edges are clipped at each time threshold.</p></div>
-        <div class="step"><div class="step-index">05</div><h3>Create the C1 surface</h3><p>Network samples at roughly 15 m support an ordinary-Delaunay travel-time contour. This is an experimental proxy, not a reproduction of constrained-Delaunay research methods.</p></div>
+        <div class="step"><div class="step-index">05</div><h3>Convert travel time into a polygon</h3><p>Network samples at roughly 15 m support an ordinary-Delaunay travel-time contour. This transparent proxy turns reachable lines into a land area; it does not claim to reproduce constrained-Delaunay research methods.</p></div>
         <div class="step"><div class="step-index">06</div><h3>Apply barriers and estimate population</h3><p>Mapped water is removed and verified crossings retained. Census 2021 totals are allocated by the proportion of each LSOA intersecting the analytical catchment.</p></div>
       </div>
     </section>
@@ -128,7 +149,7 @@
         <div class="kicker">04 / Schools</div>
         <div>
           <h2>School locations are mapped; network accessibility remains subject to entrance review</h2>
-          <p class="measure">Forty-two open London schools were retained after closed, overseas and duplicate records were removed. Three geocoded points fall inside the final C1 10-minute analytical polygon, but an address coordinate is not evidence of a usable pedestrian entrance.</p>
+          <p class="measure">Forty-two open London schools were retained after closed, overseas and duplicate records were removed. Three geocoded points fall inside the final 10-minute analytical polygon, but an address coordinate is not evidence of a usable pedestrian entrance.</p>
         </div>
       </div>
       <div class="figure-grid">
@@ -200,9 +221,25 @@ python scripts/04_download_pedestrian_network.py
 
     <section class="section compact">
       <div class="callout">
-        <span class="status">Interpretation</span>
+        <span class="status">Note to the architect · 137 words</span>
         <h3>Use the result as an early-stage planning scenario</h3>
-        <p>The model uses a fixed walking speed and does not include slope, crossing delay, crowding, mobility variation or confirmed future building entrances. Population values are estimates from Census allocation rather than current headcounts. The maps support workshop discussion; they do not establish parcel-level pedestrian rights.</p>
+        <p>The final 10-minute walking catchment from two reviewed planning-proxy access points covers 68.0 hectares of analytical land. Using ONS Census 2021 LSOA totals and standard area weighting, it contains an estimated 8,016 residents, or 117.8 residents per hectare. OS NGD allocation tests produce 8,938–9,739 residents, showing sensitivity to where population is placed within LSOAs; 8,016 remains the clearest baseline. Forty-two open schools were retained after status, overseas and duplicate exclusions. Three school address points fall within the catchment, but no accessible-school count is reported because address coordinates are not verified pedestrian entrances. Routing uses a reviewed OSM walking graph, 4.8 km/h, multi-source shortest paths and partial-edge clipping. The result should support early-stage workshop discussion rather than parcel-level access decisions; future design work should confirm site entrances, school gates and any conditional pedestrian restrictions.</p>
+      </div>
+    </section>
+
+    <section class="section compact" id="licences">
+      <div class="section-head">
+        <div class="kicker">Licences and credits</div>
+        <div>
+          <h2>Credits shown on the maps and recorded here in full</h2>
+          <p class="measure">The OS Maps API is used only as presentation context. Analytical walking routes and water barriers come from OpenStreetMap; population comes from ONS; school records come from DfE.</p>
+        </div>
+      </div>
+      <div class="source-list licence-list">
+        <div class="source-item"><h3>Schools</h3><p>Contains public sector information licensed under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>. Source: Department for Education, Get Information about Schools.</p></div>
+        <div class="source-item"><h3>LSOA boundaries and Census 2021</h3><p>Source: Office for National Statistics, licensed under the Open Government Licence v3.0. Contains OS data © Crown copyright and database right 2026.</p></div>
+        <div class="source-item"><h3>OpenStreetMap</h3><p>© OpenStreetMap contributors, licensed under the <a href="https://www.openstreetmap.org/copyright">Open Database Licence (ODbL)</a>.</p></div>
+        <div class="source-item"><h3>Ordnance Survey</h3><p>OS Maps API <code>Outdoor_27700</code> provides the presentation basemap; OS NGD and OS Places support sensitivity and geocoding. Contains OS data © Crown copyright and database rights 2026.</p></div>
       </div>
     </section>
   </main>
@@ -210,7 +247,7 @@ python scripts/04_download_pedestrian_network.py
   <footer>
     <div class="footer-inner">
       <div><strong>Crossharbour Walking Catchment</strong><br>GIS Developer technical assessment</div>
-      <div>Contains OS data © Crown copyright and database rights 2026<br>© OpenStreetMap contributors · ONS Census 2021 · DfE</div>
+      <div>Contains OS data © Crown copyright and database rights 2026<br>© OpenStreetMap contributors (ODbL) · ONS and DfE (OGL v3.0)</div>
     </div>
   </footer>
 </body>

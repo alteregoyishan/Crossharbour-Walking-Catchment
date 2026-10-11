@@ -428,8 +428,11 @@ def _draw_map(ax, results, minutes_list, water_frame, site, origins, schools,
         facecolor="white", edgecolor="#b7bec0", framealpha=0.90,
         borderpad=0.7, labelspacing=0.5, handlelength=2.2)
     legend.set_zorder(1000)
-    attribution = (f"{basemap['attribution']} | OSM network/water"
-                   if basemap else "© OpenStreetMap contributors")
+    os_credit = (basemap["attribution"] if basemap else
+                 "Contains OS data © Crown copyright and database rights 2026")
+    attribution = (
+        f"{os_credit} | © OpenStreetMap contributors (ODbL) | "
+        "Schools: DfE Get Information about Schools (OGL v3.0)")
     ax.text(0.995, 0.006, attribution, transform=ax.transAxes, ha="right", va="bottom",
             fontsize=5.8, color="#445057", zorder=40,
             bbox={"facecolor":"white", "edgecolor":"none", "alpha":0.70, "pad":1})
@@ -455,14 +458,14 @@ def _save_a3_pdf(path, results, minutes_list, water_frame, site, origins,
         minutes = minutes_list[0]
         title = f"Crossharbour {minutes}-Minute Walking Catchment"
         row = summary[summary.time_minutes == minutes].iloc[0]
-        subtitle = (f"C1 ordinary-Delaunay contour  |  {row.analytical_land_area_ha:.1f} ha analytical land  |  "
+        subtitle = (f"Network travel-time contour  |  {row.analytical_land_area_ha:.1f} ha analytical land  |  "
                     f"{row.reachable_network_length_km:.1f} km reachable network")
     elif circle is None:
         title = "Crossharbour Walking Catchments"
-        subtitle = "C1 ordinary-Delaunay contours  |  5, 10 and 15 minutes"
+        subtitle = "Network travel-time contours  |  5, 10 and 15 minutes"
     else:
         title = "Crossharbour Walking Catchments and Straight-Line Reference"
-        subtitle = (f"C1 contours  |  Dashed circle: {2*THEORETICAL_RADIUS_M/1000:g} km "
+        subtitle = (f"Network travel-time contours  |  Dashed circle: {2*THEORETICAL_RADIUS_M/1000:g} km "
                     f"diameter based on 4.8 km/h × {REFERENCE_CIRCLE_MINUTES} minutes")
     fig.text(0.035, 0.955, title, ha="left", va="top", fontsize=20,
              color="#253842", weight="bold")
@@ -470,15 +473,16 @@ def _save_a3_pdf(path, results, minutes_list, water_frame, site, origins,
              color="#586970")
     fig.text(0.035, 0.025,
              "Routing: reviewed OSMnx pedestrian graph, origins A/B, multi-source shortest paths, partial-edge handling, 4.8 km/h. "
-             "C1 is an ordinary-Delaunay proxy, not constrained Delaunay. School markers are cleaned coordinates, not verified entrances.",
+             "The surface uses ordinary-Delaunay interpolation and is not a constrained-Delaunay implementation. School markers are cleaned coordinates, not verified entrances.",
              ha="left", va="bottom", fontsize=7.2, color="#586970")
     fig.savefig(path, facecolor="white", metadata={
         "Title": title,
-        "Subject": "Selected C1 walking catchment; EPSG:27700; no LSOA boundaries"})
+        "Subject": "Selected network travel-time walking catchment; EPSG:27700; no LSOA boundaries"})
     plt.close(fig)
 
 
-def _finish_context_map(ax, bounds, basemap, handles, legend_columns=1):
+def _finish_context_map(ax, bounds, basemap, handles, legend_columns=1,
+                        data_credit=""):
     ax.set_xlim(bounds[0], bounds[2]); ax.set_ylim(bounds[1], bounds[3])
     ax.set_aspect("equal"); ax.set_axis_off()
     _draw_scale_and_north(ax, bounds)
@@ -488,8 +492,11 @@ def _finish_context_map(ax, bounds, basemap, handles, legend_columns=1):
         edgecolor="#b7bec0", framealpha=.94, borderpad=.7,
         labelspacing=.5, handlelength=2.2)
     legend.set_zorder(1000)
-    attribution = (f"{basemap['attribution']} | OSM pedestrian network"
-                   if basemap else "© OpenStreetMap contributors")
+    os_credit = (basemap["attribution"] if basemap else
+                 "Contains OS data © Crown copyright and database rights 2026")
+    attribution = os_credit
+    if data_credit:
+        attribution = f"{attribution} | {data_credit}"
     ax.text(.995, .006, attribution, transform=ax.transAxes, ha="right",
             va="bottom", fontsize=5.8, color="#445057", zorder=1001,
             bbox={"facecolor":"white", "edgecolor":"none", "alpha":.70, "pad":1})
@@ -497,7 +504,9 @@ def _finish_context_map(ax, bounds, basemap, handles, legend_columns=1):
 
 def _draw_origin_selection_map(ax, site, origins, network_edges, water_frame):
     site_geometry = site.geometry.union_all()
-    bounds = _fit_bounds(site_geometry.buffer(115).bounds, padding_fraction=.02)
+    # Keep enough context to show both connecting footways while allowing the
+    # development boundary and reviewed crossings to remain the visual focus.
+    bounds = _fit_bounds(site_geometry.buffer(75).bounds, padding_fraction=.02)
     ax.set_facecolor("#F4F3EF")
     # Use the requested outdoor cartography one matrix level finer than the
     # project default.  The labels are baked into OS raster tiles, so they
@@ -532,7 +541,7 @@ def _draw_origin_selection_map(ax, site, origins, network_edges, water_frame):
     if not selected_edges.empty:
         selected_edges.plot(ax=ax, color="#17685F", linewidth=2.4,
                             alpha=.98, zorder=20)
-    _plot_site_outline(ax, site, linewidth=1.05, zorder=30)
+    _plot_site_outline(ax, site, linewidth=1.20, zorder=30)
     origins.plot(
         ax=ax, marker="o", color=ORIGIN_COLOUR, edgecolor="white",
         linewidth=.65, markersize=ORIGIN_MARKER_AREA, zorder=40)
@@ -547,14 +556,16 @@ def _draw_origin_selection_map(ax, site, origins, network_edges, water_frame):
         Line2D([], [], color="#68787C", lw=.9, label="Reviewed pedestrian network"),
         Line2D([], [], color="#17685F", lw=2.4,
                label="Selected boundary-crossing footway"),
-        Line2D([], [], color=SITE_COLOUR, lw=1.05, linestyle=(0, (5, 3)),
+        Line2D([], [], color=SITE_COLOUR, lw=1.20, linestyle=(0, (5, 3)),
                label="Development site"),
         Line2D([], [], marker="o", linestyle="none",
                markerfacecolor=ORIGIN_COLOUR, markeredgecolor="white",
                markeredgewidth=.65, markersize=math.sqrt(ORIGIN_MARKER_AREA),
                label="Origin"),
     ]
-    _finish_context_map(ax, bounds, basemap, handles)
+    _finish_context_map(
+        ax, bounds, basemap, handles,
+        data_credit="© OpenStreetMap contributors (ODbL)")
 
 
 def _draw_all_schools_map(ax, site, schools, water_frame):
@@ -576,7 +587,9 @@ def _draw_all_schools_map(ax, site, schools, water_frame):
         Line2D([], [], color=SITE_COLOUR, lw=SITE_LINEWIDTH,
                linestyle=(0, (5, 3)), label="Development site"),
     ]
-    _finish_context_map(ax, bounds, basemap, handles)
+    _finish_context_map(
+        ax, bounds, basemap, handles,
+        data_credit="Schools: DfE Get Information about Schools (OGL v3.0)")
     return len(valid_schools)
 
 

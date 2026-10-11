@@ -697,7 +697,11 @@ def _plot_qa(population, catchment, display_outline, water, network, sites,
     legend.set_zorder(1000)
     ax.set_xlim(bounds[0], bounds[2]); ax.set_ylim(bounds[1], bounds[3])
     ax.set_aspect("equal"); ax.set_axis_off()
-    attribution = basemap["attribution"] if basemap else "Contains OS data © Crown copyright and database rights 2026"
+    os_credit = (basemap["attribution"] if basemap else
+                 "Contains OS data © Crown copyright and database rights 2026")
+    attribution = (
+        f"{os_credit} | ONS Census 2021 and LSOA boundaries (OGL v3.0) | "
+        "© OpenStreetMap contributors (ODbL)")
     ax.text(.995, .006, attribution, transform=ax.transAxes, ha="right", va="bottom",
             fontsize=5.8, color="#46545a", bbox={"facecolor":"white", "edgecolor":"none", "alpha":.8})
     fig.savefig(OUT_MAP_PNG, dpi=220, facecolor="white")
