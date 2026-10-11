@@ -9,7 +9,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 MAPS = ROOT / "outputs" / "maps"
-SITE = ROOT / "site"
+SITE = ROOT / "docs"
 IMAGES = SITE / "assets" / "images"
 DOWNLOADS = SITE / "assets" / "downloads"
 

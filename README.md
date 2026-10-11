@@ -447,13 +447,13 @@ python -m unittest discover -s tests -v
 
 ## GitHub Pages 报告
 
-网站源文件位于 `site/`，本地更新网页图片和下载版地图：
+网站源文件位于 `docs/`，本地更新网页图片和下载版地图：
 
 ```bash
 conda activate prior-gis
 python scripts/18_build_web_report.py
 ```
 
-`.github/workflows/pages.yml` 会在 `main` 分支的 `site/` 文件发生变化时，通过 GitHub Actions 发布静态网站。本项目仓库名为 `Crossharbour-Walking-Catchment`，因此项目网站地址是 `https://alteregoyishan.github.io/Crossharbour-Walking-Catchment/`，源代码地址是 `https://github.com/alteregoyishan/Crossharbour-Walking-Catchment`。
+GitHub Pages 从 `main` 分支的 `/docs` 文件夹发布静态网站。本项目仓库名为 `Crossharbour-Walking-Catchment`，因此项目网站地址是 `https://alteregoyishan.github.io/Crossharbour-Walking-Catchment/`，源代码地址是 `https://github.com/alteregoyishan/Crossharbour-Walking-Catchment`。
 
-第一次发布时，在 GitHub 仓库进入 **Settings → Pages → Build and deployment**，将 Source 设为 **GitHub Actions**。随后 push 到 `main` 即会自动部署。`.env`、API key、OS Maps tile cache、临时数据库 WAL/SHM 和测试缓存均由 `.gitignore` 排除。
+第一次发布时，在 GitHub 仓库进入 **Settings → Pages → Build and deployment**，选择 **Deploy from a branch**，分支选择 `main`、文件夹选择 `/docs`。随后对 `docs/` 的更新会自动部署。`.env`、API key、OS Maps tile cache、临时数据库 WAL/SHM 和测试缓存均由 `.gitignore` 排除。
