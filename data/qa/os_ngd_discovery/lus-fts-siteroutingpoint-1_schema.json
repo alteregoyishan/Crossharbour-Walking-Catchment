@@ -1,0 +1,174 @@
+{
+  "$id": "lus-fts-siteroutingpoint-1.0",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "shortName": "SiteRoutingPoint",
+  "longName": "Site Routing Point",
+  "description": "The location on the road network which provides entry or exit into a site for vehicles and / or pedestrians, represented as a point geometry.",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -8.82,
+          49.79,
+          1.92,
+          60.94
+        ]
+      ],
+      "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-10-04T00:00:00Z",
+          null
+        ]
+      ],
+      "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+    }
+  },
+  "properties": {
+    "osid": {
+      "originalName": "OSID",
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD.",
+      "type": "string",
+      "maxLength": 36
+    },
+    "toid": {
+      "originalName": "TOID",
+      "description": "Topographic identifier (TOID) of the feature, as published in the OS MasterMap suite of products.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20
+    },
+    "versiondate": {
+      "originalName": "versionDate",
+      "description": "Date when the version was last updated.",
+      "type": "string",
+      "pattern": "YYYY-MM-DD",
+      "format": "date"
+    },
+    "versionavailablefromdate": {
+      "originalName": "versionAvailableFromDate",
+      "description": "The date this version of the feature became the latest version.",
+      "type": "string",
+      "pattern": "YYYY-MM-DDTHH:MM:SSZ",
+      "format": "date-time"
+    },
+    "versionavailabletodate": {
+      "originalName": "versionAvailableToDate",
+      "description": "The date this version of the feature was superseded by an update or ceased to exist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "YYYY-MM-DDTHH:MM:SSZ",
+      "format": "date-time"
+    },
+    "changetype": {
+      "originalName": "changeType",
+      "description": "The type of change that generated a new version of the feature.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "End Of Life",
+        "Modified Attributes",
+        "Modified Geometry",
+        "Modified Geometry And Attributes",
+        "Moved From A Different Feature Type",
+        "Moved To A Different Feature Type",
+        "New"
+      ]
+    },
+    "geometry": {
+      "originalName": "geometry",
+      "description": "Geometry for the feature.",
+      "$ref": "https://geojson.org/schema/Point.json",
+      "precision": 10,
+      "scale": 3
+    },
+    "geometry_evidencedate": {
+      "originalName": "geometry_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "YYYY-MM-DD",
+      "format": "date"
+    },
+    "geometry_updatedate": {
+      "originalName": "geometry_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "pattern": "YYYY-MM-DD",
+      "format": "date"
+    },
+    "geometry_source": {
+      "originalName": "geometry_source",
+      "description": "The source organisation who provided the data.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 50
+    },
+    "theme": {
+      "originalName": "theme",
+      "description": "The OS NGD Theme to which the feature belongs. Multiplicity allows for a primary theme to be assigned along with additional themes. For example, a Verge is primarily in the OS NGD Transport Theme, but it is also in the OS NGD Land Theme.",
+      "type": "string",
+      "maxLength": 40,
+      "enum": [
+        "Address",
+        "Administrative and Statistical Units",
+        "Buildings",
+        "Geographical Names",
+        "Land",
+        "Land Use",
+        "Structures",
+        "Transport",
+        "Water"
+      ]
+    },
+    "description": {
+      "originalName": "description",
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "type": "string",
+      "maxLength": 15,
+      "enum": [
+        "Routing Point"
+      ]
+    },
+    "startdistance": {
+      "originalName": "startDistance",
+      "description": "The distance in metres from the start of the referenced RoadLink feature to the vertex where the SiteRoutingPoint is positioned. The startDistance is calculated in two-dimensions (2D).",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 2
+    },
+    "roadlinkid": {
+      "originalName": "roadLinkID",
+      "description": "The unique identifier (OSID) of the RoadLink feature that the SiteRoutingPoint is related to.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 36
+    }
+  },
+  "required": [
+    "changetype",
+    "description",
+    "geometry",
+    "geometry_updatedate",
+    "osid",
+    "theme",
+    "versionavailablefromdate",
+    "versiondate"
+  ],
+  "additionalProperties": false
+}

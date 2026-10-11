@@ -1,0 +1,11 @@
+analysis_version,method,population_method,analytical_land_area_ha,estimated_population,population_density_per_ha,population_baseline
+v2,A0,standard_full_LSOA_denominator,69.43945540868282,8161.323441635878,117.53150127118326,ONS Census 2021
+v2,A0,water_adjusted_source_zone_sensitivity,66.68634041097042,10129.079401825795,151.8913669486575,ONS Census 2021
+v2,A2,standard_full_LSOA_denominator,66.68634041097042,7683.215531819889,115.2142325470291,ONS Census 2021
+v2,A2,water_adjusted_source_zone_sensitivity,66.6863404109704,10129.079401825798,151.89136694865758,ONS Census 2021
+v2,B2,standard_full_LSOA_denominator,71.66192986618645,8409.846489690104,117.35445173460607,ONS Census 2021
+v2,B2,water_adjusted_source_zone_sensitivity,71.66192986618654,11058.682327713814,154.31739486172864,ONS Census 2021
+v2,C1,standard_full_LSOA_denominator,67.93284573449674,8006.102041290174,117.85318213490686,ONS Census 2021
+v2,C1,water_adjusted_source_zone_sensitivity,67.9328457344968,10508.321726800916,154.6869060641267,ONS Census 2021
+v2,C2,standard_full_LSOA_denominator,67.53967610101274,7968.9097229864665,117.98856883867961,ONS Census 2021
+v2,C2,water_adjusted_source_zone_sensitivity,67.53967610101276,10459.133046801444,154.8590939518084,ONS Census 2021

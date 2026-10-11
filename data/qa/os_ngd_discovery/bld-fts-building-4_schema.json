@@ -1,0 +1,1345 @@
+{
+  "$id": "bld-fts-building-4.1",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "shortName": "Building",
+  "longName": "Building",
+  "description": "A new building geometry which represents a single building footprint. This geometry consists of adjoining building parts which have been determined to be part of the same building. When contained in a Land Use Site, adjoining building parts will be represented by a single feature.",
+  "majorVersion": 4,
+  "minorVersion": 1,
+  "versionSuffix": null,
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -8.82,
+          49.79,
+          1.92,
+          60.94
+        ]
+      ],
+      "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-03-12T00:00:00Z",
+          null
+        ]
+      ],
+      "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+    }
+  },
+  "properties": {
+    "osid": {
+      "originalName": "OSID",
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD.",
+      "type": "string",
+      "format": "uuid",
+      "maxLength": 36
+    },
+    "versiondate": {
+      "originalName": "versionDate",
+      "description": "Date when the version was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "versionavailablefromdate": {
+      "originalName": "versionAvailableFromDate",
+      "description": "The date this version of the feature became the latest version.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "versionavailabletodate": {
+      "originalName": "versionAvailableToDate",
+      "description": "The date this version of the feature was superseded by an update or ceased to exist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "changetype": {
+      "originalName": "changeType",
+      "description": "The type of change that generated a new version of the feature.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "End Of Life",
+        "Modified Attributes",
+        "Modified Geometry",
+        "Modified Geometry And Attributes",
+        "Moved From A Different Feature Type",
+        "Moved To A Different Feature Type",
+        "New"
+      ]
+    },
+    "geometry": {
+      "originalName": "geometry",
+      "description": "Geometry for the feature.",
+      "type": "object",
+      "$ref": "https://geojson.org/schema/Polygon.json",
+      "precision": 10,
+      "scale": 3
+    },
+    "geometry_area_m2": {
+      "originalName": "geometry_area_m2",
+      "description": "The measured area of the geometry in square metres.",
+      "type": "number",
+      "precision": 15,
+      "scale": 3
+    },
+    "geometry_updatedate": {
+      "originalName": "geometry_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "theme": {
+      "originalName": "theme",
+      "description": "The OS NGD Theme to which the feature belongs.",
+      "type": "string",
+      "maxLength": 40,
+      "enum": [
+        "Address",
+        "Administrative and Statistical Units",
+        "Buildings",
+        "Geographical Names",
+        "Land",
+        "Land Use",
+        "Structures",
+        "Transport",
+        "Water"
+      ]
+    },
+    "description": {
+      "originalName": "description",
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "type": "string",
+      "maxLength": 45,
+      "enum": [
+        "Abbey",
+        "Agriculture Building",
+        "Air Passenger Terminal",
+        "Air Quality Monitoring Station",
+        "Airport With Scheduled Services",
+        "Airport Without Scheduled Services",
+        "Ambulance And Fire Station",
+        "Ambulance And Police Station",
+        "Ambulance Station",
+        "Ambulance, Fire And Police Station",
+        "Ancillary Building",
+        "Art Gallery",
+        "Arts Centre",
+        "Arts Centre And Museum",
+        "Athletics Ground",
+        "Athletics Stadium",
+        "Attraction Building",
+        "Biogas Power Station",
+        "Bowls Clubhouse",
+        "Buddhist Temple",
+        "Building Under Construction",
+        "Cable Terminal Station",
+        "Cathedral",
+        "Central Government Services",
+        "Chapel",
+        "Children's Nursery",
+        "Church",
+        "Cinema",
+        "Coastguard Lookout",
+        "College",
+        "Commercial Building",
+        "Community Building",
+        "Community Meeting Place",
+        "Community Services",
+        "Construction Building",
+        "Crematorium",
+        "Cricket Ground (Participation)",
+        "Cricket Ground (Spectating)",
+        "Cricket Stadium",
+        "Curling Rink",
+        "Cycling Sports Facility",
+        "Defence Building",
+        "Detached House",
+        "Detention Centre",
+        "Domestic Outbuilding",
+        "Education Building",
+        "Electricity Distribution Facility",
+        "Electricity Storage Facility",
+        "Electricity Sub Station",
+        "Emergency Assistance Or Equipment Facility",
+        "End-Of-Terrace House",
+        "Ferry Passenger Terminal",
+        "Ferry Vehicular Terminal",
+        "Ferry Vehicular Terminal (International)",
+        "Fire Station",
+        "Fire Station And Police Station",
+        "Football Ground (Participation)",
+        "Football Ground (Spectating)",
+        "Football Stadium",
+        "Gas Distribution Or Storage Facility",
+        "Gas Governor",
+        "Gas Production Facility",
+        "Golf Centre",
+        "Golf Clubhouse",
+        "Golf Course",
+        "Golf Driving Range",
+        "Government Building",
+        "Greyhound Track Or Stadium",
+        "Gurdwara",
+        "Health Centre",
+        "Heating Plant",
+        "Heliport",
+        "Hindu Temple",
+        "Historic Building",
+        "HM Coastguard Station",
+        "Hockey Ground",
+        "Horse Racing Course",
+        "Hospice",
+        "Hospital",
+        "Hydroelectric Power Generating",
+        "Hydrogen Fuel Production And Supply",
+        "Ice Rink",
+        "Inshore Rescue Boat Station",
+        "Kingdom Hall",
+        "Law Court",
+        "Leisure Or Sports Centre",
+        "Library",
+        "Library And Museum",
+        "Lifeboat Station",
+        "Light Rail Station",
+        "Local Government Facility",
+        "Medical Building",
+        "Medical Care Facility",
+        "Mid-Terrace House",
+        "Minster",
+        "Mixed Use Building",
+        "Mosque",
+        "Multi-Purpose Community Centre",
+        "Multiple Residential Accommodation",
+        "Museum",
+        "Place Of Worship",
+        "Police Headquarters",
+        "Police Station",
+        "Police Support Facility",
+        "Power Station",
+        "Prison",
+        "Pumping Station",
+        "Pupil Referral Centre",
+        "Racquet Sports Club",
+        "Railway Station",
+        "Railway Station (Not Publicly Accessible)",
+        "Railway Station (Principal)",
+        "Railway Station (Underground System)",
+        "Religious Meeting Place",
+        "Residential Building",
+        "Rowing Club",
+        "Rugby Ground (Spectating)",
+        "Rugby Pitch Or Ground (Participation)",
+        "Rugby Stadium",
+        "Sailing Centre",
+        "School",
+        "Secure Residential Unit",
+        "Semi-Detached House",
+        "Solar Power Facility",
+        "Speedway Track",
+        "Sports Building",
+        "Sports Ground (Spectating)",
+        "Sports Or Exercise Facility",
+        "Sports Pavilion",
+        "Sports Stadium",
+        "Static Caravan Or Mobile Home",
+        "Stupa",
+        "Swimming Pool",
+        "Synagogue",
+        "Telecommunications Facility",
+        "Telephone Exchange",
+        "Temporary Or Holiday Accommodation Building",
+        "Tennis Centre",
+        "Theatre",
+        "Tidal Power Station",
+        "Transport Building",
+        "University",
+        "University College",
+        "University School",
+        "University Sports Or Exercise Facility",
+        "Unknown Building",
+        "Utility Building",
+        "Waste Water Treatment Works",
+        "Water Distribution Facility",
+        "Water Sports Centre",
+        "Water Treatment Facility",
+        "Wildlife Or Zoological Park",
+        "Yacht Club"
+      ]
+    },
+    "description_updatedate": {
+      "originalName": "description_updateDate",
+      "description": "Date when the building description was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "physicalstate": {
+      "originalName": "physicalState",
+      "description": "The state of the building in relation to its physical condition.",
+      "type": "string",
+      "maxLength": 20,
+      "enum": [
+        "Built",
+        "Derelict",
+        "Under Construction"
+      ]
+    },
+    "physicalstate_updatedate": {
+      "originalName": "physicalState_updateDate",
+      "description": "Date when the physical state was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "buildingpartcount": {
+      "originalName": "buildingPartCount",
+      "description": "Count of building parts within the building.",
+      "type": "integer"
+    },
+    "isinsite": {
+      "originalName": "isInSite",
+      "description": "Flag to indicate whether the building is within a Land Use Site.",
+      "type": "boolean",
+      "default": false
+    },
+    "primarysiteid": {
+      "originalName": "primarySiteID",
+      "description": "Identifier of the primary site associated with the building. The primary site is the smallest site which contains the building feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 36
+    },
+    "containingsitecount": {
+      "originalName": "containingSiteCount",
+      "description": "Count of sites that the building is contained within.",
+      "type": "integer"
+    },
+    "mainbuildingid": {
+      "originalName": "mainBuildingID",
+      "description": "Populated if the feature is not the main building. Can be used to identify the main building within the same site.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 36
+    },
+    "mainbuildingid_ismainbuilding": {
+      "originalName": "mainBuildingID_isMainBuilding",
+      "description": "Flag to indicate whether the building is the primary building within the site. This has been captured by OS surveyors as the most normal building a casual visitor would report to within the Land Use Site.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 5,
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "mainbuildingid_updatedate": {
+      "originalName": "mainBuildingID_updateDate",
+      "description": "Date when the main building was updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "buildinguse": {
+      "originalName": "buildingUse",
+      "description": "Describes what the Building is used for and can have up to two values. The value will be 'Mixed Use' where more than two uses are identified.",
+      "type": "string",
+      "maxLength": 100,
+      "enum": [
+        "Agriculture Or Aquaculture",
+        "Attraction Or Activity",
+        "Commercial Activity: Animal Services",
+        "Commercial Activity: Distribution Or Storage",
+        "Commercial Activity: Industrial Or Manufacturing",
+        "Commercial Activity: Other",
+        "Commercial Activity: Retail",
+        "Community Services: Emergency Services",
+        "Community Services: Funerary",
+        "Community Services: Other",
+        "Community Services: Religious Worship",
+        "Construction",
+        "Defence",
+        "Education",
+        "Government Services",
+        "Historic",
+        "Medical Or Health Care",
+        "Mixed Use",
+        "Residential Accommodation",
+        "Sports Attraction Or Facility",
+        "Temporary Or Holiday Accommodation",
+        "Transport: Air",
+        "Transport: Rail",
+        "Transport: Road, Track Or Path",
+        "Transport: Water",
+        "Unknown",
+        "Unknown Use",
+        "Utility Or Environmental Protection"
+      ]
+    },
+    "buildinguse_oslandusetiera": {
+      "originalName": "buildingUse_OSLandUseTierA",
+      "description": "A high-level description of the main activity that takes place at the location or that the feature supports.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 50,
+      "enum": [
+        "Agriculture Or Aquaculture",
+        "Attraction Or Activity",
+        "Commercial Activity: Animal Services",
+        "Commercial Activity: Distribution Or Storage",
+        "Commercial Activity: Industrial Or Manufacturing",
+        "Commercial Activity: Other",
+        "Commercial Activity: Retail",
+        "Community Services: Emergency Services",
+        "Community Services: Funerary",
+        "Community Services: Other",
+        "Community Services: Religious Worship",
+        "Construction",
+        "Defence",
+        "Education",
+        "Government Services",
+        "Historic",
+        "Medical Or Health Care",
+        "Mixed Use",
+        "Residential Accommodation",
+        "Sports Attraction Or Facility",
+        "Temporary Or Holiday Accommodation",
+        "Transport: Air",
+        "Transport: Rail",
+        "Transport: Road, Track Or Path",
+        "Transport: Water",
+        "Unknown Or Unused Artificial",
+        "Unknown Or Unused Natural",
+        "Unknown Use",
+        "Utility Or Environmental Protection"
+      ]
+    },
+    "buildinguse_addresscount_total": {
+      "originalName": "buildingUse_addressCount_total",
+      "description": "Total count of built complete address UPRNs associated with the building.",
+      "type": "integer"
+    },
+    "buildinguse_addresscount_residential": {
+      "originalName": "buildingUse_addressCount_residential",
+      "description": "Count of residential built complete address UPRNs associated with the building.",
+      "type": "integer"
+    },
+    "buildinguse_addresscount_commercial": {
+      "originalName": "buildingUse_addressCount_commercial",
+      "description": "Count of commercial built complete address UPRNs associated with the building.",
+      "type": "integer"
+    },
+    "buildinguse_addresscount_other": {
+      "originalName": "buildingUse_addressCount_other",
+      "description": "Count of other (not residential or commercial) built complete address UPRNs associated with the building.",
+      "type": "integer"
+    },
+    "buildinguse_updatedate": {
+      "originalName": "buildingUse_updateDate",
+      "description": "Date when the building use was updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "connectivity": {
+      "originalName": "connectivity",
+      "description": "Describes how the building is connected to other buildings.",
+      "type": "string",
+      "maxLength": 15,
+      "enum": [
+        "End-Connected",
+        "Multi-Connected",
+        "Semi-Connected",
+        "Standalone"
+      ]
+    },
+    "connectivity_count": {
+      "originalName": "connectivity_count",
+      "description": "Count of connected buildings.",
+      "type": "integer"
+    },
+    "connectivity_updatedate": {
+      "originalName": "connectivity_updateDate",
+      "description": "Date when the building connectivity was updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "constructionmaterial": {
+      "originalName": "constructionMaterial",
+      "description": "The primary material from which the building is constructed. Construction material is recorded for addressable buildings. It may be recorded for some non-addressable buildings, but the majority of these will have construction material recorded as NULL.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 40,
+      "enum": [
+        "Brick Or Block Or Stone",
+        "Concrete",
+        "Mixed (Masonry And Metal)",
+        "Mixed (Masonry And Timber)",
+        "Mixed (Plaster And Timber)",
+        "Other Artificial Material (Not Concrete)",
+        "Other Non-Standard Or System Build",
+        "Static Caravan Or Mobile Home",
+        "Metal",
+        "Timber Or Wood",
+        "Unknown"
+      ]
+    },
+    "constructionmaterial_evidencedate": {
+      "originalName": "constructionMaterial_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "constructionmaterial_updatedate": {
+      "originalName": "constructionMaterial_updateDate",
+      "description": "Date when the construction material was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "constructionmaterial_source": {
+      "originalName": "constructionMaterial_source",
+      "description": "Indicates the data source of the construction material.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 85,
+      "enum": [
+        "Ordnance Survey",
+        "Verisk"
+      ]
+    },
+    "constructionmaterial_capturemethod": {
+      "originalName": "constructionMaterial_captureMethod",
+      "description": "The capture method describes how the construction material was created, for example, via remote survey or via an automated process.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "constructionmaterial_thirdpartyprovenance": {
+      "originalName": "constructionMaterial_thirdPartyProvenance",
+      "description": "The provenance of the construction material provided by the third party data provider, for example, the name of an organisation and the specific dataset provided by that organisation.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 65
+    },
+    "buildingage_period": {
+      "originalName": "buildingAge_period",
+      "description": "The period (i.e. a range of years) in which the building was constructed. Construction period is recorded for addressable buildings. It may be recorded for some non-addressable buildings, but the majority of these will have construction period recorded as NULL.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10,
+      "enum": [
+        "Pre-1837",
+        "Pre-1919",
+        "1837-1869",
+        "1870-1918",
+        "1919-1944",
+        "1945-1959",
+        "1960-1979",
+        "1980-1989",
+        "1990-1999",
+        "2000-2009",
+        "2010-2019",
+        "2020-2029",
+        "2030-2039",
+        "Unknown"
+      ]
+    },
+    "buildingage_year": {
+      "originalName": "buildingAge_year",
+      "description": "The year in which the building was constructed, for buildings constructed post-1999 and where available.",
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "buildingage_evidencedate": {
+      "originalName": "buildingAge_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "buildingage_updatedate": {
+      "originalName": "buildingAge_updateDate",
+      "description": "Date when the building age was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "buildingage_source": {
+      "originalName": "buildingAge_source",
+      "description": "Indicates the data source of the building age.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 85,
+      "enum": [
+        "Ordnance Survey",
+        "Verisk"
+      ]
+    },
+    "buildingage_capturemethod": {
+      "originalName": "buildingAge_captureMethod",
+      "description": "The capture method describes how the building age was created, for example, via remote survey or via an automated process.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "buildingage_thirdpartyprovenance": {
+      "originalName": "buildingAge_thirdPartyProvenance",
+      "description": "The provenance of the building age provided by the third party data provider, for example, the name of an organisation and the specific dataset provided by that organisation.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 65
+    },
+    "basementpresence": {
+      "originalName": "basementPresence",
+      "description": "Indicates if a basement is present in the building. Basement presence is recorded for addressable buildings. It may be recorded for some non-addressable buildings, but the majority of these will have basement presence recorded as NULL.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 15,
+      "enum": [
+        "Present",
+        "Not Present",
+        "Unknown"
+      ]
+    },
+    "basementpresence_selfcontained": {
+      "originalName": "basementPresence_selfContained",
+      "description": "Indicates if the basement contains a self-contained flat.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 15,
+      "enum": [
+        "Present",
+        "Not Present",
+        "Unknown"
+      ]
+    },
+    "basementpresence_evidencedate": {
+      "originalName": "basementPresence_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "basementpresence_updatedate": {
+      "originalName": "basementPresence_updateDate",
+      "description": "Date when the basement presence was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "basementpresence_source": {
+      "originalName": "basementPresence_source",
+      "description": "Indicates the data source of the basement presence.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 85,
+      "enum": [
+        "Address Authority",
+        "Ordnance Survey",
+        "Verisk"
+      ]
+    },
+    "basementpresence_capturemethod": {
+      "originalName": "basementPresence_captureMethod",
+      "description": "The capture method describes how the basement presence was created, for example, via remote survey or via an automated process.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "basementpresence_thirdpartyprovenance": {
+      "originalName": "basementPresence_thirdPartyProvenance",
+      "description": "The provenance of the basement presence provided by the third party data provider, for example, the name of an organisation and the specific dataset provided by that organisation.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 65
+    },
+    "numberoffloors": {
+      "originalName": "numberOfFloors",
+      "description": "The maximum number of occupiable floors at or above ground level within a building. ",
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "numberoffloors_evidencedate": {
+      "originalName": "numberOfFloors_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "numberoffloors_updatedate": {
+      "originalName": "numberOfFloors_updateDate",
+      "description": "Date when the number of floors was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "numberoffloors_source": {
+      "originalName": "numberOfFloors_source",
+      "description": "Indicates the data source of the number of floors. For buildings with a populated number of floors value, this can be either 'Ordnance Survey' or 'Energy Performance Certificate Authority'.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 40
+    },
+    "numberoffloors_capturemethod": {
+      "originalName": "numberOfFloors_captureMethod",
+      "description": "The capture method describes how the number of floors was created, for example, via remote sensing survey or via an automated process.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "height_absolutemin_m": {
+      "originalName": "height_absoluteMin_m",
+      "description": "The height, above datum, of the underlying ground surface.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 5,
+      "scale": 1
+    },
+    "height_absoluteroofbase_m": {
+      "originalName": "height_absoluteRoofBase_m",
+      "description": "The height, above datum, of the base of the roof, that is, where the roof intersects the building walls.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 5,
+      "scale": 1
+    },
+    "height_absolutemax_m": {
+      "originalName": "height_absoluteMax_m",
+      "description": "The height, above datum, of the highest point of the building; this could include a chimney or other structure on a building.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 5,
+      "scale": 1
+    },
+    "height_relativeroofbase_m": {
+      "originalName": "height_relativeRoofBase_m",
+      "description": "The difference in height between the intersection of the external building walls and the underlying ground surface and the base of the roof of the building.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 4,
+      "scale": 1
+    },
+    "height_relativemax_m": {
+      "originalName": "height_relativeMax_m",
+      "description": "The difference in height between the intersection of the external building walls and the underlying ground surface and the highest point on the building.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 4,
+      "scale": 1
+    },
+    "height_confidencelevel": {
+      "originalName": "height_confidenceLevel",
+      "description": "The confidence in the quality of the height attributes for the building expressed in qualitative terms.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 15,
+      "enum": [
+        "High",
+        "Incomplete",
+        "Low",
+        "Moderate",
+        "Not Assessed"
+      ]
+    },
+    "height_evidencedate": {
+      "originalName": "height_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date the imagery was captured that has been used to derive the height information.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "height_updatedate": {
+      "originalName": "height_updateDate",
+      "description": "Date when the height was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "roofmaterial_primarymaterial": {
+      "originalName": "roofMaterial_primaryMaterial",
+      "description": "The primary roof material present on the building.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 35,
+      "enum": [
+        "Fabric",
+        "Glass Or Polycarbonate",
+        "Green Roof",
+        "Metal",
+        "Mixed",
+        "Other",
+        "Thatch",
+        "Tile Or Stone Or Slate",
+        "Unknown",
+        "Waterproof Membrane Or Concrete"
+      ]
+    },
+    "roofmaterial_solarpanelpresence": {
+      "originalName": "roofMaterial_solarPanelPresence",
+      "description": "Indicates if solar panels are present on the roof of the building.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 15,
+      "enum": [
+        "Present",
+        "Not Present",
+        "Unknown"
+      ]
+    },
+    "roofmaterial_greenroofpresence": {
+      "originalName": "roofMaterial_greenRoofPresence",
+      "description": "Indicates if the roof of the building is at least partially covered with vegetation. This is usually specifically installed on a growing medium with a waterproof membrane, for environmental reasons.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 15,
+      "enum": [
+        "Present",
+        "Not Present",
+        "Unknown"
+      ]
+    },
+    "roofmaterial_confidenceindicator": {
+      "originalName": "roofMaterial_confidenceIndicator",
+      "description": "An indication of whether the roof material output was expected, or if not, the reason why the quality may be lower.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 50,
+      "enum": [
+        "Complex Roof",
+        "Existing Building Changed Since Imagery Capture",
+        "Expected Data Output",
+        "Insufficient Building Size",
+        "New Building Surveyed After Imagery Capture",
+        "Obscured Roof",
+        "Uncertain Data Output"
+      ]
+    },
+    "roofmaterial_evidencedate": {
+      "originalName": "roofMaterial_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date the imagery was captured that has been used to derive the roof material information.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "roofmaterial_updatedate": {
+      "originalName": "roofMaterial_updateDate",
+      "description": "Date when the roof material was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "roofmaterial_capturemethod": {
+      "originalName": "roofMaterial_captureMethod",
+      "description": "The capture method describes how the roof material attributes were created, for example, via remote sensing survey or via an automated process.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "roofshapeaspect_shape": {
+      "originalName": "roofShapeAspect_shape",
+      "description": "An indication of the general shape characteristic of the roof of the building.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10,
+      "enum": [
+        "Flat",
+        "Mixed",
+        "Pitched",
+        "Unknown"
+      ]
+    },
+    "roofshapeaspect_areapitched_m2": {
+      "originalName": "roofShapeAspect_areaPitched_m2",
+      "description": "The sum of all roof face areas that have a pitch value of > 15°. Note that this measured area value is geometric (3D) rather than the planimetric (2D) measured area represented by geometry_area_m2.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_areaflat_m2": {
+      "originalName": "roofShapeAspect_areaFlat_m2",
+      "description": "The sum of all roof face areas that have a pitch value of <= 15°. Note that this measured area value is geometric (3D) rather than the planimetric (2D) measured area represented by geometry_area_m2.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_areafacingnorth_m2": {
+      "originalName": "roofShapeAspect_areaFacingNorth_m2",
+      "description": "The sum of all roof face areas with an aspect >= 337.5° and < 360° or >= 0 and < 22.5°. Note that this measured area value is geometric (3D) rather than the planimetric (2D) measured area represented by geometry_area_m2.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_areafacingnortheast_m2": {
+      "originalName": "roofShapeAspect_areaFacingNorthEast_m2",
+      "description": "The sum of all roof face areas with an aspect >= 22.5° and < 67.5°. Note that this measured area value is geometric (3D) rather than the planimetric (2D) measured area represented by geometry_area_m2.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_areafacingeast_m2": {
+      "originalName": "roofShapeAspect_areaFacingEast_m2",
+      "description": "The sum of all roof face areas with an aspect >= 67.5° and < 112.5°. Note that this measured area value is geometric (3D) rather than the planimetric (2D) measured area represented by geometry_area_m2.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_areafacingsoutheast_m2": {
+      "originalName": "roofShapeAspect_areaFacingSouthEast_m2",
+      "description": "The sum of all roof face areas with an aspect >= 112.5° and < 157.5°. Note that this measured area value is geometric (3D) rather than the planimetric (2D) measured area represented by geometry_area_m2.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_areafacingsouth_m2": {
+      "originalName": "roofShapeAspect_areaFacingSouth_m2",
+      "description": "The sum of all roof face areas with an aspect >= 157.5° and < 202.5°. Note that this measured area value is geometric (3D) rather than the planimetric (2D) measured area represented by geometry_area_m2.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_areafacingsouthwest_m2": {
+      "originalName": "roofShapeAspect_areaFacingSouthWest_m2",
+      "description": "The sum of all roof face areas with an aspect >= 202.5° and < 247.5°. Note that this measured area value is geometric (3D) rather than the planimetric (2D) measured area represented by geometry_area_m2.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_areafacingwest_m2": {
+      "originalName": "roofShapeAspect_areaFacingWest_m2",
+      "description": "The sum of all roof face areas with an aspect >= 247.5° and < 292.5°. Note that this measured area value is geometric (3D) rather than the planimetric (2D) measured area represented by geometry_area_m2.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_areafacingnorthwest_m2": {
+      "originalName": "roofShapeAspect_areaFacingNorthWest_m2",
+      "description": "The sum of all roof face areas with an aspect >= 292.5° and < 337.5°. Note that this measured area value is geometric (3D) rather than the planimetric (2D) measured area represented by geometry_area_m2.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_areaindeterminable_m2": {
+      "originalName": "roofShapeAspect_areaIndeterminable_m2",
+      "description": "The sum of all roof face areas that have an indeterminable aspect. For example, areas obscured by vegetation or shadow, such as in an urban 'canyon'. Note that this measured area value is planimetric (2D) rather than geometric (3D), and is different to the other roofshapeaspect_area values.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_areatotal_m2": {
+      "originalName": "roofShapeAspect_areaTotal_m2",
+      "description": "The sum of all roof face areas, excluding those with indeterminable aspects. Note that this measure area value is a combination of geometric (3D) and planimetric (2D) area values because it is comprised of all known and unknown areas. Where the roofshapeaspect_areaindeterminable_m2 value is equal to 0, this value will be entirely a geometric (3D) area value.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 7,
+      "scale": 1
+    },
+    "roofshapeaspect_confidenceindicator": {
+      "originalName": "roofShapeAspect_confidenceIndicator",
+      "description": "An indication of whether the roof shape and aspect output was expected, or if not, the reason why the quality may be lower.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 50,
+      "enum": [
+        "Complex Roof",
+        "Existing Building Changed Since Imagery Capture",
+        "Expected Data Output",
+        "Insufficient Building Size",
+        "New Building Surveyed After Imagery Capture",
+        "Obscured Roof",
+        "Uncertain Data Output"
+      ]
+    },
+    "roofshapeaspect_evidencedate": {
+      "originalName": "roofShapeAspect_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date the imagery was captured that has been used to derive the roof shape aspect information.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "roofshapeaspect_updatedate": {
+      "originalName": "roofShapeAspect_updateDate",
+      "description": "Date when the roof shape aspect was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "roofshapeaspect_capturemethod": {
+      "originalName": "roofShapeAspect_captureMethod",
+      "description": "The capture method describes how the roof shape and aspect attributes were created, for example, via remote sensing survey or via an automated process.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "sitereference": {
+      "originalName": "siteReference",
+      "description": "Building to site cross-reference.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "siteid": {
+            "originalName": "siteID",
+            "description": "The identifier of the site the Building is within.",
+            "type": "string",
+            "format": "uuid",
+            "maxLength": 36
+          },
+          "buildingid": {
+            "originalName": "buildingID",
+            "description": "The identifier of the Building.",
+            "type": "string",
+            "format": "uuid",
+            "maxLength": 36
+          },
+          "buildingversiondate": {
+            "originalName": "buildingVersionDate",
+            "description": "The date this version of the feature entered the OS National Geographic Database.",
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    },
+    "buildingpartreference": {
+      "originalName": "buildingPartReference",
+      "description": "Building to building part cross-reference.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "buildingpartid": {
+            "originalName": "buidingPartID",
+            "description": "The identifier of the Building Part the Building is created from.",
+            "type": "string",
+            "format": "uuid",
+            "maxLength": 36
+          },
+          "buildingid": {
+            "originalName": "buildingID",
+            "description": "The identifier of the Building.",
+            "type": "string",
+            "format": "uuid",
+            "maxLength": 36
+          },
+          "buildingversiondate": {
+            "originalName": "buildingVersionDate",
+            "description": "The date this version of the feature entered the OS National Geographic Database.",
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    },
+    "uprnreference": {
+      "originalName": "uprnreference",
+      "description": "Building to address cross-reference.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "uprn": {
+            "originalName": "uprn",
+            "description": "The identifier of the addressable feature that is located within the Building.",
+            "type": "number"
+          },
+          "buildingid": {
+            "originalName": "buildingID",
+            "description": "The identifier of the Building.",
+            "type": "string",
+            "format": "uuid",
+            "maxLength": 36
+          },
+          "buildingversiondate": {
+            "originalName": "buildingVersionDate",
+            "description": "The date this version of the feature entered the OS National Geographic Database.",
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "osid",
+    "versiondate",
+    "versionavailablefromdate",
+    "versionavailabletodate",
+    "changetype",
+    "geometry",
+    "geometry_area_m2",
+    "geometry_updatedate",
+    "theme",
+    "description",
+    "description_updatedate",
+    "physicalstate",
+    "physicalstate_updatedate",
+    "buildingpartcount",
+    "isinsite",
+    "primarysiteid",
+    "containingsitecount",
+    "mainbuildingid",
+    "mainbuildingid_ismainbuilding",
+    "mainbuildingid_updatedate",
+    "buildinguse",
+    "buildinguse_oslandusetiera",
+    "buildinguse_addresscount_total",
+    "buildinguse_addresscount_residential",
+    "buildinguse_addresscount_commercial",
+    "buildinguse_addresscount_other",
+    "buildinguse_updatedate",
+    "connectivity",
+    "connectivity_count",
+    "connectivity_updatedate",
+    "constructionmaterial",
+    "constructionmaterial_evidencedate",
+    "constructionmaterial_updatedate",
+    "constructionmaterial_source",
+    "constructionmaterial_capturemethod",
+    "constructionmaterial_thirdpartyprovenance",
+    "buildingage_period",
+    "buildingage_year",
+    "buildingage_evidencedate",
+    "buildingage_updatedate",
+    "buildingage_source",
+    "buildingage_capturemethod",
+    "buildingage_thirdpartyprovenance",
+    "basementpresence",
+    "basementpresence_selfcontained",
+    "basementpresence_evidencedate",
+    "basementpresence_updatedate",
+    "basementpresence_source",
+    "basementpresence_capturemethod",
+    "basementpresence_thirdpartyprovenance",
+    "numberoffloors",
+    "numberoffloors_evidencedate",
+    "numberoffloors_updatedate",
+    "numberoffloors_source",
+    "numberoffloors_capturemethod",
+    "height_absolutemin_m",
+    "height_absoluteroofbase_m",
+    "height_absolutemax_m",
+    "height_relativeroofbase_m",
+    "height_relativemax_m",
+    "height_confidencelevel",
+    "height_evidencedate",
+    "height_updatedate",
+    "roofmaterial_primarymaterial",
+    "roofmaterial_solarpanelpresence",
+    "roofmaterial_greenroofpresence",
+    "roofmaterial_confidenceindicator",
+    "roofmaterial_evidencedate",
+    "roofmaterial_updatedate",
+    "roofmaterial_capturemethod",
+    "roofshapeaspect_shape",
+    "roofshapeaspect_areapitched_m2",
+    "roofshapeaspect_areaflat_m2",
+    "roofshapeaspect_areafacingnorth_m2",
+    "roofshapeaspect_areafacingnortheast_m2",
+    "roofshapeaspect_areafacingeast_m2",
+    "roofshapeaspect_areafacingsoutheast_m2",
+    "roofshapeaspect_areafacingsouth_m2",
+    "roofshapeaspect_areafacingsouthwest_m2",
+    "roofshapeaspect_areafacingwest_m2",
+    "roofshapeaspect_areafacingnorthwest_m2",
+    "roofshapeaspect_areaindeterminable_m2",
+    "roofshapeaspect_areatotal_m2",
+    "roofshapeaspect_confidenceindicator",
+    "roofshapeaspect_evidencedate",
+    "roofshapeaspect_updatedate",
+    "roofshapeaspect_capturemethod",
+    "sitereference",
+    "buildingpartreference",
+    "uprnreference"
+  ],
+  "additionalProperties": false
+}

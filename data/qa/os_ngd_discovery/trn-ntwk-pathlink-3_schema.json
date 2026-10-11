@@ -1,0 +1,486 @@
+{
+  "$id": "trn-ntwk-pathlink-3.0",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "shortName": "PathLink",
+  "longName": "Path Link",
+  "description": "A Path Link is a linear spatial object that defines the geometry and connectivity of the path network between two points in the network. Path Links will be split for connectivity purposes (for example, at junctions) and Path Nodes will connect the Path Links together. Each Path Link will provide a reference to the Path Nodes at the start and end of the Path Link. Path Links will be captured where: They provide a route that cannot be inferred from the Road Network. They provide connectivity between road networks. There is a canal path or tow path. There are paths over footbridges and under subways. Path Links will not be captured where: They run parallel to the Road Network (for example, a pavement). They are connected to a motorway. There is a physical obstruction which prevents connectivity.",
+  "majorVersion": 3,
+  "minorVersion": 0,
+  "versionSuffix": null,
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -8.82,
+          49.79,
+          1.92,
+          60.94
+        ]
+      ],
+      "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-08-20T00:00:00Z",
+          null
+        ]
+      ],
+      "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+    }
+  },
+  "properties": {
+    "osid": {
+      "originalName": "OSID",
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD.",
+      "type": "string",
+      "format": "uuid",
+      "maxLength": 36
+    },
+    "toid": {
+      "originalName": "TOID",
+      "description": "Topographic Identifier (TOID) of the feature, as published in the OS MasterMap suite of products.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20
+    },
+    "versiondate": {
+      "originalName": "versionDate",
+      "description": "Date when the version was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "versionavailablefromdate": {
+      "originalName": "versionAvailableFromDate",
+      "description": "The date this version of the feature became the latest version.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "versionavailabletodate": {
+      "originalName": "versionAvailableToDate",
+      "description": "The date this version of the feature was superseded by an update or ceased to exist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "changetype": {
+      "originalName": "changeType",
+      "description": "The type of change that generated a new version of the feature.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "End Of Life",
+        "Modified Attributes",
+        "Modified Geometry",
+        "Modified Geometry And Attributes",
+        "Moved From A Different Feature Type",
+        "Moved To A Different Feature Type",
+        "New"
+      ]
+    },
+    "geometry": {
+      "originalName": "geometry",
+      "description": "Geometry for the feature.",
+      "type": "object",
+      "$ref": "https://geojson.org/schema/LineString.json",
+      "precision": 10,
+      "scale": 3
+    },
+    "geometry_length_m": {
+      "originalName": "geometry_length_m",
+      "description": "The measured length of the geometry in metres.",
+      "type": "number",
+      "precision": 15,
+      "scale": 3
+    },
+    "theme": {
+      "originalName": "theme",
+      "description": "The OS NGD Theme to which the feature belongs. Multiplicity allows for a primary theme to be assigned along with additional themes. For example, a Verge is primarily in the OS NGD Transport Theme, but it is also in the OS NGD Land Theme.",
+      "type": "string",
+      "maxLength": 40,
+      "enum": [
+        "Address",
+        "Administrative and Statistical Units",
+        "Buildings",
+        "Geographical Names",
+        "Land",
+        "Land Use",
+        "Structures",
+        "Transport",
+        "Water"
+      ]
+    },
+    "description": {
+      "originalName": "description",
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "type": "string",
+      "maxLength": 42,
+      "enum": [
+        "Canal Path",
+        "Collapsed Dual Carriageway",
+        "Dual Carriageway",
+        "Enclosed Traffic Area",
+        "Footbridge",
+        "Guided Busway",
+        "Layby",
+        "Path",
+        "Path With Ford",
+        "Path With Level Crossing",
+        "Path With Steps",
+        "Roundabout",
+        "Service Road",
+        "Shared Use Carriageway",
+        "Single Carriageway",
+        "Slip Road",
+        "Subway",
+        "Track",
+        "Traffic Island Link",
+        "Traffic Island Link At Junction"
+      ]
+    },
+    "pathname1_text": {
+      "originalName": "pathName1_text",
+      "description": "The name of the path which the feature is part of. When a path link is referenced by a Street with a street type of Designated Street Name, this is the name used; otherwise, the name is from the Path feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "pathname1_language": {
+      "originalName": "pathName1_language",
+      "description": "The language of pathname1, provided as a 3-digit ISO 639-2 code ('eng, 'cym', 'gla').",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "pathname2_text": {
+      "originalName": "pathName2_text",
+      "description": "The name of the path which the feature is part of. When a path link is referenced by a Street with a street type of Designated Street Name, this is the name used; otherwise, the name is from the Path feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "pathname2_language": {
+      "originalName": "pathName2_language",
+      "description": "The language of pathname2, provided as a 3-digit ISO 639-2 code ('eng, 'cym', 'gla').",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "alternatename1_text": {
+      "originalName": "alternateName1_text",
+      "description": "Another name for the path that the feature is part of. This is populated with the name captured by Ordnance Survey when it differs from that in Street.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "alternatename1_language": {
+      "originalName": "alternateName1_language",
+      "description": "The language the name is expressed in, provided as a 3-digit ISO 639-2 code ('eng, 'cym', 'gla').",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "alternatename2_text": {
+      "originalName": "alternateName2_text",
+      "description": "Another name for the path that the feature is part of. This is populated with the name captured by Ordnance Survey when it differs from that in Street.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "alternatename2_language": {
+      "originalName": "alternateName2_language",
+      "description": "The language the name is expressed in, provided as a 3-digit ISO 639-2 code ('eng, 'cym', 'gla').",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "surfacetype": {
+      "originalName": "surfaceType",
+      "description": "Nature of the material that the path is made up of.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 13,
+      "enum": [
+        "Made Sealed",
+        "Made Unknown",
+        "Made Unsealed",
+        "Unmade"
+      ]
+    },
+    "elevationgain_indirection": {
+      "originalName": "elevationGain_InDirection",
+      "description": "The total ascent experienced when passing along a link feature in the direction of digitisation, calculated from three-dimensional geometry.",
+      "type": "number",
+      "precision": 6,
+      "scale": 1
+    },
+    "elevationgain_againstdirection": {
+      "originalName": "elevationGain_AgainstDirection",
+      "description": "The total ascent experienced when passing along a link feature against the direction of digitisation, calculated from three-dimensional geometry.",
+      "type": "number",
+      "precision": 6,
+      "scale": 1
+    },
+    "heightingmethod": {
+      "originalName": "heightingMethod",
+      "description": "The origin and derivation of the three dimensional geometry of the road link.",
+      "type": "string",
+      "maxLength": 19,
+      "enum": [
+        "DTM",
+        "Interpolated Bridge",
+        "Interpolated Tunnel"
+      ]
+    },
+    "capturespecification": {
+      "originalName": "captureSpecification",
+      "description": "Indicates the capture specification used by OS when capturing the feature. This could either be Urban, Rural or Moorland.",
+      "type": "string",
+      "maxLength": 10,
+      "enum": [
+        "Moorland",
+        "Rural",
+        "Urban"
+      ]
+    },
+    "matchstatus": {
+      "originalName": "matchStatus",
+      "description": "Indication of whether the feature has been matched to a feature in the National or Scottish Street Gazetteers.",
+      "type": "string",
+      "maxLength": 39,
+      "enum": [
+        "Matched",
+        "Matched With Attribute Discrepancy",
+        "No Match",
+        "Not Matched Awaiting Review"
+      ]
+    },
+    "startnode": {
+      "originalName": "startNode",
+      "description": "The node coincident with the first vertex of the geometry attribute of the link feature.",
+      "type": "string",
+      "maxLength": 36
+    },
+    "startgradeseparation": {
+      "originalName": "startGradeSeparation",
+      "description": "The relative level of the link at the startNode.",
+      "type": "integer"
+    },
+    "endnode": {
+      "originalName": "endNode",
+      "description": "The node coincident with the last vertex of the geometry attribute of the link feature.",
+      "type": "string",
+      "maxLength": 36
+    },
+    "endgradeseparation": {
+      "originalName": "endGradeSeparation",
+      "description": "The relative level of the link at the endNode.",
+      "type": "integer"
+    },
+    "presenceofstreetlight_coverage": {
+      "originalName": "presenceOfStreetLight_coverage",
+      "description": "An indication of the extent of street light coverage along the Road Link or Path Link.",
+      "type": "string",
+      "maxLength": 15,
+      "enum": [
+        "Fully Lit",
+        "Mostly Lit",
+        "Mostly Unlit",
+        "Fully Unlit",
+        "Unknown"
+      ]
+    },
+    "presenceofstreetlight_evidencedate": {
+      "originalName": "presenceOfStreetLight_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date of collection by a surveyor or third party information received.",
+      "type": "string",
+      "format": "date"
+    },
+    "presenceofstreetlight_updatedate": {
+      "originalName": "presenceOfStreetLight_updateDate",
+      "description": "Date when the Street Light record was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "presenceofstreetlight_capturemethod": {
+      "originalName": "presenceOfStreetLight_captureMethod",
+      "description": "Indication of the method used to capture or produce the data.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "presenceofcyclelane_overall_m": {
+      "originalName": "presenceOfCycleLane_overall_m",
+      "description": "Indicates the length of the Path Link in metres that has a Cycle Lane present on it.",
+      "type": "number",
+      "precision": 6,
+      "scale": 2
+    },
+    "presenceofcyclelane_overallpercentage": {
+      "originalName": "presenceOfCycleLane_overallPercentage",
+      "description": "Indicates the percentage of the Path Link that has a Cycle Lane present on it.",
+      "type": "integer"
+    },
+    "presenceofcyclelane_indirection_m": {
+      "originalName": "presenceOfCycleLane_inDirection_m",
+      "description": "Indicates the length of the Path Link in metres that has a Cycle Lane present on it that can be traversed in the direction of digitisation of the Path Link.",
+      "type": "number",
+      "precision": 6,
+      "scale": 2
+    },
+    "presenceofcyclelane_indirectionsegregated_m": {
+      "originalName": "presenceOfCycleLane_inDIrectionSegregated_m",
+      "description": "Indicates the length of the Path Link in metres that has some form of segregated Cycle Lane away from the carriageway that can be traversed in the direction of digitisation of the Path Link.",
+      "type": "number",
+      "precision": 6,
+      "scale": 2
+    },
+    "presenceofcyclelane_indirectionpercentage": {
+      "originalName": "presenceOfCycleLane_inDirectionPercentage",
+      "description": "Indicates the presence of a Cycle Lane that can be traversed in the direction of digitisation of the Path Link as a percentage of the total length of the Path Link.",
+      "type": "integer"
+    },
+    "presenceofcyclelane_inoppositedirection_m": {
+      "originalName": "presenceOfCycleLane_inOppositeDirection_m",
+      "description": "Indicates the length of the Path Link in metres that has a Cycle Lane present on it that can be traversed against the direction of digitisation of the Path Link.",
+      "type": "number",
+      "precision": 6,
+      "scale": 2
+    },
+    "presenceofcyclelane_inoppositedirectionsegregated_m": {
+      "originalName": "presenceOfCycleLane_inOppositeDirectionSegregated_m",
+      "description": "Indicates the length of the Path Link in metres that has some form of segregated Cycle Lane away from the carriageway that can be traversed against the direction of digitisation of the Path Link.",
+      "type": "number",
+      "precision": 6,
+      "scale": 2
+    },
+    "presenceofcyclelane_inoppositedirectionpercentage": {
+      "originalName": "presenceOfCycleLane_inOppositeDirectionPercentage",
+      "description": "Indicates the length of the Path Link that has some form of segregated Cycle Lane away from the carriageway that can be traversed in the opposite direction of digitisation of the Path Link.",
+      "type": "integer"
+    },
+    "presenceofcyclelane_evidencedate": {
+      "originalName": "presenceOfCycleLane_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date of collection by a surveyor or the date information was received from a third party.",
+      "type": "string",
+      "format": "date"
+    },
+    "presenceofcyclelane_updatedate": {
+      "originalName": "presenceOfCycleLane_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "presenceofcyclelane_capturemethod": {
+      "originalName": "presenceOfStreetLight_captureMethod",
+      "description": "Indication of the method used to capture or produce the data.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    }
+  },
+  "required": [
+    "osid",
+    "toid",
+    "versiondate",
+    "versionavailablefromdate",
+    "versionavailabletodate",
+    "changetype",
+    "geometry",
+    "geometry_length_m",
+    "theme",
+    "description",
+    "pathname1_text",
+    "pathname1_language",
+    "pathname2_text",
+    "pathname2_language",
+    "alternatename1_text",
+    "alternatename1_language",
+    "alternatename2_text",
+    "alternatename2_language",
+    "surfacetype",
+    "elevationgain_indirection",
+    "elevationgain_againstdirection",
+    "heightingmethod",
+    "capturespecification",
+    "matchstatus",
+    "startnode",
+    "startgradeseparation",
+    "endnode",
+    "endgradeseparation",
+    "presenceofstreetlight_coverage",
+    "presenceofstreetlight_evidencedate",
+    "presenceofstreetlight_updatedate",
+    "presenceofstreetlight_capturemethod",
+    "presenceofcyclelane_overall_m",
+    "presenceofcyclelane_overallpercentage",
+    "presenceofcyclelane_indirection_m",
+    "presenceofcyclelane_indirectionsegregated_m",
+    "presenceofcyclelane_indirectionpercentage",
+    "presenceofcyclelane_inoppositedirection_m",
+    "presenceofcyclelane_inoppositedirectionsegregated_m",
+    "presenceofcyclelane_inoppositedirectionpercentage",
+    "presenceofcyclelane_evidencedate",
+    "presenceofcyclelane_updatedate",
+    "presenceofcyclelane_capturemethod"
+  ],
+  "additionalProperties": false
+}

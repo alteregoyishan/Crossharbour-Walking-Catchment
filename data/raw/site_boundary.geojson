@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "name": "site_boundary",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "site_name": "Crossharbour building plot (fictional, for assessment only)",
+        "source": "Traced by the design team from an aerial photo, September 2026",
+        "note": "Plot area approx. 0.55 ha"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.0135855,
+              51.4950168
+            ],
+            [
+              -0.0125762,
+              51.4950357
+            ],
+            [
+              -0.0125441,
+              51.4944506
+            ],
+            [
+              -0.0135533,
+              51.4944317
+            ],
+            [
+              -0.0135855,
+              51.4950168
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

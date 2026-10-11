@@ -1,0 +1,500 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://api.os.uk/features/ngd/ofa/v1/collections/bld-fts-building-4/queryables",
+  "type": "object",
+  "title": "Queryable attributes for bld-fts-building-4 collection",
+  "description": "This lists the attributes which can be filtered on and their types for bld-fts-building-4 collection.",
+  "properties": {
+    "osid": {
+      "type": [
+        "string"
+      ],
+      "format": "uuid",
+      "maxLength": 36,
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD."
+    },
+    "geometry_area_m2": {
+      "type": [
+        "number"
+      ],
+      "description": "The measured area of the geometry in square metres."
+    },
+    "description": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 45,
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "enumeration": true,
+      "enum": [
+        "Abbey",
+        "Agriculture Building",
+        "Air Passenger Terminal",
+        "Air Quality Monitoring Station",
+        "Airport With Scheduled Services",
+        "Airport Without Scheduled Services",
+        "Ambulance And Fire Station",
+        "Ambulance And Police Station",
+        "Ambulance Station",
+        "Ambulance, Fire And Police Station",
+        "Ancillary Building",
+        "Art Gallery",
+        "Arts Centre",
+        "Arts Centre And Museum",
+        "Athletics Ground",
+        "Athletics Stadium",
+        "Attraction Building",
+        "Biogas Power Station",
+        "Bowls Clubhouse",
+        "Buddhist Temple",
+        "Building Under Construction",
+        "Cable Terminal Station",
+        "Cathedral",
+        "Central Government Services",
+        "Chapel",
+        "Children's Nursery",
+        "Church",
+        "Cinema",
+        "Coastguard Lookout",
+        "College",
+        "Commercial Building",
+        "Community Building",
+        "Community Meeting Place",
+        "Community Services",
+        "Construction Building",
+        "Crematorium",
+        "Cricket Ground (Participation)",
+        "Cricket Ground (Spectating)",
+        "Cricket Stadium",
+        "Curling Rink",
+        "Cycling Sports Facility",
+        "Defence Building",
+        "Detached House",
+        "Detention Centre",
+        "Domestic Outbuilding",
+        "Education Building",
+        "Electricity Distribution Facility",
+        "Electricity Storage Facility",
+        "Electricity Sub Station",
+        "Emergency Assistance Or Equipment Facility",
+        "End-Of-Terrace House",
+        "Ferry Passenger Terminal",
+        "Ferry Vehicular Terminal",
+        "Ferry Vehicular Terminal (International)",
+        "Fire Station",
+        "Fire Station And Police Station",
+        "Football Ground (Participation)",
+        "Football Ground (Spectating)",
+        "Football Stadium",
+        "Gas Distribution Or Storage Facility",
+        "Gas Governor",
+        "Gas Production Facility",
+        "Golf Centre",
+        "Golf Clubhouse",
+        "Golf Course",
+        "Golf Driving Range",
+        "Government Building",
+        "Greyhound Track Or Stadium",
+        "Gurdwara",
+        "Health Centre",
+        "Heating Plant",
+        "Heliport",
+        "Hindu Temple",
+        "Historic Building",
+        "HM Coastguard Station",
+        "Hockey Ground",
+        "Horse Racing Course",
+        "Hospice",
+        "Hospital",
+        "Hydroelectric Power Generating",
+        "Hydrogen Fuel Production And Supply",
+        "Ice Rink",
+        "Inshore Rescue Boat Station",
+        "Kingdom Hall",
+        "Law Court",
+        "Leisure Or Sports Centre",
+        "Library",
+        "Library And Museum",
+        "Lifeboat Station",
+        "Light Rail Station",
+        "Local Government Facility",
+        "Medical Building",
+        "Medical Care Facility",
+        "Mid-Terrace House",
+        "Minster",
+        "Mixed Use Building",
+        "Mosque",
+        "Multi-Purpose Community Centre",
+        "Multiple Residential Accommodation",
+        "Museum",
+        "Place Of Worship",
+        "Police Headquarters",
+        "Police Station",
+        "Police Support Facility",
+        "Power Station",
+        "Prison",
+        "Pumping Station",
+        "Pupil Referral Centre",
+        "Racquet Sports Club",
+        "Railway Station",
+        "Railway Station (Not Publicly Accessible)",
+        "Railway Station (Principal)",
+        "Railway Station (Underground System)",
+        "Religious Meeting Place",
+        "Residential Building",
+        "Rowing Club",
+        "Rugby Ground (Spectating)",
+        "Rugby Pitch Or Ground (Participation)",
+        "Rugby Stadium",
+        "Sailing Centre",
+        "School",
+        "Secure Residential Unit",
+        "Semi-Detached House",
+        "Solar Power Facility",
+        "Speedway Track",
+        "Sports Building",
+        "Sports Ground (Spectating)",
+        "Sports Or Exercise Facility",
+        "Sports Pavilion",
+        "Sports Stadium",
+        "Static Caravan Or Mobile Home",
+        "Stupa",
+        "Swimming Pool",
+        "Synagogue",
+        "Telecommunications Facility",
+        "Telephone Exchange",
+        "Temporary Or Holiday Accommodation Building",
+        "Tennis Centre",
+        "Theatre",
+        "Tidal Power Station",
+        "Transport Building",
+        "University",
+        "University College",
+        "University School",
+        "University Sports Or Exercise Facility",
+        "Unknown Building",
+        "Utility Building",
+        "Waste Water Treatment Works",
+        "Water Distribution Facility",
+        "Water Sports Centre",
+        "Water Treatment Facility",
+        "Wildlife Or Zoological Park",
+        "Yacht Club"
+      ]
+    },
+    "physicalstate": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 20,
+      "description": "The state of the building in relation to its physical condition.",
+      "enumeration": true,
+      "enum": [
+        "Built",
+        "Derelict",
+        "Under Construction"
+      ]
+    },
+    "mainbuildingid": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 36,
+      "description": "Populated if the feature is not the main building. Can be used to identify the main building within the same site."
+    },
+    "mainbuildingid_ismainbuilding": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 5,
+      "description": "Flag to indicate whether the building is the primary building within the site. This has been captured by OS surveyors as the most normal building a casual visitor would report to within the Land Use Site.",
+      "enumeration": true,
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "buildinguse": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 100,
+      "description": "Describes what the Building is used for and can have up to two values. The value will be 'Mixed Use' where more than two uses are identified.",
+      "enumeration": true,
+      "enum": [
+        "Agriculture Or Aquaculture",
+        "Attraction Or Activity",
+        "Commercial Activity: Animal Services",
+        "Commercial Activity: Distribution Or Storage",
+        "Commercial Activity: Industrial Or Manufacturing",
+        "Commercial Activity: Other",
+        "Commercial Activity: Retail",
+        "Community Services: Emergency Services",
+        "Community Services: Funerary",
+        "Community Services: Other",
+        "Community Services: Religious Worship",
+        "Construction",
+        "Defence",
+        "Education",
+        "Government Services",
+        "Historic",
+        "Medical Or Health Care",
+        "Mixed Use",
+        "Residential Accommodation",
+        "Sports Attraction Or Facility",
+        "Temporary Or Holiday Accommodation",
+        "Transport: Air",
+        "Transport: Rail",
+        "Transport: Road, Track Or Path",
+        "Transport: Water",
+        "Unknown",
+        "Unknown Use",
+        "Utility Or Environmental Protection"
+      ]
+    },
+    "buildinguse_oslandusetiera": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 50,
+      "description": "A high-level description of the main activity that takes place at the location or that the feature supports.",
+      "enumeration": true,
+      "enum": [
+        "Agriculture Or Aquaculture",
+        "Attraction Or Activity",
+        "Commercial Activity: Animal Services",
+        "Commercial Activity: Distribution Or Storage",
+        "Commercial Activity: Industrial Or Manufacturing",
+        "Commercial Activity: Other",
+        "Commercial Activity: Retail",
+        "Community Services: Emergency Services",
+        "Community Services: Funerary",
+        "Community Services: Other",
+        "Community Services: Religious Worship",
+        "Construction",
+        "Defence",
+        "Education",
+        "Government Services",
+        "Historic",
+        "Medical Or Health Care",
+        "Mixed Use",
+        "Residential Accommodation",
+        "Sports Attraction Or Facility",
+        "Temporary Or Holiday Accommodation",
+        "Transport: Air",
+        "Transport: Rail",
+        "Transport: Road, Track Or Path",
+        "Transport: Water",
+        "Unknown Or Unused Artificial",
+        "Unknown Or Unused Natural",
+        "Unknown Use",
+        "Utility Or Environmental Protection"
+      ]
+    },
+    "connectivity": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 15,
+      "description": "Describes how the building is connected to other buildings.",
+      "enumeration": true,
+      "enum": [
+        "End-Connected",
+        "Multi-Connected",
+        "Semi-Connected",
+        "Standalone"
+      ]
+    },
+    "constructionmaterial": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 40,
+      "description": "The primary material from which the building is constructed. Construction material is recorded for addressable buildings. It may be recorded for some non-addressable buildings, but the majority of these will have construction material recorded as NULL.",
+      "enumeration": true,
+      "enum": [
+        "Brick Or Block Or Stone",
+        "Concrete",
+        "Mixed (Masonry And Metal)",
+        "Mixed (Masonry And Timber)",
+        "Mixed (Plaster And Timber)",
+        "Other Artificial Material (Not Concrete)",
+        "Other Non-Standard Or System Build",
+        "Static Caravan Or Mobile Home",
+        "Metal",
+        "Timber Or Wood",
+        "Unknown"
+      ]
+    },
+    "buildingage_period": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10,
+      "description": "The period (i.e. a range of years) in which the building was constructed. Construction period is recorded for addressable buildings. It may be recorded for some non-addressable buildings, but the majority of these will have construction period recorded as NULL.",
+      "enumeration": true,
+      "enum": [
+        "Pre-1837",
+        "Pre-1919",
+        "1837-1869",
+        "1870-1918",
+        "1919-1944",
+        "1945-1959",
+        "1960-1979",
+        "1980-1989",
+        "1990-1999",
+        "2000-2009",
+        "2010-2019",
+        "2020-2029",
+        "2030-2039",
+        "Unknown"
+      ]
+    },
+    "buildingage_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "The year in which the building was constructed, for buildings constructed post-1999 and where available."
+    },
+    "basementpresence": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 15,
+      "description": "Indicates if a basement is present in the building. Basement presence is recorded for addressable buildings. It may be recorded for some non-addressable buildings, but the majority of these will have basement presence recorded as NULL.",
+      "enumeration": true,
+      "enum": [
+        "Present",
+        "Not Present",
+        "Unknown"
+      ]
+    },
+    "basementpresence_selfcontained": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 15,
+      "description": "Indicates if the basement contains a self-contained flat.",
+      "enumeration": true,
+      "enum": [
+        "Present",
+        "Not Present",
+        "Unknown"
+      ]
+    },
+    "numberoffloors": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "The maximum number of occupiable floors at or above ground level within a building. "
+    },
+    "height_absolutemin_m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "The height, above datum, of the underlying ground surface."
+    },
+    "height_absoluteroofbase_m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "The height, above datum, of the base of the roof, that is, where the roof intersects the building walls."
+    },
+    "height_absolutemax_m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "The height, above datum, of the highest point of the building; this could include a chimney or other structure on a building."
+    },
+    "height_relativeroofbase_m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "The difference in height between the intersection of the external building walls and the underlying ground surface and the base of the roof of the building."
+    },
+    "height_relativemax_m": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "The difference in height between the intersection of the external building walls and the underlying ground surface and the highest point on the building."
+    },
+    "roofmaterial_primarymaterial": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 35,
+      "description": "The primary roof material present on the building.",
+      "enumeration": true,
+      "enum": [
+        "Fabric",
+        "Glass Or Polycarbonate",
+        "Green Roof",
+        "Metal",
+        "Mixed",
+        "Other",
+        "Thatch",
+        "Tile Or Stone Or Slate",
+        "Unknown",
+        "Waterproof Membrane Or Concrete"
+      ]
+    },
+    "roofmaterial_solarpanelpresence": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 15,
+      "description": "Indicates if solar panels are present on the roof of the building.",
+      "enumeration": true,
+      "enum": [
+        "Present",
+        "Not Present",
+        "Unknown"
+      ]
+    },
+    "roofmaterial_greenroofpresence": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 15,
+      "description": "Indicates if the roof of the building is at least partially covered with vegetation. This is usually specifically installed on a growing medium with a waterproof membrane, for environmental reasons.",
+      "enumeration": true,
+      "enum": [
+        "Present",
+        "Not Present",
+        "Unknown"
+      ]
+    },
+    "roofshapeaspect_shape": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10,
+      "description": "An indication of the general shape characteristic of the roof of the building.",
+      "enumeration": true,
+      "enum": [
+        "Flat",
+        "Mixed",
+        "Pitched",
+        "Unknown"
+      ]
+    }
+  }
+}

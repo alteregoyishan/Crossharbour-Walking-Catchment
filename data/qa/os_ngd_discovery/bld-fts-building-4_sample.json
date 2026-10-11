@@ -1,0 +1,1521 @@
+{
+  "type": "FeatureCollection",
+  "links": [
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/bld-fts-building-4/items?limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "self",
+      "type": "application/geo+json",
+      "title": "All features from the 'Building v4' collection within bounding box: 537642.241,178797.287,538415.757,179565.712"
+    },
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/bld-fts-building-4/items?offset=10&limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "next",
+      "type": "application/geo+json",
+      "title": "Next page"
+    }
+  ],
+  "timeStamp": "2026-10-10T22:03:47.960755967Z",
+  "numberReturned": 10,
+  "features": [
+    {
+      "id": "000282e2-5dec-482f-9a1b-b35851834af7",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537954.5,
+              179334.6
+            ],
+            [
+              537955.92,
+              179338.33
+            ],
+            [
+              537964.11,
+              179335.25
+            ],
+            [
+              537962.65,
+              179331.4
+            ],
+            [
+              537958.41,
+              179327.39
+            ],
+            [
+              537955.36,
+              179328.4
+            ],
+            [
+              537954.5,
+              179334.6
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "000282e2-5dec-482f-9a1b-b35851834af7",
+        "theme": "Buildings",
+        "isinsite": true,
+        "changetype": "Modified Attributes",
+        "buildinguse": "Commercial Activity: Retail",
+        "description": "Commercial Building",
+        "versiondate": "2026-09-22",
+        "connectivity": "End-Connected",
+        "physicalstate": "Built",
+        "primarysiteid": "d940c91d-3d0b-421e-9d44-8b003f6a0685",
+        "sitereference": [
+          {
+            "siteid": "d940c91d-3d0b-421e-9d44-8b003f6a0685",
+            "buildingid": "000282e2-5dec-482f-9a1b-b35851834af7",
+            "buildingversiondate": "2026-09-22"
+          }
+        ],
+        "uprnreference": [
+          {
+            "uprn": 6062104,
+            "buildingid": "000282e2-5dec-482f-9a1b-b35851834af7",
+            "buildingversiondate": "2026-09-22"
+          },
+          {
+            "uprn": 6129532,
+            "buildingid": "000282e2-5dec-482f-9a1b-b35851834af7",
+            "buildingversiondate": "2026-09-22"
+          }
+        ],
+        "mainbuildingid": null,
+        "numberoffloors": null,
+        "basementpresence": "Present",
+        "buildingage_year": null,
+        "geometry_area_m2": 67.631,
+        "buildingpartcount": 1,
+        "height_updatedate": "2026-09-01",
+        "buildingage_period": "1990-1999",
+        "buildingage_source": "Verisk",
+        "connectivity_count": 1,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2026-09-01",
+        "height_evidencedate": "2023-08-23",
+        "constructionmaterial": "Brick Or Block Or Stone",
+        "height_absolutemax_m": 13.5,
+        "height_absolutemin_m": 1.7,
+        "height_relativemax_m": 11.8,
+        "buildingpartreference": [
+          {
+            "buildingid": "000282e2-5dec-482f-9a1b-b35851834af7",
+            "buildingpartid": "1b9c0328-de56-4e09-8d0c-b9a53a5c31b3",
+            "buildingversiondate": "2026-09-22"
+          }
+        ],
+        "numberoffloors_source": null,
+        "roofshapeaspect_shape": "Pitched",
+        "buildingage_updatedate": "2026-09-02",
+        "buildinguse_updatedate": "2026-09-01",
+        "description_updatedate": "2026-09-01",
+        "height_confidencelevel": "Moderate",
+        "versionavailabletodate": null,
+        "basementpresence_source": "Verisk",
+        "connectivity_updatedate": "2026-09-01",
+        "roofmaterial_updatedate": "2026-09-22",
+        "buildingage_evidencedate": "1900-01-01",
+        "physicalstate_updatedate": "2026-09-01",
+        "versionavailablefromdate": "2026-09-23T00:00:00Z",
+        "buildingage_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": 9.2,
+        "height_relativeroofbase_m": 7.5,
+        "mainbuildingid_updatedate": "2026-09-01",
+        "numberoffloors_updatedate": null,
+        "roofmaterial_evidencedate": "2026-05-24",
+        "buildinguse_oslandusetiera": "Commercial Activity: Retail",
+        "roofmaterial_capturemethod": "Automated Process",
+        "roofshapeaspect_updatedate": "2026-09-22",
+        "basementpresence_updatedate": "2026-09-02",
+        "constructionmaterial_source": "Verisk",
+        "numberoffloors_evidencedate": null,
+        "roofshapeaspect_areaflat_m2": 0.0,
+        "numberoffloors_capturemethod": null,
+        "roofmaterial_primarymaterial": "Tile Or Stone Or Slate",
+        "roofshapeaspect_areatotal_m2": 93.5,
+        "roofshapeaspect_evidencedate": "2026-05-24",
+        "basementpresence_evidencedate": "2017-01-01",
+        "mainbuildingid_ismainbuilding": "Yes",
+        "roofshapeaspect_capturemethod": "Automated Process",
+        "basementpresence_capturemethod": "Remote Sensing Survey",
+        "basementpresence_selfcontained": "Not Present",
+        "buildinguse_addresscount_other": 1,
+        "buildinguse_addresscount_total": 2,
+        "roofmaterial_greenroofpresence": "Not Present",
+        "roofshapeaspect_areapitched_m2": 93.5,
+        "constructionmaterial_updatedate": "2026-09-02",
+        "roofmaterial_solarpanelpresence": "Not Present",
+        "buildingage_thirdpartyprovenance": "Address Analysis",
+        "roofmaterial_confidenceindicator": "Expected Data Output",
+        "constructionmaterial_evidencedate": "2017-01-01",
+        "roofshapeaspect_areafacingeast_m2": 0.0,
+        "roofshapeaspect_areafacingwest_m2": 56.3,
+        "constructionmaterial_capturemethod": "Remote Sensing Survey",
+        "roofshapeaspect_areafacingnorth_m2": 0.0,
+        "roofshapeaspect_areafacingsouth_m2": 0.0,
+        "buildinguse_addresscount_commercial": 1,
+        "roofshapeaspect_confidenceindicator": "Expected Data Output",
+        "buildinguse_addresscount_residential": 0,
+        "basementpresence_thirdpartyprovenance": "Remote Sensed Manual Imagery Interpretation",
+        "roofshapeaspect_areaindeterminable_m2": 0.0,
+        "roofshapeaspect_areafacingnortheast_m2": 0.0,
+        "roofshapeaspect_areafacingnorthwest_m2": 0.0,
+        "roofshapeaspect_areafacingsoutheast_m2": 37.2,
+        "roofshapeaspect_areafacingsouthwest_m2": 0.0,
+        "constructionmaterial_thirdpartyprovenance": "Remote Sensed Manual Imagery Interpretation"
+      }
+    },
+    {
+      "id": "00333fc7-8a2a-4bc7-adc4-b68ed407bed9",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537814.9,
+              178835.9
+            ],
+            [
+              537815.15,
+              178839.55
+            ],
+            [
+              537816.25,
+              178839.3
+            ],
+            [
+              537816.55,
+              178843.85
+            ],
+            [
+              537817.6,
+              178843.8
+            ],
+            [
+              537825.55,
+              178843.2
+            ],
+            [
+              537825.25,
+              178838.75
+            ],
+            [
+              537826.15,
+              178838.85
+            ],
+            [
+              537825.85,
+              178835.25
+            ],
+            [
+              537824.95,
+              178835.1
+            ],
+            [
+              537815.9,
+              178835.7
+            ],
+            [
+              537814.9,
+              178835.9
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00333fc7-8a2a-4bc7-adc4-b68ed407bed9",
+        "theme": "Buildings",
+        "isinsite": true,
+        "changetype": "Modified Attributes",
+        "buildinguse": "Residential Accommodation",
+        "description": "Multiple Residential Accommodation",
+        "versiondate": "2026-09-22",
+        "connectivity": "Multi-Connected",
+        "physicalstate": "Built",
+        "primarysiteid": "646eee3f-6c78-40b1-8d9c-13643b811f3f",
+        "sitereference": [
+          {
+            "siteid": "646eee3f-6c78-40b1-8d9c-13643b811f3f",
+            "buildingid": "00333fc7-8a2a-4bc7-adc4-b68ed407bed9",
+            "buildingversiondate": "2026-09-22"
+          }
+        ],
+        "uprnreference": [
+          {
+            "uprn": 6060470,
+            "buildingid": "00333fc7-8a2a-4bc7-adc4-b68ed407bed9",
+            "buildingversiondate": "2026-09-22"
+          },
+          {
+            "uprn": 6060471,
+            "buildingid": "00333fc7-8a2a-4bc7-adc4-b68ed407bed9",
+            "buildingversiondate": "2026-09-22"
+          }
+        ],
+        "mainbuildingid": null,
+        "numberoffloors": 3,
+        "basementpresence": "Not Present",
+        "buildingage_year": null,
+        "geometry_area_m2": 80.797,
+        "buildingpartcount": 2,
+        "height_updatedate": "2026-09-01",
+        "buildingage_period": "1980-1989",
+        "buildingage_source": "Verisk",
+        "connectivity_count": 2,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2026-09-01",
+        "height_evidencedate": "2023-08-23",
+        "constructionmaterial": "Brick Or Block Or Stone",
+        "height_absolutemax_m": 13.0,
+        "height_absolutemin_m": 4.3,
+        "height_relativemax_m": 8.7,
+        "buildingpartreference": [
+          {
+            "buildingid": "00333fc7-8a2a-4bc7-adc4-b68ed407bed9",
+            "buildingpartid": "9110222b-1916-45de-a32b-b26d13e2349c",
+            "buildingversiondate": "2026-09-22"
+          },
+          {
+            "buildingid": "00333fc7-8a2a-4bc7-adc4-b68ed407bed9",
+            "buildingpartid": "e9df5ef6-f54d-4d88-b699-b5b8d34fe924",
+            "buildingversiondate": "2026-09-22"
+          }
+        ],
+        "numberoffloors_source": "Ordnance Survey",
+        "roofshapeaspect_shape": "Pitched",
+        "buildingage_updatedate": "2026-09-02",
+        "buildinguse_updatedate": "2026-09-01",
+        "description_updatedate": "2026-09-01",
+        "height_confidencelevel": "Moderate",
+        "versionavailabletodate": null,
+        "basementpresence_source": "Verisk",
+        "connectivity_updatedate": "2026-09-01",
+        "roofmaterial_updatedate": "2026-09-22",
+        "buildingage_evidencedate": "2018-12-05",
+        "physicalstate_updatedate": "2026-09-01",
+        "versionavailablefromdate": "2026-09-23T00:00:00Z",
+        "buildingage_capturemethod": "Third Party Unknown",
+        "height_absoluteroofbase_m": 11.3,
+        "height_relativeroofbase_m": 7.0,
+        "mainbuildingid_updatedate": "2026-09-01",
+        "numberoffloors_updatedate": "2026-04-09",
+        "roofmaterial_evidencedate": "2026-05-24",
+        "buildinguse_oslandusetiera": "Residential Accommodation",
+        "roofmaterial_capturemethod": "Automated Process",
+        "roofshapeaspect_updatedate": "2026-09-22",
+        "basementpresence_updatedate": "2026-09-02",
+        "constructionmaterial_source": "Verisk",
+        "numberoffloors_evidencedate": "2023-08-23",
+        "roofshapeaspect_areaflat_m2": 0.0,
+        "numberoffloors_capturemethod": "Automated Process",
+        "roofmaterial_primarymaterial": "Tile Or Stone Or Slate",
+        "roofshapeaspect_areatotal_m2": 93.7,
+        "roofshapeaspect_evidencedate": "2026-05-24",
+        "basementpresence_evidencedate": "2022-12-23",
+        "mainbuildingid_ismainbuilding": "Yes",
+        "roofshapeaspect_capturemethod": "Automated Process",
+        "basementpresence_capturemethod": "Automated Process",
+        "basementpresence_selfcontained": "Not Present",
+        "buildinguse_addresscount_other": 0,
+        "buildinguse_addresscount_total": 2,
+        "roofmaterial_greenroofpresence": "Not Present",
+        "roofshapeaspect_areapitched_m2": 93.7,
+        "constructionmaterial_updatedate": "2026-09-02",
+        "roofmaterial_solarpanelpresence": "Not Present",
+        "buildingage_thirdpartyprovenance": "Domestic Energy Performance Certificate (England And Wales)",
+        "roofmaterial_confidenceindicator": "Expected Data Output",
+        "constructionmaterial_evidencedate": "2018-12-06",
+        "roofshapeaspect_areafacingeast_m2": 35.5,
+        "roofshapeaspect_areafacingwest_m2": 43.2,
+        "constructionmaterial_capturemethod": "Third Party Unknown",
+        "roofshapeaspect_areafacingnorth_m2": 0.0,
+        "roofshapeaspect_areafacingsouth_m2": 10.1,
+        "buildinguse_addresscount_commercial": 0,
+        "roofshapeaspect_confidenceindicator": "Expected Data Output",
+        "buildinguse_addresscount_residential": 2,
+        "basementpresence_thirdpartyprovenance": "Infill Modelling",
+        "roofshapeaspect_areaindeterminable_m2": 0.0,
+        "roofshapeaspect_areafacingnortheast_m2": 0.0,
+        "roofshapeaspect_areafacingnorthwest_m2": 0.0,
+        "roofshapeaspect_areafacingsoutheast_m2": 0.0,
+        "roofshapeaspect_areafacingsouthwest_m2": 4.9,
+        "constructionmaterial_thirdpartyprovenance": "Domestic Energy Performance Certificate (England And Wales)"
+      }
+    },
+    {
+      "id": "0049b83d-f756-45f6-9a56-df33dcec5410",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538041.9,
+              179387.8
+            ],
+            [
+              538042.9,
+              179388.95
+            ],
+            [
+              538045.75,
+              179386.2
+            ],
+            [
+              538048.3,
+              179383.85
+            ],
+            [
+              538047.9,
+              179383.4
+            ],
+            [
+              538048,
+              179383.3
+            ],
+            [
+              538047.3,
+              179382.7
+            ],
+            [
+              538041.9,
+              179387.8
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0049b83d-f756-45f6-9a56-df33dcec5410",
+        "theme": "Buildings",
+        "isinsite": false,
+        "changetype": "New",
+        "buildinguse": "Unknown",
+        "description": "Unknown Building",
+        "versiondate": "2025-03-11",
+        "connectivity": "End-Connected",
+        "physicalstate": "Built",
+        "primarysiteid": null,
+        "sitereference": [],
+        "uprnreference": [],
+        "mainbuildingid": null,
+        "numberoffloors": null,
+        "basementpresence": null,
+        "buildingage_year": null,
+        "geometry_area_m2": 11.212,
+        "buildingpartcount": 1,
+        "height_updatedate": "2025-03-10",
+        "buildingage_period": null,
+        "buildingage_source": null,
+        "connectivity_count": 1,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2025-03-10",
+        "height_evidencedate": "2023-08-23",
+        "constructionmaterial": null,
+        "height_absolutemax_m": null,
+        "height_absolutemin_m": 1.0,
+        "height_relativemax_m": null,
+        "buildingpartreference": [
+          {
+            "buildingid": "0049b83d-f756-45f6-9a56-df33dcec5410",
+            "buildingpartid": "f43616e5-6502-46f3-b7b8-b719d965b483",
+            "buildingversiondate": "2025-03-11"
+          }
+        ],
+        "numberoffloors_source": null,
+        "roofshapeaspect_shape": "Pitched",
+        "buildingage_updatedate": null,
+        "buildinguse_updatedate": "2025-03-10",
+        "description_updatedate": "2025-03-10",
+        "height_confidencelevel": "Incomplete",
+        "versionavailabletodate": null,
+        "basementpresence_source": null,
+        "connectivity_updatedate": "2025-03-10",
+        "roofmaterial_updatedate": "2025-03-10",
+        "buildingage_evidencedate": null,
+        "physicalstate_updatedate": "2025-03-10",
+        "versionavailablefromdate": "2025-03-12T00:00:00Z",
+        "buildingage_capturemethod": null,
+        "height_absoluteroofbase_m": null,
+        "height_relativeroofbase_m": null,
+        "mainbuildingid_updatedate": "2025-03-10",
+        "numberoffloors_updatedate": null,
+        "roofmaterial_evidencedate": "2023-08-23",
+        "buildinguse_oslandusetiera": null,
+        "roofmaterial_capturemethod": "Automated Process",
+        "roofshapeaspect_updatedate": "2025-03-10",
+        "basementpresence_updatedate": null,
+        "constructionmaterial_source": null,
+        "numberoffloors_evidencedate": null,
+        "roofshapeaspect_areaflat_m2": 0.0,
+        "numberoffloors_capturemethod": null,
+        "roofmaterial_primarymaterial": "Waterproof Membrane Or Concrete",
+        "roofshapeaspect_areatotal_m2": 11.8,
+        "roofshapeaspect_evidencedate": "2023-08-23",
+        "basementpresence_evidencedate": null,
+        "mainbuildingid_ismainbuilding": null,
+        "roofshapeaspect_capturemethod": "Automated Process",
+        "basementpresence_capturemethod": null,
+        "basementpresence_selfcontained": null,
+        "buildinguse_addresscount_other": 0,
+        "buildinguse_addresscount_total": 0,
+        "roofmaterial_greenroofpresence": "Not Present",
+        "roofshapeaspect_areapitched_m2": 11.8,
+        "constructionmaterial_updatedate": null,
+        "roofmaterial_solarpanelpresence": "Not Present",
+        "buildingage_thirdpartyprovenance": null,
+        "roofmaterial_confidenceindicator": "Insufficient Building Size",
+        "constructionmaterial_evidencedate": null,
+        "roofshapeaspect_areafacingeast_m2": 0.0,
+        "roofshapeaspect_areafacingwest_m2": 0.0,
+        "constructionmaterial_capturemethod": null,
+        "roofshapeaspect_areafacingnorth_m2": 0.0,
+        "roofshapeaspect_areafacingsouth_m2": 0.0,
+        "buildinguse_addresscount_commercial": 0,
+        "roofshapeaspect_confidenceindicator": "Insufficient Building Size",
+        "buildinguse_addresscount_residential": 0,
+        "basementpresence_thirdpartyprovenance": null,
+        "roofshapeaspect_areaindeterminable_m2": 0.0,
+        "roofshapeaspect_areafacingnortheast_m2": 11.8,
+        "roofshapeaspect_areafacingnorthwest_m2": 0.0,
+        "roofshapeaspect_areafacingsoutheast_m2": 0.0,
+        "roofshapeaspect_areafacingsouthwest_m2": 0.0,
+        "constructionmaterial_thirdpartyprovenance": null
+      }
+    },
+    {
+      "id": "00ee4416-57eb-47fe-b08d-3da6bafcbbba",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538177.1,
+              179441.75
+            ],
+            [
+              538179.35,
+              179444.2
+            ],
+            [
+              538180.15,
+              179443.4
+            ],
+            [
+              538182.35,
+              179441.2
+            ],
+            [
+              538180.15,
+              179438.85
+            ],
+            [
+              538178.7,
+              179440.2
+            ],
+            [
+              538177.1,
+              179441.75
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00ee4416-57eb-47fe-b08d-3da6bafcbbba",
+        "theme": "Buildings",
+        "isinsite": true,
+        "changetype": "Modified Attributes",
+        "buildinguse": "Unknown",
+        "description": "Electricity Sub Station",
+        "versiondate": "2026-06-10",
+        "connectivity": "Standalone",
+        "physicalstate": "Built",
+        "primarysiteid": "8400d391-90fa-4164-a452-9a5581be6a0c",
+        "sitereference": [
+          {
+            "siteid": "8400d391-90fa-4164-a452-9a5581be6a0c",
+            "buildingid": "00ee4416-57eb-47fe-b08d-3da6bafcbbba",
+            "buildingversiondate": "2026-06-10"
+          }
+        ],
+        "uprnreference": [],
+        "mainbuildingid": null,
+        "numberoffloors": null,
+        "basementpresence": null,
+        "buildingage_year": null,
+        "geometry_area_m2": 13.868,
+        "buildingpartcount": 1,
+        "height_updatedate": "2026-06-10",
+        "buildingage_period": null,
+        "buildingage_source": null,
+        "connectivity_count": 0,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2026-06-10",
+        "height_evidencedate": "2026-05-24",
+        "constructionmaterial": null,
+        "height_absolutemax_m": 4.2,
+        "height_absolutemin_m": 1.1,
+        "height_relativemax_m": 3.1,
+        "buildingpartreference": [
+          {
+            "buildingid": "00ee4416-57eb-47fe-b08d-3da6bafcbbba",
+            "buildingpartid": "e539d9f3-9d02-4a68-be0a-cd2e137fd943",
+            "buildingversiondate": "2026-06-10"
+          }
+        ],
+        "numberoffloors_source": null,
+        "roofshapeaspect_shape": "Unknown",
+        "buildingage_updatedate": null,
+        "buildinguse_updatedate": "2026-06-10",
+        "description_updatedate": "2026-06-10",
+        "height_confidencelevel": "Moderate",
+        "versionavailabletodate": null,
+        "basementpresence_source": null,
+        "connectivity_updatedate": "2026-06-10",
+        "roofmaterial_updatedate": "2026-04-09",
+        "buildingage_evidencedate": null,
+        "physicalstate_updatedate": "2026-06-10",
+        "versionavailablefromdate": "2026-06-11T00:00:00Z",
+        "buildingage_capturemethod": null,
+        "height_absoluteroofbase_m": 3.5,
+        "height_relativeroofbase_m": 2.4,
+        "mainbuildingid_updatedate": "2026-06-10",
+        "numberoffloors_updatedate": null,
+        "roofmaterial_evidencedate": "2023-08-23",
+        "buildinguse_oslandusetiera": "Utility Or Environmental Protection",
+        "roofmaterial_capturemethod": "Automated Process",
+        "roofshapeaspect_updatedate": "2026-04-09",
+        "basementpresence_updatedate": null,
+        "constructionmaterial_source": null,
+        "numberoffloors_evidencedate": null,
+        "roofshapeaspect_areaflat_m2": 0.0,
+        "numberoffloors_capturemethod": null,
+        "roofmaterial_primarymaterial": "Unknown",
+        "roofshapeaspect_areatotal_m2": 21.1,
+        "roofshapeaspect_evidencedate": "2023-08-23",
+        "basementpresence_evidencedate": null,
+        "mainbuildingid_ismainbuilding": "Yes",
+        "roofshapeaspect_capturemethod": "Automated Process",
+        "basementpresence_capturemethod": null,
+        "basementpresence_selfcontained": null,
+        "buildinguse_addresscount_other": 0,
+        "buildinguse_addresscount_total": 0,
+        "roofmaterial_greenroofpresence": "Not Present",
+        "roofshapeaspect_areapitched_m2": 0.0,
+        "constructionmaterial_updatedate": null,
+        "roofmaterial_solarpanelpresence": "Present",
+        "buildingage_thirdpartyprovenance": null,
+        "roofmaterial_confidenceindicator": "Obscured Roof",
+        "constructionmaterial_evidencedate": null,
+        "roofshapeaspect_areafacingeast_m2": 0.0,
+        "roofshapeaspect_areafacingwest_m2": 0.0,
+        "constructionmaterial_capturemethod": null,
+        "roofshapeaspect_areafacingnorth_m2": 0.0,
+        "roofshapeaspect_areafacingsouth_m2": 0.0,
+        "buildinguse_addresscount_commercial": 0,
+        "roofshapeaspect_confidenceindicator": "Obscured Roof",
+        "buildinguse_addresscount_residential": 0,
+        "basementpresence_thirdpartyprovenance": null,
+        "roofshapeaspect_areaindeterminable_m2": 21.1,
+        "roofshapeaspect_areafacingnortheast_m2": 0.0,
+        "roofshapeaspect_areafacingnorthwest_m2": 0.0,
+        "roofshapeaspect_areafacingsoutheast_m2": 0.0,
+        "roofshapeaspect_areafacingsouthwest_m2": 0.0,
+        "constructionmaterial_thirdpartyprovenance": null
+      }
+    },
+    {
+      "id": "01079029-20c0-43e4-8b45-19cffa0a6233",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537720.75,
+              178815.75
+            ],
+            [
+              537721.4,
+              178824.3
+            ],
+            [
+              537724.35,
+              178824.1
+            ],
+            [
+              537724.4,
+              178825.05
+            ],
+            [
+              537726.53,
+              178824.88
+            ],
+            [
+              537728.25,
+              178824.75
+            ],
+            [
+              537728.2,
+              178823.8
+            ],
+            [
+              537726.45,
+              178823.9
+            ],
+            [
+              537725.75,
+              178815.35
+            ],
+            [
+              537720.75,
+              178815.75
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "01079029-20c0-43e4-8b45-19cffa0a6233",
+        "theme": "Buildings",
+        "isinsite": true,
+        "changetype": "New",
+        "buildinguse": "Residential Accommodation",
+        "description": "End-Of-Terrace House",
+        "versiondate": "2025-03-11",
+        "connectivity": "End-Connected",
+        "physicalstate": "Built",
+        "primarysiteid": "f8785fab-d874-454c-a083-3bd29be9b4c9",
+        "sitereference": [
+          {
+            "siteid": "f8785fab-d874-454c-a083-3bd29be9b4c9",
+            "buildingid": "01079029-20c0-43e4-8b45-19cffa0a6233",
+            "buildingversiondate": "2025-03-11"
+          }
+        ],
+        "uprnreference": [
+          {
+            "uprn": 6060597,
+            "buildingid": "01079029-20c0-43e4-8b45-19cffa0a6233",
+            "buildingversiondate": "2025-03-11"
+          }
+        ],
+        "mainbuildingid": null,
+        "numberoffloors": 2,
+        "basementpresence": "Not Present",
+        "buildingage_year": null,
+        "geometry_area_m2": 47.053,
+        "buildingpartcount": 2,
+        "height_updatedate": "2025-03-10",
+        "buildingage_period": "1980-1989",
+        "buildingage_source": "Verisk",
+        "connectivity_count": 1,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2025-03-10",
+        "height_evidencedate": "2023-08-23",
+        "constructionmaterial": "Brick Or Block Or Stone",
+        "height_absolutemax_m": 11.9,
+        "height_absolutemin_m": 4.5,
+        "height_relativemax_m": 7.4,
+        "buildingpartreference": [
+          {
+            "buildingid": "01079029-20c0-43e4-8b45-19cffa0a6233",
+            "buildingpartid": "3f00fd33-41ac-4c07-8b8a-6a0d5c1e76be",
+            "buildingversiondate": "2025-03-11"
+          },
+          {
+            "buildingid": "01079029-20c0-43e4-8b45-19cffa0a6233",
+            "buildingpartid": "a55913d1-7725-4fd8-9773-bb79bfc00466",
+            "buildingversiondate": "2025-03-11"
+          }
+        ],
+        "numberoffloors_source": "Ordnance Survey",
+        "roofshapeaspect_shape": "Pitched",
+        "buildingage_updatedate": "2025-03-10",
+        "buildinguse_updatedate": "2025-03-10",
+        "description_updatedate": "2025-03-10",
+        "height_confidencelevel": "Moderate",
+        "versionavailabletodate": null,
+        "basementpresence_source": "Verisk",
+        "connectivity_updatedate": "2025-03-10",
+        "roofmaterial_updatedate": "2025-03-10",
+        "buildingage_evidencedate": "2009-09-29",
+        "physicalstate_updatedate": "2025-03-10",
+        "versionavailablefromdate": "2025-03-12T00:00:00Z",
+        "buildingage_capturemethod": "Third Party Unknown",
+        "height_absoluteroofbase_m": 10.6,
+        "height_relativeroofbase_m": 6.1,
+        "mainbuildingid_updatedate": "2025-03-10",
+        "numberoffloors_updatedate": "2025-03-10",
+        "roofmaterial_evidencedate": "2023-08-23",
+        "buildinguse_oslandusetiera": "Residential Accommodation",
+        "roofmaterial_capturemethod": "Automated Process",
+        "roofshapeaspect_updatedate": "2025-03-10",
+        "basementpresence_updatedate": "2025-03-10",
+        "constructionmaterial_source": "Verisk",
+        "numberoffloors_evidencedate": "2022-09-22",
+        "roofshapeaspect_areaflat_m2": 0.0,
+        "numberoffloors_capturemethod": "Automated Process",
+        "roofmaterial_primarymaterial": "Tile Or Stone Or Slate",
+        "roofshapeaspect_areatotal_m2": 54.7,
+        "roofshapeaspect_evidencedate": "2023-08-23",
+        "basementpresence_evidencedate": "2022-12-23",
+        "mainbuildingid_ismainbuilding": "Yes",
+        "roofshapeaspect_capturemethod": "Automated Process",
+        "basementpresence_capturemethod": "Automated Process",
+        "basementpresence_selfcontained": "Not Present",
+        "buildinguse_addresscount_other": 0,
+        "buildinguse_addresscount_total": 1,
+        "roofmaterial_greenroofpresence": "Not Present",
+        "roofshapeaspect_areapitched_m2": 47.9,
+        "constructionmaterial_updatedate": "2025-03-10",
+        "roofmaterial_solarpanelpresence": "Not Present",
+        "buildingage_thirdpartyprovenance": "Domestic Energy Performance Certificate (England And Wales)",
+        "roofmaterial_confidenceindicator": "Expected Data Output",
+        "constructionmaterial_evidencedate": "2020-06-16",
+        "roofshapeaspect_areafacingeast_m2": 0.0,
+        "roofshapeaspect_areafacingwest_m2": 0.0,
+        "constructionmaterial_capturemethod": "Third Party Unknown",
+        "roofshapeaspect_areafacingnorth_m2": 23.3,
+        "roofshapeaspect_areafacingsouth_m2": 24.6,
+        "buildinguse_addresscount_commercial": 0,
+        "roofshapeaspect_confidenceindicator": "Expected Data Output",
+        "buildinguse_addresscount_residential": 1,
+        "basementpresence_thirdpartyprovenance": "Infill Modelling",
+        "roofshapeaspect_areaindeterminable_m2": 6.8,
+        "roofshapeaspect_areafacingnortheast_m2": 0.0,
+        "roofshapeaspect_areafacingnorthwest_m2": 0.0,
+        "roofshapeaspect_areafacingsoutheast_m2": 0.0,
+        "roofshapeaspect_areafacingsouthwest_m2": 0.0,
+        "constructionmaterial_thirdpartyprovenance": "Domestic Energy Performance Certificate (England And Wales)"
+      }
+    },
+    {
+      "id": "012e4e75-5491-4dff-8bac-7baa05fa691d",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538055.1,
+              179408.5
+            ],
+            [
+              538060.1,
+              179413.8
+            ],
+            [
+              538064.5,
+              179409.75
+            ],
+            [
+              538059.45,
+              179404.5
+            ],
+            [
+              538055.1,
+              179408.5
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "012e4e75-5491-4dff-8bac-7baa05fa691d",
+        "theme": "Buildings",
+        "isinsite": true,
+        "changetype": "New",
+        "buildinguse": "Residential Accommodation",
+        "description": "End-Of-Terrace House",
+        "versiondate": "2025-03-11",
+        "connectivity": "End-Connected",
+        "physicalstate": "Built",
+        "primarysiteid": "a6e60597-816c-4a9a-b8e6-b607ccb4b999",
+        "sitereference": [
+          {
+            "siteid": "a6e60597-816c-4a9a-b8e6-b607ccb4b999",
+            "buildingid": "012e4e75-5491-4dff-8bac-7baa05fa691d",
+            "buildingversiondate": "2025-03-11"
+          }
+        ],
+        "uprnreference": [
+          {
+            "uprn": 6080064,
+            "buildingid": "012e4e75-5491-4dff-8bac-7baa05fa691d",
+            "buildingversiondate": "2025-03-11"
+          }
+        ],
+        "mainbuildingid": null,
+        "numberoffloors": 2,
+        "basementpresence": "Not Present",
+        "buildingage_year": null,
+        "geometry_area_m2": 43.304,
+        "buildingpartcount": 1,
+        "height_updatedate": "2025-03-10",
+        "buildingage_period": "1945-1959",
+        "buildingage_source": "Verisk",
+        "connectivity_count": 1,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2025-03-10",
+        "height_evidencedate": "2023-08-23",
+        "constructionmaterial": "Brick Or Block Or Stone",
+        "height_absolutemax_m": 9.4,
+        "height_absolutemin_m": 0.9,
+        "height_relativemax_m": 8.5,
+        "buildingpartreference": [
+          {
+            "buildingid": "012e4e75-5491-4dff-8bac-7baa05fa691d",
+            "buildingpartid": "999214bd-22d8-4520-8521-62d1cfb06461",
+            "buildingversiondate": "2025-03-11"
+          }
+        ],
+        "numberoffloors_source": "Ordnance Survey",
+        "roofshapeaspect_shape": "Pitched",
+        "buildingage_updatedate": "2025-03-10",
+        "buildinguse_updatedate": "2025-03-10",
+        "description_updatedate": "2025-03-10",
+        "height_confidencelevel": "Moderate",
+        "versionavailabletodate": null,
+        "basementpresence_source": "Verisk",
+        "connectivity_updatedate": "2025-03-10",
+        "roofmaterial_updatedate": "2025-03-10",
+        "buildingage_evidencedate": "2017-01-01",
+        "physicalstate_updatedate": "2025-03-10",
+        "versionavailablefromdate": "2025-03-12T00:00:00Z",
+        "buildingage_capturemethod": "Remote Sensing Survey",
+        "height_absoluteroofbase_m": 6.4,
+        "height_relativeroofbase_m": 5.5,
+        "mainbuildingid_updatedate": "2025-03-10",
+        "numberoffloors_updatedate": "2025-03-10",
+        "roofmaterial_evidencedate": "2023-08-23",
+        "buildinguse_oslandusetiera": "Residential Accommodation",
+        "roofmaterial_capturemethod": "Automated Process",
+        "roofshapeaspect_updatedate": "2025-03-10",
+        "basementpresence_updatedate": "2025-03-10",
+        "constructionmaterial_source": "Verisk",
+        "numberoffloors_evidencedate": "2022-09-22",
+        "roofshapeaspect_areaflat_m2": 0.0,
+        "numberoffloors_capturemethod": "Automated Process",
+        "roofmaterial_primarymaterial": "Tile Or Stone Or Slate",
+        "roofshapeaspect_areatotal_m2": 52.7,
+        "roofshapeaspect_evidencedate": "2023-08-23",
+        "basementpresence_evidencedate": "2022-12-23",
+        "mainbuildingid_ismainbuilding": "Yes",
+        "roofshapeaspect_capturemethod": "Automated Process",
+        "basementpresence_capturemethod": "Automated Process",
+        "basementpresence_selfcontained": "Not Present",
+        "buildinguse_addresscount_other": 0,
+        "buildinguse_addresscount_total": 1,
+        "roofmaterial_greenroofpresence": "Not Present",
+        "roofshapeaspect_areapitched_m2": 52.7,
+        "constructionmaterial_updatedate": "2025-03-10",
+        "roofmaterial_solarpanelpresence": "Not Present",
+        "buildingage_thirdpartyprovenance": "Remote Sensed Manual Imagery Interpretation",
+        "roofmaterial_confidenceindicator": "Expected Data Output",
+        "constructionmaterial_evidencedate": "2017-01-01",
+        "roofshapeaspect_areafacingeast_m2": 0.0,
+        "roofshapeaspect_areafacingwest_m2": 0.0,
+        "constructionmaterial_capturemethod": "Automated Process",
+        "roofshapeaspect_areafacingnorth_m2": 0.0,
+        "roofshapeaspect_areafacingsouth_m2": 0.0,
+        "buildinguse_addresscount_commercial": 0,
+        "roofshapeaspect_confidenceindicator": "Expected Data Output",
+        "buildinguse_addresscount_residential": 1,
+        "basementpresence_thirdpartyprovenance": "Infill Modelling",
+        "roofshapeaspect_areaindeterminable_m2": 0.0,
+        "roofshapeaspect_areafacingnortheast_m2": 27.9,
+        "roofshapeaspect_areafacingnorthwest_m2": 0.0,
+        "roofshapeaspect_areafacingsoutheast_m2": 0.0,
+        "roofshapeaspect_areafacingsouthwest_m2": 24.8,
+        "constructionmaterial_thirdpartyprovenance": "Infill Modelling"
+      }
+    },
+    {
+      "id": "01aff140-99be-43eb-97ac-098c97fe170e",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538282.01,
+              179093.491
+            ],
+            [
+              538283.356,
+              179093.989
+            ],
+            [
+              538285.55,
+              179094.8
+            ],
+            [
+              538291.05,
+              179096.8
+            ],
+            [
+              538293.05,
+              179091.2
+            ],
+            [
+              538287.6,
+              179089.25
+            ],
+            [
+              538287.358,
+              179089.906
+            ],
+            [
+              538285.163,
+              179089.095
+            ],
+            [
+              538283.818,
+              179088.598
+            ],
+            [
+              538282.01,
+              179093.491
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "01aff140-99be-43eb-97ac-098c97fe170e",
+        "theme": "Buildings",
+        "isinsite": true,
+        "changetype": "Modified Attributes",
+        "buildinguse": "Residential Accommodation",
+        "description": "Mid-Terrace House",
+        "versiondate": "2026-09-22",
+        "connectivity": "Multi-Connected",
+        "physicalstate": "Built",
+        "primarysiteid": "ae0ec9c5-19d0-4cb2-b240-a0fc44af6999",
+        "sitereference": [
+          {
+            "siteid": "ae0ec9c5-19d0-4cb2-b240-a0fc44af6999",
+            "buildingid": "01aff140-99be-43eb-97ac-098c97fe170e",
+            "buildingversiondate": "2026-09-22"
+          }
+        ],
+        "uprnreference": [
+          {
+            "uprn": 6081248,
+            "buildingid": "01aff140-99be-43eb-97ac-098c97fe170e",
+            "buildingversiondate": "2026-09-22"
+          }
+        ],
+        "mainbuildingid": null,
+        "numberoffloors": 2,
+        "basementpresence": "Not Present",
+        "buildingage_year": null,
+        "geometry_area_m2": 54.211,
+        "buildingpartcount": 1,
+        "height_updatedate": "2026-09-09",
+        "buildingage_period": "1980-1989",
+        "buildingage_source": "Verisk",
+        "connectivity_count": 2,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2026-09-09",
+        "height_evidencedate": "2023-08-23",
+        "constructionmaterial": "Brick Or Block Or Stone",
+        "height_absolutemax_m": 10.0,
+        "height_absolutemin_m": 2.8,
+        "height_relativemax_m": 7.2,
+        "buildingpartreference": [
+          {
+            "buildingid": "01aff140-99be-43eb-97ac-098c97fe170e",
+            "buildingpartid": "aea4a634-aff5-430e-bafd-f465f74b73fc",
+            "buildingversiondate": "2026-09-22"
+          }
+        ],
+        "numberoffloors_source": "Ordnance Survey",
+        "roofshapeaspect_shape": "Pitched",
+        "buildingage_updatedate": "2026-09-09",
+        "buildinguse_updatedate": "2026-09-09",
+        "description_updatedate": "2026-09-09",
+        "height_confidencelevel": "Moderate",
+        "versionavailabletodate": null,
+        "basementpresence_source": "Verisk",
+        "connectivity_updatedate": "2026-09-09",
+        "roofmaterial_updatedate": "2026-09-22",
+        "buildingage_evidencedate": "2020-11-21",
+        "physicalstate_updatedate": "2026-09-09",
+        "versionavailablefromdate": "2026-09-23T00:00:00Z",
+        "buildingage_capturemethod": "Third Party Unknown",
+        "height_absoluteroofbase_m": 6.7,
+        "height_relativeroofbase_m": 3.9,
+        "mainbuildingid_updatedate": "2026-09-09",
+        "numberoffloors_updatedate": "2026-04-09",
+        "roofmaterial_evidencedate": "2026-05-24",
+        "buildinguse_oslandusetiera": "Residential Accommodation",
+        "roofmaterial_capturemethod": "Automated Process",
+        "roofshapeaspect_updatedate": "2026-09-22",
+        "basementpresence_updatedate": "2026-09-09",
+        "constructionmaterial_source": "Verisk",
+        "numberoffloors_evidencedate": "2023-08-23",
+        "roofshapeaspect_areaflat_m2": 0.0,
+        "numberoffloors_capturemethod": "Automated Process",
+        "roofmaterial_primarymaterial": "Tile Or Stone Or Slate",
+        "roofshapeaspect_areatotal_m2": 59.7,
+        "roofshapeaspect_evidencedate": "2026-05-24",
+        "basementpresence_evidencedate": "2026-05-25",
+        "mainbuildingid_ismainbuilding": "Yes",
+        "roofshapeaspect_capturemethod": "Automated Process",
+        "basementpresence_capturemethod": "Automated Process",
+        "basementpresence_selfcontained": "Not Present",
+        "buildinguse_addresscount_other": 0,
+        "buildinguse_addresscount_total": 1,
+        "roofmaterial_greenroofpresence": "Not Present",
+        "roofshapeaspect_areapitched_m2": 59.7,
+        "constructionmaterial_updatedate": "2026-09-09",
+        "roofmaterial_solarpanelpresence": "Not Present",
+        "buildingage_thirdpartyprovenance": "Domestic Energy Performance Certificate (England And Wales)",
+        "roofmaterial_confidenceindicator": "Expected Data Output",
+        "constructionmaterial_evidencedate": "2020-11-22",
+        "roofshapeaspect_areafacingeast_m2": 0.0,
+        "roofshapeaspect_areafacingwest_m2": 42.8,
+        "constructionmaterial_capturemethod": "Third Party Unknown",
+        "roofshapeaspect_areafacingnorth_m2": 16.9,
+        "roofshapeaspect_areafacingsouth_m2": 0.0,
+        "buildinguse_addresscount_commercial": 0,
+        "roofshapeaspect_confidenceindicator": "Expected Data Output",
+        "buildinguse_addresscount_residential": 1,
+        "basementpresence_thirdpartyprovenance": "Infill Modelling",
+        "roofshapeaspect_areaindeterminable_m2": 0.0,
+        "roofshapeaspect_areafacingnortheast_m2": 0.0,
+        "roofshapeaspect_areafacingnorthwest_m2": 0.0,
+        "roofshapeaspect_areafacingsoutheast_m2": 0.0,
+        "roofshapeaspect_areafacingsouthwest_m2": 0.0,
+        "constructionmaterial_thirdpartyprovenance": "Domestic Energy Performance Certificate (England And Wales)"
+      }
+    },
+    {
+      "id": "01e33f90-fc1c-485f-b58e-2c388b906bfc",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538074.749,
+              179043.447
+            ],
+            [
+              538075.141,
+              179048.833
+            ],
+            [
+              538083.329,
+              179048.239
+            ],
+            [
+              538082.938,
+              179042.853
+            ],
+            [
+              538074.749,
+              179043.447
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "01e33f90-fc1c-485f-b58e-2c388b906bfc",
+        "theme": "Buildings",
+        "isinsite": true,
+        "changetype": "New",
+        "buildinguse": "Unknown",
+        "description": "Ancillary Building",
+        "versiondate": "2025-03-11",
+        "connectivity": "Standalone",
+        "physicalstate": "Built",
+        "primarysiteid": "86c61c9d-b47c-4787-805f-905c9f1aa34e",
+        "sitereference": [
+          {
+            "siteid": "86c61c9d-b47c-4787-805f-905c9f1aa34e",
+            "buildingid": "01e33f90-fc1c-485f-b58e-2c388b906bfc",
+            "buildingversiondate": "2025-03-11"
+          }
+        ],
+        "uprnreference": [],
+        "mainbuildingid": "a561f61c-a40a-4dc5-ac68-2904bfeac9c7",
+        "numberoffloors": null,
+        "basementpresence": null,
+        "buildingage_year": null,
+        "geometry_area_m2": 44.336,
+        "buildingpartcount": 1,
+        "height_updatedate": "2025-03-10",
+        "buildingage_period": null,
+        "buildingage_source": null,
+        "connectivity_count": 0,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2025-03-10",
+        "height_evidencedate": "2023-08-23",
+        "constructionmaterial": null,
+        "height_absolutemax_m": 8.2,
+        "height_absolutemin_m": 4.8,
+        "height_relativemax_m": 3.4,
+        "buildingpartreference": [
+          {
+            "buildingid": "01e33f90-fc1c-485f-b58e-2c388b906bfc",
+            "buildingpartid": "c0433981-2d21-4182-9ac2-2f98a92e146a",
+            "buildingversiondate": "2025-03-11"
+          }
+        ],
+        "numberoffloors_source": null,
+        "roofshapeaspect_shape": "Flat",
+        "buildingage_updatedate": null,
+        "buildinguse_updatedate": "2025-03-10",
+        "description_updatedate": "2025-03-10",
+        "height_confidencelevel": "Moderate",
+        "versionavailabletodate": null,
+        "basementpresence_source": null,
+        "connectivity_updatedate": "2025-03-10",
+        "roofmaterial_updatedate": "2025-03-10",
+        "buildingage_evidencedate": null,
+        "physicalstate_updatedate": "2025-03-10",
+        "versionavailablefromdate": "2025-03-12T00:00:00Z",
+        "buildingage_capturemethod": null,
+        "height_absoluteroofbase_m": 7.8,
+        "height_relativeroofbase_m": 3.0,
+        "mainbuildingid_updatedate": "2025-03-10",
+        "numberoffloors_updatedate": null,
+        "roofmaterial_evidencedate": "2023-08-23",
+        "buildinguse_oslandusetiera": "Commercial Activity: Retail",
+        "roofmaterial_capturemethod": "Automated Process",
+        "roofshapeaspect_updatedate": "2025-03-10",
+        "basementpresence_updatedate": null,
+        "constructionmaterial_source": null,
+        "numberoffloors_evidencedate": null,
+        "roofshapeaspect_areaflat_m2": 44.7,
+        "numberoffloors_capturemethod": null,
+        "roofmaterial_primarymaterial": "Metal",
+        "roofshapeaspect_areatotal_m2": 44.7,
+        "roofshapeaspect_evidencedate": "2023-08-23",
+        "basementpresence_evidencedate": null,
+        "mainbuildingid_ismainbuilding": "No",
+        "roofshapeaspect_capturemethod": "Automated Process",
+        "basementpresence_capturemethod": null,
+        "basementpresence_selfcontained": null,
+        "buildinguse_addresscount_other": 0,
+        "buildinguse_addresscount_total": 0,
+        "roofmaterial_greenroofpresence": "Not Present",
+        "roofshapeaspect_areapitched_m2": 0.0,
+        "constructionmaterial_updatedate": null,
+        "roofmaterial_solarpanelpresence": "Not Present",
+        "buildingage_thirdpartyprovenance": null,
+        "roofmaterial_confidenceindicator": "Expected Data Output",
+        "constructionmaterial_evidencedate": null,
+        "roofshapeaspect_areafacingeast_m2": 0.0,
+        "roofshapeaspect_areafacingwest_m2": 0.0,
+        "constructionmaterial_capturemethod": null,
+        "roofshapeaspect_areafacingnorth_m2": 0.0,
+        "roofshapeaspect_areafacingsouth_m2": 0.0,
+        "buildinguse_addresscount_commercial": 0,
+        "roofshapeaspect_confidenceindicator": "Expected Data Output",
+        "buildinguse_addresscount_residential": 0,
+        "basementpresence_thirdpartyprovenance": null,
+        "roofshapeaspect_areaindeterminable_m2": 0.0,
+        "roofshapeaspect_areafacingnortheast_m2": 0.0,
+        "roofshapeaspect_areafacingnorthwest_m2": 0.0,
+        "roofshapeaspect_areafacingsoutheast_m2": 0.0,
+        "roofshapeaspect_areafacingsouthwest_m2": 0.0,
+        "constructionmaterial_thirdpartyprovenance": null
+      }
+    },
+    {
+      "id": "01f6cd0f-b882-48b7-970a-5cdb17a04c39",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538229.099,
+              179096.672
+            ],
+            [
+              538229.279,
+              179099.929
+            ],
+            [
+              538229.293,
+              179100.192
+            ],
+            [
+              538232.352,
+              179099.991
+            ],
+            [
+              538232.339,
+              179099.759
+            ],
+            [
+              538232.187,
+              179097.044
+            ],
+            [
+              538232.157,
+              179096.503
+            ],
+            [
+              538230.813,
+              179096.577
+            ],
+            [
+              538229.099,
+              179096.672
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "01f6cd0f-b882-48b7-970a-5cdb17a04c39",
+        "theme": "Buildings",
+        "isinsite": true,
+        "changetype": "Modified Attributes",
+        "buildinguse": "Unknown",
+        "description": "Domestic Outbuilding",
+        "versiondate": "2026-06-10",
+        "connectivity": "Standalone",
+        "physicalstate": "Built",
+        "primarysiteid": "5704a3cc-0e5a-4d33-b62e-bd7ea6191167",
+        "sitereference": [
+          {
+            "siteid": "5704a3cc-0e5a-4d33-b62e-bd7ea6191167",
+            "buildingid": "01f6cd0f-b882-48b7-970a-5cdb17a04c39",
+            "buildingversiondate": "2026-06-10"
+          }
+        ],
+        "uprnreference": [],
+        "mainbuildingid": "2f206185-18ca-42c0-af21-2cfee881953a",
+        "numberoffloors": null,
+        "basementpresence": null,
+        "buildingage_year": null,
+        "geometry_area_m2": 10.752,
+        "buildingpartcount": 1,
+        "height_updatedate": "2026-06-10",
+        "buildingage_period": null,
+        "buildingage_source": null,
+        "connectivity_count": 0,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2026-06-10",
+        "height_evidencedate": "2026-05-24",
+        "constructionmaterial": null,
+        "height_absolutemax_m": 5.2,
+        "height_absolutemin_m": 2.5,
+        "height_relativemax_m": 2.7,
+        "buildingpartreference": [
+          {
+            "buildingid": "01f6cd0f-b882-48b7-970a-5cdb17a04c39",
+            "buildingpartid": "7b99b5c9-ac18-4009-8990-069223d5b27b",
+            "buildingversiondate": "2026-06-10"
+          }
+        ],
+        "numberoffloors_source": null,
+        "roofshapeaspect_shape": "Pitched",
+        "buildingage_updatedate": null,
+        "buildinguse_updatedate": "2026-06-10",
+        "description_updatedate": "2026-06-10",
+        "height_confidencelevel": "Moderate",
+        "versionavailabletodate": null,
+        "basementpresence_source": null,
+        "connectivity_updatedate": "2026-06-10",
+        "roofmaterial_updatedate": "2026-04-09",
+        "buildingage_evidencedate": null,
+        "physicalstate_updatedate": "2026-06-10",
+        "versionavailablefromdate": "2026-06-11T00:00:00Z",
+        "buildingage_capturemethod": null,
+        "height_absoluteroofbase_m": 4.6,
+        "height_relativeroofbase_m": 2.1,
+        "mainbuildingid_updatedate": "2026-06-10",
+        "numberoffloors_updatedate": null,
+        "roofmaterial_evidencedate": "2023-08-23",
+        "buildinguse_oslandusetiera": "Residential Accommodation",
+        "roofmaterial_capturemethod": "Automated Process",
+        "roofshapeaspect_updatedate": "2026-04-09",
+        "basementpresence_updatedate": null,
+        "constructionmaterial_source": null,
+        "numberoffloors_evidencedate": null,
+        "roofshapeaspect_areaflat_m2": 0.0,
+        "numberoffloors_capturemethod": null,
+        "roofmaterial_primarymaterial": "Tile Or Stone Or Slate",
+        "roofshapeaspect_areatotal_m2": 11.4,
+        "roofshapeaspect_evidencedate": "2023-08-23",
+        "basementpresence_evidencedate": null,
+        "mainbuildingid_ismainbuilding": "No",
+        "roofshapeaspect_capturemethod": "Automated Process",
+        "basementpresence_capturemethod": null,
+        "basementpresence_selfcontained": null,
+        "buildinguse_addresscount_other": 0,
+        "buildinguse_addresscount_total": 0,
+        "roofmaterial_greenroofpresence": "Not Present",
+        "roofshapeaspect_areapitched_m2": 11.4,
+        "constructionmaterial_updatedate": null,
+        "roofmaterial_solarpanelpresence": "Not Present",
+        "buildingage_thirdpartyprovenance": null,
+        "roofmaterial_confidenceindicator": "Insufficient Building Size",
+        "constructionmaterial_evidencedate": null,
+        "roofshapeaspect_areafacingeast_m2": 5.6,
+        "roofshapeaspect_areafacingwest_m2": 5.8,
+        "constructionmaterial_capturemethod": null,
+        "roofshapeaspect_areafacingnorth_m2": 0.0,
+        "roofshapeaspect_areafacingsouth_m2": 0.0,
+        "buildinguse_addresscount_commercial": 0,
+        "roofshapeaspect_confidenceindicator": "Insufficient Building Size",
+        "buildinguse_addresscount_residential": 0,
+        "basementpresence_thirdpartyprovenance": null,
+        "roofshapeaspect_areaindeterminable_m2": 0.0,
+        "roofshapeaspect_areafacingnortheast_m2": 0.0,
+        "roofshapeaspect_areafacingnorthwest_m2": 0.0,
+        "roofshapeaspect_areafacingsoutheast_m2": 0.0,
+        "roofshapeaspect_areafacingsouthwest_m2": 0.0,
+        "constructionmaterial_thirdpartyprovenance": null
+      }
+    },
+    {
+      "id": "0202ce45-e9cc-4445-8a32-7abab5803c61",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538412.35,
+              179152.35
+            ],
+            [
+              538413.25,
+              179152.8
+            ],
+            [
+              538417.4,
+              179154.75
+            ],
+            [
+              538418.7,
+              179151.85
+            ],
+            [
+              538413.65,
+              179149.55
+            ],
+            [
+              538412.35,
+              179152.35
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0202ce45-e9cc-4445-8a32-7abab5803c61",
+        "theme": "Buildings",
+        "isinsite": true,
+        "changetype": "Modified Attributes",
+        "buildinguse": "Unknown",
+        "description": "Domestic Outbuilding",
+        "versiondate": "2026-09-22",
+        "connectivity": "Semi-Connected",
+        "physicalstate": "Built",
+        "primarysiteid": "023452e8-c33a-4f88-8f01-9f5694c48d09",
+        "sitereference": [
+          {
+            "siteid": "023452e8-c33a-4f88-8f01-9f5694c48d09",
+            "buildingid": "0202ce45-e9cc-4445-8a32-7abab5803c61",
+            "buildingversiondate": "2026-09-22"
+          }
+        ],
+        "uprnreference": [],
+        "mainbuildingid": "ccc43c04-791e-4dc3-b105-a930081f91b4",
+        "numberoffloors": null,
+        "basementpresence": null,
+        "buildingage_year": null,
+        "geometry_area_m2": 17.504,
+        "buildingpartcount": 1,
+        "height_updatedate": "2026-09-01",
+        "buildingage_period": null,
+        "buildingage_source": null,
+        "connectivity_count": 1,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2026-09-01",
+        "height_evidencedate": "2023-08-23",
+        "constructionmaterial": null,
+        "height_absolutemax_m": 6.6,
+        "height_absolutemin_m": 3.1,
+        "height_relativemax_m": 3.5,
+        "buildingpartreference": [
+          {
+            "buildingid": "0202ce45-e9cc-4445-8a32-7abab5803c61",
+            "buildingpartid": "f4d01e60-7f17-4d32-aa3b-79ff49ba3d70",
+            "buildingversiondate": "2026-09-22"
+          }
+        ],
+        "numberoffloors_source": null,
+        "roofshapeaspect_shape": "Pitched",
+        "buildingage_updatedate": null,
+        "buildinguse_updatedate": "2026-09-01",
+        "description_updatedate": "2026-09-01",
+        "height_confidencelevel": "Moderate",
+        "versionavailabletodate": null,
+        "basementpresence_source": null,
+        "connectivity_updatedate": "2026-09-01",
+        "roofmaterial_updatedate": "2026-09-22",
+        "buildingage_evidencedate": null,
+        "physicalstate_updatedate": "2026-09-01",
+        "versionavailablefromdate": "2026-09-23T00:00:00Z",
+        "buildingage_capturemethod": null,
+        "height_absoluteroofbase_m": 5.7,
+        "height_relativeroofbase_m": 2.6,
+        "mainbuildingid_updatedate": "2026-09-01",
+        "numberoffloors_updatedate": null,
+        "roofmaterial_evidencedate": "2026-05-24",
+        "buildinguse_oslandusetiera": "Residential Accommodation",
+        "roofmaterial_capturemethod": "Automated Process",
+        "roofshapeaspect_updatedate": "2026-09-22",
+        "basementpresence_updatedate": null,
+        "constructionmaterial_source": null,
+        "numberoffloors_evidencedate": null,
+        "roofshapeaspect_areaflat_m2": 0.0,
+        "numberoffloors_capturemethod": null,
+        "roofmaterial_primarymaterial": "Tile Or Stone Or Slate",
+        "roofshapeaspect_areatotal_m2": 19.6,
+        "roofshapeaspect_evidencedate": "2026-05-24",
+        "basementpresence_evidencedate": null,
+        "mainbuildingid_ismainbuilding": "No",
+        "roofshapeaspect_capturemethod": "Automated Process",
+        "basementpresence_capturemethod": null,
+        "basementpresence_selfcontained": null,
+        "buildinguse_addresscount_other": 0,
+        "buildinguse_addresscount_total": 0,
+        "roofmaterial_greenroofpresence": "Not Present",
+        "roofshapeaspect_areapitched_m2": 19.6,
+        "constructionmaterial_updatedate": null,
+        "roofmaterial_solarpanelpresence": "Not Present",
+        "buildingage_thirdpartyprovenance": null,
+        "roofmaterial_confidenceindicator": "Expected Data Output",
+        "constructionmaterial_evidencedate": null,
+        "roofshapeaspect_areafacingeast_m2": 0.0,
+        "roofshapeaspect_areafacingwest_m2": 9.3,
+        "constructionmaterial_capturemethod": null,
+        "roofshapeaspect_areafacingnorth_m2": 0.0,
+        "roofshapeaspect_areafacingsouth_m2": 0.0,
+        "buildinguse_addresscount_commercial": 0,
+        "roofshapeaspect_confidenceindicator": "Expected Data Output",
+        "buildinguse_addresscount_residential": 0,
+        "basementpresence_thirdpartyprovenance": null,
+        "roofshapeaspect_areaindeterminable_m2": 0.0,
+        "roofshapeaspect_areafacingnortheast_m2": 10.3,
+        "roofshapeaspect_areafacingnorthwest_m2": 0.0,
+        "roofshapeaspect_areafacingsoutheast_m2": 0.0,
+        "roofshapeaspect_areafacingsouthwest_m2": 0.0,
+        "constructionmaterial_thirdpartyprovenance": null
+      }
+    }
+  ]
+}

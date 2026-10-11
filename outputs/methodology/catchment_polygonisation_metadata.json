@@ -1,0 +1,31 @@
+{
+  "created_at_utc": "2026-10-10T22:58:25.162004+00:00",
+  "analysis_crs": "EPSG:27700",
+  "existing_figure_01_modified": false,
+  "reference_article": "https://doi.org/10.3390/ijgi9080467",
+  "reference_implementation": "https://gitlab.com/Drsulmp/tcageneration",
+  "reference_commit_inspected": "066c6d6796250fd186a382dc612678b779d671cc",
+  "water_source": "data/processed/OpenStreetMap/water_polygons.gpkg",
+  "parameters": {
+    "walking_speed_kmh": 4.8,
+    "threshold_s": 600.0,
+    "grid_spacing_m": 10.0,
+    "network_sample_spacing_m": 15.0,
+    "max_triangle_edge_m": 150.0
+  },
+  "method_c": {
+    "implementation_status": "experimental deviation; not a reproduction of Lin et al. (2020)",
+    "network_sample_spacing_m": 15.0,
+    "sample_count": 5443,
+    "triangle_count": 10855,
+    "triangles_masked_over_max_edge": 217,
+    "max_triangle_edge_m": 150.0,
+    "threshold_s": 600.0,
+    "triangulation": "SciPy ordinary Delaunay",
+    "constraint_status": "network edges are not enforced as CDT constraints",
+    "barrier_treatment": "selected OSM water subtracted after contour construction"
+  },
+  "method_b_exterior_hausdorff_difference_m": 0.0,
+  "reachable_tagged_barrier_crossing_count": 47,
+  "local_water_feature_count": 10
+}

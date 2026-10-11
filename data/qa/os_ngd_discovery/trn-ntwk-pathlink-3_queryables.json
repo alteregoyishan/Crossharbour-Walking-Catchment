@@ -1,0 +1,142 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://api.os.uk/features/ngd/ofa/v1/collections/trn-ntwk-pathlink-3/queryables",
+  "type": "object",
+  "title": "Queryable attributes for trn-ntwk-pathlink-3 collection",
+  "description": "This lists the attributes which can be filtered on and their types for trn-ntwk-pathlink-3 collection.",
+  "properties": {
+    "osid": {
+      "type": [
+        "string"
+      ],
+      "format": "uuid",
+      "maxLength": 36,
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD."
+    },
+    "toid": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20,
+      "description": "Topographic Identifier (TOID) of the feature, as published in the OS MasterMap suite of products."
+    },
+    "changetype": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 50,
+      "description": "The type of change that generated a new version of the feature.",
+      "enumeration": true,
+      "enum": [
+        "End Of Life",
+        "Modified Attributes",
+        "Modified Geometry",
+        "Modified Geometry And Attributes",
+        "Moved From A Different Feature Type",
+        "Moved To A Different Feature Type",
+        "New"
+      ]
+    },
+    "geometry_length_m": {
+      "type": [
+        "number"
+      ],
+      "description": "The measured length of the geometry in metres."
+    },
+    "description": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 42,
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "enumeration": true,
+      "enum": [
+        "Canal Path",
+        "Collapsed Dual Carriageway",
+        "Dual Carriageway",
+        "Enclosed Traffic Area",
+        "Footbridge",
+        "Guided Busway",
+        "Layby",
+        "Path",
+        "Path With Ford",
+        "Path With Level Crossing",
+        "Path With Steps",
+        "Roundabout",
+        "Service Road",
+        "Shared Use Carriageway",
+        "Single Carriageway",
+        "Slip Road",
+        "Subway",
+        "Track",
+        "Traffic Island Link",
+        "Traffic Island Link At Junction"
+      ]
+    },
+    "pathname1_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254,
+      "description": "The name of the path which the feature is part of. When a path link is referenced by a Street with a street type of Designated Street Name, this is the name used; otherwise, the name is from the Path feature."
+    },
+    "pathname2_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254,
+      "description": "The name of the path which the feature is part of. When a path link is referenced by a Street with a street type of Designated Street Name, this is the name used; otherwise, the name is from the Path feature."
+    },
+    "surfacetype": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 13,
+      "description": "Nature of the material that the path is made up of.",
+      "enumeration": true,
+      "enum": [
+        "Made Sealed",
+        "Made Unknown",
+        "Made Unsealed",
+        "Unmade"
+      ]
+    },
+    "presenceofstreetlight_coverage": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 15,
+      "description": "An indication of the extent of street light coverage along the Road Link or Path Link.",
+      "enumeration": true,
+      "enum": [
+        "Fully Lit",
+        "Mostly Lit",
+        "Mostly Unlit",
+        "Fully Unlit",
+        "Unknown"
+      ]
+    },
+    "presenceofcyclelane_overall_m": {
+      "type": [
+        "number"
+      ],
+      "description": "Indicates the length of the Path Link in metres that has a Cycle Lane present on it."
+    },
+    "presenceofcyclelane_overallpercentage": {
+      "type": [
+        "integer"
+      ],
+      "description": "Indicates the percentage of the Path Link that has a Cycle Lane present on it."
+    },
+    "presenceofcyclelane_inoppositedirectionpercentage": {
+      "type": [
+        "integer"
+      ],
+      "description": "Indicates the length of the Path Link that has some form of segregated Cycle Lane away from the carriageway that can be traversed in the opposite direction of digitisation of the Path Link."
+    }
+  }
+}

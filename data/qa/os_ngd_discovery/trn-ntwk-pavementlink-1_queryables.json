@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://api.os.uk/features/ngd/ofa/v1/collections/trn-ntwk-pavementlink-1/queryables",
+  "type": "object",
+  "title": "Queryable attributes for trn-ntwk-pavementlink-1 collection",
+  "description": "This lists the attributes which can be filtered on and their types for trn-ntwk-pavementlink-1 collection.",
+  "properties": {
+    "osid": {
+      "type": [
+        "string"
+      ],
+      "format": "uuid",
+      "maxLength": 36,
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD."
+    },
+    "geometry_length_m": {
+      "type": [
+        "number"
+      ],
+      "description": "The measured length of the geometry in metres."
+    },
+    "description": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 10,
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "enumeration": true,
+      "enum": [
+        "Pavement"
+      ]
+    },
+    "routehierarchy": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 32,
+      "description": "A classification of the road designed to give the most appropriate route.",
+      "enumeration": true,
+      "enum": [
+        "A Road",
+        "A Road Primary",
+        "B Road",
+        "B Road Primary",
+        "Local Access Road",
+        "Local Road",
+        "Minor Road",
+        "Motorway",
+        "Restricted Local Access Road",
+        "Restricted Secondary Access Road",
+        "Secondary Access Road",
+        "Shared Use Road"
+      ]
+    },
+    "roadclassificationnumber": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10,
+      "description": "The official road number assigned by the appropriate authority, for example, M6."
+    },
+    "name1_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254,
+      "description": "Name assigned to identify the feature."
+    },
+    "name2_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254,
+      "description": "The alternative language name assigned to identify the feature."
+    },
+    "presenceofpavement_sideofroad": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 5,
+      "description": "Indicates which side of the road the presence of pavement is located which can be both sides of a RoadLink.",
+      "enumeration": true,
+      "enum": [
+        "Left",
+        "Right"
+      ]
+    },
+    "presenceofpavement_minimumwidth_m": {
+      "type": [
+        "number"
+      ],
+      "description": "Indicates the minimum width of the pavement along a road link measured in metres."
+    },
+    "presenceofpavement_averagewidth_m": {
+      "type": [
+        "number"
+      ],
+      "description": "Indicates the average width of the pavement along a road link measured in metres."
+    }
+  }
+}

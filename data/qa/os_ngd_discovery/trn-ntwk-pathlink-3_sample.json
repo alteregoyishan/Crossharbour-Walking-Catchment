@@ -1,0 +1,767 @@
+{
+  "type": "FeatureCollection",
+  "links": [
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/trn-ntwk-pathlink-3/items?limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "self",
+      "type": "application/geo+json",
+      "title": "All features from the 'Path Link v3' collection within bounding box: 537642.241,178797.287,538415.757,179565.712"
+    },
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/trn-ntwk-pathlink-3/items?offset=10&limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "next",
+      "type": "application/geo+json",
+      "title": "Next page"
+    }
+  ],
+  "timeStamp": "2026-10-10T22:03:52.627201252Z",
+  "numberReturned": 10,
+  "features": [
+    {
+      "id": "0047d227-2145-401b-875e-fecc5cd9b126",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            537955.115,
+            178997.336
+          ],
+          [
+            537955.397,
+            179000.338
+          ],
+          [
+            537956.631,
+            179004.224
+          ],
+          [
+            537957.474,
+            179006.585
+          ],
+          [
+            537959.122,
+            179009.663
+          ],
+          [
+            537961.284,
+            179012.039
+          ],
+          [
+            537963.707,
+            179014.103
+          ],
+          [
+            537966.954,
+            179016.295
+          ],
+          [
+            537969.915,
+            179018.043
+          ],
+          [
+            537974.729,
+            179020.286
+          ],
+          [
+            537980.537,
+            179021.5
+          ],
+          [
+            537986.329,
+            179022.178
+          ],
+          [
+            537990.55,
+            179022.6
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0047d227-2145-401b-875e-fecc5cd9b126",
+        "toid": "osgb4000000071398475",
+        "theme": "Transport",
+        "endnode": "301504bc-2e79-4c3a-8b44-259131ab4422",
+        "startnode": "c11f5fc7-95c0-4367-a568-e5373f52a53f",
+        "changetype": "New",
+        "description": "Path",
+        "matchstatus": "No Match",
+        "surfacetype": "Unmade",
+        "versiondate": "2025-08-19",
+        "pathname1_text": null,
+        "pathname2_text": null,
+        "heightingmethod": "DTM",
+        "geometry_length_m": 48.16,
+        "endgradeseparation": 0,
+        "pathname1_language": null,
+        "pathname2_language": null,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "startgradeseparation": 0,
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "versionavailablefromdate": "2025-08-20T00:00:00Z",
+        "elevationgain_indirection": 1.1,
+        "presenceofcyclelane_overall_m": 0.0,
+        "elevationgain_againstdirection": 0.4,
+        "presenceofcyclelane_updatedate": "2025-07-29",
+        "presenceofstreetlight_coverage": "Fully Unlit",
+        "presenceofcyclelane_evidencedate": "2025-04-02",
+        "presenceofstreetlight_updatedate": "2025-05-30",
+        "presenceofcyclelane_capturemethod": "Automated Process",
+        "presenceofcyclelane_indirection_m": 0.0,
+        "presenceofstreetlight_evidencedate": "2023-07-16",
+        "presenceofstreetlight_capturemethod": "Automated Process",
+        "presenceofcyclelane_overallpercentage": 0,
+        "presenceofcyclelane_indirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirection_m": 0.0,
+        "presenceofcyclelane_indirectionsegregated_m": 0.0,
+        "presenceofcyclelane_inoppositedirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirectionsegregated_m": 0.0
+      }
+    },
+    {
+      "id": "01631c2e-723d-40d8-8590-d7628f2fb481",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            537751.083,
+            178799.096
+          ],
+          [
+            537751.85,
+            178810.225
+          ],
+          [
+            537752.857,
+            178824.656
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "01631c2e-723d-40d8-8590-d7628f2fb481",
+        "toid": "osgb4000000071397102",
+        "theme": "Transport",
+        "endnode": "2fe6aadf-b740-4248-9125-56309bc9c7aa",
+        "startnode": "d3bdc5b7-5aac-47df-b2a4-6c87d1e10956",
+        "changetype": "New",
+        "description": "Path",
+        "matchstatus": "Matched",
+        "surfacetype": "Made Sealed",
+        "versiondate": "2025-08-19",
+        "pathname1_text": "Whiteadder Way",
+        "pathname2_text": null,
+        "heightingmethod": "DTM",
+        "geometry_length_m": 25.621,
+        "endgradeseparation": 0,
+        "pathname1_language": null,
+        "pathname2_language": null,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "startgradeseparation": 0,
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "versionavailablefromdate": "2025-08-20T00:00:00Z",
+        "elevationgain_indirection": 0.0,
+        "presenceofcyclelane_overall_m": 0.0,
+        "elevationgain_againstdirection": 0.1,
+        "presenceofcyclelane_updatedate": "2025-07-29",
+        "presenceofstreetlight_coverage": "Fully Unlit",
+        "presenceofcyclelane_evidencedate": "2025-04-02",
+        "presenceofstreetlight_updatedate": "2025-05-30",
+        "presenceofcyclelane_capturemethod": "Automated Process",
+        "presenceofcyclelane_indirection_m": 0.0,
+        "presenceofstreetlight_evidencedate": "2023-07-16",
+        "presenceofstreetlight_capturemethod": "Automated Process",
+        "presenceofcyclelane_overallpercentage": 0,
+        "presenceofcyclelane_indirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirection_m": 0.0,
+        "presenceofcyclelane_indirectionsegregated_m": 0.0,
+        "presenceofcyclelane_inoppositedirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirectionsegregated_m": 0.0
+      }
+    },
+    {
+      "id": "0240387e-cbd2-47eb-a13f-13b803f6da70",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            537754.028,
+            178841.435
+          ],
+          [
+            537755.731,
+            178865.833
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0240387e-cbd2-47eb-a13f-13b803f6da70",
+        "toid": "osgb4000000071398959",
+        "theme": "Transport",
+        "endnode": "7825d3a4-db68-4546-9b0c-b79ddc7b85c7",
+        "startnode": "13c48f41-1de5-4507-bf1a-e4624b780970",
+        "changetype": "New",
+        "description": "Path",
+        "matchstatus": "Matched",
+        "surfacetype": "Made Sealed",
+        "versiondate": "2025-08-19",
+        "pathname1_text": "Whiteadder Way",
+        "pathname2_text": null,
+        "heightingmethod": "DTM",
+        "geometry_length_m": 24.457,
+        "endgradeseparation": 0,
+        "pathname1_language": null,
+        "pathname2_language": null,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "startgradeseparation": 0,
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "versionavailablefromdate": "2025-08-20T00:00:00Z",
+        "elevationgain_indirection": 0.0,
+        "presenceofcyclelane_overall_m": 0.0,
+        "elevationgain_againstdirection": 0.1,
+        "presenceofcyclelane_updatedate": "2025-07-29",
+        "presenceofstreetlight_coverage": "Fully Unlit",
+        "presenceofcyclelane_evidencedate": "2025-04-02",
+        "presenceofstreetlight_updatedate": "2025-05-30",
+        "presenceofcyclelane_capturemethod": "Automated Process",
+        "presenceofcyclelane_indirection_m": 0.0,
+        "presenceofstreetlight_evidencedate": "2023-07-16",
+        "presenceofstreetlight_capturemethod": "Automated Process",
+        "presenceofcyclelane_overallpercentage": 0,
+        "presenceofcyclelane_indirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirection_m": 0.0,
+        "presenceofcyclelane_indirectionsegregated_m": 0.0,
+        "presenceofcyclelane_inoppositedirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirectionsegregated_m": 0.0
+      }
+    },
+    {
+      "id": "02e589f2-6fdb-462b-9f1d-9d646cdf4763",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            537867.737,
+            178933.584
+          ],
+          [
+            537884.55,
+            178932.05
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "02e589f2-6fdb-462b-9f1d-9d646cdf4763",
+        "toid": "osgb4000000071399041",
+        "theme": "Transport",
+        "endnode": "ae98e3d2-29e3-4de2-9884-1117d230d53f",
+        "startnode": "fa8c9ab0-51b8-4894-bed0-943aeb63ee25",
+        "changetype": "New",
+        "description": "Path",
+        "matchstatus": "No Match",
+        "surfacetype": "Made Sealed",
+        "versiondate": "2025-08-19",
+        "pathname1_text": null,
+        "pathname2_text": null,
+        "heightingmethod": "DTM",
+        "geometry_length_m": 16.883,
+        "endgradeseparation": 0,
+        "pathname1_language": null,
+        "pathname2_language": null,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "startgradeseparation": 0,
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "versionavailablefromdate": "2025-08-20T00:00:00Z",
+        "elevationgain_indirection": 0.6,
+        "presenceofcyclelane_overall_m": 0.0,
+        "elevationgain_againstdirection": 0.0,
+        "presenceofcyclelane_updatedate": "2025-07-29",
+        "presenceofstreetlight_coverage": "Mostly Unlit",
+        "presenceofcyclelane_evidencedate": "2025-04-02",
+        "presenceofstreetlight_updatedate": "2025-08-07",
+        "presenceofcyclelane_capturemethod": "Automated Process",
+        "presenceofcyclelane_indirection_m": 0.0,
+        "presenceofstreetlight_evidencedate": "2023-09-08",
+        "presenceofstreetlight_capturemethod": "Automated Process",
+        "presenceofcyclelane_overallpercentage": 0,
+        "presenceofcyclelane_indirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirection_m": 0.0,
+        "presenceofcyclelane_indirectionsegregated_m": 0.0,
+        "presenceofcyclelane_inoppositedirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirectionsegregated_m": 0.0
+      }
+    },
+    {
+      "id": "03e98ebe-8bd3-4adf-a923-d5080526ff33",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            538192.323,
+            179464.754
+          ],
+          [
+            538178.18,
+            179449.429
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "03e98ebe-8bd3-4adf-a923-d5080526ff33",
+        "toid": "osgb4000000066026215",
+        "theme": "Transport",
+        "endnode": "0e7adaa2-b3ef-494a-a62f-2970538931a0",
+        "startnode": "7d22ebe9-466d-424b-b44f-cf9fee744a2c",
+        "changetype": "New",
+        "description": "Path",
+        "matchstatus": "No Match",
+        "surfacetype": "Made Sealed",
+        "versiondate": "2025-08-19",
+        "pathname1_text": null,
+        "pathname2_text": null,
+        "heightingmethod": "DTM",
+        "geometry_length_m": 20.854,
+        "endgradeseparation": 0,
+        "pathname1_language": null,
+        "pathname2_language": null,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "startgradeseparation": 0,
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "versionavailablefromdate": "2025-08-20T00:00:00Z",
+        "elevationgain_indirection": 0.0,
+        "presenceofcyclelane_overall_m": 0.0,
+        "elevationgain_againstdirection": 0.1,
+        "presenceofcyclelane_updatedate": "2025-07-29",
+        "presenceofstreetlight_coverage": "Fully Lit",
+        "presenceofcyclelane_evidencedate": "2025-04-02",
+        "presenceofstreetlight_updatedate": "2025-08-07",
+        "presenceofcyclelane_capturemethod": "Automated Process",
+        "presenceofcyclelane_indirection_m": 0.0,
+        "presenceofstreetlight_evidencedate": "2023-09-08",
+        "presenceofstreetlight_capturemethod": "Automated Process",
+        "presenceofcyclelane_overallpercentage": 0,
+        "presenceofcyclelane_indirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirection_m": 0.0,
+        "presenceofcyclelane_indirectionsegregated_m": 0.0,
+        "presenceofcyclelane_inoppositedirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirectionsegregated_m": 0.0
+      }
+    },
+    {
+      "id": "04590858-adbe-4e13-9854-ff020a2eb2b0",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            538223.323,
+            178903.91
+          ],
+          [
+            538225.028,
+            178897.37
+          ],
+          [
+            538225.038,
+            178897.352
+          ],
+          [
+            538225.894,
+            178895.77
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "04590858-adbe-4e13-9854-ff020a2eb2b0",
+        "toid": "osgb4000000071398646",
+        "theme": "Transport",
+        "endnode": "32629f60-bb79-4f85-8da2-398d98b11fe0",
+        "startnode": "97d461c2-cda2-46b0-990f-1a985854006e",
+        "changetype": "Modified Attributes",
+        "description": "Path",
+        "matchstatus": "No Match",
+        "surfacetype": "Made Sealed",
+        "versiondate": "2026-02-13",
+        "pathname1_text": null,
+        "pathname2_text": null,
+        "heightingmethod": "DTM",
+        "geometry_length_m": 8.578,
+        "endgradeseparation": 0,
+        "pathname1_language": null,
+        "pathname2_language": null,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "startgradeseparation": 0,
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "versionavailablefromdate": "2026-02-14T00:00:00Z",
+        "elevationgain_indirection": 0.0,
+        "presenceofcyclelane_overall_m": 6.73,
+        "elevationgain_againstdirection": 0.7,
+        "presenceofcyclelane_updatedate": "2026-02-05",
+        "presenceofstreetlight_coverage": "Fully Unlit",
+        "presenceofcyclelane_evidencedate": "2026-01-22",
+        "presenceofstreetlight_updatedate": "2026-02-12",
+        "presenceofcyclelane_capturemethod": "Automated Process",
+        "presenceofcyclelane_indirection_m": 6.73,
+        "presenceofstreetlight_evidencedate": "2025-03-15",
+        "presenceofstreetlight_capturemethod": "Automated Process",
+        "presenceofcyclelane_overallpercentage": 78,
+        "presenceofcyclelane_indirectionpercentage": 78,
+        "presenceofcyclelane_inoppositedirection_m": 6.73,
+        "presenceofcyclelane_indirectionsegregated_m": 0.0,
+        "presenceofcyclelane_inoppositedirectionpercentage": 78,
+        "presenceofcyclelane_inoppositedirectionsegregated_m": 0.0
+      }
+    },
+    {
+      "id": "049380aa-7338-4106-b341-eebe971dcc22",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            537928.969,
+            179423.241
+          ],
+          [
+            537929.018,
+            179423.192
+          ],
+          [
+            537931.176,
+            179422.988
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "049380aa-7338-4106-b341-eebe971dcc22",
+        "toid": "osgb5000005309186119",
+        "theme": "Transport",
+        "endnode": "c157fafc-37ee-4e44-9fd8-fcf9bebb1daf",
+        "startnode": "7fab2828-298e-40d6-a9b5-14f155f9b645",
+        "changetype": "New",
+        "description": "Path",
+        "matchstatus": "No Match",
+        "surfacetype": "Made Sealed",
+        "versiondate": "2025-08-19",
+        "pathname1_text": null,
+        "pathname2_text": null,
+        "heightingmethod": "DTM",
+        "geometry_length_m": 2.237,
+        "endgradeseparation": 0,
+        "pathname1_language": null,
+        "pathname2_language": null,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "startgradeseparation": 0,
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "versionavailablefromdate": "2025-08-20T00:00:00Z",
+        "elevationgain_indirection": 0.0,
+        "presenceofcyclelane_overall_m": 0.0,
+        "elevationgain_againstdirection": 0.2,
+        "presenceofcyclelane_updatedate": "2025-07-29",
+        "presenceofstreetlight_coverage": "Mostly Unlit",
+        "presenceofcyclelane_evidencedate": "2025-04-02",
+        "presenceofstreetlight_updatedate": "2025-08-07",
+        "presenceofcyclelane_capturemethod": "Automated Process",
+        "presenceofcyclelane_indirection_m": 0.0,
+        "presenceofstreetlight_evidencedate": "2023-11-19",
+        "presenceofstreetlight_capturemethod": "Automated Process",
+        "presenceofcyclelane_overallpercentage": 0,
+        "presenceofcyclelane_indirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirection_m": 0.0,
+        "presenceofcyclelane_indirectionsegregated_m": 0.0,
+        "presenceofcyclelane_inoppositedirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirectionsegregated_m": 0.0
+      }
+    },
+    {
+      "id": "04e9ae1f-c70b-4bc3-a58a-dd4bb4f166d2",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            537867.464,
+            178992.406
+          ],
+          [
+            537865.963,
+            178964.116
+          ],
+          [
+            537869.667,
+            178964.011
+          ],
+          [
+            537868.994,
+            178952.185
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "04e9ae1f-c70b-4bc3-a58a-dd4bb4f166d2",
+        "toid": "osgb4000000071397692",
+        "theme": "Transport",
+        "endnode": "7e5a5a5b-3680-4c09-8878-f1619a2cc42b",
+        "startnode": "186f7cd4-c16b-4fec-ac7f-275b2eab5cf7",
+        "changetype": "New",
+        "description": "Path",
+        "matchstatus": "No Match",
+        "surfacetype": "Made Sealed",
+        "versiondate": "2025-08-19",
+        "pathname1_text": null,
+        "pathname2_text": null,
+        "heightingmethod": "DTM",
+        "geometry_length_m": 43.88,
+        "endgradeseparation": 0,
+        "pathname1_language": null,
+        "pathname2_language": null,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "startgradeseparation": 0,
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "versionavailablefromdate": "2025-08-20T00:00:00Z",
+        "elevationgain_indirection": 0.7,
+        "presenceofcyclelane_overall_m": 0.0,
+        "elevationgain_againstdirection": 0.0,
+        "presenceofcyclelane_updatedate": "2025-07-29",
+        "presenceofstreetlight_coverage": "Mostly Unlit",
+        "presenceofcyclelane_evidencedate": "2025-04-02",
+        "presenceofstreetlight_updatedate": "2025-08-07",
+        "presenceofcyclelane_capturemethod": "Automated Process",
+        "presenceofcyclelane_indirection_m": 0.0,
+        "presenceofstreetlight_evidencedate": "2023-09-08",
+        "presenceofstreetlight_capturemethod": "Automated Process",
+        "presenceofcyclelane_overallpercentage": 0,
+        "presenceofcyclelane_indirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirection_m": 0.0,
+        "presenceofcyclelane_indirectionsegregated_m": 0.0,
+        "presenceofcyclelane_inoppositedirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirectionsegregated_m": 0.0
+      }
+    },
+    {
+      "id": "04e9fdf3-1f6a-491c-b09d-b38e43cf791a",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            537738.755,
+            178866.968
+          ],
+          [
+            537740.161,
+            178880.875
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "04e9fdf3-1f6a-491c-b09d-b38e43cf791a",
+        "toid": "osgb4000000071397110",
+        "theme": "Transport",
+        "endnode": "9de06a9c-78e9-4770-9dbf-6f469dc7a922",
+        "startnode": "cd06a9bf-ff31-4f2a-b188-8f94395f1e54",
+        "changetype": "New",
+        "description": "Path",
+        "matchstatus": "No Match",
+        "surfacetype": "Made Sealed",
+        "versiondate": "2025-08-19",
+        "pathname1_text": null,
+        "pathname2_text": null,
+        "heightingmethod": "DTM",
+        "geometry_length_m": 13.978,
+        "endgradeseparation": 0,
+        "pathname1_language": null,
+        "pathname2_language": null,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "startgradeseparation": 0,
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "versionavailablefromdate": "2025-08-20T00:00:00Z",
+        "elevationgain_indirection": 0.3,
+        "presenceofcyclelane_overall_m": 0.0,
+        "elevationgain_againstdirection": 0.0,
+        "presenceofcyclelane_updatedate": "2025-07-29",
+        "presenceofstreetlight_coverage": "Fully Unlit",
+        "presenceofcyclelane_evidencedate": "2025-04-02",
+        "presenceofstreetlight_updatedate": "2025-05-30",
+        "presenceofcyclelane_capturemethod": "Automated Process",
+        "presenceofcyclelane_indirection_m": 0.0,
+        "presenceofstreetlight_evidencedate": "2023-07-16",
+        "presenceofstreetlight_capturemethod": "Automated Process",
+        "presenceofcyclelane_overallpercentage": 0,
+        "presenceofcyclelane_indirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirection_m": 0.0,
+        "presenceofcyclelane_indirectionsegregated_m": 0.0,
+        "presenceofcyclelane_inoppositedirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirectionsegregated_m": 0.0
+      }
+    },
+    {
+      "id": "05097642-0858-41b0-bb5b-9b0b36edc6ba",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            538101.361,
+            178997.69
+          ],
+          [
+            538101.9,
+            178998.45
+          ],
+          [
+            538102.55,
+            178999.3
+          ],
+          [
+            538103.1,
+            179000
+          ],
+          [
+            538103.65,
+            179000.65
+          ],
+          [
+            538104.7,
+            179001.75
+          ],
+          [
+            538106.05,
+            179003.05
+          ],
+          [
+            538107.4,
+            179004.3
+          ],
+          [
+            538108.9,
+            179005.55
+          ],
+          [
+            538109.65,
+            179006.2
+          ],
+          [
+            538110.4,
+            179006.8
+          ],
+          [
+            538111.2,
+            179007.4
+          ],
+          [
+            538112.25,
+            179008.1
+          ],
+          [
+            538114.05,
+            179009.15
+          ],
+          [
+            538115.3,
+            179009.65
+          ],
+          [
+            538116.15,
+            179009.85
+          ],
+          [
+            538117,
+            179010
+          ],
+          [
+            538118.5,
+            179010.25
+          ],
+          [
+            538120.1,
+            179010.8
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "05097642-0858-41b0-bb5b-9b0b36edc6ba",
+        "toid": "osgb4000000071399243",
+        "theme": "Transport",
+        "endnode": "10f254a7-6b5d-4b23-aa4a-2b9d72b27057",
+        "startnode": "cc19d79c-adff-4180-bcfc-84b9adc052a5",
+        "changetype": "New",
+        "description": "Path",
+        "matchstatus": "No Match",
+        "surfacetype": "Unmade",
+        "versiondate": "2025-08-19",
+        "pathname1_text": null,
+        "pathname2_text": null,
+        "heightingmethod": "DTM",
+        "geometry_length_m": 23.525,
+        "endgradeseparation": 0,
+        "pathname1_language": null,
+        "pathname2_language": null,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "startgradeseparation": 0,
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "versionavailablefromdate": "2025-08-20T00:00:00Z",
+        "elevationgain_indirection": 0.0,
+        "presenceofcyclelane_overall_m": 0.0,
+        "elevationgain_againstdirection": 0.5,
+        "presenceofcyclelane_updatedate": "2025-07-29",
+        "presenceofstreetlight_coverage": "Fully Unlit",
+        "presenceofcyclelane_evidencedate": "2025-04-02",
+        "presenceofstreetlight_updatedate": "2025-05-30",
+        "presenceofcyclelane_capturemethod": "Automated Process",
+        "presenceofcyclelane_indirection_m": 0.0,
+        "presenceofstreetlight_evidencedate": "2023-07-16",
+        "presenceofstreetlight_capturemethod": "Automated Process",
+        "presenceofcyclelane_overallpercentage": 0,
+        "presenceofcyclelane_indirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirection_m": 0.0,
+        "presenceofcyclelane_indirectionsegregated_m": 0.0,
+        "presenceofcyclelane_inoppositedirectionpercentage": 0,
+        "presenceofcyclelane_inoppositedirectionsegregated_m": 0.0
+      }
+    }
+  ]
+}

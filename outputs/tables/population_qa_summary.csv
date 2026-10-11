@@ -1,0 +1,14 @@
+check,value,status
+crs,EPSG:27700,pass
+population_field,usual_residents_total,pass
+baseline,ONS Census 2021 population baseline,pass
+missing_population,0,pass
+negative_population,0,pass
+duplicate_geographies,0,pass
+invalid_geometries,0,pass
+missing_geometries,0,pass
+unique_source_population_preserved,True,pass
+raw_total_including_duplicate,189570,pass
+unique_population_total,188124,pass
+overlap_area_m2,5.587935447692871e-08,pass
+repairs_this_stage,0,pass

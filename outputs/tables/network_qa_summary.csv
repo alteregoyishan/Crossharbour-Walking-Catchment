@@ -1,0 +1,77 @@
+section,check,value,unit,status,severity,notes
+metadata,osmnx_runtime_version,2.0.1,,pass,,
+metadata,qa_source_graph,pedestrian_network_reviewed.graphml,,pass,,
+metadata,osmnx_created_with,OSMnx 2.0.1,,pass,,
+metadata,graph_crs,EPSG:27700,,pass,,
+metadata,graph_type,MultiDiGraph,,pass,,
+metadata,directed,True,,pass,,
+metadata,node_count,36971,nodes,pass,,
+metadata,directed_edge_count,91704,edges,pass,,
+metadata,simplified,True,,pass,,
+metadata,network_bbox,"534176.556, 173773.048, 542365.685, 183308.650","minx,miny,maxx,maxy",pass,,
+acquisition,created_date,2026-10-10 18:21:51,,pass,,
+acquisition,network_type,walk,,pass,,
+acquisition,retained_way_tags,access | area | bridge | est_width | highway | junction | landuse | lanes | maxspeed | name | oneway | ref | service | tunnel | width | foot | layer | sidewalk | sidewalk:left | sidewalk:right | sidewalk:both,,pass,,
+acquisition,download_area_hash,04c3524c6773d486d1b441df02289b6dbbfe52f6f9fc113a0ddbc050b1479c55,,pass,,
+acquisition,download_buffer_m,2000,,pass,,
+acquisition,school_count,42,,pass,,
+acquisition,osm_snapshot_date,not recorded,,review,LOW,The GraphML records creation time but not the OSM data snapshot timestamp.
+topology,weak_component_count,708,components,review,MEDIUM,"Largest sizes: [33811, 529, 146, 68, 62, 47, 44, 41, 39, 34]"
+topology,weak_component_size_distribution,33811 nodes=1; 529 nodes=1; 146 nodes=1; 68 nodes=1; 62 nodes=1; 47 nodes=1; 44 nodes=1; 41 nodes=1; 39 nodes=1; 34 nodes=1; 29 nodes=1; 28 nodes=1; 22 nodes=2; 21 nodes=2; 19 nodes=1; 18 nodes=2; 17 nodes=1; 16 nodes=1; 14 nodes=2; 13 nodes=3; 12 nodes=4; 11 nodes=4; 10 nodes=6; 8 nodes=13; 7 nodes=5; 6 nodes=31; 5 nodes=5; 4 nodes=61; 2 nodes=553,component counts,pass,,
+topology,strong_component_count,708,components,pass,,"Largest sizes: [33811, 529, 146, 68, 62, 47, 44, 41, 39, 34]"
+topology,strong_component_size_distribution,33811 nodes=1; 529 nodes=1; 146 nodes=1; 68 nodes=1; 62 nodes=1; 47 nodes=1; 44 nodes=1; 41 nodes=1; 39 nodes=1; 34 nodes=1; 29 nodes=1; 28 nodes=1; 22 nodes=2; 21 nodes=2; 19 nodes=1; 18 nodes=2; 17 nodes=1; 16 nodes=1; 14 nodes=2; 13 nodes=3; 12 nodes=4; 11 nodes=4; 10 nodes=6; 8 nodes=13; 7 nodes=5; 6 nodes=31; 5 nodes=5; 4 nodes=61; 2 nodes=553,component counts,pass,,
+topology,largest_weak_component_nodes,33811,nodes,pass,,
+topology,largest_weak_component_share,0.914527602715642,proportion,pass,,
+topology,isolated_node_count,0,nodes,pass,,
+topology,physical_dead_end_count,11860,nodes,review,LOW,Degree uses distinct neighbours so reciprocal and parallel directed edges are not double-counted.
+topology,ordered_node_pairs_with_parallel_edges,1136,pairs,pass,,1170 additional directed edges; parallel edges are retained and are not assumed to be errors.
+topology,exact_duplicate_directed_edges,96,additional edges,review,LOW,Exact parallels are flagged for review but are not automatically treated as errors or removed.
+local_review,non_main_components_within_1km,42,components,review,MEDIUM,
+local_review,origin_components,0 | 0,component ids,pass,,Both reviewed origins must connect to the largest weak component.
+local_review,dead_ends_within_1km,551,nodes,review,LOW,
+local_review,possible_gap_findings,64,findings,review,MEDIUM,
+pedestrian_access,highway_tag_missing,0,directed edges,pass,,footway=51584; residential=17892; service=15612; unclassified=2904; steps=2758; tertiary=1538; path=1502; pedestrian=1070; primary=578; secondary=470; trunk=274; corridor=236
+pedestrian_access,foot_tag_missing,84842,directed edges,pass,,<missing>=84842; yes=4558; permissive=1658; private=322; designated=310; customers=44; destination=18; discouraged=8; permit=4
+pedestrian_access,access_tag_missing,88646,directed edges,pass,,<missing>=88646; permissive=962; no=692; customers=642; destination=472; yes=230; permit=50; delivery=20; unknown=8; designated=2
+pedestrian_access,service_tag_missing,86862,directed edges,pass,,<missing>=86862; parking_aisle=2490; driveway=2016; alley=158; drive-through=94; emergency_access=80; bus=4; slipway=2; delivery=2; parking=2
+pedestrian_access,bridge_tag_missing,90236,directed edges,pass,,<missing>=90236; yes=1336; viaduct=60; boardwalk=56; movable=22
+pedestrian_access,tunnel_tag_missing,90268,directed edges,pass,,<missing>=90268; building_passage=718; yes=718; covered=2
+pedestrian_access,layer_tag_missing,88984,directed edges,pass,,<missing>=88984; 1=1568; -1=768; 2=246; -2=124; -3=58; 0=40; -4=40; 3=6; 5=4; -6=4
+pedestrian_access,restricted_physical_edges,333,physical edges,fail,HIGH,
+local_review,restricted_physical_edges_within_1km,10,physical edges,fail,HIGH,
+local_review,restricted_physical_edges_within_250m,0,physical edges,pass,,
+pedestrian_access,service_physical_edges,7806,physical edges,pass,,Service roads are retained; only access evidence creates a QA issue.
+pedestrian_access,bridge_directed_edges,1468,edges,pass,,
+pedestrian_access,tunnel_directed_edges,1436,edges,pass,,
+geometry,invalid_geometry_count,0,directed edges,pass,,
+geometry,missing_explicit_geometry_count,36508,directed edges,pass_with_note,LOW,OSMnx omits geometry for straight edges; QA reconstructs only for measurement from node endpoints.
+geometry,zero_stored_length_count,0,directed edges,pass,,
+geometry,zero_geometry_length_count,0,directed edges,pass,,
+geometry,length_discrepancy_count,0,directed edges,pass,,Threshold: >5.0 m and >10%.
+geometry,endpoint_mismatch_count,0,directed edges,pass,,Threshold: >0.5 m from graph node coordinates.
+geometry,stored_vs_geometry_absolute_difference_min,0.0,m,pass,,
+geometry,stored_vs_geometry_absolute_difference_median,0.03300299586448219,m,pass,,
+geometry,stored_vs_geometry_absolute_difference_p95,0.22292267610818955,m,pass,,
+geometry,stored_vs_geometry_absolute_difference_p99,0.4571752516812492,m,pass,,
+geometry,stored_vs_geometry_absolute_difference_max,3.2098452506106696,m,pass,,
+geometry,stored_vs_geometry_absolute_difference_mean,0.06526783973145238,m,pass,,
+geometry,stored_vs_geometry_relative_difference_min,0.0,proportion,pass,,
+geometry,stored_vs_geometry_relative_difference_median,0.0017317015766234985,proportion,pass,,
+geometry,stored_vs_geometry_relative_difference_p95,0.003017136720261706,proportion,pass,,
+geometry,stored_vs_geometry_relative_difference_p99,0.003036068416017091,proportion,pass,,
+geometry,stored_vs_geometry_relative_difference_max,0.00304295951762641,proportion,pass,,
+geometry,stored_vs_geometry_relative_difference_mean,0.0017317400626025345,proportion,pass,,
+geometry,crs_consistency,True,,pass,,
+geometry,configured_analysis_crs_match,True,,pass,,Configured analysis CRS: EPSG:27700.
+findings,critical_issue_count,0,findings,pass,,
+findings,high_issue_count,333,findings,review,HIGH,
+findings,medium_issue_count,2083,findings,review,MEDIUM,
+findings,low_issue_count,96,findings,review,LOW,
+local_review,restricted_edges_reachable_within_5min,0,physical edges,pass,,
+local_review,restricted_edges_reachable_within_10min,0,physical edges,pass,,
+local_review,restricted_edges_reachable_within_15min,0,physical edges,pass,,
+local_review,high_priority_gaps_within_250m,0,findings,pass,,
+suitability,5_minute_walking_analysis,SUITABLE_WITH_REVIEW,,review,MEDIUM,"Graph is suitable for 5-, 10- and 15-minute routing; no unresolved critical, endpoint, near-site gap or reachable restricted-link finding affects these analysis thresholds."
+suitability,10_minute_walking_analysis,SUITABLE_WITH_REVIEW,,review,MEDIUM,"Graph is suitable for 5-, 10- and 15-minute routing; no unresolved critical, endpoint, near-site gap or reachable restricted-link finding affects these analysis thresholds."
+suitability,15_minute_walking_analysis,SUITABLE_WITH_REVIEW,,review,MEDIUM,"Graph is suitable for 5-, 10- and 15-minute routing; no unresolved critical, endpoint, near-site gap or reachable restricted-link finding affects these analysis thresholds."
+suitability,required_before_population_and_school_accessibility,"Graph is suitable for 5-, 10- and 15-minute routing; no unresolved critical, endpoint, near-site gap or reachable restricted-link finding affects these analysis thresholds.",,review,,

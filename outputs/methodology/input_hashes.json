@@ -1,0 +1,12 @@
+{
+  "data/raw/schools.csv": "299951d3ade43b093b39320ba83833b7faa2a5fd35eb931612d5367c68a24fe9",
+  "data/raw/site_boundary.geojson": "ce192111d4543552021200da1ea184b0d209b61907803c51ecd77ca6837de5dd",
+  "data/raw/README.txt": "2d3245f37d3dc1565a5e9a26c7db735803752e4b262115469688a8a17359aa53",
+  "data/raw/lsoa_2021_population.gpkg": "8ebfbf04e18e30f5624c90d39c6d4db67488597154f82b46522a3e38fd1cf4b9",
+  "data/cleaned/lsoa_2021_population_cleaned.gpkg": "ea672e26ec3a83d01377b494652b156fe4a31bea8da0c8de9305a747843ce3e0",
+  "data/cleaned/schools_cleaned.gpkg": "fe271cf85db47c58fcfe03f8106a8e40004b77e26388a9587e632d89afed08fb",
+  "data/processed/OpenStreetMap/pedestrian_network.graphml": "6b8992f6d5600d2919df7f0835d328bc9eb02ddb534557f5933ba3d2899ace7f",
+  "data/processed/OpenStreetMap/pedestrian_network_reviewed.graphml": "440deca0e08b4dfae85db06bced75cc0b4cce63bf69e715ac3c2f3688e481e75",
+  "data/processed/OpenStreetMap/pedestrian_network_reviewed_with_origins.graphml": "7e6c498450c35671aa4fbf3a3a6839d0d5473da7e3f247f6142d4aa0012396d1",
+  "data/processed/site_origins.gpkg": "50aaa78e6a55c54e96a335cb095f40b378ad96959975b70edb8da3034e54114a"
+}

@@ -1,0 +1,43 @@
+check,minutes,value,unit,status,partial_directed_edges,buffer_m,area_method,notes
+reachable_network_matches_recomputed_partial_edges,5.0,0.0,m,pass,55.0,,,
+reachable_network_matches_recomputed_partial_edges,10.0,0.0,m,pass,95.0,,,
+reachable_network_matches_recomputed_partial_edges,15.0,0.0,m,pass,189.0,,,
+restricted_links_reachable_full_graph_15min,,0,,pass,,,,
+polygon_valid,5.0,True,,pass,,25.0,standard,
+polygon_valid,5.0,True,,pass,,25.0,land_only,
+polygon_valid,5.0,True,,pass,,50.0,standard,
+polygon_valid,5.0,True,,pass,,50.0,land_only,
+polygon_valid,5.0,True,,pass,,75.0,standard,
+polygon_valid,5.0,True,,pass,,75.0,land_only,
+buffer_arc_discretisation_repair,10.0,0.02418312919585365,m2,documented_repair,,25.0,,Union only sub-0.5 m2 slivers within 0.1 m boundary; <1 ppm smaller area.
+polygon_valid,10.0,True,,pass,,25.0,standard,
+polygon_valid,10.0,True,,pass,,25.0,land_only,
+buffer_arc_discretisation_repair,10.0,0.012110301145116818,m2,documented_repair,,50.0,,Union only sub-0.5 m2 slivers within 0.1 m boundary; <1 ppm smaller area.
+polygon_valid,10.0,True,,pass,,50.0,standard,
+polygon_valid,10.0,True,,pass,,50.0,land_only,
+buffer_arc_discretisation_repair,10.0,0.0272627901527156,m2,documented_repair,,75.0,,Union only sub-0.5 m2 slivers within 0.1 m boundary; <1 ppm smaller area.
+polygon_valid,10.0,True,,pass,,75.0,standard,
+polygon_valid,10.0,True,,pass,,75.0,land_only,
+buffer_arc_discretisation_repair,15.0,0.22526558440614225,m2,documented_repair,,25.0,,Union only sub-0.5 m2 slivers within 0.1 m boundary; <1 ppm smaller area.
+polygon_valid,15.0,True,,pass,,25.0,standard,
+polygon_valid,15.0,True,,pass,,25.0,land_only,
+buffer_arc_discretisation_repair,15.0,0.013318572718136096,m2,documented_repair,,50.0,,Union only sub-0.5 m2 slivers within 0.1 m boundary; <1 ppm smaller area.
+polygon_valid,15.0,True,,pass,,50.0,standard,
+polygon_valid,15.0,True,,pass,,50.0,land_only,
+buffer_arc_discretisation_repair,15.0,4.386331261052231e-06,m2,documented_repair,,75.0,,Union only sub-0.5 m2 slivers within 0.1 m boundary; <1 ppm smaller area.
+polygon_valid,15.0,True,,pass,,75.0,standard,
+polygon_valid,15.0,True,,pass,,75.0,land_only,
+containment_5_in_10,,0.0,m2,pass,,25.0,standard,
+containment_10_in_15,,0.0,m2,pass,,25.0,standard,
+containment_5_in_10,,0.0,m2,pass,,25.0,land_only,
+containment_10_in_15,,0.0,m2,pass,,25.0,land_only,
+containment_5_in_10,,1.0999329148710167e-09,m2,pass,,50.0,standard,
+containment_10_in_15,,4.8864272759232543e-11,m2,pass,,50.0,standard,
+containment_5_in_10,,1.0999329148710167e-09,m2,pass,,50.0,land_only,
+containment_10_in_15,,0.0,m2,pass,,50.0,land_only,
+containment_5_in_10,,0.0,m2,pass,,75.0,standard,
+containment_10_in_15,,0.0,m2,pass,,75.0,standard,
+containment_5_in_10,,2.0399966736478134e-11,m2,pass,,75.0,land_only,
+containment_10_in_15,,0.0,m2,pass,,75.0,land_only,
+non_overlapping_bands,,-4.540709778666496e-05,,pass,,,land_only,
+non_overlapping_bands,,-4.544737748801708e-05,,pass,,,standard,

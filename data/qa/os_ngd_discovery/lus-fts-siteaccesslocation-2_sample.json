@@ -1,0 +1,341 @@
+{
+  "type": "FeatureCollection",
+  "links": [
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/lus-fts-siteaccesslocation-2/items?limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "self",
+      "type": "application/geo+json",
+      "title": "All features from the 'Site Access Location v2' collection within bounding box: 537642.241,178797.287,538415.757,179565.712"
+    },
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/lus-fts-siteaccesslocation-2/items?offset=10&limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "next",
+      "type": "application/geo+json",
+      "title": "Next page"
+    }
+  ],
+  "timeStamp": "2026-10-10T22:03:49.838463466Z",
+  "numberReturned": 10,
+  "features": [
+    {
+      "id": "01d42392-3a06-4b20-876f-44ab1b0ad1c9",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          537921.961,
+          179328.355
+        ]
+      },
+      "properties": {
+        "osid": "01d42392-3a06-4b20-876f-44ab1b0ad1c9",
+        "toid": "osgb5000005303347773",
+        "theme": "Land Use",
+        "changetype": "New",
+        "access_mode": "Pedestrian",
+        "description": "Access Location",
+        "versiondate": "2025-02-25",
+        "access_purpose": "Primary Public",
+        "accessedsiteid": "9777f155-2693-48db-9eb3-3385d4411eb1",
+        "access_updatedate": "2022-03-08",
+        "access_evidencedate": "2022-03-08",
+        "geometry_updatedate": "2022-03-08",
+        "accessednetworknodeid": "353a1981-c0a2-44a0-92f5-bbc58ef402e6",
+        "geometry_evidencedate": "2022-03-08",
+        "geometry_capturemethod": "Field Survey",
+        "versionavailabletodate": null,
+        "distancetonetworknode_m": 6.0,
+        "versionavailablefromdate": "2025-02-26T00:00:00Z",
+        "accessednetworknodefeaturetype": "Road Node"
+      }
+    },
+    {
+      "id": "0c3543dc-0a34-42b0-9c24-d96ffb251a2c",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          537898.526,
+          179141.387
+        ]
+      },
+      "properties": {
+        "osid": "0c3543dc-0a34-42b0-9c24-d96ffb251a2c",
+        "toid": null,
+        "theme": "Land Use",
+        "changetype": "New",
+        "access_mode": "Pedestrian",
+        "description": "Access Location",
+        "versiondate": "2025-02-25",
+        "access_purpose": null,
+        "accessedsiteid": "8865c3f4-48bb-460a-a586-76bb8cdccb40",
+        "access_updatedate": "2016-10-20",
+        "access_evidencedate": "2016-07-12",
+        "geometry_updatedate": "2016-10-20",
+        "accessednetworknodeid": "f72aba4e-1cd9-46e3-9247-0c664bd1abcd",
+        "geometry_evidencedate": "2016-07-12",
+        "geometry_capturemethod": "Desk-Based",
+        "versionavailabletodate": null,
+        "distancetonetworknode_m": 16.5,
+        "versionavailablefromdate": "2025-02-26T00:00:00Z",
+        "accessednetworknodefeaturetype": "Road Node"
+      }
+    },
+    {
+      "id": "109d1158-6892-4157-8fdd-42f3a97595a2",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          538317.5,
+          179191.44
+        ]
+      },
+      "properties": {
+        "osid": "109d1158-6892-4157-8fdd-42f3a97595a2",
+        "toid": "osgb4000000073410258",
+        "theme": "Land Use",
+        "changetype": "New",
+        "access_mode": "Pedestrian And Vehicular",
+        "description": "Access Location",
+        "versiondate": "2025-02-25",
+        "access_purpose": null,
+        "accessedsiteid": "7f84bb69-e01e-424a-bb10-801337a13901",
+        "access_updatedate": "2016-05-19",
+        "access_evidencedate": "2016-05-19",
+        "geometry_updatedate": "2016-08-07",
+        "accessednetworknodeid": "6585569d-62e4-4f0c-bb69-ada1b7543dd0",
+        "geometry_evidencedate": "2016-05-19",
+        "geometry_capturemethod": "Automated Process",
+        "versionavailabletodate": null,
+        "distancetonetworknode_m": 13.7,
+        "versionavailablefromdate": "2025-02-26T00:00:00Z",
+        "accessednetworknodefeaturetype": "Road Node"
+      }
+    },
+    {
+      "id": "1bd6d042-f71e-4af7-becc-573cbe322edd",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          538193.241,
+          179226.754
+        ]
+      },
+      "properties": {
+        "osid": "1bd6d042-f71e-4af7-becc-573cbe322edd",
+        "toid": null,
+        "theme": "Land Use",
+        "changetype": "New",
+        "access_mode": "Pedestrian",
+        "description": "Access Location",
+        "versiondate": "2025-02-25",
+        "access_purpose": null,
+        "accessedsiteid": "d7c58641-dfac-4445-b3e0-5f43763648a3",
+        "access_updatedate": "2016-10-20",
+        "access_evidencedate": "2016-07-12",
+        "geometry_updatedate": "2016-10-20",
+        "accessednetworknodeid": "fa593643-4d33-4441-bd62-715633efa12f",
+        "geometry_evidencedate": "2016-07-12",
+        "geometry_capturemethod": "Desk-Based",
+        "versionavailabletodate": null,
+        "distancetonetworknode_m": 9.5,
+        "versionavailablefromdate": "2025-02-26T00:00:00Z",
+        "accessednetworknodefeaturetype": "Road Node"
+      }
+    },
+    {
+      "id": "20fa2faa-455f-471a-8f4d-07e29083a71d",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          537983.839,
+          179149.845
+        ]
+      },
+      "properties": {
+        "osid": "20fa2faa-455f-471a-8f4d-07e29083a71d",
+        "toid": null,
+        "theme": "Land Use",
+        "changetype": "New",
+        "access_mode": "Pedestrian",
+        "description": "Access Location",
+        "versiondate": "2025-02-25",
+        "access_purpose": null,
+        "accessedsiteid": "86c61c9d-b47c-4787-805f-905c9f1aa34e",
+        "access_updatedate": "2024-01-30",
+        "access_evidencedate": "2024-01-30",
+        "geometry_updatedate": "2024-01-30",
+        "accessednetworknodeid": "6be89903-fba2-45b5-8ab8-579ab62121fa",
+        "geometry_evidencedate": "2024-01-30",
+        "geometry_capturemethod": "Desk-Based",
+        "versionavailabletodate": null,
+        "distancetonetworknode_m": 22.0,
+        "versionavailablefromdate": "2025-02-26T00:00:00Z",
+        "accessednetworknodefeaturetype": "Road Node"
+      }
+    },
+    {
+      "id": "259a4393-6f68-4aec-837d-6ebec897b821",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          538200.45,
+          179460.9
+        ]
+      },
+      "properties": {
+        "osid": "259a4393-6f68-4aec-837d-6ebec897b821",
+        "toid": null,
+        "theme": "Land Use",
+        "changetype": "New",
+        "access_mode": "Pedestrian",
+        "description": "Access Location",
+        "versiondate": "2025-02-25",
+        "access_purpose": null,
+        "accessedsiteid": "b1145e8f-fbb2-4e2b-8c83-c8e5b919ba65",
+        "access_updatedate": "2024-01-30",
+        "access_evidencedate": "2024-01-30",
+        "geometry_updatedate": "2024-01-30",
+        "accessednetworknodeid": "3a98999d-4613-47f3-9cff-de75d327d158",
+        "geometry_evidencedate": "2024-01-30",
+        "geometry_capturemethod": "Desk-Based",
+        "versionavailabletodate": null,
+        "distancetonetworknode_m": 59.4,
+        "versionavailablefromdate": "2025-02-26T00:00:00Z",
+        "accessednetworknodefeaturetype": "Road Node"
+      }
+    },
+    {
+      "id": "2b6b1a64-da3e-42cd-aa9b-e0d2c2c0ae5a",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          537918.775,
+          179319.682
+        ]
+      },
+      "properties": {
+        "osid": "2b6b1a64-da3e-42cd-aa9b-e0d2c2c0ae5a",
+        "toid": "osgb5000005303347771",
+        "theme": "Land Use",
+        "changetype": "New",
+        "access_mode": "Pedestrian",
+        "description": "Access Location",
+        "versiondate": "2025-02-25",
+        "access_purpose": "Public",
+        "accessedsiteid": "9777f155-2693-48db-9eb3-3385d4411eb1",
+        "access_updatedate": "2022-03-08",
+        "access_evidencedate": "2022-03-08",
+        "geometry_updatedate": "2022-03-08",
+        "accessednetworknodeid": "353a1981-c0a2-44a0-92f5-bbc58ef402e6",
+        "geometry_evidencedate": "2022-03-08",
+        "geometry_capturemethod": "Field Survey",
+        "versionavailabletodate": null,
+        "distancetonetworknode_m": 12.8,
+        "versionavailablefromdate": "2025-02-26T00:00:00Z",
+        "accessednetworknodefeaturetype": "Road Node"
+      }
+    },
+    {
+      "id": "3185a400-3acd-4854-8356-e05d30ee89a3",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          537937.7,
+          179349.605
+        ]
+      },
+      "properties": {
+        "osid": "3185a400-3acd-4854-8356-e05d30ee89a3",
+        "toid": "osgb5000005303347775",
+        "theme": "Land Use",
+        "changetype": "New",
+        "access_mode": "Pedestrian",
+        "description": "Access Location",
+        "versiondate": "2025-02-25",
+        "access_purpose": "Primary Public",
+        "accessedsiteid": "9777f155-2693-48db-9eb3-3385d4411eb1",
+        "access_updatedate": "2022-03-08",
+        "access_evidencedate": "2022-03-08",
+        "geometry_updatedate": "2020-02-21",
+        "accessednetworknodeid": "309997a1-45bf-4055-aa54-253ca9d5dfc9",
+        "geometry_evidencedate": "2019-06-29",
+        "geometry_capturemethod": "Remote Sensing Survey",
+        "versionavailabletodate": null,
+        "distancetonetworknode_m": 12.4,
+        "versionavailablefromdate": "2025-02-26T00:00:00Z",
+        "accessednetworknodefeaturetype": "Road Node"
+      }
+    },
+    {
+      "id": "3311a7c4-045f-4ebf-9bdf-95859b5f3979",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          537967.676,
+          179147.119
+        ]
+      },
+      "properties": {
+        "osid": "3311a7c4-045f-4ebf-9bdf-95859b5f3979",
+        "toid": null,
+        "theme": "Land Use",
+        "changetype": "New",
+        "access_mode": "Pedestrian And Vehicular",
+        "description": "Access Location",
+        "versiondate": "2025-02-25",
+        "access_purpose": null,
+        "accessedsiteid": "86c61c9d-b47c-4787-805f-905c9f1aa34e",
+        "access_updatedate": "2024-01-30",
+        "access_evidencedate": "2024-01-30",
+        "geometry_updatedate": "2024-01-30",
+        "accessednetworknodeid": "6be89903-fba2-45b5-8ab8-579ab62121fa",
+        "geometry_evidencedate": "2024-01-30",
+        "geometry_capturemethod": "Desk-Based",
+        "versionavailabletodate": null,
+        "distancetonetworknode_m": 9.0,
+        "versionavailablefromdate": "2025-02-26T00:00:00Z",
+        "accessednetworknodefeaturetype": "Road Node"
+      }
+    },
+    {
+      "id": "33984bac-1648-4827-b294-3bbbaff3c04a",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          538059.313,
+          179206.423
+        ]
+      },
+      "properties": {
+        "osid": "33984bac-1648-4827-b294-3bbbaff3c04a",
+        "toid": null,
+        "theme": "Land Use",
+        "changetype": "New",
+        "access_mode": "Pedestrian And Vehicular",
+        "description": "Access Location",
+        "versiondate": "2025-02-25",
+        "access_purpose": null,
+        "accessedsiteid": "86c61c9d-b47c-4787-805f-905c9f1aa34e",
+        "access_updatedate": "2024-04-25",
+        "access_evidencedate": "2024-04-25",
+        "geometry_updatedate": "2024-04-25",
+        "accessednetworknodeid": "d97e9519-f9b4-4cd0-b941-f90e5cbbe4ab",
+        "geometry_evidencedate": "2024-04-25",
+        "geometry_capturemethod": "Remote Sensing Survey",
+        "versionavailabletodate": null,
+        "distancetonetworknode_m": 33.7,
+        "versionavailablefromdate": "2025-02-26T00:00:00Z",
+        "accessednetworknodefeaturetype": "Road Node"
+      }
+    }
+  ]
+}

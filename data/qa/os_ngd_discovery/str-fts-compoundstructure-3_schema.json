@@ -1,0 +1,552 @@
+{
+  "$id": "str-fts-compoundstructure-3.0",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "shortName": "CompoundStructure",
+  "longName": "Compound Structure",
+  "description": "Polygon feature which encompasses one or more components and represents a manmade construction that has been built for a specific purpose. Examples include a bridge, a dam, and an aqueduct.",
+  "majorVersion": 3,
+  "minorVersion": 0,
+  "versionSuffix": null,
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -8.82,
+          49.79,
+          1.92,
+          60.94
+        ]
+      ],
+      "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-02-19T00:00:00Z",
+          null
+        ]
+      ],
+      "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+    }
+  },
+  "properties": {
+    "osid": {
+      "originalName": "OSID",
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD.",
+      "type": "string",
+      "maxLength": 36
+    },
+    "versiondate": {
+      "originalName": "versionDate",
+      "description": "Date when the version was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "versionavailablefromdate": {
+      "originalName": "versionAvailableFromDate",
+      "description": "The date this version of the feature became the latest version.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "versionavailabletodate": {
+      "originalName": "versionAvailableToDate",
+      "description": "The date this version of the feature was superseded by an update or ceased to exist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "changetype": {
+      "originalName": "changeType",
+      "description": "The type of change that generated a new version of the feature.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "End Of Life",
+        "Modified Attributes",
+        "Modified Geometry",
+        "Modified Geometry And Attributes",
+        "Moved From A Different Feature Type",
+        "Moved To A Different Feature Type",
+        "New"
+      ]
+    },
+    "geometry": {
+      "originalName": "geometry",
+      "description": "Geometry for the feature.",
+      "type": "object",
+      "$ref": "https://geojson.org/schema/MultiPolygon.json",
+      "precision": 10,
+      "scale": 3
+    },
+    "geometry_area_m2": {
+      "originalName": "geometry_area_m2",
+      "description": "The measured area of the geometry in square metres.",
+      "type": "number",
+      "precision": 15,
+      "scale": 3
+    },
+    "geometry_evidencedate": {
+      "originalName": "geometry_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "geometry_updatedate": {
+      "originalName": "geometry_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "geometry_capturemethod": {
+      "originalName": "geometry_captureMethod",
+      "description": "Indication of the method used to capture or produce the data.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "theme": {
+      "originalName": "theme",
+      "description": "The OS NGD Theme to which the feature belongs. Multiplicity allows for a primary theme to be assigned along with additional themes. For example, a Verge is primarily in the OS NGD Transport Theme, but it is also in the OS NGD Land Theme.",
+      "type": "string",
+      "maxLength": 40,
+      "enum": [
+        "Address",
+        "Administrative and Statistical Units",
+        "Buildings",
+        "Geographical Names",
+        "Land",
+        "Land Use",
+        "Structures",
+        "Transport",
+        "Water"
+      ]
+    },
+    "description": {
+      "originalName": "description",
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "Aqueduct",
+        "Breakwater",
+        "Bridge",
+        "Canal Tunnel",
+        "Clapper Bridge",
+        "Dam",
+        "Footbridge",
+        "Leisure Pier",
+        "Lift Bridge",
+        "Natural Subterranean Passage",
+        "Pedestrian Tunnel Or Subway",
+        "Rail Tunnel",
+        "Road Tunnel",
+        "Sluice",
+        "Swing Bridge",
+        "Tanker Berthing",
+        "Transporter Bridge",
+        "Tube Or Metro Tunnel",
+        "Underground Conduit",
+        "Underground Flood Relief Channel",
+        "Underpass",
+        "Viaduct",
+        "Watercourse Tunnel"
+      ]
+    },
+    "description_evidencedate": {
+      "originalName": "description_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "description_updatedate": {
+      "originalName": "description_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "description_capturemethod": {
+      "originalName": "description_captureMethod",
+      "description": "Indication of the method used to capture or produce the data.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "name1_text": {
+      "originalName": "name1_text",
+      "description": "Name assigned to identify the feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "name1_language": {
+      "originalName": "name1_language",
+      "description": "The language type associated with name1. The valid values are defined in the LanguageValue codelist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "name1_evidencedate": {
+      "originalName": "name1_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "name1_updatedate": {
+      "originalName": "name1_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "name2_text": {
+      "originalName": "name2_text",
+      "description": "The alternative language name assigned to identify the feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "name2_language": {
+      "originalName": "name2_language",
+      "description": "The language type associated with name2. The valid values are defined in the LanguageValue codelist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "name2_evidencedate": {
+      "originalName": "name2_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "name2_updatedate": {
+      "originalName": "name2_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "name3_text": {
+      "originalName": "name3_text",
+      "description": "The proper name of a feature, populated where at least three or more names have been captured for the same feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "name3_language": {
+      "originalName": "name3_language",
+      "description": "The language the name is expressed in.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "name3_evidencedate": {
+      "originalName": "name3_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date of collection by a surveyor or the date third party information was received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "name3_updatedate": {
+      "originalName": "name3_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "name4_text": {
+      "originalName": "name4_text",
+      "description": "The proper name of a feature, populated where four names have been captured for the same feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "name4_language": {
+      "originalName": "name4_language",
+      "description": "The language the name is expressed in.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "name4_evidencedate": {
+      "originalName": "name4_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date of collection by a surveyor or the date third party information was received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "name4_updatedate": {
+      "originalName": "name4_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "status": {
+      "originalName": "status",
+      "description": "The state of the feature in relation to either its physical condition or the activity the feature is intended to support.",
+      "type": "string",
+      "maxLength": 20,
+      "enum": [
+        "Active",
+        "Derelict",
+        "Inactive",
+        "Under Construction",
+        "Unknown"
+      ]
+    },
+    "capturespecification": {
+      "originalName": "captureSpecification",
+      "description": "Indicates the capture specification used by OS when capturing the feature. This could either be Urban, Rural or Moorland.",
+      "type": "string",
+      "maxLength": 10,
+      "enum": [
+        "Moorland",
+        "Rural",
+        "Urban"
+      ]
+    },
+    "networkover": {
+      "originalName": "networkOver",
+      "description": "Description of the network passing over the bridge. Will be null if the network could not be determined or the bridge has no network passing over it.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10,
+      "enum": [
+        "Canal",
+        "Multiple",
+        "Path",
+        "Railway",
+        "Road",
+        "Water"
+      ]
+    },
+    "networkunder": {
+      "originalName": "networkUnder",
+      "description": "Description of the network passing under the bridge. Will be null if the network could not be determined or the bridge has no network passing under it.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10,
+      "enum": [
+        "Canal",
+        "Multiple",
+        "Path",
+        "Railway",
+        "Road",
+        "Water"
+      ]
+    },
+    "relatedentity": {
+      "originalName": "RelatedEntity",
+      "description": "The Related Entity Related Component provides information from selected expert third parties, allowing for the linking of a Compound Structure feature to its associated feature types.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "relatedentityid": {
+            "originalName": "relatedEntityID",
+            "description": "Primary key providing a unique row identifier assigned to enable indexing for efficient querying.",
+            "type": "string",
+            "format": "uuid",
+            "maxLength": 36
+          },
+          "featuretypeid": {
+            "originalName": "featureTypeID",
+            "description": "OSID assigned by Ordnance Survey to the compound structure as a persistent identifier. This is used along with the Feature Type Version Date attribute to join the component to the Compound Structure Feature Type.",
+            "type": "string",
+            "maxLength": 36
+          },
+          "featuretypeversiondate": {
+            "originalName": "featureTypeVersionDate",
+            "description": "Date of the feature version to which this related component applies. This is used along with the Feature Type ID attribute to join the component to the Compound Structure Feature Type.",
+            "type": "string",
+            "format": "date"
+          },
+          "crossreferenceid": {
+            "originalName": "crossReferenceID",
+            "description": "Identifier of the related data entity or feature type instance that is the target of the reference or link.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 254
+          },
+          "crossreferencefeature": {
+            "originalName": "crossReferenceFeature",
+            "description": "Description of the related dataset that the cross reference refers to, for example, 'Third-party Bridge Information'.",
+            "type": "string",
+            "maxLength": 40,
+            "enum": [
+              "Third-party Bridge Information"
+            ]
+          },
+          "relationshiptype": {
+            "originalName": "relationshipType",
+            "description": "Type of relationship which has been formed between the source and target features, for example, 'Within' or 'Same As'.",
+            "type": "string",
+            "maxLength": 30,
+            "enum": [
+              "Within",
+              "Same As",
+              "Accessed From",
+              "Nearest"
+            ]
+          },
+          "crossreferencename": {
+            "originalName": "crossReferenceName",
+            "description": "The bridge name extracted from the third-party bridge information record by OS.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 254
+          },
+          "crossreferencenumber": {
+            "originalName": "crossReferenceNumber",
+            "description": "The bridge number extracted from the third-party bridge information record by OS.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 254
+          },
+          "crossreferencetype": {
+            "originalName": "crossReferenceType",
+            "description": "The bridge type extracted from the third-party bridge information record by OS.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 254
+          },
+          "crossreferenceprovider": {
+            "originalName": "crossReferenceProvider",
+            "description": "The organisation that provided the third-party bridge information record.",
+            "type": "string",
+            "maxLength": 254
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "osid",
+    "versiondate",
+    "versionavailablefromdate",
+    "versionavailabletodate",
+    "changetype",
+    "geometry",
+    "geometry_area_m2",
+    "geometry_evidencedate",
+    "geometry_updatedate",
+    "geometry_capturemethod",
+    "theme",
+    "description",
+    "description_evidencedate",
+    "description_updatedate",
+    "description_capturemethod",
+    "name1_text",
+    "name1_language",
+    "name1_evidencedate",
+    "name1_updatedate",
+    "name2_text",
+    "name2_language",
+    "name2_evidencedate",
+    "name2_updatedate",
+    "name3_text",
+    "name3_language",
+    "name3_evidencedate",
+    "name3_updatedate",
+    "name4_text",
+    "name4_language",
+    "name4_evidencedate",
+    "name4_updatedate",
+    "status",
+    "capturespecification",
+    "networkover",
+    "networkunder",
+    "relatedentity"
+  ],
+  "additionalProperties": false
+}

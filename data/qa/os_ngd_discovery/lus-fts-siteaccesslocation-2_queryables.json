@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://api.os.uk/features/ngd/ofa/v1/collections/lus-fts-siteaccesslocation-2/queryables",
+  "type": "object",
+  "title": "Queryable attributes for lus-fts-siteaccesslocation-2 collection",
+  "description": "This lists the attributes which can be filtered on and their types for lus-fts-siteaccesslocation-2 collection.",
+  "properties": {
+    "osid": {
+      "type": [
+        "string"
+      ],
+      "format": "uuid",
+      "maxLength": 36,
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD."
+    },
+    "toid": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20,
+      "description": "Topographic identifier (TOID) of the feature, as published in the OS MasterMap suite of products."
+    },
+    "access_mode": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 25,
+      "description": "A description of the method(s) of access normally utilised at the Site Access Location (for example, Pedestrian).",
+      "enumeration": true,
+      "enum": [
+        "Pedestrian",
+        "Pedestrian And Vehicular",
+        "Vehicular"
+      ]
+    },
+    "access_purpose": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 30,
+      "description": "A description of the principal access function at the Site Access Location (for example, Private or Public).",
+      "enumeration": true,
+      "enum": [
+        "Emergency",
+        "Primary Public",
+        "Private",
+        "Public"
+      ]
+    }
+  }
+}

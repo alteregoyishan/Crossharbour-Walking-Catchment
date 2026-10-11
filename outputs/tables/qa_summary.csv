@@ -1,0 +1,12 @@
+dataset,check_category,issue,severity,issue_count,example_records,status
+population,field_structure,duplicate_identifier,error,1,E01035705:row66 | E01035705:row109,issues_found
+schools,field_structure,duplicate_identifier,error,1,100898:row69 | 100898:row70,issues_found
+all,crs,no_issues_found,,0,,pass
+schools,spatial_location,duplicate_coordinates,warning,13,100675:row50 | 146221:row51 ; 100807:row61 | 137648:row62 ; 100900:row71 | 148681:row72,issues_found
+schools,spatial_location,unusable_coordinates,error,7,132930:row22 ; 126586:row23 ; 152334:row28,issues_found
+population,geometry_topology,invalid_geometry,error,1,E01035698:row103,issues_found
+schools,attribute_consistency,invalid_or_missing_capacity,warning,35,132553:row2 ; 132640:row3 ; 134387:row4,issues_found
+schools,attribute_consistency,invalid_or_missing_pupils,warning,41,132553:row2 ; 132640:row3 ; 134387:row4,issues_found
+schools,attribute_consistency,invalid_statutory_age_range,warning,11,134387:row4 ; 133992:row6 ; 132678:row15,issues_found
+schools,attribute_consistency,pupils_exceed_capacity,warning,5,100675:row50 ; 137441:row59 ; 137016:row65,issues_found
+site,attribute_consistency,stated_area_differs_from_geometry,warning,1,feature:row1,issues_found

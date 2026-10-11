@@ -1,0 +1,30 @@
+project:
+  analysis_crs: EPSG:27700
+  geographic_crs: EPSG:4326
+walking:
+  speed_kmh: 4.8
+  primary_catchment_minutes: 10
+  sensitivity_minutes: [5, 10, 15]
+  edge_buffer_m: 25
+osm:
+  download_buffer_m: 2000
+  network_type: walk
+  use_cached_network: true
+site_origins:
+  contact_tolerance_m: 2
+  min_crossing_angle_degrees: 45
+  min_access_separation_m: 20
+  max_access_points: 2
+population:
+  use_area_weighting: true
+schools:
+  open_only: true
+qa:
+  london_bounds_bng: [500000, 150000, 570000, 210000]
+  overlap_tolerance_m2: 1.0
+  site_area_relative_tolerance: 0.05
+  bng_bounds: [0, 0, 700000, 1300000]
+  distance_outlier_m: 6000
+  max_statutory_age: 30
+accessibility_extension:
+  enabled: false

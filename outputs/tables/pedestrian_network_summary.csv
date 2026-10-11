@@ -1,0 +1,2 @@
+school_count,node_count,directed_edge_count,crs,network_type,retained_way_tags,edges_with_foot_tag,edges_with_layer_tag,download_buffer_m,max_school_to_node_distance_m,reused_graphml
+42,36968,91692,EPSG:27700,walk,access | area | bridge | est_width | highway | junction | landuse | lanes | maxspeed | name | oneway | ref | service | tunnel | width | foot | layer | sidewalk | sidewalk:left | sidewalk:right | sidewalk:both,6856,2718,2000,71.26521855697665,False

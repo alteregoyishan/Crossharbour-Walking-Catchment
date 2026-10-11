@@ -1,0 +1,3 @@
+origin_id,inserted_node,matched_u,matched_v,matched_key,point_to_edge_distance_m,highway,foot,access,service,name,osmid,pedestrian_accessible,directed_edges_split,original_edge_length_m,split_parts_length_m,length_difference_m,status,warning,reachable_node_count
+A,-1000000001,9669577249,1993139153,0,3.460058888841194e-11,footway,,,,,188692596,True,2,16.3387580692946,16.3387580692946,0.0,pass,,33813
+B,-1000000002,229784364,10085791855,0,1.8163726379137152e-11,footway,,,,,1102226414,True,2,7.505499425711889,7.505499425711888,8.881784197001252e-16,pass,,33813

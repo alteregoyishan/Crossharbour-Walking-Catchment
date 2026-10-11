@@ -1,0 +1,4 @@
+time_minutes,reachable_network_length_m,catchment_area_m2,catchment_area_ha,number_of_origins,walking_speed_kmh,partial_directed_edge_count,polygon_buffer_m,polygon_note,network_containment_status,area_monotonic_status,water_mask_status
+5,8179.745689549936,184183.5919608536,18.418359196085362,2,4.8,55,25,Cartographic network buffer; authoritative result is reachable network,pass,pass,warning_not_applied
+10,28998.54801404111,694394.5299036982,69.43945299036983,2,4.8,95,25,Cartographic network buffer; authoritative result is reachable network,pass,pass,warning_not_applied
+15,57264.9895067969,1444830.20254509,144.483020254509,2,4.8,189,25,Cartographic network buffer; authoritative result is reachable network,pass,pass,warning_not_applied

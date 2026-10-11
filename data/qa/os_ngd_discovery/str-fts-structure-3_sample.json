@@ -1,0 +1,1335 @@
+{
+  "type": "FeatureCollection",
+  "links": [
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/str-fts-structure-3/items?limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "self",
+      "type": "application/geo+json",
+      "title": "All features from the 'Structure v3' collection within bounding box: 537642.241,178797.287,538415.757,179565.712"
+    },
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/str-fts-structure-3/items?offset=10&limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "next",
+      "type": "application/geo+json",
+      "title": "Next page"
+    }
+  ],
+  "timeStamp": "2026-10-10T22:03:51.364747319Z",
+  "numberReturned": 10,
+  "features": [
+    {
+      "id": "12dfe447-ee80-4f2f-a64c-b38ade51665f",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537695.1,
+              179286.95
+            ],
+            [
+              537692.65,
+              179284.5
+            ],
+            [
+              537697.2,
+              179284.15
+            ],
+            [
+              537695.1,
+              179286.95
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "12dfe447-ee80-4f2f-a64c-b38ade51665f",
+        "toid": "osgb1000001769372684",
+        "theme": "Structures",
+        "status": null,
+        "istidal": false,
+        "nlud_code": "U100",
+        "changetype": "Modified Attributes",
+        "ishistoric": false,
+        "isobscured": false,
+        "name1_text": null,
+        "name2_text": null,
+        "description": "Crane",
+        "versiondate": "2025-02-01",
+        "physicallevel": "Surface Level",
+        "sitereference": [],
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Commercial Activity: Industrial Or Manufacturing",
+        "oslandusetierb": [],
+        "geometry_area_m2": 6.003,
+        "name1_updatedate": null,
+        "name2_updatedate": null,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Structure"
+        ],
+        "height_updatedate": null,
+        "status_updatedate": "2002-10-28",
+        "name1_evidencedate": null,
+        "name2_evidencedate": null,
+        "associatedstructure": null,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2002-10-28",
+        "height_evidencedate": null,
+        "smallestsite_siteid": null,
+        "capturespecification": "Urban",
+        "height_absolutemax_m": null,
+        "height_absolutemin_m": null,
+        "height_relativemax_m": null,
+        "oslanduse_updatedate": "2002-10-28",
+        "geometry_evidencedate": "2002-10-28",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": "INDUSTRY AND BUSINESS",
+        "description_updatedate": "2002-10-28",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": null,
+        "oslandcover_updatedate": "2002-10-28",
+        "oslanduse_evidencedate": "2002-10-28",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-07-12",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2002-10-28",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2002-10-28",
+        "versionavailablefromdate": "2025-02-02T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": null,
+        "height_relativeroofbase_m": null,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": null,
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": null,
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "23f99ab4-8c9d-4b3b-b9ac-c312676fe53a",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538325.9,
+              179472.3
+            ],
+            [
+              538324.53,
+              179475.17
+            ],
+            [
+              538320.9,
+              179473.5
+            ],
+            [
+              538316,
+              179471.3
+            ],
+            [
+              538313.85,
+              179470.35
+            ],
+            [
+              538314.15,
+              179469.7
+            ],
+            [
+              538314.529,
+              179468.779
+            ],
+            [
+              538314.85,
+              179468
+            ],
+            [
+              538315.1,
+              179467.4
+            ],
+            [
+              538319.5,
+              179458.1
+            ],
+            [
+              538319.65,
+              179457.75
+            ],
+            [
+              538327.95,
+              179439.45
+            ],
+            [
+              538336.1,
+              179421.35
+            ],
+            [
+              538336.61,
+              179420.23
+            ],
+            [
+              538340.25,
+              179421.85
+            ],
+            [
+              538336.363,
+              179430.375
+            ],
+            [
+              538334.133,
+              179435.266
+            ],
+            [
+              538331.971,
+              179440.005
+            ],
+            [
+              538327.65,
+              179449.482
+            ],
+            [
+              538325.296,
+              179454.644
+            ],
+            [
+              538323.207,
+              179459.225
+            ],
+            [
+              538321.003,
+              179464.059
+            ],
+            [
+              538318.75,
+              179469
+            ],
+            [
+              538324.3,
+              179471.55
+            ],
+            [
+              538324.9,
+              179471.85
+            ],
+            [
+              538325.9,
+              179472.3
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "23f99ab4-8c9d-4b3b-b9ac-c312676fe53a",
+        "toid": "osgb1000001769385581",
+        "theme": "Structures",
+        "status": null,
+        "istidal": false,
+        "nlud_code": "U051",
+        "changetype": "Modified Geometry",
+        "ishistoric": false,
+        "isobscured": false,
+        "name1_text": null,
+        "name2_text": null,
+        "description": "Upper Level Of Communication",
+        "versiondate": "2026-09-18",
+        "physicallevel": "Surface Level",
+        "sitereference": [],
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Unknown Or Unused Artificial",
+        "oslandusetierb": [],
+        "geometry_area_m2": 240.157,
+        "name1_updatedate": null,
+        "name2_updatedate": null,
+        "oslandcovertiera": "Made",
+        "oslandcovertierb": [
+          "Made Sealed"
+        ],
+        "height_updatedate": null,
+        "status_updatedate": "1989-03-01",
+        "name1_evidencedate": null,
+        "name2_evidencedate": null,
+        "associatedstructure": null,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2026-09-12",
+        "height_evidencedate": null,
+        "smallestsite_siteid": null,
+        "capturespecification": "Urban",
+        "height_absolutemax_m": null,
+        "height_absolutemin_m": null,
+        "height_relativemax_m": null,
+        "oslanduse_updatedate": "1989-03-01",
+        "geometry_evidencedate": "2026-05-24",
+        "nlud_groupdescription": "Transport tracks and ways",
+        "nlud_orderdescription": "TRANSPORT",
+        "description_updatedate": "2013-10-30",
+        "geometry_capturemethod": "Remote Sensing Survey",
+        "height_confidencelevel": null,
+        "oslandcover_updatedate": "2013-10-30",
+        "oslanduse_evidencedate": "1989-03-01",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1989-03-01",
+        "oslanduse_capturemethod": "Desk-Based",
+        "description_evidencedate": "2013-10-30",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2013-10-30",
+        "versionavailablefromdate": "2026-09-19T00:00:00Z",
+        "description_capturemethod": "Desk-Based",
+        "height_absoluteroofbase_m": null,
+        "height_relativeroofbase_m": null,
+        "oslandcover_capturemethod": "Desk-Based",
+        "smallestsite_landusetiera": null,
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": null,
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "2ff0f13c-8072-4f86-b052-e0dfadb3013e",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538341.3,
+              179482.7
+            ],
+            [
+              538336.7,
+              179480.6
+            ],
+            [
+              538341.1,
+              179470.85
+            ],
+            [
+              538351.45,
+              179447.7
+            ],
+            [
+              538357.65,
+              179433.9
+            ],
+            [
+              538362.25,
+              179436.05
+            ],
+            [
+              538358.6,
+              179444.45
+            ],
+            [
+              538350.15,
+              179462.95
+            ],
+            [
+              538341.3,
+              179482.7
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "2ff0f13c-8072-4f86-b052-e0dfadb3013e",
+        "toid": "osgb1000001769386829",
+        "theme": "Structures",
+        "status": null,
+        "istidal": false,
+        "nlud_code": "U071",
+        "changetype": "Modified Attributes",
+        "ishistoric": false,
+        "isobscured": false,
+        "name1_text": null,
+        "name2_text": null,
+        "description": "Upper Level Of Communication",
+        "versiondate": "2025-02-13",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "cb931ee8-fe58-4a95-8a1b-2f6769c96c2c",
+            "structureid": "2ff0f13c-8072-4f86-b052-e0dfadb3013e",
+            "structureversiondate": "2025-02-13"
+          }
+        ],
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "geometry_area_m2": 260.238,
+        "name1_updatedate": null,
+        "name2_updatedate": null,
+        "oslandcovertiera": "Made",
+        "oslandcovertierb": [
+          "Made Sealed"
+        ],
+        "height_updatedate": null,
+        "status_updatedate": "2014-08-28",
+        "name1_evidencedate": null,
+        "name2_evidencedate": null,
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2001-07-12",
+        "height_evidencedate": null,
+        "smallestsite_siteid": "cb931ee8-fe58-4a95-8a1b-2f6769c96c2c",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": null,
+        "height_absolutemin_m": null,
+        "height_relativemax_m": null,
+        "oslanduse_updatedate": "2014-08-28",
+        "geometry_evidencedate": "2001-07-12",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2014-08-28",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": null,
+        "oslandcover_updatedate": "2014-08-28",
+        "oslanduse_evidencedate": "2013-07-18",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-07-12",
+        "oslanduse_capturemethod": "Remote Sensing Survey",
+        "description_evidencedate": "2013-07-18",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2013-07-18",
+        "versionavailablefromdate": "2025-02-14T00:00:00Z",
+        "description_capturemethod": "Remote Sensing Survey",
+        "height_absoluteroofbase_m": null,
+        "height_relativeroofbase_m": null,
+        "oslandcover_capturemethod": "Remote Sensing Survey",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "34a82992-1e02-40dd-9195-48bc23e3f203",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537698.5,
+              179300.4
+            ],
+            [
+              537696.4,
+              179303.1
+            ],
+            [
+              537693.95,
+              179300.65
+            ],
+            [
+              537698.5,
+              179300.4
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "34a82992-1e02-40dd-9195-48bc23e3f203",
+        "toid": "osgb1000001769372690",
+        "theme": "Structures",
+        "status": null,
+        "istidal": false,
+        "nlud_code": "U100",
+        "changetype": "Modified Attributes",
+        "ishistoric": false,
+        "isobscured": false,
+        "name1_text": null,
+        "name2_text": null,
+        "description": "Crane",
+        "versiondate": "2025-02-01",
+        "physicallevel": "Surface Level",
+        "sitereference": [],
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Commercial Activity: Industrial Or Manufacturing",
+        "oslandusetierb": [],
+        "geometry_area_m2": 5.88,
+        "name1_updatedate": null,
+        "name2_updatedate": null,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Structure"
+        ],
+        "height_updatedate": null,
+        "status_updatedate": "2002-10-28",
+        "name1_evidencedate": null,
+        "name2_evidencedate": null,
+        "associatedstructure": null,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2002-10-28",
+        "height_evidencedate": null,
+        "smallestsite_siteid": null,
+        "capturespecification": "Urban",
+        "height_absolutemax_m": null,
+        "height_absolutemin_m": null,
+        "height_relativemax_m": null,
+        "oslanduse_updatedate": "2002-10-28",
+        "geometry_evidencedate": "2002-10-28",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": "INDUSTRY AND BUSINESS",
+        "description_updatedate": "2002-10-28",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": null,
+        "oslandcover_updatedate": "2002-10-28",
+        "oslanduse_evidencedate": "2002-10-28",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-07-12",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2002-10-28",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2002-10-28",
+        "versionavailablefromdate": "2025-02-02T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": null,
+        "height_relativeroofbase_m": null,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": null,
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": null,
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "4ac149f0-b68f-4ee6-b804-0013b2fb6087",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537693.05,
+              179289.8
+            ],
+            [
+              537692.65,
+              179284.5
+            ],
+            [
+              537695.1,
+              179286.95
+            ],
+            [
+              537693.05,
+              179289.8
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "4ac149f0-b68f-4ee6-b804-0013b2fb6087",
+        "toid": "osgb1000001769372693",
+        "theme": "Structures",
+        "status": null,
+        "istidal": false,
+        "nlud_code": "U100",
+        "changetype": "Modified Attributes",
+        "ishistoric": false,
+        "isobscured": false,
+        "name1_text": null,
+        "name2_text": null,
+        "description": "Crane",
+        "versiondate": "2025-02-01",
+        "physicallevel": "Surface Level",
+        "sitereference": [],
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Commercial Activity: Industrial Or Manufacturing",
+        "oslandusetierb": [],
+        "geometry_area_m2": 6.003,
+        "name1_updatedate": null,
+        "name2_updatedate": null,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Structure"
+        ],
+        "height_updatedate": null,
+        "status_updatedate": "2013-11-19",
+        "name1_evidencedate": null,
+        "name2_evidencedate": null,
+        "associatedstructure": null,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2001-07-12",
+        "height_evidencedate": null,
+        "smallestsite_siteid": null,
+        "capturespecification": "Urban",
+        "height_absolutemax_m": null,
+        "height_absolutemin_m": null,
+        "height_relativemax_m": null,
+        "oslanduse_updatedate": "2013-11-19",
+        "geometry_evidencedate": "2001-07-12",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": "INDUSTRY AND BUSINESS",
+        "description_updatedate": "2013-11-19",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": null,
+        "oslandcover_updatedate": "2013-11-19",
+        "oslanduse_evidencedate": "2013-11-19",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-07-12",
+        "oslanduse_capturemethod": "Desk-Based",
+        "description_evidencedate": "2013-11-19",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2013-11-19",
+        "versionavailablefromdate": "2025-02-02T00:00:00Z",
+        "description_capturemethod": "Desk-Based",
+        "height_absoluteroofbase_m": null,
+        "height_relativeroofbase_m": null,
+        "oslandcover_capturemethod": "Desk-Based",
+        "smallestsite_landusetiera": null,
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": null,
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "614a0c27-7438-432b-b22c-7b326eb708d3",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537697.05,
+              179310.9
+            ],
+            [
+              537694.6,
+              179308.35
+            ],
+            [
+              537699,
+              179307.95
+            ],
+            [
+              537697.05,
+              179310.9
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "614a0c27-7438-432b-b22c-7b326eb708d3",
+        "toid": "osgb1000001769372728",
+        "theme": "Structures",
+        "status": null,
+        "istidal": false,
+        "nlud_code": "U100",
+        "changetype": "Modified Attributes",
+        "ishistoric": false,
+        "isobscured": false,
+        "name1_text": null,
+        "name2_text": null,
+        "description": "Crane",
+        "versiondate": "2025-02-01",
+        "physicallevel": "Surface Level",
+        "sitereference": [],
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Commercial Activity: Industrial Or Manufacturing",
+        "oslandusetierb": [],
+        "geometry_area_m2": 6.1,
+        "name1_updatedate": null,
+        "name2_updatedate": null,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Structure"
+        ],
+        "height_updatedate": null,
+        "status_updatedate": "2002-10-28",
+        "name1_evidencedate": null,
+        "name2_evidencedate": null,
+        "associatedstructure": null,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2002-10-28",
+        "height_evidencedate": null,
+        "smallestsite_siteid": null,
+        "capturespecification": "Urban",
+        "height_absolutemax_m": null,
+        "height_absolutemin_m": null,
+        "height_relativemax_m": null,
+        "oslanduse_updatedate": "2002-10-28",
+        "geometry_evidencedate": "2002-10-28",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": "INDUSTRY AND BUSINESS",
+        "description_updatedate": "2002-10-28",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": null,
+        "oslandcover_updatedate": "2002-10-28",
+        "oslanduse_evidencedate": "2002-10-28",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-07-12",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2002-10-28",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2002-10-28",
+        "versionavailablefromdate": "2025-02-02T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": null,
+        "height_relativeroofbase_m": null,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": null,
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": null,
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "644a786b-d710-4ad3-a6e9-06ed260fc691",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537699.5,
+              179313.55
+            ],
+            [
+              537695.05,
+              179313.9
+            ],
+            [
+              537697.05,
+              179310.9
+            ],
+            [
+              537699.5,
+              179313.55
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "644a786b-d710-4ad3-a6e9-06ed260fc691",
+        "toid": "osgb1000001769372730",
+        "theme": "Structures",
+        "status": null,
+        "istidal": false,
+        "nlud_code": "U100",
+        "changetype": "Modified Attributes",
+        "ishistoric": false,
+        "isobscured": false,
+        "name1_text": null,
+        "name2_text": null,
+        "description": "Crane",
+        "versiondate": "2025-02-01",
+        "physicallevel": "Surface Level",
+        "sitereference": [],
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Commercial Activity: Industrial Or Manufacturing",
+        "oslandusetierb": [],
+        "geometry_area_m2": 6.325,
+        "name1_updatedate": null,
+        "name2_updatedate": null,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Structure"
+        ],
+        "height_updatedate": null,
+        "status_updatedate": "2013-11-19",
+        "name1_evidencedate": null,
+        "name2_evidencedate": null,
+        "associatedstructure": null,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2001-07-12",
+        "height_evidencedate": null,
+        "smallestsite_siteid": null,
+        "capturespecification": "Urban",
+        "height_absolutemax_m": null,
+        "height_absolutemin_m": null,
+        "height_relativemax_m": null,
+        "oslanduse_updatedate": "2013-11-19",
+        "geometry_evidencedate": "2001-07-12",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": "INDUSTRY AND BUSINESS",
+        "description_updatedate": "2013-11-19",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": null,
+        "oslandcover_updatedate": "2013-11-19",
+        "oslanduse_evidencedate": "2013-11-19",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-07-12",
+        "oslanduse_capturemethod": "Desk-Based",
+        "description_evidencedate": "2013-11-19",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2013-11-19",
+        "versionavailablefromdate": "2025-02-02T00:00:00Z",
+        "description_capturemethod": "Desk-Based",
+        "height_absoluteroofbase_m": null,
+        "height_relativeroofbase_m": null,
+        "oslandcover_capturemethod": "Desk-Based",
+        "smallestsite_landusetiera": null,
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": null,
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "691c7917-55bf-440b-8269-3d833ed62a98",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538348.8,
+              179402.7
+            ],
+            [
+              538346.75,
+              179407.25
+            ],
+            [
+              538344.651,
+              179411.899
+            ],
+            [
+              538342.55,
+              179416.55
+            ],
+            [
+              538344.75,
+              179417.45
+            ],
+            [
+              538344.55,
+              179417.9
+            ],
+            [
+              538338.85,
+              179415.2
+            ],
+            [
+              538340.05,
+              179412.5
+            ],
+            [
+              538340.65,
+              179411.1
+            ],
+            [
+              538342.6,
+              179407
+            ],
+            [
+              538337.904,
+              179404.898
+            ],
+            [
+              538323.199,
+              179398.316
+            ],
+            [
+              538318.25,
+              179396.1
+            ],
+            [
+              538316.4,
+              179400
+            ],
+            [
+              538315.7,
+              179401.65
+            ],
+            [
+              538310.85,
+              179399.45
+            ],
+            [
+              538311.3,
+              179398.45
+            ],
+            [
+              538311.55,
+              179397.95
+            ],
+            [
+              538313.4,
+              179393.95
+            ],
+            [
+              538314.4,
+              179394.35
+            ],
+            [
+              538315.6,
+              179394.8
+            ],
+            [
+              538316.05,
+              179393.9
+            ],
+            [
+              538316.62,
+              179392.707
+            ],
+            [
+              538317.15,
+              179391.6
+            ],
+            [
+              538319.35,
+              179392.6
+            ],
+            [
+              538329.7,
+              179397.3
+            ],
+            [
+              538335.3,
+              179384.65
+            ],
+            [
+              538344.75,
+              179389
+            ],
+            [
+              538342.55,
+              179394.05
+            ],
+            [
+              538337.45,
+              179391.8
+            ],
+            [
+              538335.3,
+              179396.7
+            ],
+            [
+              538345.15,
+              179401.1
+            ],
+            [
+              538359.5,
+              179368.95
+            ],
+            [
+              538360.6,
+              179367.15
+            ],
+            [
+              538361.15,
+              179365.75
+            ],
+            [
+              538363,
+              179366.65
+            ],
+            [
+              538364.9,
+              179367.55
+            ],
+            [
+              538355.4,
+              179388.05
+            ],
+            [
+              538353.35,
+              179392.6
+            ],
+            [
+              538351.05,
+              179397.7
+            ],
+            [
+              538348.8,
+              179402.7
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "691c7917-55bf-440b-8269-3d833ed62a98",
+        "toid": "osgb1000001769385564",
+        "theme": "Structures",
+        "status": null,
+        "istidal": false,
+        "nlud_code": "U051",
+        "changetype": "Modified Geometry And Attributes",
+        "ishistoric": false,
+        "isobscured": false,
+        "name1_text": null,
+        "name2_text": null,
+        "description": "Upper Level Of Communication",
+        "versiondate": "2026-09-18",
+        "physicallevel": "Surface Level",
+        "sitereference": [],
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Unknown Or Unused Artificial",
+        "oslandusetierb": [],
+        "geometry_area_m2": 488.511,
+        "name1_updatedate": null,
+        "name2_updatedate": null,
+        "oslandcovertiera": "Made",
+        "oslandcovertierb": [
+          "Made Sealed"
+        ],
+        "height_updatedate": null,
+        "status_updatedate": "1989-03-01",
+        "name1_evidencedate": null,
+        "name2_evidencedate": null,
+        "associatedstructure": null,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2026-09-12",
+        "height_evidencedate": null,
+        "smallestsite_siteid": null,
+        "capturespecification": "Urban",
+        "height_absolutemax_m": null,
+        "height_absolutemin_m": null,
+        "height_relativemax_m": null,
+        "oslanduse_updatedate": "1989-03-01",
+        "geometry_evidencedate": "2026-05-24",
+        "nlud_groupdescription": "Transport tracks and ways",
+        "nlud_orderdescription": "TRANSPORT",
+        "description_updatedate": "2013-10-30",
+        "geometry_capturemethod": "Remote Sensing Survey",
+        "height_confidencelevel": null,
+        "oslandcover_updatedate": "2013-10-30",
+        "oslanduse_evidencedate": "1989-03-01",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1989-03-01",
+        "oslanduse_capturemethod": "Desk-Based",
+        "description_evidencedate": "2013-10-30",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2013-10-30",
+        "versionavailablefromdate": "2026-09-19T00:00:00Z",
+        "description_capturemethod": "Desk-Based",
+        "height_absoluteroofbase_m": null,
+        "height_relativeroofbase_m": null,
+        "oslandcover_capturemethod": "Desk-Based",
+        "smallestsite_landusetiera": null,
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": null,
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "6cbf5dd3-b9c4-41bc-805f-d6feb27e2bbf",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537633.577,
+              179308.077
+            ],
+            [
+              537634.177,
+              179316.422
+            ],
+            [
+              537625.929,
+              179317.015
+            ],
+            [
+              537625.328,
+              179308.671
+            ],
+            [
+              537633.577,
+              179308.077
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "6cbf5dd3-b9c4-41bc-805f-d6feb27e2bbf",
+        "toid": "osgb5000005363368883",
+        "theme": "Structures",
+        "status": null,
+        "istidal": false,
+        "nlud_code": "U100",
+        "changetype": "New",
+        "ishistoric": false,
+        "isobscured": false,
+        "name1_text": null,
+        "name2_text": null,
+        "description": "Roofed Storage Tank",
+        "versiondate": "2026-09-18",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "b70db353-73a3-413a-8aa0-882602f3f0c3",
+            "structureid": "6cbf5dd3-b9c4-41bc-805f-d6feb27e2bbf",
+            "structureversiondate": "2026-09-18"
+          }
+        ],
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Commercial Activity: Distribution Or Storage",
+        "oslandusetierb": [],
+        "geometry_area_m2": 69.186,
+        "name1_updatedate": null,
+        "name2_updatedate": null,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Structure"
+        ],
+        "height_updatedate": "2026-09-14",
+        "status_updatedate": "2026-09-12",
+        "name1_evidencedate": null,
+        "name2_evidencedate": null,
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2026-09-12",
+        "height_evidencedate": "2026-05-24",
+        "smallestsite_siteid": "b70db353-73a3-413a-8aa0-882602f3f0c3",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": 10.0,
+        "height_absolutemin_m": 4.4,
+        "height_relativemax_m": 5.6,
+        "oslanduse_updatedate": "2026-09-12",
+        "geometry_evidencedate": "2026-05-24",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": "INDUSTRY AND BUSINESS",
+        "description_updatedate": "2026-09-12",
+        "geometry_capturemethod": "Remote Sensing Survey",
+        "height_confidencelevel": "Moderate",
+        "oslandcover_updatedate": "2026-09-12",
+        "oslanduse_evidencedate": "2026-05-24",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2026-09-12",
+        "oslanduse_capturemethod": "Remote Sensing Survey",
+        "description_evidencedate": "2026-05-24",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2026-05-24",
+        "versionavailablefromdate": "2026-09-19T00:00:00Z",
+        "description_capturemethod": "Remote Sensing Survey",
+        "height_absoluteroofbase_m": 9.6,
+        "height_relativeroofbase_m": 5.2,
+        "oslandcover_capturemethod": "Remote Sensing Survey",
+        "smallestsite_landusetiera": "Commercial Activity: Other",
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": "C",
+        "address_primarydescription": "Commercial",
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "6fc226ff-130d-470b-a8a6-60d7469cc254",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537885.55,
+              178998.1
+            ],
+            [
+              537885.5,
+              178997.25
+            ],
+            [
+              537885.35,
+              178996.95
+            ],
+            [
+              537885.2,
+              178996.7
+            ],
+            [
+              537885.1,
+              178996.2
+            ],
+            [
+              537885.1,
+              178995.7
+            ],
+            [
+              537885.3,
+              178995.1
+            ],
+            [
+              537885.6,
+              178994.7
+            ],
+            [
+              537885.75,
+              178994.55
+            ],
+            [
+              537885.75,
+              178993.75
+            ],
+            [
+              537887.55,
+              178993.65
+            ],
+            [
+              537887.65,
+              178994.2
+            ],
+            [
+              537887.8,
+              178994.45
+            ],
+            [
+              537888,
+              178994.7
+            ],
+            [
+              537888.3,
+              178995
+            ],
+            [
+              537888.55,
+              178995.35
+            ],
+            [
+              537888.6,
+              178995.9
+            ],
+            [
+              537888.6,
+              178996.35
+            ],
+            [
+              537888.5,
+              178996.85
+            ],
+            [
+              537888.55,
+              178998
+            ],
+            [
+              537885.55,
+              178998.1
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "6fc226ff-130d-470b-a8a6-60d7469cc254",
+        "toid": "osgb1000041914294",
+        "theme": "Structures",
+        "status": null,
+        "istidal": false,
+        "nlud_code": "U100",
+        "changetype": "Modified Attributes",
+        "ishistoric": false,
+        "isobscured": false,
+        "name1_text": null,
+        "name2_text": null,
+        "description": "Chimney",
+        "versiondate": "2026-08-04",
+        "physicallevel": "Surface Level",
+        "sitereference": [],
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Commercial Activity: Industrial Or Manufacturing",
+        "oslandusetierb": [],
+        "geometry_area_m2": 12.666,
+        "name1_updatedate": null,
+        "name2_updatedate": null,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Structure"
+        ],
+        "height_updatedate": "2026-06-10",
+        "status_updatedate": "2004-12-01",
+        "name1_evidencedate": null,
+        "name2_evidencedate": null,
+        "associatedstructure": null,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2004-12-01",
+        "height_evidencedate": "2026-05-24",
+        "smallestsite_siteid": null,
+        "capturespecification": "Urban",
+        "height_absolutemax_m": 35.6,
+        "height_absolutemin_m": 5.4,
+        "height_relativemax_m": 30.2,
+        "oslanduse_updatedate": "2004-12-01",
+        "geometry_evidencedate": "2004-12-01",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": "INDUSTRY AND BUSINESS",
+        "description_updatedate": "2004-12-01",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": "Moderate",
+        "oslandcover_updatedate": "2004-12-01",
+        "oslanduse_evidencedate": "2004-12-01",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1988-04-20",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2004-12-01",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2004-12-01",
+        "versionavailablefromdate": "2026-08-05T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": 30.3,
+        "height_relativeroofbase_m": 24.9,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": null,
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": null,
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    }
+  ]
+}

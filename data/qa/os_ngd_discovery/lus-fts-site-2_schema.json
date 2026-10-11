@@ -1,0 +1,1091 @@
+{
+  "$id": "lus-fts-site-2.3",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "shortName": "Site",
+  "longName": "Site",
+  "description": "Polygon feature which represents the recognisable extent of certain types of function or activity. Examples include a caravan site, a university, and a railway centre.",
+  "majorVersion": 2,
+  "minorVersion": 3,
+  "versionSuffix": null,
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -8.82,
+          49.79,
+          1.92,
+          60.94
+        ]
+      ],
+      "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-09-07T00:00:00Z",
+          null
+        ]
+      ],
+      "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+    }
+  },
+  "properties": {
+    "osid": {
+      "originalName": "OSID",
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD.",
+      "type": "string",
+      "format": "uuid",
+      "maxLength": 36
+    },
+    "toid": {
+      "originalName": "TOID",
+      "description": "Topographic identifier (TOID) of the feature, as published in the OS MasterMap suite of products.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20
+    },
+    "versiondate": {
+      "originalName": "versionDate",
+      "description": "Date when the version was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "versionavailablefromdate": {
+      "originalName": "versionAvailableFromDate",
+      "description": "The date this version of the feature became the latest version.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "versionavailabletodate": {
+      "originalName": "versionAvailableToDate",
+      "description": "The date this version of the feature was superseded by an update or ceased to exist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "changetype": {
+      "originalName": "changeType",
+      "description": "The type of change that generated a new version of the feature.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "End Of Life",
+        "Modified Attributes",
+        "Modified Geometry",
+        "Modified Geometry And Attributes",
+        "Moved From A Different Feature Type",
+        "Moved To A Different Feature Type",
+        "New"
+      ]
+    },
+    "geometry": {
+      "originalName": "geometry",
+      "description": "Geometry for the feature.",
+      "type": "object",
+      "$ref": "https://geojson.org/schema/MultiPolygon.json",
+      "precision": 10,
+      "scale": 3
+    },
+    "geometry_area_m2": {
+      "originalName": "geometry_area_m2",
+      "description": "The measured area of the geometry in square metres.",
+      "type": "number",
+      "precision": 15,
+      "scale": 3
+    },
+    "geometry_evidencedate": {
+      "originalName": "geometry_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "geometry_updatedate": {
+      "originalName": "geometry_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "geometry_capturemethod": {
+      "originalName": "geometry_captureMethod",
+      "description": "Indication of the method used to capture or produce the data.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "theme": {
+      "originalName": "theme",
+      "description": "The OS NGD Theme to which the feature belongs.",
+      "type": "string",
+      "maxLength": 40,
+      "enum": [
+        "Address",
+        "Administrative and Statistical Units",
+        "Buildings",
+        "Geographical Names",
+        "Land",
+        "Land Use",
+        "Structures",
+        "Transport",
+        "Water"
+      ]
+    },
+    "description": {
+      "originalName": "description",
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "Abattoir",
+        "Abbey",
+        "Agriculture Services Site",
+        "Air Freight Terminal",
+        "Air Navigation Beacon",
+        "Air Passenger Terminal",
+        "Air Quality Monitoring Station",
+        "Air Traffic Control Centre",
+        "Air Transport Services Site",
+        "Aircraft Works",
+        "Airfield",
+        "Airport With Scheduled Services",
+        "Airport Without Scheduled Services",
+        "Airstrip",
+        "Allotments",
+        "Ambulance And Fire Station",
+        "Ambulance And Police Station",
+        "Ambulance Station",
+        "Ambulance, Fire And Police Station",
+        "Amenity And Open Space Site",
+        "Amphitheatre",
+        "Amusement And Show Place Site",
+        "Amusement Park",
+        "Animal Cemetery",
+        "Animal Cemetery And Crematorium",
+        "Animal Crematorium",
+        "Animal Training Site",
+        "Animal Treatment Site",
+        "Animal Welfare Site",
+        "Aquatic Animal Attraction",
+        "Arboretum",
+        "Art Gallery",
+        "Art Gallery And Library",
+        "Art Gallery And Library And Museum",
+        "Art Gallery And Museum",
+        "Arts Centre",
+        "Arts Centre And Museum",
+        "Athletics Ground",
+        "Athletics Stadium",
+        "Attraction Or Leisure Site",
+        "Aviary",
+        "Balancing Pond",
+        "Beach",
+        "Biogas Power Station",
+        "Boat Building Site",
+        "Boat Hire Site",
+        "Boat Lift",
+        "Boat Maintenance Or Storage Site",
+        "Boating Site",
+        "Botanical Garden",
+        "Bothy",
+        "Bowls Site",
+        "Brewery",
+        "Brick Works",
+        "Buddhist Temple",
+        "Burial Ground",
+        "Bus Depot",
+        "Bus Station",
+        "Business Or Industrial Park",
+        "Cable Terminal Station",
+        "Camp Site",
+        "Camping And Caravanning Site",
+        "Car Cleaning Site",
+        "Caravan Site",
+        "Castle",
+        "Cathedral",
+        "Cattery",
+        "Cattery And Kennels",
+        "Cement Works",
+        "Cemetery",
+        "Cemetery And Crematorium",
+        "Central Government Services",
+        "Chapel",
+        "Chapel Of Rest",
+        "Chemical Works",
+        "Children's Centre",
+        "Children's Nursery",
+        "Church",
+        "Cider Factory",
+        "Cinema",
+        "Cliff Railway",
+        "Climbing Hut",
+        "Coach And Commercial Vehicle Park",
+        "Coach Park",
+        "Coach Station",
+        "Coastguard Lookout",
+        "College",
+        "Commercial Fisheries",
+        "Commercial Hostel",
+        "Commercial Vehicle Park",
+        "Commercial Vehicle Service Area",
+        "Communal Residential Site",
+        "Community Meeting Place",
+        "Community Services",
+        "Conference Or Exhibition Centre",
+        "Construction Site",
+        "Consulate",
+        "Container Freight Terminal",
+        "Cooling Station",
+        "Crematorium",
+        "Cricket Ground (Participation)",
+        "Cricket Ground (Spectating)",
+        "Cricket Stadium",
+        "Crop Handling And Storage Site",
+        "Curling Rink",
+        "Customs Post",
+        "Cycle Hire Station",
+        "Cycling Sports Facility",
+        "Dairy Processing Site",
+        "Derelict Site",
+        "Detention Centre",
+        "Distillery",
+        "Distribution Or Storage Site",
+        "Docks",
+        "Dry Dock",
+        "Education Support Site",
+        "Educational Field Study Centre",
+        "Electricity Distribution Site",
+        "Electricity Storage Site",
+        "Electricity Sub Station",
+        "Embassy",
+        "Emergency Assistance Or Equipment Site",
+        "Equestrian Sports Facility",
+        "Farm Site",
+        "Ferry Passenger Terminal",
+        "Ferry Vehicular Terminal",
+        "Ferry Vehicular Terminal (International)",
+        "Filling Station",
+        "Filling Station And Post Office",
+        "Film Studio",
+        "Fire Service Training Site",
+        "Fire Station",
+        "Fire Station And Police Station",
+        "Fish Farm",
+        "Fish Hatchery",
+        "Fishing Lake",
+        "Flood Or Water Controlling Site",
+        "Flour Mill",
+        "Folly",
+        "Food Processing Site",
+        "Football Ground (Participation)",
+        "Football Ground (Spectating)",
+        "Football Stadium",
+        "Garden Centre",
+        "Garden Of Rest",
+        "Gas Distribution Or Storage Site",
+        "Gas Extraction Site",
+        "Gas Governor",
+        "Gas Production Site",
+        "Glassworks",
+        "Gliding Area",
+        "Go-Kart Track",
+        "Golf Centre",
+        "Golf Clubhouse",
+        "Golf Course",
+        "Golf Driving Range",
+        "Greyhound Track Or Stadium",
+        "Gurdwara",
+        "Health Centre",
+        "Heating Plant",
+        "Helicopter Station",
+        "Heliport",
+        "High Commission",
+        "Hill Carving",
+        "Hindu Temple",
+        "HM Coastguard Station",
+        "Hockey Ground",
+        "Holiday Accommodation",
+        "Holiday Centre",
+        "Horse Racing Course",
+        "Horse Racing Facility",
+        "Horse Racing Or Breeding Stables",
+        "Horticulture",
+        "Hospice",
+        "Hospital",
+        "Hotel",
+        "Hydroelectric Power Generating",
+        "Hydrogen Fuel Production And Supply",
+        "Ice Rink",
+        "Industry And Business Site",
+        "Inshore Rescue Boat Station",
+        "Kennels",
+        "Kingdom Hall",
+        "Knackery",
+        "Law Court",
+        "Leisure Or Sports Centre",
+        "Library",
+        "Library And Museum",
+        "Lifeboat Station",
+        "Light Rail Station",
+        "Lighthouse",
+        "Livestock Market",
+        "Local Government Site",
+        "Lock",
+        "Manufacturing Site",
+        "Marina",
+        "Maze",
+        "Medical Care Accommodation",
+        "Medical Care Site",
+        "Memorial",
+        "Memorial Gardens",
+        "Meteorological Station",
+        "Military Accommodation Site",
+        "Military Airfield",
+        "Military Cemetery",
+        "Military Docks",
+        "Military Range",
+        "Military Reserves Site",
+        "Military Site",
+        "Military Training Area",
+        "Mine",
+        "Mineral Distribution Or Storage Site",
+        "Mineral Processing Site",
+        "Minster",
+        "Mixed Use Site",
+        "Model Aircraft Flying Site",
+        "Model Boating Site",
+        "Model Car Racing Site",
+        "Model Village",
+        "Mortuary",
+        "Mosque",
+        "Motocross Circuit",
+        "Motor Sport Site",
+        "Multi-Purpose Community Site",
+        "Museum",
+        "Nautical Fuel Station",
+        "Nautical Navigation Beacon",
+        "Non Commercial Hostel",
+        "Observatory",
+        "Observing Station",
+        "Oil Distribution Centre",
+        "Oil Extraction Site",
+        "Oil Refinery",
+        "Oil Terminal",
+        "Outdoor Activity Centre",
+        "Paddling Pool",
+        "Paper Mill",
+        "Park And Ride Car Park",
+        "Peat Cuttings",
+        "Picnic Area",
+        "Pitch And Putt Course",
+        "Place Of Worship",
+        "Play Area",
+        "Playing Field",
+        "Police Headquarters",
+        "Police Station",
+        "Police Support Site",
+        "Post Office",
+        "Pottery",
+        "Pound",
+        "Power Station",
+        "Printing Works",
+        "Prison",
+        "Private Park Or Significant Garden",
+        "Private Residential Site",
+        "Professional Sports Training Ground",
+        "Public Car And Coach Park",
+        "Public Car And Commercial Vehicle Park",
+        "Public Car Park",
+        "Public Convenience",
+        "Public House",
+        "Public Park Or Garden",
+        "Public Recycling Site",
+        "Public Waste Disposal Site",
+        "Pumping Station",
+        "Pupil Referral Site",
+        "Putting Green",
+        "Quarry",
+        "Racquet Sports Club",
+        "Radar Station",
+        "Rail Freight Transport",
+        "Rail Maintenance Site",
+        "Railway Station",
+        "Railway Station (Not Publicly Accessible)",
+        "Railway Station (Preserved Line)",
+        "Railway Station (Principal)",
+        "Railway Station (Underground System)",
+        "Railway Stop (Amusement)",
+        "Railway Stop (Funicular)",
+        "Recreation Ground",
+        "Recreational Or Social Club",
+        "Recycling Site",
+        "Religious Community Site",
+        "Religious Meeting Place",
+        "Research Site",
+        "Retail Complex",
+        "Retail Site",
+        "Riding Stables",
+        "Road Freight Site",
+        "Road Maintenance Site",
+        "Rowing Club",
+        "Royal Palace",
+        "Rugby Ground (Spectating)",
+        "Rugby Pitch Or Ground (Participation)",
+        "Rugby Stadium",
+        "Sailing Centre",
+        "Satellite Earth Station",
+        "School",
+        "Secure Residential Site",
+        "Service Area",
+        "Sheep Dip",
+        "Shinty Site",
+        "Ship Passenger Terminal",
+        "Shipyard",
+        "Shooting Lodge",
+        "Shooting Range",
+        "Showground",
+        "Shrine",
+        "Skateboard Park",
+        "Ski Centre",
+        "Slate Mining",
+        "Smallholding",
+        "Social Care Services Site",
+        "Solar Power Site",
+        "Solid Fuel Distribution Or Storage Site",
+        "Speedway Track",
+        "Sports Ground (Spectating)",
+        "Sports Or Exercise Facility",
+        "Sports Pavilion",
+        "Sports Stadium",
+        "Steel Works",
+        "Stone Works",
+        "Stupa",
+        "Sugar Refinery",
+        "Swimming Pool",
+        "Synagogue",
+        "Telecommunications Site",
+        "Telephone Exchange",
+        "Television Studio",
+        "Tennis Site",
+        "Tenpin Bowling Centre",
+        "Theatre",
+        "Tidal Power Station",
+        "Timber Distribution Or Storage Site",
+        "Timber Mill",
+        "Tourist Attraction",
+        "Tourist Information Centre",
+        "Training Site",
+        "Travellers Site",
+        "Unclassified Site",
+        "University",
+        "University College",
+        "University Halls Of Residence",
+        "University School",
+        "University Sports Or Exercise Facility",
+        "University Support Site",
+        "Vehicle Charging Site",
+        "Vehicle Repair Garage",
+        "Vehicle Testing Site",
+        "Vehicular Rail Terminal",
+        "Ventilating Station",
+        "Visitor Information Centre",
+        "War Memorial",
+        "Waste Disposal Site",
+        "Waste Incineration Site",
+        "Waste Processing Site",
+        "Waste Water Treatment Works",
+        "Water Distribution Site",
+        "Water Monitoring Station",
+        "Water Sports Centre",
+        "Water Treatment Site",
+        "Weighbridge",
+        "Wholesale Food Market",
+        "Wildlife Observation Site",
+        "Wildlife Or Zoological Park",
+        "Wind Farm",
+        "Winery",
+        "Yacht Club",
+        "Youth Hostel",
+        "Youth Organisation Camp Site",
+        "Youth Recreational Or Social Club"
+      ]
+    },
+    "description_evidencedate": {
+      "originalName": "description_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "description_updatedate": {
+      "originalName": "description_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "description_capturemethod": {
+      "originalName": "description_captureMethod",
+      "description": "Indication of the method used to capture or produce the data.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "oslandusetiera": {
+      "originalName": "OSLandUseTierA",
+      "description": "A high-level description of the main activity that takes place at the location or that the feature supports.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "Agriculture Or Aquaculture",
+        "Attraction Or Activity",
+        "Commercial Activity: Animal Services",
+        "Commercial Activity: Distribution Or Storage",
+        "Commercial Activity: Industrial Or Manufacturing",
+        "Commercial Activity: Other",
+        "Commercial Activity: Retail",
+        "Community Services: Emergency Services",
+        "Community Services: Funerary",
+        "Community Services: Other",
+        "Community Services: Religious Worship",
+        "Construction",
+        "Defence",
+        "Education",
+        "Government Services",
+        "Historic",
+        "Medical Or Health Care",
+        "Mixed Use",
+        "Residential Accommodation",
+        "Sports Attraction Or Facility",
+        "Temporary Or Holiday Accommodation",
+        "Transport: Air",
+        "Transport: Rail",
+        "Transport: Road, Track Or Path",
+        "Transport: Water",
+        "Unknown Or Unused Artificial",
+        "Unknown Or Unused Natural",
+        "Unknown Use",
+        "Utility Or Environmental Protection"
+      ]
+    },
+    "oslandusetierb": {
+      "originalName": "OSLandUseTierB",
+      "description": "A detailed description of the main activity that takes place at the location or that the feature supports.",
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 4,
+      "items": {
+        "type": "string",
+        "maxLength": 200,
+        "enum": [
+          "Agriculture",
+          "Air Travel Interchange",
+          "Allotments",
+          "Ambulance Services",
+          "Aquaculture",
+          "Athletics",
+          "Bowls",
+          "Buddhist Temple",
+          "Bus Network Interchange",
+          "Camp Site",
+          "Caravan Site",
+          "Cathedral",
+          "Cemetery",
+          "Chapel",
+          "Chemical Processing",
+          "Church",
+          "Coach Network Interchange",
+          "Coastal Protection",
+          "Coastguard Services",
+          "Communal Residential",
+          "Community Meeting Place",
+          "Cricket",
+          "Cycling Sports",
+          "Diplomatic Services",
+          "Electricity Distribution",
+          "Energy Generation",
+          "Equestrian Sports",
+          "Ferry Terminal",
+          "Fire Services",
+          "First School",
+          "Fisheries",
+          "Fishing Sport",
+          "Flood Or Water Controlling",
+          "Football",
+          "Further Education",
+          "Gas Distribution Or Storage",
+          "Gas Extraction",
+          "Gas Production",
+          "Golf",
+          "Greyhound Racing",
+          "Gurdwara",
+          "Higher Education",
+          "Hindu Temple",
+          "Hockey",
+          "Holiday Accommodation",
+          "Holiday Centre",
+          "Horse Racing",
+          "Ice Sports",
+          "Infant School",
+          "Junior School",
+          "Kingdom Hall",
+          "Leisure Or Sports Centre",
+          "Lifeboat Services",
+          "Light Rail System Interchange",
+          "Mainline Railway Interchange",
+          "Mainline Railway Principal Interchange",
+          "Mainline Railway Station (Non Public Accessible)",
+          "Middle School",
+          "Mineral Or Fuel Extraction",
+          "Mosque",
+          "Motor Sports",
+          "Multi-Purpose Community Site",
+          "Non State Primary Or Preparatory School",
+          "Non State Secondary School",
+          "Observation",
+          "Oil Extraction",
+          "Oil Refinery",
+          "Oil Terminal",
+          "Outdoor Amenity",
+          "Place Of Worship",
+          "Police Services",
+          "Preserved Railway Interchange",
+          "Primary Health Care",
+          "Primary School",
+          "Prison Services",
+          "Private Residence",
+          "Pupil Referral",
+          "Racquet Sports",
+          "Rail Travel Interchange",
+          "Religious Meeting Place",
+          "Residential Garden",
+          "Rugby",
+          "School",
+          "School For Special Needs",
+          "Secondary Health Care",
+          "Secondary School",
+          "Shooting",
+          "Skiing",
+          "Stupa",
+          "Swimming Pool",
+          "Synagogue",
+          "Telecommunications",
+          "Underground Railway System Interchange",
+          "University",
+          "University Halls Of Residence",
+          "Waste Disposal",
+          "Waste Water Treatment",
+          "Water Distribution",
+          "Water Sports",
+          "Weather Observation"
+        ]
+      }
+    },
+    "oslanduse_evidencedate": {
+      "originalName": "OSLandUse_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "oslanduse_updatedate": {
+      "originalName": "OSLandUse_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "oslanduse_capturemethod": {
+      "originalName": "OSlanduse_captureMethod",
+      "description": "Indication of the method used to capture or produce the data.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "stakeholder": {
+      "originalName": "stakeholder",
+      "description": "The name of the main party operating the site, currently limited to information on universities and railway stations.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 150
+    },
+    "name1_text": {
+      "originalName": "name1_text",
+      "description": "Name assigned to identify the feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "name1_language": {
+      "originalName": "name1_language",
+      "description": "The language type associated with name1. The valid values are defined in the LanguageValue codelist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "name1_evidencedate": {
+      "originalName": "name1_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "name1_updatedate": {
+      "originalName": "name1_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "name2_text": {
+      "originalName": "name2_text",
+      "description": "The alternative language name assigned to identify the feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "name2_language": {
+      "originalName": "name2_language",
+      "description": "The language type associated with name2. The valid values are defined in the LanguageValue codelist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "name2_evidencedate": {
+      "originalName": "name2_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "name2_updatedate": {
+      "originalName": "name2_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "extentdefinition": {
+      "originalName": "extentdefinition",
+      "description": "The confidence in the quality of the geometry for the extent of a site or named area.",
+      "type": "string",
+      "maxLength": 30,
+      "enum": [
+        "Auto-Defined Complete",
+        "Manually Defined Complete",
+        "Manually Defined Incomplete"
+      ]
+    },
+    "matcheduprn": {
+      "originalName": "matchedUPRN",
+      "description": "The identifier of the NGD Address feature that has been identified as most likely to represent the same feature as the Site.",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "matcheduprn_method": {
+      "originalName": "matchedUPRNmethod",
+      "description": "A description of how the matchedUPRN has been identified.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 40,
+      "enum": [
+        "Matched Using Single Address",
+        "Matched Using Single Non-parent Address",
+        "Matched Using Classification",
+        "Matched Using Hierarchy",
+        "Matched Using Override"
+      ]
+    },
+    "address_classificationcode": {
+      "originalName": "address_classificationCode",
+      "description": "An alternative land use classification that uses a code defined in the Address/BS7666 schema. The value is derived by analysis of the attribution of NGD Address information that falls within the extent of the Site.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 2
+    },
+    "address_primarydescription": {
+      "originalName": "address_primaryDescription",
+      "description": "The description of the highest (least detailed) level of an alternative land use classification as defined in the Address/BS7666 schema. The value is derived by analysis of the attribution of NGD Address information that falls within the extent of the Site.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 120
+    },
+    "address_secondarydescription": {
+      "originalName": "address_secondaryDescription",
+      "description": "The description of the second level of an alternative land use classification as defined in the Address/BS7666 schema. The value is derived by analysis of the attribution of NGD Address information that falls within the extent of the Site.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 120
+    },
+    "address_classificationcorrelation": {
+      "originalName": "address_classificationCorrelation",
+      "description": "A description of how consistent the Address Classification recorded as addressLandUse_classificationCode, addressLandUse_primaryDescription and addressLandUse_secondaryDescription is when compared to the OS land use attribution of the Site. Where address_classificationsource is either ‘Child Address’ or ‘Multiple Addresses’ the classification correlation analysis is only carried out to the level of classification provided (Primary or Secondary), but where address_classificationsource is ’Matched UPRN’ the correlation analysis is carried out to the lowest level the address is classified to.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 15,
+      "enum": [
+        "Good",
+        "Acceptable",
+        "Discrepancy"
+      ]
+    },
+    "address_classificationsource": {
+      "originalName": "address_classificationSource",
+      "description": "A description of the derivation of the Address Classification recorded as addressLandUse_classificationCode, addressLandUse_primaryDescription and addressLandUse_secondaryDescription.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20,
+      "enum": [
+        "Matched UPRN",
+        "Child Address",
+        "Multiple Addresses"
+      ]
+    },
+    "addresscount_total": {
+      "originalName": "addressCount_total",
+      "description": "The total number of NGD addresses of any type that lie within the extent of the Site geometry.",
+      "type": "integer"
+    },
+    "addresscount_residential": {
+      "originalName": "addressCount_residential",
+      "description": "The total number of NGD addresses that have a primary classification of ‘Residential’ that lie within the extent of the Site geometry.",
+      "type": "integer"
+    },
+    "addresscount_commercial": {
+      "originalName": "addressCount_commercial",
+      "description": "The total number of NGD addresses that have a primary classification of ‘Commercial’ that lie within the extent of the Site geometry.",
+      "type": "integer"
+    },
+    "addresscount_other": {
+      "originalName": "addressCount_other",
+      "description": "The total number of NGD addresses that do not have a primary classification of either ‘Residential’ or ‘Commercial’ that lie within the extent of the Site geometry.",
+      "type": "integer"
+    },
+    "nlud_code": {
+      "originalName": "NLUD_code",
+      "description": "An alternative land use classification that uses a code defined in the National Land Use Database schema.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 4
+    },
+    "nlud_orderdescription": {
+      "originalName": "NLUD_orderDescription",
+      "description": "A description of the highest (least detailed) level of National Land Use Database classification.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 30
+    },
+    "nlud_groupdescription": {
+      "originalName": "NLUD_groupDescription",
+      "description": "A description of the most detailed level of National Land Use Database classification.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 40
+    },
+    "mainbuildingid": {
+      "originalName": "mainBuildingID",
+      "description": "The identifier of the NGD Building feature recognised as the principal building at the Site.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 36
+    },
+    "status": {
+      "originalName": "status",
+      "description": "The state of the Site in relation to either its physical condition or the activity the feature is intended to support.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20,
+      "enum": [
+        "Active",
+        "Derelict",
+        "Inactive",
+        "Under Construction",
+        "Unknown"
+      ]
+    },
+    "status_updatedate": {
+      "originalName": "status_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "sitetoaddressreference": {
+      "originalName": "SiteToAddressReference",
+      "description": "This attribute holds the cross reference table between Site and Address.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "uprn": {
+            "originalName": "uprn",
+            "description": "Unique Property Reference Number (UPRN) of the Address features that lie within the extent of the Site geometry.",
+            "type": "number"
+          },
+          "siteid": {
+            "originalName": "siteID",
+            "description": "The identifier for the Site feature.",
+            "type": "string",
+            "format": "uuid",
+            "maxLength": 36
+          },
+          "siteversiondate": {
+            "originalName": "siteVersionDate",
+            "description": "The date this version of the feature entered the OS National Geographic Database.",
+            "type": "string",
+            "format": "date"
+          },
+          "relationshiptype": {
+            "originalName": "relationshipType",
+            "description": "The type of relationship that has been formed between the source and target features, for example, Within or Same As.",
+            "type": "string",
+            "maxLength": 30,
+            "enum": [
+              "Within",
+              "Same As",
+              "Accessed From",
+              "Nearest"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "osid",
+    "toid",
+    "versiondate",
+    "versionavailablefromdate",
+    "versionavailabletodate",
+    "changetype",
+    "geometry",
+    "geometry_area_m2",
+    "geometry_evidencedate",
+    "geometry_updatedate",
+    "geometry_capturemethod",
+    "theme",
+    "description",
+    "description_evidencedate",
+    "description_updatedate",
+    "description_capturemethod",
+    "oslandusetiera",
+    "oslandusetierb",
+    "oslanduse_evidencedate",
+    "oslanduse_updatedate",
+    "oslanduse_capturemethod",
+    "stakeholder",
+    "name1_text",
+    "name1_language",
+    "name1_evidencedate",
+    "name1_updatedate",
+    "name2_text",
+    "name2_language",
+    "name2_evidencedate",
+    "name2_updatedate",
+    "extentdefinition",
+    "matcheduprn",
+    "matcheduprn_method",
+    "address_classificationcode",
+    "address_classificationcorrelation",
+    "address_classificationsource",
+    "address_primarydescription",
+    "address_secondarydescription",
+    "addresscount_total",
+    "addresscount_residential",
+    "addresscount_commercial",
+    "addresscount_other",
+    "nlud_code",
+    "nlud_orderdescription",
+    "nlud_groupdescription",
+    "mainbuildingid",
+    "status",
+    "status_updateDate",
+    "sitetoaddressreference"
+  ],
+  "additionalProperties": false
+}

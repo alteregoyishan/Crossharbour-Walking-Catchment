@@ -1,0 +1,117 @@
+dataset,check_category,record_id,issue,severity,details,next_step
+site,attribute_consistency,feature:row1,stated_area_differs_from_geometry,warning,"{""stated_ha"": 0.55, ""geometry_ha"": 0.4566144334875579, ""source_field"": ""note""}",Confirm the authoritative site area; preserve the supplied boundary until then
+schools,field_structure,100898:row69 | 100898:row70,duplicate_identifier,error,"{""field"": ""URN"", ""value"": ""100898"", ""rows"": [""100898:row69"", ""100898:row70""]}",Compare the records and retain or merge the correct record
+schools,spatial_location,132930:row22,unusable_coordinates,error,"{""easting"": NaN, ""northing"": NaN, ""reason"": [""missing""]}","Verify the address, then recover coordinates in the correction stage"
+schools,spatial_location,126586:row23,unusable_coordinates,error,"{""easting"": NaN, ""northing"": NaN, ""reason"": [""missing""]}","Verify the address, then recover coordinates in the correction stage"
+schools,spatial_location,152334:row28,unusable_coordinates,error,"{""easting"": NaN, ""northing"": NaN, ""reason"": [""missing""]}","Verify the address, then recover coordinates in the correction stage"
+schools,spatial_location,126578:row32,unusable_coordinates,error,"{""easting"": NaN, ""northing"": NaN, ""reason"": [""missing""]}","Verify the address, then recover coordinates in the correction stage"
+schools,spatial_location,133146:row45,unusable_coordinates,error,"{""easting"": NaN, ""northing"": NaN, ""reason"": [""missing""]}","Verify the address, then recover coordinates in the correction stage"
+schools,spatial_location,136096:row64,unusable_coordinates,error,"{""easting"": ""0"", ""northing"": ""0"", ""reason"": [""zero""]}","Verify the address, then recover coordinates in the correction stage"
+schools,spatial_location,137016:row65,unusable_coordinates,error,"{""easting"": NaN, ""northing"": NaN, ""reason"": [""missing""]}","Verify the address, then recover coordinates in the correction stage"
+schools,spatial_location,100675:row50 | 146221:row51,duplicate_coordinates,warning,"{""coordinates"": [536358.0, 177160.0], ""rows"": [""100675:row50"", ""146221:row51""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,100807:row61 | 137648:row62,duplicate_coordinates,warning,"{""coordinates"": [536369.0, 179935.0], ""rows"": [""100807:row61"", ""137648:row62""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,100900:row71 | 148681:row72,duplicate_coordinates,warning,"{""coordinates"": [536813.0, 180888.0], ""rows"": [""100900:row71"", ""148681:row72""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,134013:row20 | 100133:row27,duplicate_coordinates,warning,"{""coordinates"": [537289.0, 177940.0], ""rows"": [""134013:row20"", ""100133:row27""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,134827:row18 | 134431:row88,duplicate_coordinates,warning,"{""coordinates"": [537449.0, 177699.0], ""rows"": [""134827:row18"", ""134431:row88""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,100964:row77 | 139423:row81,duplicate_coordinates,warning,"{""coordinates"": [537507.0, 180862.0], ""rows"": [""100964:row77"", ""139423:row81""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,132553:row2 | 132640:row3 | 134387:row4 | 132573:row5 | 133992:row6 | 132572:row7 | 132591:row8 | 132590:row9 | 132574:row10 | 132552:row11 | 132557:row12 | 132593:row13 | 132575:row14 | 132678:row15 | 132639:row16 | 132674:row17,duplicate_coordinates,warning,"{""coordinates"": [538045.0, 179670.0], ""rows"": [""132553:row2"", ""132640:row3"", ""134387:row4"", ""132573:row5"", ""133992:row6"", ""132572:row7"", ""132591:row8"", ""132590:row9"", ""132574:row10"", ""132552:row11"", ""132557:row12"", ""132593:row13"", ""132575:row14"", ""132678:row15"", ""132639:row16"", ""132674:row17""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,100153:row29 | 100135:row30,duplicate_coordinates,warning,"{""coordinates"": [538073.0, 177440.0], ""rows"": [""100153:row29"", ""100135:row30""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,100932:row68 | 100898:row69 | 100898:row70,duplicate_coordinates,warning,"{""coordinates"": [538254.0, 179195.0], ""rows"": [""100932:row68"", ""100898:row69"", ""100898:row70""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,141039:row66 | 100954:row86,duplicate_coordinates,warning,"{""coordinates"": [538579.0, 178697.0], ""rows"": [""141039:row66"", ""100954:row86""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,100192:row43 | 147439:row44,duplicate_coordinates,warning,"{""coordinates"": [539630.0, 177440.0], ""rows"": [""100192:row43"", ""147439:row44""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,100111:row35 | 143211:row36,duplicate_coordinates,warning,"{""coordinates"": [539725.0, 179099.0], ""rows"": [""100111:row35"", ""143211:row36""]}",Check whether the schools share a site or a coordinate was copied
+schools,spatial_location,100130:row25 | 143597:row26,duplicate_coordinates,warning,"{""coordinates"": [540019.0, 178163.0], ""rows"": [""100130:row25"", ""143597:row26""]}",Check whether the schools share a site or a coordinate was copied
+schools,attribute_consistency,132553:row2,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132640:row3,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,134387:row4,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132573:row5,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,133992:row6,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132572:row7,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132591:row8,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132590:row9,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132574:row10,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132552:row11,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132557:row12,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132593:row13,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132575:row14,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132678:row15,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132639:row16,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132674:row17,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132930:row22,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,126586:row23,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,100133:row27,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,100153:row29,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,100135:row30,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,126578:row32,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,100207:row33,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,100097:row37,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,133797:row38,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,134334:row39,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,100102:row40,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,133146:row45,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,133875:row46,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,133876:row47,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,100107:row48,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,133086:row49,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,100667:row52,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,136096:row64,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,130418:row80,invalid_or_missing_capacity,warning,nan,Verify a whole number greater than or equal to 1
+schools,attribute_consistency,132553:row2,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132640:row3,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,134387:row4,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132573:row5,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,133992:row6,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132572:row7,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132591:row8,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132590:row9,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132574:row10,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132552:row11,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132557:row12,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132593:row13,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132575:row14,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132678:row15,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132639:row16,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132674:row17,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,134013:row20,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,132930:row22,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,126586:row23,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,100133:row27,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,152334:row28,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,100153:row29,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,100135:row30,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,126578:row32,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,100207:row33,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,100111:row35,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,133797:row38,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,134334:row39,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,133146:row45,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,133875:row46,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,133876:row47,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,100107:row48,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,133086:row49,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,100694:row57,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,100706:row60,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,100807:row61,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,136096:row64,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,137508:row73,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,100964:row77,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,130418:row80,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,134431:row88,invalid_or_missing_pupils,warning,nan,Verify a whole number greater than or equal to 0
+schools,attribute_consistency,100675:row50,pupils_exceed_capacity,warning,"{""pupils"": 463.0, ""capacity"": 420.0}",Verify both values
+schools,attribute_consistency,137441:row59,pupils_exceed_capacity,warning,"{""pupils"": 427.0, ""capacity"": 420.0}",Verify both values
+schools,attribute_consistency,137016:row65,pupils_exceed_capacity,warning,"{""pupils"": 298.0, ""capacity"": 280.0}",Verify both values
+schools,attribute_consistency,100974:row75,pupils_exceed_capacity,warning,"{""pupils"": 1256.0, ""capacity"": 1239.0}",Verify both values
+schools,attribute_consistency,100913:row78,pupils_exceed_capacity,warning,"{""pupils"": 400.0, ""capacity"": 390.0}",Verify both values
+schools,attribute_consistency,134387:row4,invalid_statutory_age_range,warning,"{""low_age"": NaN, ""high_age"": NaN}",Verify the statutory age range
+schools,attribute_consistency,133992:row6,invalid_statutory_age_range,warning,"{""low_age"": NaN, ""high_age"": NaN}",Verify the statutory age range
+schools,attribute_consistency,132678:row15,invalid_statutory_age_range,warning,"{""low_age"": NaN, ""high_age"": NaN}",Verify the statutory age range
+schools,attribute_consistency,132674:row17,invalid_statutory_age_range,warning,"{""low_age"": NaN, ""high_age"": NaN}",Verify the statutory age range
+schools,attribute_consistency,126586:row23,invalid_statutory_age_range,warning,"{""low_age"": NaN, ""high_age"": NaN}",Verify the statutory age range
+schools,attribute_consistency,126578:row32,invalid_statutory_age_range,warning,"{""low_age"": NaN, ""high_age"": NaN}",Verify the statutory age range
+schools,attribute_consistency,133797:row38,invalid_statutory_age_range,warning,"{""low_age"": NaN, ""high_age"": NaN}",Verify the statutory age range
+schools,attribute_consistency,133875:row46,invalid_statutory_age_range,warning,"{""low_age"": NaN, ""high_age"": NaN}",Verify the statutory age range
+schools,attribute_consistency,133876:row47,invalid_statutory_age_range,warning,"{""low_age"": NaN, ""high_age"": NaN}",Verify the statutory age range
+schools,attribute_consistency,133086:row49,invalid_statutory_age_range,warning,"{""low_age"": NaN, ""high_age"": NaN}",Verify the statutory age range
+schools,attribute_consistency,130418:row80,invalid_statutory_age_range,warning,"{""low_age"": ""14"", ""high_age"": ""99""}",Verify the statutory age range
+population,field_structure,E01035705:row66 | E01035705:row109,duplicate_identifier,error,"{""field"": ""LSOA21CD"", ""value"": ""E01035705"", ""rows"": [""E01035705:row66"", ""E01035705:row109""]}",Compare the records and retain or merge the correct record
+population,geometry_topology,E01035698:row103,invalid_geometry,error,Self-intersection[537608.519887765 179636.693765926],Repair the geometry and document the change

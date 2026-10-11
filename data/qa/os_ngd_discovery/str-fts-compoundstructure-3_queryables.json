@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://api.os.uk/features/ngd/ofa/v1/collections/str-fts-compoundstructure-3/queryables",
+  "type": "object",
+  "title": "Queryable attributes for str-fts-compoundstructure-3 collection",
+  "description": "This lists the attributes which can be filtered on and their types for str-fts-compoundstructure-3 collection.",
+  "properties": {
+    "osid": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 36,
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD."
+    },
+    "geometry_area_m2": {
+      "type": [
+        "number"
+      ],
+      "description": "The measured area of the geometry in square metres."
+    },
+    "description": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 50,
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "enumeration": true,
+      "enum": [
+        "Aqueduct",
+        "Breakwater",
+        "Bridge",
+        "Canal Tunnel",
+        "Clapper Bridge",
+        "Dam",
+        "Footbridge",
+        "Leisure Pier",
+        "Lift Bridge",
+        "Natural Subterranean Passage",
+        "Pedestrian Tunnel Or Subway",
+        "Rail Tunnel",
+        "Road Tunnel",
+        "Sluice",
+        "Swing Bridge",
+        "Tanker Berthing",
+        "Transporter Bridge",
+        "Tube Or Metro Tunnel",
+        "Underground Conduit",
+        "Underground Flood Relief Channel",
+        "Underpass",
+        "Viaduct",
+        "Watercourse Tunnel"
+      ]
+    },
+    "name1_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254,
+      "description": "Name assigned to identify the feature."
+    },
+    "name2_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254,
+      "description": "The alternative language name assigned to identify the feature."
+    },
+    "name3_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254,
+      "description": "The proper name of a feature, populated where at least three or more names have been captured for the same feature."
+    },
+    "name4_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254,
+      "description": "The proper name of a feature, populated where four names have been captured for the same feature."
+    },
+    "status": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 20,
+      "description": "The state of the feature in relation to either its physical condition or the activity the feature is intended to support.",
+      "enumeration": true,
+      "enum": [
+        "Active",
+        "Derelict",
+        "Inactive",
+        "Under Construction",
+        "Unknown"
+      ]
+    }
+  }
+}

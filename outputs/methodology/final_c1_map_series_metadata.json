@@ -1,0 +1,51 @@
+{
+  "created_at_utc": "2026-10-11T13:28:10.485283+00:00",
+  "selected_method": "C1 ordinary-Delaunay contour proxy",
+  "routing_modified": false,
+  "analysis_crs": "EPSG:27700",
+  "theoretical_circle_radius_m": 1200.0,
+  "theoretical_circle_diameter_m": 2400.0,
+  "reference_circle_minutes": 15,
+  "reference_circle_contains_15min_cartographic_catchment": true,
+  "school_marker_area_points_squared": 49.0,
+  "origin_marker_area_points_squared": 22.0,
+  "site_outline_colour": "#202428",
+  "site_outline_width_points": 0.9,
+  "all_cleaned_school_count": 42,
+  "individual_map_bounds_epsg27700": [
+    536506.9635523458,
+    178142.47736278502,
+    539589.3649050749,
+    180322.17546221497
+  ],
+  "cartographic_regularisation_m": 10.0,
+  "cartographic_simplify_tolerance_m": 10.0,
+  "network_inclusion_half_width_m": 2.0,
+  "display_network_inclusion_half_width_m": 6.0,
+  "circle_center_easting": 538019.9519511261,
+  "circle_center_northing": 179213.5984672705,
+  "map_outputs": [
+    "outputs/maps/figure_00a_site_origin_selection.png",
+    "outputs/maps/figure_00a_site_origin_selection.pdf",
+    "outputs/maps/figure_00b_all_cleaned_schools.png",
+    "outputs/maps/figure_00b_all_cleaned_schools.pdf",
+    "outputs/maps/figure_01_c1_05min.png",
+    "outputs/maps/figure_01_c1_05min.pdf",
+    "outputs/maps/figure_02_c1_10min.png",
+    "outputs/maps/figure_02_c1_10min.pdf",
+    "outputs/maps/figure_03_c1_15min.png",
+    "outputs/maps/figure_03_c1_15min.pdf",
+    "outputs/maps/figure_04_c1_combined.png",
+    "outputs/maps/figure_04_c1_combined.pdf",
+    "outputs/maps/figure_05_c1_combined_2400m_diameter.png",
+    "outputs/maps/figure_05_c1_combined_2400m_diameter.pdf"
+  ],
+  "obsolete_map_outputs_removed": [],
+  "surface": {
+    "sample_count": 8137,
+    "triangle_count": 16231,
+    "triangles_over_150m": 245,
+    "sample_spacing_m": 15.0,
+    "triangulation": "SciPy ordinary Delaunay; experimental C1 proxy"
+  }
+}

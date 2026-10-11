@@ -1,0 +1,7 @@
+method,area_method,catchment_area_ha,estimated_population,population_density_per_ha,population_baseline
+A,standard_area_weighting,69.43945540868282,8161.323441635878,117.53150127118326,ONS Census 2021
+A,water_adjusted_area_weighting,66.68634041097042,10129.079401825795,151.8913669486575,ONS Census 2021
+B,standard_area_weighting,74.4150448638987,8887.954399506101,119.43760049814811,ONS Census 2021
+B,water_adjusted_area_weighting,71.66192986618643,11058.68232771381,154.31739486172884,ONS Census 2021
+C,standard_area_weighting,67.93284573449674,8006.102041290174,117.85318213490686,ONS Census 2021
+C,water_adjusted_area_weighting,67.9328457344968,10508.321726800916,154.6869060641267,ONS Census 2021

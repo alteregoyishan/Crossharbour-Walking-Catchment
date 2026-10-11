@@ -1,0 +1,2 @@
+method,status,entrance_accessible_population,entrance_inaccessible_population,access_unknown_population,access_classified_population_pct,access_unknown_population_pct,associated_residential_building_pct,reason
+P5 entrance-accessible population,not_implemented_insufficient_coverage,,,,0.0,100.0,0.0267022696929239,Building Access Location coverage is insufficient and no automatic barrier-crossing network connectors are accepted; population is not classified as inaccessible merely because an entrance is absent.

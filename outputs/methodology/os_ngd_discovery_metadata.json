@@ -1,0 +1,44 @@
+{
+  "source": "OS NGD API \u2013 Features live discovery",
+  "base_endpoint": "https://api.os.uk/features/ngd/ofa/v1",
+  "run_at_utc": "2026-10-10T22:03:52.994571+00:00",
+  "project_key_source": "OS project key loaded from .env; value not recorded",
+  "api_key_recorded": false,
+  "collections_endpoint_http": 200,
+  "available_collection_count": 94,
+  "selected_collection_count": 12,
+  "missing_target_families": [],
+  "query_bbox_epsg27700": [
+    537642.2407061829,
+    178797.28748149032,
+    538415.7573578667,
+    179565.71239190214
+  ],
+  "site_buffer_m": 350,
+  "sample_limit_per_collection": 10,
+  "saved_sample_layers": [
+    "bld-fts-building-4",
+    "bld-fts-buildingpart-2",
+    "lus-fts-site-2",
+    "lus-fts-siteaccesslocation-2",
+    "lnd-fts-land-3",
+    "str-fts-structure-3",
+    "str-fts-compoundstructure-3",
+    "trn-fts-roadtrackorpath-3",
+    "trn-ntwk-pathlink-3",
+    "trn-ntwk-pavementlink-1"
+  ],
+  "conformance_http": 200,
+  "conformance_classes": [
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas3",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson",
+    "http://www.opengis.net/spec/ogcapi-features-2/1.0/conf/crs",
+    "http://www.opengis.net/spec/ogcapi-features-3/0.0/conf/filter",
+    "http://www.opengis.net/spec/ogcapi-features-3/0.0/conf/features-filter",
+    "http://www.opengis.net/spec/ogcapi-features-3/0.0/conf/simple-cql",
+    "http://www.opengis.net/spec/ogcapi-features-3/0.0/conf/cql-text",
+    "http://www.opengis.net/spec/ogcapi-features-3/0.0/conf/arrays"
+  ],
+  "existing_analysis_modified": false
+}

@@ -1,0 +1,16 @@
+check,count,status
+retained_schools,42,pass
+duplicate_URN,0,pass
+missing_coordinate,0,pass
+excluded_Closed,29,documented
+excluded_Duplicate,1,documented
+excluded_Overseas,15,documented
+missing_TypeOfEstablishment (name),0,review_attributes_only
+missing_StatutoryLowAge,4,review_attributes_only
+missing_StatutoryHighAge,4,review_attributes_only
+missing_SchoolCapacity,8,review_attributes_only
+missing_NumberOfPupils,6,review_attributes_only
+inconsistent_age_range,0,review_attributes_only
+pupils_exceed_capacity,4,review_attributes_only
+unverified_destinations,42,review
+candidate_within_2min_of_threshold,1,review

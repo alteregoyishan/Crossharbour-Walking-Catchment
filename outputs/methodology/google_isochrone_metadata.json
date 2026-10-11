@@ -1,0 +1,31 @@
+{
+  "source": "Google Maps Platform Isochrones API",
+  "endpoint": "https://isochrones.googleapis.com/v1/isochrones:generate",
+  "documentation": "https://developers.google.com/maps/documentation/isochrones",
+  "acquired_at_utc": "2026-10-10T22:05:57.343607+00:00",
+  "requests": 6,
+  "origins": [
+    "A",
+    "B"
+  ],
+  "minutes": [
+    5,
+    10,
+    15
+  ],
+  "request_parameters": {
+    "travelMode": "WALK",
+    "travelDirection": "FROM",
+    "routingPreference": "TRAFFIC_UNAWARE",
+    "enableSmoothing": false,
+    "polygonFidelity": "HIGH"
+  },
+  "combination": "A and B requested separately; union at each duration to represent min(T_A,T_B).",
+  "api_key_recorded": false,
+  "derived_display_output": {
+    "file": "/Users/yishan/code/Crossharbour-Walking-Catchment/outputs/gis/google_walking_isochrones_land_only.gpkg",
+    "layer": "combined_land_only",
+    "treatment": "Selected OSM water polygons subtracted for display only; raw Google outputs preserved.",
+    "new_google_requests": 0
+  }
+}

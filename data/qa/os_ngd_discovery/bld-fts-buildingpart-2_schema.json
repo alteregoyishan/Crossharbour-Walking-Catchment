@@ -1,0 +1,1135 @@
+{
+  "$id": "bld-fts-buildingpart-2.2",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "shortName": "BuildingPart",
+  "longName": "Building Part",
+  "description": "Polygon feature representing either a complete separate building, or part of a larger building where internal divisions exist from ground to roof level which can be identified externally. Examples of Building Part features include a multistorey car park, a castle or a windmill.",
+  "majorVersion": 2,
+  "minorVersion": 2,
+  "versionSuffix": null,
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -8.82,
+          49.79,
+          1.92,
+          60.94
+        ]
+      ],
+      "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2024-09-25T00:00:00Z",
+          null
+        ]
+      ],
+      "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+    }
+  },
+  "properties": {
+    "osid": {
+      "originalName": "OSID",
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD.",
+      "type": "string",
+      "format": "uuid",
+      "maxLength": 36
+    },
+    "toid": {
+      "originalName": "TOID",
+      "description": "Topographic identifier (TOID) of the feature, as published in the OS MasterMap suite of products.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20
+    },
+    "versiondate": {
+      "originalName": "versionDate",
+      "description": "Date when the version was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "versionavailablefromdate": {
+      "originalName": "versionAvailableFromDate",
+      "description": "The date this version of the feature became the latest version.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "versionavailabletodate": {
+      "originalName": "versionAvailableToDate",
+      "description": "The date this version of the feature was superseded by an update or ceased to exist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "firstdigitalcapturedate": {
+      "originalName": "firstDigitalCaptureDate",
+      "description": "Represents the date on which a feature was first digitised by Ordnance Survey.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "changetype": {
+      "originalName": "changeType",
+      "description": "The type of change that generated a new version of the feature.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "End Of Life",
+        "Modified Attributes",
+        "Modified Geometry",
+        "Modified Geometry And Attributes",
+        "Moved From A Different Feature Type",
+        "Moved To A Different Feature Type",
+        "New"
+      ]
+    },
+    "geometry": {
+      "originalName": "geometry",
+      "description": "Geometry for the feature.",
+      "type": "object",
+      "$ref": "https://geojson.org/schema/Polygon.json",
+      "precision": 10,
+      "scale": 3
+    },
+    "geometry_area_m2": {
+      "originalName": "geometry_area_m2",
+      "description": "The measured area of the geometry in square metres.",
+      "type": "number",
+      "precision": 15,
+      "scale": 3
+    },
+    "geometry_evidencedate": {
+      "originalName": "geometry_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "geometry_updatedate": {
+      "originalName": "geometry_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "geometry_capturemethod": {
+      "originalName": "geometry_captureMethod",
+      "description": "Indication of the method used to capture or produce the data.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "theme": {
+      "originalName": "theme",
+      "description": "The OS NGD Theme to which the feature belongs.",
+      "type": "string",
+      "maxLength": 40,
+      "enum": [
+        "Address",
+        "Administrative and Statistical Units",
+        "Buildings",
+        "Geographical Names",
+        "Land",
+        "Land Use",
+        "Structures",
+        "Transport",
+        "Water"
+      ]
+    },
+    "description": {
+      "originalName": "description",
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "Air Traffic Control Tower",
+        "Arch",
+        "Archway",
+        "Bell Tower",
+        "Boat House",
+        "Bore Hole",
+        "Building",
+        "Building And Dovecot",
+        "Building And Light",
+        "Building And Made Surface",
+        "Building Under Construction",
+        "Building With Car Park On Roof",
+        "Building With Path on Roof",
+        "Cable Bridge",
+        "Castle",
+        "Castle Wall",
+        "Clock Tower",
+        "Columbarium",
+        "Crypt",
+        "Floating Structure",
+        "Fog Horn",
+        "Gantry",
+        "Hide",
+        "Kiln",
+        "Lift",
+        "Lighthouse",
+        "Lych Gate",
+        "Martello Tower",
+        "Motor Vehicle Weighbridge",
+        "Multistorey Car Park",
+        "Pagoda",
+        "Pergola",
+        "Police Call Box",
+        "Rail Vehicle Weighbridge",
+        "Roofed Bandstand",
+        "Roofed Chimney",
+        "Roofed Clock Tower",
+        "Roofed Leat",
+        "Roofed Outfall",
+        "Roofed Shaft",
+        "Roofed Tower",
+        "Roofed Well",
+        "Ruined Building",
+        "Shelter",
+        "Signal Box",
+        "Stand",
+        "Static Caravan Or Mobile Home",
+        "Supported Roofed Conveyor",
+        "Telecommunications Mast",
+        "Terraces",
+        "Tomb",
+        "Travelling Crane",
+        "Vehicle Dip",
+        "Ventilation Shaft",
+        "Water Pumping Chamber",
+        "Water Tower",
+        "Waterwheel",
+        "Weir",
+        "Well",
+        "Wheel House",
+        "Wind Pump",
+        "Windmill"
+      ]
+    },
+    "description_evidencedate": {
+      "originalName": "description_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "description_updatedate": {
+      "originalName": "description_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "description_capturemethod": {
+      "originalName": "description_captureMethod",
+      "description": "Indication of the method used to capture or produce the data.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "oslandcovertiera": {
+      "originalName": "OSLandCoverTierA",
+      "description": "A high-level description of the land cover; more detail is provided in the oslandcovertierb attribute.",
+      "type": "string",
+      "maxLength": 20,
+      "enum": [
+        "Constructed",
+        "Under Construction"
+      ]
+    },
+    "oslandcovertierb": {
+      "originalName": "OSLandCoverTierB",
+      "description": "A detailed description of the land cover type. Up to five distinct land cover types can be applied.",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": {
+        "type": "string",
+        "maxLength": 20,
+        "enum": [
+          "Building",
+          "Made Sealed",
+          "Under Construction"
+        ]
+      }
+    },
+    "oslandcover_evidencedate": {
+      "originalName": "OSLandCover_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "oslandcover_updatedate": {
+      "originalName": "OSLandCover_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "oslandcover_capturemethod": {
+      "originalName": "OSlandcover_captureMethod",
+      "description": "Indication of the method used to capture or produce the data.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "oslandusetiera": {
+      "originalName": "OSLandUseTierA",
+      "description": "A high-level description of the main activity that takes place at the location or that the feature supports.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "Agriculture Or Aquaculture",
+        "Attraction Or Activity",
+        "Commercial Activity: Animal Services",
+        "Commercial Activity: Distribution Or Storage",
+        "Commercial Activity: Industrial Or Manufacturing",
+        "Commercial Activity: Other",
+        "Commercial Activity: Retail",
+        "Community Services: Emergency Services",
+        "Community Services: Funerary",
+        "Community Services: Other",
+        "Community Services: Religious Worship",
+        "Construction",
+        "Defence",
+        "Education",
+        "Government Services",
+        "Historic",
+        "Medical Or Health Care",
+        "Mixed Use",
+        "Residential Accommodation",
+        "Sports Attraction Or Facility",
+        "Temporary Or Holiday Accommodation",
+        "Transport: Air",
+        "Transport: Rail",
+        "Transport: Road, Track Or Path",
+        "Transport: Water",
+        "Unknown Or Unused Artificial",
+        "Unknown Or Unused Natural",
+        "Unknown Use",
+        "Utility Or Environmental Protection"
+      ]
+    },
+    "oslandusetierb": {
+      "originalName": "OSLandUseTierB",
+      "description": "A detailed description of the main activity that takes place at the location or that the feature supports.",
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 2,
+      "items": {
+        "type": "string",
+        "maxLength": 200,
+        "enum": [
+          "Agriculture",
+          "Air Travel Interchange",
+          "Allotments",
+          "Ambulance Services",
+          "Aquaculture",
+          "Athletics",
+          "Bowls",
+          "Buddhist Temple",
+          "Bus Network Interchange",
+          "Camp Site",
+          "Caravan Site",
+          "Cathedral",
+          "Cemetery",
+          "Chapel",
+          "Chemical Processing",
+          "Church",
+          "Coach Network Interchange",
+          "Coastal Protection",
+          "Coastguard Services",
+          "Communal Residential",
+          "Community Meeting Place",
+          "Cricket",
+          "Cycling Sports",
+          "Diplomatic Services",
+          "Electricity Distribution",
+          "Energy Generation",
+          "Equestrian Sports",
+          "Ferry Terminal",
+          "Fire Services",
+          "First School",
+          "Fisheries",
+          "Fishing Sport",
+          "Flood Or Water Controlling",
+          "Football",
+          "Further Education",
+          "Gas Distribution Or Storage",
+          "Gas Extraction",
+          "Gas Production",
+          "Golf",
+          "Greyhound Racing",
+          "Gurdwara",
+          "Higher Education",
+          "Hindu Temple",
+          "Hockey",
+          "Holiday Accommodation",
+          "Holiday Centre",
+          "Horse Racing",
+          "Ice Sports",
+          "Infant School",
+          "Junior School",
+          "Kingdom Hall",
+          "Leisure Or Sports Centre",
+          "Lifeboat Services",
+          "Light Rail System Interchange",
+          "Mainline Railway Interchange",
+          "Mainline Railway Principal Interchange",
+          "Mainline Railway Station (Non Public Accessible)",
+          "Middle School",
+          "Mineral Or Fuel Extraction",
+          "Mosque",
+          "Motor Sports",
+          "Multi-Purpose Community Site",
+          "Non State Primary Or Preparatory School",
+          "Non State Secondary School",
+          "Observation",
+          "Oil Extraction",
+          "Oil Refinery",
+          "Oil Terminal",
+          "Outdoor Amenity",
+          "Place Of Worship",
+          "Police Services",
+          "Preserved Railway Interchange",
+          "Primary Health Care",
+          "Primary School",
+          "Prison Services",
+          "Private Residence",
+          "Pupil Referral",
+          "Racquet Sports",
+          "Rail Travel Interchange",
+          "Religious Meeting Place",
+          "Residential Garden",
+          "Rugby",
+          "School",
+          "School For Special Needs",
+          "Secondary Health Care",
+          "Secondary School",
+          "Shooting",
+          "Skiing",
+          "Stupa",
+          "Swimming Pool",
+          "Synagogue",
+          "Telecommunications",
+          "Underground Railway System Interchange",
+          "University",
+          "University Halls Of Residence",
+          "Waste Disposal",
+          "Waste Water Treatment",
+          "Water Distribution",
+          "Water Sports",
+          "Weather Observation"
+        ]
+      }
+    },
+    "oslanduse_evidencedate": {
+      "originalName": "OSLandUse_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "oslanduse_updatedate": {
+      "originalName": "OSLandUse_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "oslanduse_capturemethod": {
+      "originalName": "OSlanduse_captureMethod",
+      "description": "Indication of the method used to capture or produce the data.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "height_absoluteroofbase_m": {
+      "originalName": "height_absoluteRoofBase_m",
+      "description": "The height, above datum, of the base of the roof, that is, where the roof intersects the building walls.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 5,
+      "scale": 1
+    },
+    "height_relativeroofbase_m": {
+      "originalName": "height_relativeRoofBase_m",
+      "description": "The difference in height between the intersection of the external building walls and the underlying ground surface and the base of the roof of the building.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 4,
+      "scale": 1
+    },
+    "height_absolutemax_m": {
+      "originalName": "height_absoluteMax_m",
+      "description": "The height, above datum, of the highest point of the building, this could include a chimney or other structure on a building.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 5,
+      "scale": 1
+    },
+    "height_relativemax_m": {
+      "originalName": "height_relativeMax_m",
+      "description": "The difference in height between the intersection of the external building walls and the underlying ground surface and the highest point on the building.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 4,
+      "scale": 1
+    },
+    "height_absolutemin_m": {
+      "originalName": "height_absoluteMin_m",
+      "description": "The height, above datum, of the underlying ground surface.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 5,
+      "scale": 1
+    },
+    "height_confidencelevel": {
+      "originalName": "height_confidenceLevel",
+      "description": "The confidence in the quality of the height attributes for the building or structure expressed in qualitative terms.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 15,
+      "enum": [
+        "High",
+        "Incomplete",
+        "Low",
+        "Moderate",
+        "Not Assessed"
+      ]
+    },
+    "height_evidencedate": {
+      "originalName": "height_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "height_updatedate": {
+      "originalName": "height_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "associatedstructure": {
+      "originalName": "associatedStructure",
+      "description": "Indicates whether the feature is part of a larger structure and the nature of the structure, for example a dam, bridge or breakwater.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 25,
+      "enum": [
+        "Aqueduct",
+        "Breakwater",
+        "Bridge",
+        "Clapper Bridge",
+        "Dam",
+        "Footbridge",
+        "Leisure Pier",
+        "Lift Bridge",
+        "Sluice",
+        "Swing Bridge",
+        "Tanker Berthing",
+        "Transporter Bridge",
+        "Underpass",
+        "Viaduct"
+      ]
+    },
+    "isobscured": {
+      "originalName": "isObscured",
+      "description": "An indicator that the feature is at ground level but lies below another feature represented in the data. For example a road with a bridge over it will have the attribute set to 'True'.",
+      "type": "boolean",
+      "default": false
+    },
+    "physicallevel": {
+      "originalName": "physicalLevel",
+      "description": "The relative relationship of the feature to ground surface level, where ground surface level is the lowest identifiable level that is not underground.",
+      "type": "string",
+      "maxLength": 15,
+      "enum": [
+        "Level 1",
+        "Level 2",
+        "Level 3",
+        "Overhead",
+        "Surface Level",
+        "Underground"
+      ]
+    },
+    "capturespecification": {
+      "originalName": "captureSpecification",
+      "description": "Indicates the capture specification used by OS when capturing the feature. This could either be Urban, Rural or Moorland.",
+      "type": "string",
+      "maxLength": 10,
+      "enum": [
+        "Moorland",
+        "Rural",
+        "Urban"
+      ]
+    },
+    "containingsitecount": {
+      "originalName": "containingSiteCount",
+      "description": "A count of the number of Land Use Sites the feature lies within.",
+      "type": "integer"
+    },
+    "smallestsite_siteid": {
+      "originalName": "smallestSite_siteID",
+      "description": "The identifier of the smallest Land Use Site feature that the topographic area feature lies within.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 36
+    },
+    "smallestsite_landusetiera": {
+      "originalName": "smallestSite_landUseTierA",
+      "description": "A high-level description of the main activity that takes place at the location of the smallest Land Use Site feature the feature lies within, if any.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 50,
+      "enum": [
+        "Agriculture Or Aquaculture",
+        "Attraction Or Activity",
+        "Commercial Activity: Animal Services",
+        "Commercial Activity: Distribution Or Storage",
+        "Commercial Activity: Industrial Or Manufacturing",
+        "Commercial Activity: Other",
+        "Commercial Activity: Retail",
+        "Community Services: Emergency Services",
+        "Community Services: Funerary",
+        "Community Services: Other",
+        "Community Services: Religious Worship",
+        "Construction",
+        "Defence",
+        "Education",
+        "Government Services",
+        "Historic",
+        "Medical Or Health Care",
+        "Mixed Use",
+        "Residential Accommodation",
+        "Sports Attraction Or Facility",
+        "Temporary Or Holiday Accommodation",
+        "Transport: Air",
+        "Transport: Rail",
+        "Transport: Road, Track Or Path",
+        "Transport: Water",
+        "Unknown Or Unused Artificial",
+        "Unknown Or Unused Natural",
+        "Unknown Use",
+        "Utility Or Environmental Protection"
+      ]
+    },
+    "smallestsite_landusetierb": {
+      "originalName": "smallestSite_landUseTierB",
+      "description": "A more detailed description of the main activity that takes place at the location of the smallest Land Use Site feature the feature lies within, if any.",
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 2,
+      "items": {
+        "type": "string",
+        "maxLength": 200,
+        "enum": [
+          "Agriculture",
+          "Air Travel Interchange",
+          "Allotments",
+          "Ambulance Services",
+          "Aquaculture",
+          "Athletics",
+          "Bowls",
+          "Buddhist Temple",
+          "Bus Network Interchange",
+          "Camp Site",
+          "Caravan Site",
+          "Cathedral",
+          "Cemetery",
+          "Chapel",
+          "Chemical Processing",
+          "Church",
+          "Coach Network Interchange",
+          "Coastal Protection",
+          "Coastguard Services",
+          "Communal Residential",
+          "Community Meeting Place",
+          "Cricket",
+          "Cycling Sports",
+          "Diplomatic Services",
+          "Electricity Distribution",
+          "Energy Generation",
+          "Equestrian Sports",
+          "Ferry Terminal",
+          "Fire Services",
+          "First School",
+          "Fisheries",
+          "Fishing Sport",
+          "Flood Or Water Controlling",
+          "Football",
+          "Further Education",
+          "Gas Distribution Or Storage",
+          "Gas Extraction",
+          "Gas Production",
+          "Golf",
+          "Greyhound Racing",
+          "Gurdwara",
+          "Higher Education",
+          "Hindu Temple",
+          "Hockey",
+          "Holiday Accommodation",
+          "Holiday Centre",
+          "Horse Racing",
+          "Ice Sports",
+          "Infant School",
+          "Junior School",
+          "Kingdom Hall",
+          "Leisure Or Sports Centre",
+          "Lifeboat Services",
+          "Light Rail System Interchange",
+          "Mainline Railway Interchange",
+          "Mainline Railway Principal Interchange",
+          "Mainline Railway Station (Non Public Accessible)",
+          "Middle School",
+          "Mineral Or Fuel Extraction",
+          "Mosque",
+          "Motor Sports",
+          "Multi-Purpose Community Site",
+          "Non State Primary Or Preparatory School",
+          "Non State Secondary School",
+          "Observation",
+          "Oil Extraction",
+          "Oil Refinery",
+          "Oil Terminal",
+          "Outdoor Amenity",
+          "Place Of Worship",
+          "Police Services",
+          "Preserved Railway Interchange",
+          "Primary Health Care",
+          "Primary School",
+          "Prison Services",
+          "Private Residence",
+          "Pupil Referral",
+          "Racquet Sports",
+          "Rail Travel Interchange",
+          "Religious Meeting Place",
+          "Residential Garden",
+          "Rugby",
+          "School",
+          "School For Special Needs",
+          "Secondary Health Care",
+          "Secondary School",
+          "Shooting",
+          "Skiing",
+          "Stupa",
+          "Swimming Pool",
+          "Synagogue",
+          "Telecommunications",
+          "Underground Railway System Interchange",
+          "University",
+          "University Halls Of Residence",
+          "Waste Disposal",
+          "Waste Water Treatment",
+          "Water Distribution",
+          "Water Sports",
+          "Weather Observation"
+        ]
+      }
+    },
+    "largestsite_landusetiera": {
+      "originalName": "largestSite_landUseTierA",
+      "description": "A high-level description of the main activity that takes place at the location of the largest Land Use Site feature the feature lies within, if any.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 50,
+      "enum": [
+        "Agriculture Or Aquaculture",
+        "Attraction Or Activity",
+        "Commercial Activity: Animal Services",
+        "Commercial Activity: Distribution Or Storage",
+        "Commercial Activity: Industrial Or Manufacturing",
+        "Commercial Activity: Other",
+        "Commercial Activity: Retail",
+        "Community Services: Emergency Services",
+        "Community Services: Funerary",
+        "Community Services: Other",
+        "Community Services: Religious Worship",
+        "Construction",
+        "Defence",
+        "Education",
+        "Government Services",
+        "Historic",
+        "Medical Or Health Care",
+        "Mixed Use",
+        "Residential Accommodation",
+        "Sports Attraction Or Facility",
+        "Temporary Or Holiday Accommodation",
+        "Transport: Air",
+        "Transport: Rail",
+        "Transport: Road, Track Or Path",
+        "Transport: Water",
+        "Unknown Or Unused Artificial",
+        "Unknown Or Unused Natural",
+        "Unknown Use",
+        "Utility Or Environmental Protection"
+      ]
+    },
+    "largestsite_landusetierb": {
+      "originalName": "largestSite_landUseTierB",
+      "description": "A more detailed description of the main activity that takes place at the location of the largest Land Use Site feature the feature lies within, if any.",
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 2,
+      "items": {
+        "type": "string",
+        "maxLength": 200,
+        "enum": [
+          "Agriculture",
+          "Air Travel Interchange",
+          "Allotments",
+          "Ambulance Services",
+          "Aquaculture",
+          "Athletics",
+          "Bowls",
+          "Buddhist Temple",
+          "Bus Network Interchange",
+          "Camp Site",
+          "Caravan Site",
+          "Cathedral",
+          "Cemetery",
+          "Chapel",
+          "Chemical Processing",
+          "Church",
+          "Coach Network Interchange",
+          "Coastal Protection",
+          "Coastguard Services",
+          "Communal Residential",
+          "Community Meeting Place",
+          "Cricket",
+          "Cycling Sports",
+          "Diplomatic Services",
+          "Electricity Distribution",
+          "Energy Generation",
+          "Equestrian Sports",
+          "Ferry Terminal",
+          "Fire Services",
+          "First School",
+          "Fisheries",
+          "Fishing Sport",
+          "Flood Or Water Controlling",
+          "Football",
+          "Further Education",
+          "Gas Distribution Or Storage",
+          "Gas Extraction",
+          "Gas Production",
+          "Golf",
+          "Greyhound Racing",
+          "Gurdwara",
+          "Higher Education",
+          "Hindu Temple",
+          "Hockey",
+          "Holiday Accommodation",
+          "Holiday Centre",
+          "Horse Racing",
+          "Ice Sports",
+          "Infant School",
+          "Junior School",
+          "Kingdom Hall",
+          "Leisure Or Sports Centre",
+          "Lifeboat Services",
+          "Light Rail System Interchange",
+          "Mainline Railway Interchange",
+          "Mainline Railway Principal Interchange",
+          "Mainline Railway Station (Non Public Accessible)",
+          "Middle School",
+          "Mineral Or Fuel Extraction",
+          "Mosque",
+          "Motor Sports",
+          "Multi-Purpose Community Site",
+          "Non State Primary Or Preparatory School",
+          "Non State Secondary School",
+          "Observation",
+          "Oil Extraction",
+          "Oil Refinery",
+          "Oil Terminal",
+          "Outdoor Amenity",
+          "Place Of Worship",
+          "Police Services",
+          "Preserved Railway Interchange",
+          "Primary Health Care",
+          "Primary School",
+          "Prison Services",
+          "Private Residence",
+          "Pupil Referral",
+          "Racquet Sports",
+          "Rail Travel Interchange",
+          "Religious Meeting Place",
+          "Residential Garden",
+          "Rugby",
+          "School",
+          "School For Special Needs",
+          "Secondary Health Care",
+          "Secondary School",
+          "Shooting",
+          "Skiing",
+          "Stupa",
+          "Swimming Pool",
+          "Synagogue",
+          "Telecommunications",
+          "Underground Railway System Interchange",
+          "University",
+          "University Halls Of Residence",
+          "Waste Disposal",
+          "Waste Water Treatment",
+          "Water Distribution",
+          "Water Sports",
+          "Weather Observation"
+        ]
+      }
+    },
+    "nlud_code": {
+      "originalName": "NLUD_code",
+      "description": "An alternative land use classification that uses a code defined in the National Land Use Database schema. Populated in the first instance from the land use of the largest Land Use Site (if any) that the feature lies within, and if that does not apply, then by any land use implicit in the nature of the feature itself.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 4
+    },
+    "nlud_orderdescription": {
+      "originalName": "NLUD_orderDescription",
+      "description": "A description of the highest (least detailed) level of an alternative land use classification as defined in the National Land Use Database schema. Populated in the first instance from the land use of the largest Land Use Site (if any) that the feature lies within, and if that does not apply, then by any land use implicit in the nature of the feature itself.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 30
+    },
+    "nlud_groupdescription": {
+      "originalName": "NLUD_groupDescription",
+      "description": "A description of the second level of an alternative land use classification as defined in the National Land Use Database schema. Populated in the first instance from the land use of the largest Land Use Site (if any) that the feature lies within, and if that does not apply, then by any land use implicit in the nature of the feature itself.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 40
+    },
+    "address_classificationcode": {
+      "originalName": "address_classificationCode",
+      "description": "An alternative land use classification that uses a code defined in the Address/BS7666 schema. Populated only where local authority address information lies within a Land Use Site that the feature also falls within. The value is derived by analysis of the attribution of Address information that falls within the extent of the smallest Land Use Site that the feature lies within.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 2
+    },
+    "address_primarydescription": {
+      "originalName": "address_primaryDescription",
+      "description": "The description of the highest (least detailed) level of an alternative land use classification as defined in the Address/BS7666 schema. Populated only where local authority address information lies within a Land Use Site that the feature also falls within. The value is derived by analysis of the attribution of Address information that falls within the extent of the smallest Land Use Site that the feature lies within.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 120
+    },
+    "address_secondarydescription": {
+      "originalName": "address_secondaryDescription",
+      "description": "The description of the second level of an alternative land use classification as defined in the Address/BS7666 schema. Populated only where local authority address information lies within a Land Use Site that the feature also falls within. The value is derived by analysis of the attribution of Address information that falls within the extent of the smallest Land Use Site that the feature lies within.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 120
+    },
+    "lowertierlocalauthority_gsscode": {
+      "originalName": "lowerTierLocalAuthority_gssCode",
+      "description": "The unique identifier of the Lower Tier Local Authority administrative area provided by the Office for National Statistics that the Topographic feature lies within. Where a Topographic area falls into more than one Lower Tier Local Authority, then it will be assigned to the Lower Tier Local Authority that the majority of its area lies within. Where a Topographic area falls outside any Lower Tier Local Authority (for example, an offshore feature), then no code will be provided.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10
+    },
+    "lowertierlocalauthority_count": {
+      "originalName": "lowerTierLocalAuthority_count",
+      "description": "The total number of Lower Tier Local Authority administrative areas the feature lies within.",
+      "type": "integer"
+    },
+    "status": {
+      "originalName": "status",
+      "description": "The state of the feature in relation to either its physical condition or the activity the feature is intended to support.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20,
+      "enum": [
+        "Active",
+        "Derelict",
+        "Inactive",
+        "Under Construction",
+        "Unknown"
+      ]
+    },
+    "status_updatedate": {
+      "originalName": "status_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "sitereference": {
+      "originalName": "SiteReference",
+      "description": "This attribute holds the cross reference table between the feature type and Site.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "siteid": {
+            "originalName": "siteID",
+            "description": "The identifier for the Site feature.",
+            "type": "string",
+            "format": "uuid",
+            "maxLength": 36
+          },
+          "buildingpartid": {
+            "originalName": "buildingPartID",
+            "description": "The identifier for the BuildingPart feature.",
+            "type": "string",
+            "format": "uuid",
+            "maxLength": 36
+          },
+          "buildingpartversiondate": {
+            "originalName": "buildingPartVersionDate",
+            "description": "The date this version of the feature entered the OS National Geographic Database.",
+            "type": "string",
+            "format": "date"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "osid",
+    "toid",
+    "versiondate",
+    "versionavailablefromdate",
+    "versionavailabletodate",
+    "firstdigitalcapturedate",
+    "changetype",
+    "geometry",
+    "geometry_area_m2",
+    "geometry_evidencedate",
+    "geometry_updatedate",
+    "geometry_capturemethod",
+    "theme",
+    "description",
+    "description_evidencedate",
+    "description_updatedate",
+    "description_capturemethod",
+    "oslandcovertiera",
+    "oslandcovertierb",
+    "oslandcover_evidencedate",
+    "oslandcover_updatedate",
+    "oslandcover_capturemethod",
+    "oslandusetiera",
+    "oslandusetierb",
+    "oslanduse_evidencedate",
+    "oslanduse_updatedate",
+    "oslanduse_capturemethod",
+    "height_absolutemin_m",
+    "height_absoluteroofbase_m",
+    "height_absolutemax_m",
+    "height_relativeroofbase_m",
+    "height_relativemax_m",
+    "height_confidencelevel",
+    "height_evidencedate",
+    "height_updatedate",
+    "associatedstructure",
+    "isobscured",
+    "physicallevel",
+    "capturespecification",
+    "containingsitecount",
+    "smallestsite_siteid",
+    "smallestsite_landusetiera",
+    "smallestsite_landusetierb",
+    "largestsite_landusetiera",
+    "largestsite_landusetierb",
+    "nlud_code",
+    "nlud_orderdescription",
+    "nlud_groupdescription",
+    "address_classificationcode",
+    "address_primarydescription",
+    "address_secondarydescription",
+    "lowertierlocalauthority_gsscode",
+    "lowertierlocalauthority_count",
+    "status",
+    "status_updatedate",
+    "sitereference"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,330 @@
+{
+  "$id": "trn-ntwk-pavementlink-1.0",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "shortName": "PavementLink",
+  "longName": "Pavement Link",
+  "description": "A subsection of the road link geometry that indicates where there is pavement on either side of the road",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "versionSuffix": null,
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -8.82,
+          49.79,
+          1.92,
+          60.94
+        ]
+      ],
+      "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2023-09-15T00:00:00Z",
+          null
+        ]
+      ],
+      "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+    }
+  },
+  "properties": {
+    "osid": {
+      "originalName": "OSID",
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD.",
+      "type": "string",
+      "format": "uuid",
+      "maxLength": 36
+    },
+    "versiondate": {
+      "originalName": "versionDate",
+      "description": "Date when the version was last updated.",
+      "type": "string",
+      "pattern": "YYYY-MM-DD",
+      "format": "date"
+    },
+    "versionavailablefromdate": {
+      "originalName": "versionAvailableFromDate",
+      "description": "The date this version of the feature became the latest version.",
+      "type": "string",
+      "pattern": "YYYY-MM-DDTHH:MM:SSZ",
+      "format": "date-time"
+    },
+    "versionavailabletodate": {
+      "originalName": "versionAvailableToDate",
+      "description": "The date this version of the feature was superseded by an update or ceased to exist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "YYYY-MM-DDTHH:MM:SSZ",
+      "format": "date-time"
+    },
+    "changetype": {
+      "originalName": "changeType",
+      "description": "The type of change that generated a new version of the feature.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "End Of Life",
+        "Modified Attributes",
+        "Modified Geometry",
+        "Modified Geometry And Attributes",
+        "Moved From A Different Feature Type",
+        "Moved To A Different Feature Type",
+        "New"
+      ]
+    },
+    "geometry": {
+      "originalName": "geometry",
+      "description": "Geometry for the feature.",
+      "$ref": "https://geojson.org/schema/LineString.json",
+      "precision": 10,
+      "scale": 3
+    },
+    "geometry_length_m": {
+      "originalName": "geometry_length_m",
+      "description": "The measured length of the geometry in metres.",
+      "type": "number",
+      "precision": 15,
+      "scale": 3
+    },
+    "theme": {
+      "originalName": "theme",
+      "description": "The OS NGD Theme to which the feature belongs.",
+      "type": "string",
+      "maxLength": 40,
+      "enum": [
+        "Address",
+        "Administrative and Statistical Units",
+        "Buildings",
+        "Geographical Names",
+        "Land",
+        "Land Use",
+        "Structures",
+        "Transport",
+        "Water"
+      ]
+    },
+    "description": {
+      "originalName": "description",
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "type": "string",
+      "maxLength": 10,
+      "enum": [
+        "Pavement"
+      ]
+    },
+    "routehierarchy": {
+      "originalName": "routeHierarchy",
+      "description": "A classification of the road designed to give the most appropriate route.",
+      "type": "string",
+      "maxLength": 32,
+      "enum": [
+        "A Road",
+        "A Road Primary",
+        "B Road",
+        "B Road Primary",
+        "Local Access Road",
+        "Local Road",
+        "Minor Road",
+        "Motorway",
+        "Restricted Local Access Road",
+        "Restricted Secondary Access Road",
+        "Secondary Access Road",
+        "Shared Use Road"
+      ]
+    },
+    "roadclassificationnumber": {
+      "originalName": "roadClassificationNumber",
+      "description": "The official road number assigned by the appropriate authority, for example, M6.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 10
+    },
+    "name1_text": {
+      "originalName": "name1_text",
+      "description": "Name assigned to identify the feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "name1_language": {
+      "originalName": "name1_language",
+      "description": "The language type associated with name1. The valid values are defined in the LanguageValue codelist.",
+      "type": "string",
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "name2_text": {
+      "originalName": "name2_text",
+      "description": "The alternative language name assigned to identify the feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "name2_language": {
+      "originalName": "name2_language",
+      "description": "The language type associated with name2. The valid values are defined in the LanguageValue codelist.",
+      "type": "string",
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "alternatename1_text": {
+      "originalName": "alternateName1_text",
+      "description": "Another name for the road that the feature is part of. This is populated with the name captured by Ordnance Survey when it differs from that in Street.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "alternatename1_language": {
+      "originalName": "alternateName1_language",
+      "description": "The language the name is expressed in, provided as a 3-digit ISO 639-2 code ('eng, 'cym', 'gla').",
+      "type": "string",
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "alternatename2_text": {
+      "originalName": "alternateName2_text",
+      "description": "Another name for the road that the feature is part of. This is populated with the name captured by Ordnance Survey when it differs from that in Street.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 254
+    },
+    "alternatename2_language": {
+      "originalName": "alternateName2_language",
+      "description": "The language the name is expressed in, provided as a 3-digit ISO 639-2 code ('eng, 'cym', 'gla').",
+      "type": "string",
+      "maxLength": 3,
+      "enum": [
+        "eng",
+        "gla",
+        "cym"
+      ]
+    },
+    "capturespecification": {
+      "originalName": "captureSpecification",
+      "description": "Indicates the capture specification used by OS when capturing the feature. This could either be Urban, Rural or Moorland.",
+      "type": "string",
+      "maxLength": 10,
+      "enum": [
+        "Moorland",
+        "Rural",
+        "Urban"
+      ]
+    },
+    "presenceofpavement_sideofroad": {
+      "originalName": "presenceOfPavement_sideOfRoad",
+      "description": "Indicates which side of the road the presence of pavement is located which can be both sides of a RoadLink.",
+      "type": "string",
+      "maxLength": 5,
+      "enum": [
+        "Left",
+        "Right"
+      ]
+    },
+    "presenceofpavement_minimumwidth_m": {
+      "originalName": "presenceOfPavement_minimumWidth_m",
+      "description": "Indicates the minimum width of the pavement along a road link measured in metres.",
+      "type": "number",
+      "precision": 6,
+      "scale": 2
+    },
+    "presenceofpavement_averagewidth_m": {
+      "originalName": "presenceOfPavement_averageWidth_m",
+      "description": "Indicates the average width of the pavement along a road link measured in metres.",
+      "type": "number",
+      "precision": 6,
+      "scale": 2
+    },
+    "presenceofpavement_evidencedate": {
+      "originalName": "presenceOfPavement_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "YYYY-MM-DD",
+      "format": "date"
+    },
+    "presenceofpavement_updatedate": {
+      "originalName": "presenceOfPavement_updateDate",
+      "description": "Date when the pavement presence was last updated. ",
+      "type": "string",
+      "pattern": "YYYY-MM-DD",
+      "format": "date"
+    },
+    "presenceofpavement_source": {
+      "originalName": "presenceOfPavement_source",
+      "description": "Indicates the data source of the pavement presence.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 85
+    },
+    "presenceofpavement_capturemethod": {
+      "originalName": "presenceOfPavement_captureMethod",
+      "description": "The capture method describes how the pavement presence was created, for example, via remote survey or via an automated process.",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "roadlinkid": {
+      "originalName": "roadLinkID",
+      "description": "The unique identifier (OSID) of the RoadLink feature that the PavementLink is related to.",
+      "type": "string",
+      "maxLength": 36
+    }
+  },
+  "required": [
+    "capturespecification",
+    "changetype",
+    "description",
+    "geometry",
+    "geometry_length_m",
+    "osid",
+    "presenceofpavement_averagewidth_m",
+    "presenceofpavement_capturemethod",
+    "presenceofpavement_minimumwidth_m",
+    "presenceofpavement_sideofroad",
+    "presenceofpavement_updatedate",
+    "roadlinkid",
+    "routehierarchy",
+    "theme",
+    "versionavailablefromdate",
+    "versiondate"
+  ],
+  "additionalProperties": false
+}

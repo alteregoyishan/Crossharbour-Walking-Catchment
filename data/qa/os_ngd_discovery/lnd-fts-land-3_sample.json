@@ -1,0 +1,1844 @@
+{
+  "type": "FeatureCollection",
+  "links": [
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/lnd-fts-land-3/items?limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "self",
+      "type": "application/geo+json",
+      "title": "All features from the 'Land v3' collection within bounding box: 537642.241,178797.287,538415.757,179565.712"
+    },
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/lnd-fts-land-3/items?offset=10&limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "next",
+      "type": "application/geo+json",
+      "title": "Next page"
+    }
+  ],
+  "timeStamp": "2026-10-10T22:03:50.710506399Z",
+  "numberReturned": 10,
+  "features": [
+    {
+      "id": "00090116-e817-4d97-aa28-bcceb81cb286",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537928.8,
+              179234.5
+            ],
+            [
+              537932.85,
+              179234.1
+            ],
+            [
+              537936.35,
+              179233.1
+            ],
+            [
+              537936.5,
+              179232.95
+            ],
+            [
+              537936.8,
+              179232.75
+            ],
+            [
+              537937,
+              179232.65
+            ],
+            [
+              537937.05,
+              179232.55
+            ],
+            [
+              537937.3,
+              179232.4
+            ],
+            [
+              537937.35,
+              179232.3
+            ],
+            [
+              537937.45,
+              179232.25
+            ],
+            [
+              537937.5,
+              179232.15
+            ],
+            [
+              537937.6,
+              179232.1
+            ],
+            [
+              537937.65,
+              179231.9
+            ],
+            [
+              537937.8,
+              179231.5
+            ],
+            [
+              537937.85,
+              179231.4
+            ],
+            [
+              537937.85,
+              179231.1
+            ],
+            [
+              537938.1,
+              179225.45
+            ],
+            [
+              537938.72,
+              179214.16
+            ],
+            [
+              537938.51,
+              179210.37
+            ],
+            [
+              537940.21,
+              179210.28
+            ],
+            [
+              537940.65,
+              179216.85
+            ],
+            [
+              537941.1,
+              179224.65
+            ],
+            [
+              537941.25,
+              179232.6
+            ],
+            [
+              537941.2,
+              179232.8
+            ],
+            [
+              537941.2,
+              179233
+            ],
+            [
+              537941.15,
+              179233.2
+            ],
+            [
+              537941.1,
+              179233.35
+            ],
+            [
+              537941.05,
+              179233.55
+            ],
+            [
+              537940.95,
+              179233.75
+            ],
+            [
+              537940.9,
+              179233.95
+            ],
+            [
+              537940.8,
+              179234.1
+            ],
+            [
+              537940.75,
+              179234.3
+            ],
+            [
+              537940.65,
+              179234.4
+            ],
+            [
+              537940.6,
+              179234.6
+            ],
+            [
+              537940.4,
+              179234.9
+            ],
+            [
+              537940.25,
+              179235.05
+            ],
+            [
+              537940.15,
+              179235.2
+            ],
+            [
+              537939.85,
+              179235.5
+            ],
+            [
+              537939.75,
+              179235.65
+            ],
+            [
+              537939.6,
+              179235.8
+            ],
+            [
+              537939.45,
+              179235.9
+            ],
+            [
+              537939.15,
+              179236.2
+            ],
+            [
+              537939,
+              179236.3
+            ],
+            [
+              537938.8,
+              179236.45
+            ],
+            [
+              537938.6,
+              179236.55
+            ],
+            [
+              537938.4,
+              179236.7
+            ],
+            [
+              537938.2,
+              179236.8
+            ],
+            [
+              537937.95,
+              179236.95
+            ],
+            [
+              537937.45,
+              179237.15
+            ],
+            [
+              537937.25,
+              179237.3
+            ],
+            [
+              537936.75,
+              179237.5
+            ],
+            [
+              537936.6,
+              179237.55
+            ],
+            [
+              537936.3,
+              179237.7
+            ],
+            [
+              537935.9,
+              179237.8
+            ],
+            [
+              537935.55,
+              179237.95
+            ],
+            [
+              537934.75,
+              179238.15
+            ],
+            [
+              537932.95,
+              179238.35
+            ],
+            [
+              537929,
+              179238.7
+            ],
+            [
+              537928.8,
+              179234.5
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00090116-e817-4d97-aa28-bcceb81cb286",
+        "toid": "osgb1000001769372341",
+        "theme": "Land",
+        "status": null,
+        "istidal": false,
+        "landform": null,
+        "nlud_code": null,
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Sloping Masonry",
+        "versiondate": "2025-02-02",
+        "physicallevel": "Surface Level",
+        "sitereference": [],
+        "oslandusetiera": "Unknown Or Unused Artificial",
+        "oslandusetierb": [],
+        "geometry_area_m2": 106.879,
+        "oslandcovertiera": "Made",
+        "oslandcovertierb": [
+          "Made Sealed"
+        ],
+        "status_updatedate": "2005-01-13",
+        "associatedstructure": null,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2005-01-13",
+        "smallestsite_siteid": null,
+        "capturespecification": "Urban",
+        "oslanduse_updatedate": "2005-01-13",
+        "geometry_evidencedate": "2005-01-13",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": null,
+        "description_updatedate": "2005-01-13",
+        "geometry_capturemethod": "Automated Process",
+        "oslandcover_updatedate": "2005-01-13",
+        "oslanduse_evidencedate": "2005-01-13",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-07-12",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2005-01-13",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2005-01-13",
+        "versionavailablefromdate": "2025-02-03T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": null,
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": null,
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "0016a340-4325-48b8-89a9-deb8db63faaa",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538152.1,
+              179404.7
+            ],
+            [
+              538150.95,
+              179403.55
+            ],
+            [
+              538152.15,
+              179402.45
+            ],
+            [
+              538149.9,
+              179400
+            ],
+            [
+              538151.7,
+              179398.3
+            ],
+            [
+              538155.05,
+              179401.85
+            ],
+            [
+              538152.1,
+              179404.7
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0016a340-4325-48b8-89a9-deb8db63faaa",
+        "toid": "osgb1000001769386348",
+        "theme": "Land",
+        "status": null,
+        "istidal": false,
+        "landform": null,
+        "nlud_code": "U071",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Residential Garden",
+        "versiondate": "2026-06-19",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "landid": "0016a340-4325-48b8-89a9-deb8db63faaa",
+            "siteid": "bb3035ff-2968-46cc-8654-59583500daa0",
+            "landversiondate": "2026-06-19"
+          },
+          {
+            "landid": "0016a340-4325-48b8-89a9-deb8db63faaa",
+            "siteid": "170111b7-9d89-4749-8318-159f28116518",
+            "landversiondate": "2026-06-19"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Residential Garden"
+        ],
+        "geometry_area_m2": 14.84,
+        "oslandcovertiera": "Multiple",
+        "oslandcovertierb": [
+          "Residential Garden"
+        ],
+        "status_updatedate": "2001-03-27",
+        "associatedstructure": null,
+        "containingsitecount": 2,
+        "geometry_updatedate": "2001-03-27",
+        "smallestsite_siteid": "bb3035ff-2968-46cc-8654-59583500daa0",
+        "capturespecification": "Urban",
+        "oslanduse_updatedate": "2001-03-27",
+        "geometry_evidencedate": "2001-03-27",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2001-03-27",
+        "geometry_capturemethod": "Automated Process",
+        "oslandcover_updatedate": "2001-03-27",
+        "oslanduse_evidencedate": "2001-03-27",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-03-27",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2001-03-27",
+        "habitatcoveragereference": [
+          {
+            "osid": "0016a340-4325-48b8-89a9-deb8db63faaa",
+            "scheme": "EUNIS Level 1",
+            "percentage": 100,
+            "habitatcode": "X",
+            "habitatdescription": "Habitat complexes",
+            "percentage_updatedate": "2026-03-07",
+            "featuretypeversiondate": "2026-06-19",
+            "percentage_evidencedate": "2001-03-27"
+          },
+          {
+            "osid": "0016a340-4325-48b8-89a9-deb8db63faaa",
+            "scheme": "OS Land Cover Tier B",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Residential Garden",
+            "percentage_updatedate": "2026-03-07",
+            "featuretypeversiondate": "2026-06-19",
+            "percentage_evidencedate": "2001-03-27"
+          },
+          {
+            "osid": "0016a340-4325-48b8-89a9-deb8db63faaa",
+            "scheme": "UKBAP Broad Habitat",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Built Up Areas And Gardens",
+            "percentage_updatedate": "2026-03-07",
+            "featuretypeversiondate": "2026-06-19",
+            "percentage_evidencedate": "2001-03-27"
+          }
+        ],
+        "largestsite_landusetiera": "Residential Accommodation",
+        "largestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "oslandcover_evidencedate": "2001-03-27",
+        "versionavailablefromdate": "2026-06-20T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "0016a408-788e-4ada-ba55-320628970a85",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538353.35,
+              179392.6
+            ],
+            [
+              538355.4,
+              179388.05
+            ],
+            [
+              538361.05,
+              179390.6
+            ],
+            [
+              538358.95,
+              179395.2
+            ],
+            [
+              538353.35,
+              179392.6
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0016a408-788e-4ada-ba55-320628970a85",
+        "toid": "osgb1000001769385569",
+        "theme": "Land",
+        "status": null,
+        "istidal": false,
+        "landform": null,
+        "nlud_code": "U071",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Residential Garden",
+        "versiondate": "2025-02-14",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "landid": "0016a408-788e-4ada-ba55-320628970a85",
+            "siteid": "cb931ee8-fe58-4a95-8a1b-2f6769c96c2c",
+            "landversiondate": "2025-02-14"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Residential Garden"
+        ],
+        "geometry_area_m2": 31.078,
+        "oslandcovertiera": "Multiple",
+        "oslandcovertierb": [
+          "Residential Garden"
+        ],
+        "status_updatedate": "2013-10-30",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "1989-03-01",
+        "smallestsite_siteid": "cb931ee8-fe58-4a95-8a1b-2f6769c96c2c",
+        "capturespecification": "Urban",
+        "oslanduse_updatedate": "2013-10-30",
+        "geometry_evidencedate": "1989-03-01",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2013-10-30",
+        "geometry_capturemethod": "Automated Process",
+        "oslandcover_updatedate": "2013-10-30",
+        "oslanduse_evidencedate": "2013-10-30",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1989-03-01",
+        "oslanduse_capturemethod": "Desk-Based",
+        "description_evidencedate": "2013-10-30",
+        "habitatcoveragereference": [
+          {
+            "osid": "0016a408-788e-4ada-ba55-320628970a85",
+            "scheme": "EUNIS Level 1",
+            "percentage": 100,
+            "habitatcode": "X",
+            "habitatdescription": "Habitat complexes",
+            "percentage_updatedate": "2024-10-25",
+            "featuretypeversiondate": "2025-02-14",
+            "percentage_evidencedate": "2013-10-30"
+          },
+          {
+            "osid": "0016a408-788e-4ada-ba55-320628970a85",
+            "scheme": "OS Land Cover Tier B",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Residential Garden",
+            "percentage_updatedate": "2024-10-25",
+            "featuretypeversiondate": "2025-02-14",
+            "percentage_evidencedate": "2013-10-30"
+          },
+          {
+            "osid": "0016a408-788e-4ada-ba55-320628970a85",
+            "scheme": "UKBAP Broad Habitat",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Built Up Areas And Gardens",
+            "percentage_updatedate": "2024-10-25",
+            "featuretypeversiondate": "2025-02-14",
+            "percentage_evidencedate": "2013-10-30"
+          }
+        ],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2013-10-30",
+        "versionavailablefromdate": "2025-02-15T00:00:00Z",
+        "description_capturemethod": "Desk-Based",
+        "oslandcover_capturemethod": "Desk-Based",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "00352f2a-1551-4521-8ff5-e9f6198bd7d2",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537913.55,
+              179256.1
+            ],
+            [
+              537913.6,
+              179258.5
+            ],
+            [
+              537911.21,
+              179258.65
+            ],
+            [
+              537911.1,
+              179257.3
+            ],
+            [
+              537910.8,
+              179253
+            ],
+            [
+              537910.75,
+              179252.5
+            ],
+            [
+              537913.5,
+              179252.3
+            ],
+            [
+              537913.55,
+              179256.1
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00352f2a-1551-4521-8ff5-e9f6198bd7d2",
+        "toid": "osgb1000001769372349",
+        "theme": "Land",
+        "status": null,
+        "istidal": false,
+        "landform": null,
+        "nlud_code": null,
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Made Surface",
+        "versiondate": "2025-02-02",
+        "physicallevel": "Surface Level",
+        "sitereference": [],
+        "oslandusetiera": "Unknown Or Unused Artificial",
+        "oslandusetierb": [],
+        "geometry_area_m2": 15.879,
+        "oslandcovertiera": "Made",
+        "oslandcovertierb": [
+          "Made Sealed"
+        ],
+        "status_updatedate": "2011-11-19",
+        "associatedstructure": null,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2001-07-12",
+        "smallestsite_siteid": null,
+        "capturespecification": "Urban",
+        "oslanduse_updatedate": "2011-11-19",
+        "geometry_evidencedate": "2001-07-12",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": null,
+        "description_updatedate": "2011-11-19",
+        "geometry_capturemethod": "Automated Process",
+        "oslandcover_updatedate": "2011-11-19",
+        "oslanduse_evidencedate": "2011-11-19",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-07-12",
+        "oslanduse_capturemethod": "Field Survey",
+        "description_evidencedate": "2011-11-19",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2011-11-19",
+        "versionavailablefromdate": "2025-02-03T00:00:00Z",
+        "description_capturemethod": "Field Survey",
+        "oslandcover_capturemethod": "Field Survey",
+        "smallestsite_landusetiera": null,
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": null,
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "0046b7b0-39a8-4452-a77c-d1ce729a3e1e",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538075.02,
+              179549.58
+            ],
+            [
+              538071.99,
+              179552.32
+            ],
+            [
+              538070.5,
+              179550.67
+            ],
+            [
+              538069.86,
+              179550.04
+            ],
+            [
+              538072.85,
+              179547.18
+            ],
+            [
+              538075.02,
+              179549.58
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0046b7b0-39a8-4452-a77c-d1ce729a3e1e",
+        "toid": "osgb1000001769377469",
+        "theme": "Land",
+        "status": null,
+        "istidal": false,
+        "landform": null,
+        "nlud_code": "U071",
+        "changetype": "New",
+        "isobscured": false,
+        "description": "Residential Garden",
+        "versiondate": "2024-09-24",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "landid": "0046b7b0-39a8-4452-a77c-d1ce729a3e1e",
+            "siteid": "cb887e5d-8b7f-40cd-97a2-e6eff1b5e3cd",
+            "landversiondate": "2024-09-24"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Residential Garden"
+        ],
+        "geometry_area_m2": 13.005,
+        "oslandcovertiera": "Multiple",
+        "oslandcovertierb": [
+          "Residential Garden"
+        ],
+        "status_updatedate": "2001-03-26",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2001-03-26",
+        "smallestsite_siteid": "cb887e5d-8b7f-40cd-97a2-e6eff1b5e3cd",
+        "capturespecification": "Urban",
+        "oslanduse_updatedate": "2001-03-26",
+        "geometry_evidencedate": "2001-03-26",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2001-03-26",
+        "geometry_capturemethod": "Automated Process",
+        "oslandcover_updatedate": "2001-03-26",
+        "oslanduse_evidencedate": "2001-03-26",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-03-26",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2001-03-26",
+        "habitatcoveragereference": [
+          {
+            "osid": "0046b7b0-39a8-4452-a77c-d1ce729a3e1e",
+            "scheme": "EUNIS Level 1",
+            "percentage": 100,
+            "habitatcode": "X",
+            "habitatdescription": "Habitat complexes",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-03-26"
+          },
+          {
+            "osid": "0046b7b0-39a8-4452-a77c-d1ce729a3e1e",
+            "scheme": "OS Land Cover Tier B",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Residential Garden",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-03-26"
+          },
+          {
+            "osid": "0046b7b0-39a8-4452-a77c-d1ce729a3e1e",
+            "scheme": "UKBAP Broad Habitat",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Built Up Areas And Gardens",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-03-26"
+          }
+        ],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2001-03-26",
+        "versionavailablefromdate": "2024-09-25T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "004d58d4-388f-49e1-90a1-3353af6bbcad",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537966.59,
+              178819.31
+            ],
+            [
+              537960.54,
+              178821.22
+            ],
+            [
+              537960.65,
+              178821.82
+            ],
+            [
+              537959.69,
+              178822.08
+            ],
+            [
+              537959.61,
+              178821.51
+            ],
+            [
+              537954.95,
+              178786.12
+            ],
+            [
+              537954.59,
+              178782.35
+            ],
+            [
+              537954.28,
+              178778.58
+            ],
+            [
+              537954.05,
+              178773.36
+            ],
+            [
+              537954.07,
+              178772.98
+            ],
+            [
+              537954.12,
+              178772.59
+            ],
+            [
+              537954.2,
+              178772.21
+            ],
+            [
+              537954.3,
+              178771.83
+            ],
+            [
+              537954.42,
+              178771.44
+            ],
+            [
+              537954.55,
+              178771.07
+            ],
+            [
+              537954.71,
+              178770.69
+            ],
+            [
+              537954.87,
+              178770.32
+            ],
+            [
+              537955.05,
+              178769.95
+            ],
+            [
+              537955.65,
+              178768.73
+            ],
+            [
+              537955.96,
+              178768.12
+            ],
+            [
+              537956.9,
+              178766.3
+            ],
+            [
+              537957.54,
+              178765.1
+            ],
+            [
+              537957.87,
+              178764.5
+            ],
+            [
+              537958.73,
+              178762.99
+            ],
+            [
+              537959.27,
+              178762.13
+            ],
+            [
+              537963.28,
+              178766.72
+            ],
+            [
+              537963.86,
+              178766.06
+            ],
+            [
+              537965.65,
+              178767.41
+            ],
+            [
+              537967.89,
+              178769.26
+            ],
+            [
+              537969.75,
+              178770.93
+            ],
+            [
+              537971.72,
+              178772.87
+            ],
+            [
+              537971.69,
+              178773
+            ],
+            [
+              537971.62,
+              178773.29
+            ],
+            [
+              537971.59,
+              178773.46
+            ],
+            [
+              537971.57,
+              178773.63
+            ],
+            [
+              537971.55,
+              178773.8
+            ],
+            [
+              537971.53,
+              178773.98
+            ],
+            [
+              537971.46,
+              178774.85
+            ],
+            [
+              537971.45,
+              178775.3
+            ],
+            [
+              537971.51,
+              178775.97
+            ],
+            [
+              537971.57,
+              178776.34
+            ],
+            [
+              537971.63,
+              178776.71
+            ],
+            [
+              537971.69,
+              178777.07
+            ],
+            [
+              537971.75,
+              178777.44
+            ],
+            [
+              537971.97,
+              178779.43
+            ],
+            [
+              537972.19,
+              178781.13
+            ],
+            [
+              537972.48,
+              178783.34
+            ],
+            [
+              537972.49,
+              178784.56
+            ],
+            [
+              537972.48,
+              178785.18
+            ],
+            [
+              537972.56,
+              178788.21
+            ],
+            [
+              537972.78,
+              178791.3
+            ],
+            [
+              537973.07,
+              178793.88
+            ],
+            [
+              537973.15,
+              178796.24
+            ],
+            [
+              537973.22,
+              178799.71
+            ],
+            [
+              537973.15,
+              178803.32
+            ],
+            [
+              537973.41,
+              178806.59
+            ],
+            [
+              537973.5,
+              178808.76
+            ],
+            [
+              537973.37,
+              178810.51
+            ],
+            [
+              537973.24,
+              178811.6
+            ],
+            [
+              537973.34,
+              178811.91
+            ],
+            [
+              537973.42,
+              178812.15
+            ],
+            [
+              537973.48,
+              178812.4
+            ],
+            [
+              537973.53,
+              178812.65
+            ],
+            [
+              537973.57,
+              178812.9
+            ],
+            [
+              537973.6,
+              178813.15
+            ],
+            [
+              537973.62,
+              178813.4
+            ],
+            [
+              537973.63,
+              178813.66
+            ],
+            [
+              537973.63,
+              178813.91
+            ],
+            [
+              537973.61,
+              178814.19
+            ],
+            [
+              537973.56,
+              178814.44
+            ],
+            [
+              537973.51,
+              178814.69
+            ],
+            [
+              537973.45,
+              178814.94
+            ],
+            [
+              537973.42,
+              178815.19
+            ],
+            [
+              537973.41,
+              178815.44
+            ],
+            [
+              537973.42,
+              178815.69
+            ],
+            [
+              537973.44,
+              178815.86
+            ],
+            [
+              537973.47,
+              178816.03
+            ],
+            [
+              537973.5,
+              178816.2
+            ],
+            [
+              537973.54,
+              178816.37
+            ],
+            [
+              537973.59,
+              178816.54
+            ],
+            [
+              537973.65,
+              178816.7
+            ],
+            [
+              537973.71,
+              178816.86
+            ],
+            [
+              537973.78,
+              178817.02
+            ],
+            [
+              537973.85,
+              178817.17
+            ],
+            [
+              537973.94,
+              178817.32
+            ],
+            [
+              537974.03,
+              178817.47
+            ],
+            [
+              537974.18,
+              178817.68
+            ],
+            [
+              537974.28,
+              178817.8
+            ],
+            [
+              537974.38,
+              178817.92
+            ],
+            [
+              537974.49,
+              178818.03
+            ],
+            [
+              537974.6,
+              178818.14
+            ],
+            [
+              537974.64,
+              178818.18
+            ],
+            [
+              537974.34,
+              178818.27
+            ],
+            [
+              537970.86,
+              178818.89
+            ],
+            [
+              537966.8,
+              178820.12
+            ],
+            [
+              537966.59,
+              178819.31
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "004d58d4-388f-49e1-90a1-3353af6bbcad",
+        "toid": "osgb1000001768521451",
+        "theme": "Land",
+        "status": null,
+        "istidal": false,
+        "landform": null,
+        "nlud_code": "U041",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Non-Coniferous Trees And Scrub",
+        "versiondate": "2026-10-07",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "landid": "004d58d4-388f-49e1-90a1-3353af6bbcad",
+            "siteid": "0fced323-1908-44dc-93c7-a6dfc3bf5373",
+            "landversiondate": "2026-10-07"
+          }
+        ],
+        "oslandusetiera": "Attraction Or Activity",
+        "oslandusetierb": [
+          "Outdoor Amenity"
+        ],
+        "geometry_area_m2": 871.526,
+        "oslandcovertiera": "Trees",
+        "oslandcovertierb": [
+          "Non-Coniferous Trees",
+          "Scrub"
+        ],
+        "status_updatedate": "2025-02-12",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2005-11-15",
+        "smallestsite_siteid": "0fced323-1908-44dc-93c7-a6dfc3bf5373",
+        "capturespecification": "Urban",
+        "oslanduse_updatedate": "2025-02-12",
+        "geometry_evidencedate": "2005-11-15",
+        "nlud_groupdescription": "Outdoor amenity and open spaces",
+        "nlud_orderdescription": "RECREATION AND LEISURE",
+        "description_updatedate": "2025-02-12",
+        "geometry_capturemethod": "Automated Process",
+        "oslandcover_updatedate": "2025-02-12",
+        "oslanduse_evidencedate": "2025-02-12",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-07-11",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2025-02-12",
+        "habitatcoveragereference": [
+          {
+            "osid": "004d58d4-388f-49e1-90a1-3353af6bbcad",
+            "scheme": "EUNIS Level 1",
+            "percentage": 10,
+            "habitatcode": "S",
+            "habitatdescription": "Heathland, scrub and tundra",
+            "percentage_updatedate": "2026-10-07",
+            "featuretypeversiondate": "2026-10-07",
+            "percentage_evidencedate": "2026-05-24"
+          },
+          {
+            "osid": "004d58d4-388f-49e1-90a1-3353af6bbcad",
+            "scheme": "EUNIS Level 1",
+            "percentage": 90,
+            "habitatcode": "T",
+            "habitatdescription": "Forest and other wooded land",
+            "percentage_updatedate": "2026-10-07",
+            "featuretypeversiondate": "2026-10-07",
+            "percentage_evidencedate": "2026-05-24"
+          },
+          {
+            "osid": "004d58d4-388f-49e1-90a1-3353af6bbcad",
+            "scheme": "EUNIS Level 2",
+            "percentage": 90,
+            "habitatcode": "T1",
+            "habitatdescription": "Deciduous broadleaved forest",
+            "percentage_updatedate": "2026-10-07",
+            "featuretypeversiondate": "2026-10-07",
+            "percentage_evidencedate": "2026-05-24"
+          },
+          {
+            "osid": "004d58d4-388f-49e1-90a1-3353af6bbcad",
+            "scheme": "OS Land Cover Tier B",
+            "percentage": 90,
+            "habitatcode": null,
+            "habitatdescription": "Non-Coniferous Trees",
+            "percentage_updatedate": "2026-10-07",
+            "featuretypeversiondate": "2026-10-07",
+            "percentage_evidencedate": "2026-05-24"
+          },
+          {
+            "osid": "004d58d4-388f-49e1-90a1-3353af6bbcad",
+            "scheme": "OS Land Cover Tier B",
+            "percentage": 10,
+            "habitatcode": null,
+            "habitatdescription": "Scrub",
+            "percentage_updatedate": "2026-10-07",
+            "featuretypeversiondate": "2026-10-07",
+            "percentage_evidencedate": "2026-05-24"
+          },
+          {
+            "osid": "004d58d4-388f-49e1-90a1-3353af6bbcad",
+            "scheme": "UKBAP Broad Habitat",
+            "percentage": 90,
+            "habitatcode": null,
+            "habitatdescription": "Broadleaved, Mixed and Yew woodland",
+            "percentage_updatedate": "2026-10-07",
+            "featuretypeversiondate": "2026-10-07",
+            "percentage_evidencedate": "2026-05-24"
+          }
+        ],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2025-02-12",
+        "versionavailablefromdate": "2026-10-08T00:00:00Z",
+        "description_capturemethod": "Desk-Based",
+        "oslandcover_capturemethod": "Desk-Based",
+        "smallestsite_landusetiera": "Attraction Or Activity",
+        "smallestsite_landusetierb": [
+          "Outdoor Amenity"
+        ],
+        "address_classificationcode": "LP",
+        "address_primarydescription": "Land",
+        "address_secondarydescription": "Park",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "00a8f16e-f0fa-4290-a60b-cb30465e1d35",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538418.717,
+              179157.087
+            ],
+            [
+              538416.85,
+              179156.3
+            ],
+            [
+              538413.6,
+              179154.9
+            ],
+            [
+              538413.25,
+              179152.8
+            ],
+            [
+              538417.4,
+              179154.75
+            ],
+            [
+              538418.7,
+              179151.85
+            ],
+            [
+              538420.667,
+              179152.738
+            ],
+            [
+              538418.717,
+              179157.087
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00a8f16e-f0fa-4290-a60b-cb30465e1d35",
+        "toid": "osgb1000001769385950",
+        "theme": "Land",
+        "status": null,
+        "istidal": false,
+        "landform": null,
+        "nlud_code": "U071",
+        "changetype": "New",
+        "isobscured": false,
+        "description": "Residential Garden",
+        "versiondate": "2024-09-24",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "landid": "00a8f16e-f0fa-4290-a60b-cb30465e1d35",
+            "siteid": "023452e8-c33a-4f88-8f01-9f5694c48d09",
+            "landversiondate": "2024-09-24"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Residential Garden"
+        ],
+        "geometry_area_m2": 17.155,
+        "oslandcovertiera": "Multiple",
+        "oslandcovertierb": [
+          "Residential Garden"
+        ],
+        "status_updatedate": "2001-03-27",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2020-02-03",
+        "smallestsite_siteid": "023452e8-c33a-4f88-8f01-9f5694c48d09",
+        "capturespecification": "Urban",
+        "oslanduse_updatedate": "2001-03-27",
+        "geometry_evidencedate": "2019-06-29",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2001-03-27",
+        "geometry_capturemethod": "Remote Sensing Survey",
+        "oslandcover_updatedate": "2001-03-27",
+        "oslanduse_evidencedate": "2001-03-27",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-03-27",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2001-03-27",
+        "habitatcoveragereference": [
+          {
+            "osid": "00a8f16e-f0fa-4290-a60b-cb30465e1d35",
+            "scheme": "EUNIS Level 1",
+            "percentage": 100,
+            "habitatcode": "X",
+            "habitatdescription": "Habitat complexes",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-03-27"
+          },
+          {
+            "osid": "00a8f16e-f0fa-4290-a60b-cb30465e1d35",
+            "scheme": "OS Land Cover Tier B",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Residential Garden",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-03-27"
+          },
+          {
+            "osid": "00a8f16e-f0fa-4290-a60b-cb30465e1d35",
+            "scheme": "UKBAP Broad Habitat",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Built Up Areas And Gardens",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-03-27"
+          }
+        ],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2001-03-27",
+        "versionavailablefromdate": "2024-09-25T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "00bbc237-34d0-4041-8a3a-d1124c2dc16e",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538052.95,
+              179263.3
+            ],
+            [
+              538057.95,
+              179261.4
+            ],
+            [
+              538058.9,
+              179263.9
+            ],
+            [
+              538053.95,
+              179265.8
+            ],
+            [
+              538052.95,
+              179263.3
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00bbc237-34d0-4041-8a3a-d1124c2dc16e",
+        "toid": "osgb1000001769386073",
+        "theme": "Land",
+        "status": null,
+        "istidal": false,
+        "landform": null,
+        "nlud_code": "U071",
+        "changetype": "New",
+        "isobscured": false,
+        "description": "Residential Garden",
+        "versiondate": "2024-09-24",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "landid": "00bbc237-34d0-4041-8a3a-d1124c2dc16e",
+            "siteid": "2b2a7693-6904-4f06-9119-83fd6d88e119",
+            "landversiondate": "2024-09-24"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Residential Garden"
+        ],
+        "geometry_area_m2": 14.29,
+        "oslandcovertiera": "Multiple",
+        "oslandcovertierb": [
+          "Residential Garden"
+        ],
+        "status_updatedate": "2001-03-27",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2001-03-27",
+        "smallestsite_siteid": "2b2a7693-6904-4f06-9119-83fd6d88e119",
+        "capturespecification": "Urban",
+        "oslanduse_updatedate": "2001-03-27",
+        "geometry_evidencedate": "2001-03-27",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2001-03-27",
+        "geometry_capturemethod": "Automated Process",
+        "oslandcover_updatedate": "2001-03-27",
+        "oslanduse_evidencedate": "2001-03-27",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-03-27",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2001-03-27",
+        "habitatcoveragereference": [
+          {
+            "osid": "00bbc237-34d0-4041-8a3a-d1124c2dc16e",
+            "scheme": "EUNIS Level 1",
+            "percentage": 100,
+            "habitatcode": "X",
+            "habitatdescription": "Habitat complexes",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-03-27"
+          },
+          {
+            "osid": "00bbc237-34d0-4041-8a3a-d1124c2dc16e",
+            "scheme": "OS Land Cover Tier B",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Residential Garden",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-03-27"
+          },
+          {
+            "osid": "00bbc237-34d0-4041-8a3a-d1124c2dc16e",
+            "scheme": "UKBAP Broad Habitat",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Built Up Areas And Gardens",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-03-27"
+          }
+        ],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2001-03-27",
+        "versionavailablefromdate": "2024-09-25T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "00c2e9f3-7381-4878-aa10-69f98f0862a3",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537920.56,
+              179239.58
+            ],
+            [
+              537917.8,
+              179239.8
+            ],
+            [
+              537914.55,
+              179240
+            ],
+            [
+              537914.4,
+              179238.8
+            ],
+            [
+              537914.27,
+              179237.58
+            ],
+            [
+              537916.21,
+              179237.39
+            ],
+            [
+              537916.08,
+              179235.21
+            ],
+            [
+              537920.33,
+              179234.93
+            ],
+            [
+              537920.56,
+              179239.58
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00c2e9f3-7381-4878-aa10-69f98f0862a3",
+        "toid": "osgb1000001769372339",
+        "theme": "Land",
+        "status": null,
+        "istidal": false,
+        "landform": null,
+        "nlud_code": null,
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Sloping Masonry",
+        "versiondate": "2025-02-02",
+        "physicallevel": "Surface Level",
+        "sitereference": [],
+        "oslandusetiera": "Unknown Or Unused Artificial",
+        "oslandusetierb": [],
+        "geometry_area_m2": 24.476,
+        "oslandcovertiera": "Made",
+        "oslandcovertierb": [
+          "Made Sealed"
+        ],
+        "status_updatedate": "2005-01-13",
+        "associatedstructure": null,
+        "containingsitecount": 0,
+        "geometry_updatedate": "2005-01-13",
+        "smallestsite_siteid": null,
+        "capturespecification": "Urban",
+        "oslanduse_updatedate": "2005-01-13",
+        "geometry_evidencedate": "2005-01-13",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": null,
+        "description_updatedate": "2005-01-13",
+        "geometry_capturemethod": "Automated Process",
+        "oslandcover_updatedate": "2005-01-13",
+        "oslanduse_evidencedate": "2005-01-13",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-07-12",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2005-01-13",
+        "habitatcoveragereference": [],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2005-01-13",
+        "versionavailablefromdate": "2025-02-03T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": null,
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": null,
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "00c958a6-0699-49b2-aa9e-5f447fd54e74",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538265.975,
+              179328.894
+            ],
+            [
+              538265.962,
+              179328.88
+            ],
+            [
+              538264.047,
+              179326.884
+            ],
+            [
+              538263.194,
+              179327.04
+            ],
+            [
+              538261.1,
+              179324.85
+            ],
+            [
+              538263.55,
+              179322.35
+            ],
+            [
+              538264.35,
+              179321.55
+            ],
+            [
+              538268.75,
+              179326.05
+            ],
+            [
+              538265.975,
+              179328.894
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00c958a6-0699-49b2-aa9e-5f447fd54e74",
+        "toid": "osgb1000001769386415",
+        "theme": "Land",
+        "status": null,
+        "istidal": false,
+        "landform": null,
+        "nlud_code": "U071",
+        "changetype": "New",
+        "isobscured": false,
+        "description": "Residential Garden",
+        "versiondate": "2024-09-24",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "landid": "00c958a6-0699-49b2-aa9e-5f447fd54e74",
+            "siteid": "236b9660-72ed-48a2-81ab-60cd732cc289",
+            "landversiondate": "2024-09-24"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Residential Garden"
+        ],
+        "geometry_area_m2": 27.232,
+        "oslandcovertiera": "Multiple",
+        "oslandcovertierb": [
+          "Residential Garden"
+        ],
+        "status_updatedate": "2001-07-12",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2014-05-05",
+        "smallestsite_siteid": "236b9660-72ed-48a2-81ab-60cd732cc289",
+        "capturespecification": "Urban",
+        "oslanduse_updatedate": "2001-07-12",
+        "geometry_evidencedate": "2013-07-18",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2001-07-12",
+        "geometry_capturemethod": "Remote Sensing Survey",
+        "oslandcover_updatedate": "2001-07-12",
+        "oslanduse_evidencedate": "2001-07-12",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "2001-03-27",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2001-07-12",
+        "habitatcoveragereference": [
+          {
+            "osid": "00c958a6-0699-49b2-aa9e-5f447fd54e74",
+            "scheme": "EUNIS Level 1",
+            "percentage": 100,
+            "habitatcode": "X",
+            "habitatdescription": "Habitat complexes",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-07-12"
+          },
+          {
+            "osid": "00c958a6-0699-49b2-aa9e-5f447fd54e74",
+            "scheme": "OS Land Cover Tier B",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Residential Garden",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-07-12"
+          },
+          {
+            "osid": "00c958a6-0699-49b2-aa9e-5f447fd54e74",
+            "scheme": "UKBAP Broad Habitat",
+            "percentage": 100,
+            "habitatcode": null,
+            "habitatdescription": "Built Up Areas And Gardens",
+            "percentage_updatedate": "2024-06-24",
+            "featuretypeversiondate": "2024-09-24",
+            "percentage_evidencedate": "2001-07-12"
+          }
+        ],
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2001-07-12",
+        "versionavailablefromdate": "2024-09-25T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    }
+  ]
+}

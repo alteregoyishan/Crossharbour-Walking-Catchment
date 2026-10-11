@@ -1,0 +1,7 @@
+The final 10-minute walking catchment around the Crossharbour site contains an estimated 8,016 residents at 117.8 residents per hectare, using the supplied Census 2021 baseline. Its analytical land area is 68.0 hectares.
+
+The analysis assumes a walking speed of 4.8 km/h from either of two reviewed external access locations. These are planning proxies, not confirmed future building entrances. Multi-source shortest paths define network travel time; the selected C1 ordinary-Delaunay contour proxy converts the reachable network into the final two-dimensional catchment. Mapped water is removed and narrow verified crossing corridors are kept separate from analytical land area.
+
+The number of accessible schools cannot yet be confirmed. Three cleaned school address points fall within the final C1 10-minute analytical polygon, but pedestrian entrances or defensible network destinations still require review. Schools inside the shaded area must not be counted as accessible on that basis alone.
+
+Population is estimated by distributing each census zone's population uniformly across its full area. OS NGD residential-site, building-footprint and recorded floor-space allocations produce sensitivity estimates from 8,938 to 9,739 residents. These are scenario estimates, not current headcounts. OSM completeness, conditional permissions and unmodelled barriers remain limitations. Use the results to frame workshop discussion, with the sensitivity results and school-review status visible.

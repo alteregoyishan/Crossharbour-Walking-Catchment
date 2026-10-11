@@ -1,0 +1,3 @@
+dataset,record_id,source_row,action,before,after,notes
+population,E01035705,109,remove_exact_duplicate,duplicate of source row 66,removed; source row 66 retained,All attributes and normalised geometry were identical
+population,E01035698,103,repair_invalid_geometry,"{""geometry_type"": ""Polygon"", ""validity"": ""Self-intersection[537608.519887765 179636.693765926]"", ""area_m2"": 12432.623026247038}","{""geometry_type"": ""MultiPolygon"", ""valid"": true, ""area_m2"": 12432.623595159344, ""area_change_m2"": 0.0005689123063348234}",Repaired with shapely.make_valid; attributes unchanged

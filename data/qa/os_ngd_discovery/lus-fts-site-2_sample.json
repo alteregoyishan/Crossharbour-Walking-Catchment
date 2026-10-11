@@ -1,0 +1,1291 @@
+{
+  "type": "FeatureCollection",
+  "links": [
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/lus-fts-site-2/items?limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "self",
+      "type": "application/geo+json",
+      "title": "All features from the 'Site v2' collection within bounding box: 537642.241,178797.287,538415.757,179565.712"
+    },
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/lus-fts-site-2/items?offset=10&limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "next",
+      "type": "application/geo+json",
+      "title": "Next page"
+    }
+  ],
+  "timeStamp": "2026-10-10T22:03:49.307862401Z",
+  "numberReturned": 10,
+  "features": [
+    {
+      "id": "00485bd2-ac70-48fc-b063-84cb4615f0f5",
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                538191.594,
+                179129.563
+              ],
+              [
+                538191.45,
+                179127.55
+              ],
+              [
+                538195.85,
+                179127.3
+              ],
+              [
+                538196.943,
+                179125.933
+              ],
+              [
+                538202.8,
+                179129.5
+              ],
+              [
+                538207.3,
+                179133.15
+              ],
+              [
+                538203.548,
+                179137.798
+              ],
+              [
+                538201.974,
+                179139.748
+              ],
+              [
+                538200.657,
+                179141.376
+              ],
+              [
+                538199.95,
+                179142.25
+              ],
+              [
+                538195.6,
+                179148.05
+              ],
+              [
+                538192.95,
+                179148.25
+              ],
+              [
+                538191.6,
+                179129.65
+              ],
+              [
+                538191.594,
+                179129.563
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00485bd2-ac70-48fc-b063-84cb4615f0f5",
+        "toid": null,
+        "theme": "Land Use",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "New",
+        "name1_text": "47",
+        "name2_text": null,
+        "description": "Private Residential Site",
+        "matcheduprn": 6081202,
+        "stakeholder": null,
+        "versiondate": "2024-09-06",
+        "mainbuildingid": "d9b345b3-9375-4f81-bd61-a8819d4ef2e2",
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "extentdefinition": "Auto-Defined Complete",
+        "geometry_area_m2": 204.921,
+        "name1_updatedate": "2011-06-25",
+        "name2_updatedate": null,
+        "status_updatedate": "2021-09-06",
+        "addresscount_other": 0,
+        "addresscount_total": 1,
+        "matcheduprn_method": "Matched Using Single Address",
+        "name1_evidencedate": "1988-04-22",
+        "name2_evidencedate": null,
+        "geometry_updatedate": "2021-09-06",
+        "oslanduse_updatedate": "2021-09-06",
+        "geometry_evidencedate": "2021-09-06",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2021-09-06",
+        "geometry_capturemethod": "Automated Process",
+        "oslanduse_evidencedate": "2021-09-06",
+        "sitetoaddressreference": [
+          {
+            "uprn": 6081202,
+            "siteid": "00485bd2-ac70-48fc-b063-84cb4615f0f5",
+            "siteversiondate": "2024-09-06",
+            "relationshiptype": "Same As"
+          }
+        ],
+        "versionavailabletodate": null,
+        "addresscount_commercial": 0,
+        "oslanduse_capturemethod": "Automated Process",
+        "addresscount_residential": 1,
+        "description_evidencedate": "2021-09-06",
+        "versionavailablefromdate": "2024-09-07T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_classificationsource": "Matched UPRN",
+        "address_secondarydescription": "Dwelling",
+        "address_classificationcorrelation": "Good"
+      }
+    },
+    {
+      "id": "00a878e9-813e-4cba-8b3a-16924abaa294",
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                538018.5,
+                179279.5
+              ],
+              [
+                538017.5,
+                179276.8
+              ],
+              [
+                538022.35,
+                179274.9
+              ],
+              [
+                538023.4,
+                179277.6
+              ],
+              [
+                538026.7,
+                179286.3
+              ],
+              [
+                538021.75,
+                179288.2
+              ],
+              [
+                538018.5,
+                179279.5
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00a878e9-813e-4cba-8b3a-16924abaa294",
+        "toid": null,
+        "theme": "Land Use",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "New",
+        "name1_text": null,
+        "name2_text": null,
+        "description": "Private Residential Site",
+        "matcheduprn": null,
+        "stakeholder": null,
+        "versiondate": "2024-09-06",
+        "mainbuildingid": "f25db4bb-8f97-4b3b-ac4a-a8ff6d99b165",
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "extentdefinition": "Manually Defined Complete",
+        "geometry_area_m2": 64.18,
+        "name1_updatedate": null,
+        "name2_updatedate": null,
+        "status_updatedate": "2021-09-06",
+        "addresscount_other": 0,
+        "addresscount_total": 2,
+        "matcheduprn_method": null,
+        "name1_evidencedate": null,
+        "name2_evidencedate": null,
+        "geometry_updatedate": "2022-02-08",
+        "oslanduse_updatedate": "2021-09-06",
+        "geometry_evidencedate": "2022-02-08",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2021-09-06",
+        "geometry_capturemethod": "Desk-Based",
+        "oslanduse_evidencedate": "2021-09-06",
+        "sitetoaddressreference": [
+          {
+            "uprn": 6080122,
+            "siteid": "00a878e9-813e-4cba-8b3a-16924abaa294",
+            "siteversiondate": "2024-09-06",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6081701,
+            "siteid": "00a878e9-813e-4cba-8b3a-16924abaa294",
+            "siteversiondate": "2024-09-06",
+            "relationshiptype": "Within"
+          }
+        ],
+        "versionavailabletodate": null,
+        "addresscount_commercial": 0,
+        "oslanduse_capturemethod": "Automated Process",
+        "addresscount_residential": 2,
+        "description_evidencedate": "2021-09-06",
+        "versionavailablefromdate": "2024-09-07T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_classificationsource": "Multiple Addresses",
+        "address_secondarydescription": "Dwelling",
+        "address_classificationcorrelation": "Good"
+      }
+    },
+    {
+      "id": "013728b8-9497-4ea7-a62f-31b5e4dc03e0",
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                538164.25,
+                179394
+              ],
+              [
+                538165.6,
+                179392.65
+              ],
+              [
+                538166.5,
+                179391.7
+              ],
+              [
+                538169.994,
+                179388.344
+              ],
+              [
+                538170.914,
+                179387.414
+              ],
+              [
+                538173.35,
+                179384.95
+              ],
+              [
+                538178.7,
+                179379.6
+              ],
+              [
+                538183,
+                179375.35
+              ],
+              [
+                538189.45,
+                179381.8
+              ],
+              [
+                538173.6,
+                179397.35
+              ],
+              [
+                538170.5,
+                179400.4
+              ],
+              [
+                538167.25,
+                179397.05
+              ],
+              [
+                538167,
+                179396.8
+              ],
+              [
+                538164.25,
+                179394
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "013728b8-9497-4ea7-a62f-31b5e4dc03e0",
+        "toid": null,
+        "theme": "Land Use",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "New",
+        "name1_text": "32",
+        "name2_text": null,
+        "description": "Private Residential Site",
+        "matcheduprn": 6079867,
+        "stakeholder": null,
+        "versiondate": "2024-09-06",
+        "mainbuildingid": "a518f4ca-3ca0-4482-8f10-1c9b0a1d7657",
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "extentdefinition": "Auto-Defined Complete",
+        "geometry_area_m2": 239.32,
+        "name1_updatedate": "2011-06-25",
+        "name2_updatedate": null,
+        "status_updatedate": "2021-09-06",
+        "addresscount_other": 0,
+        "addresscount_total": 1,
+        "matcheduprn_method": "Matched Using Single Address",
+        "name1_evidencedate": "1988-04-22",
+        "name2_evidencedate": null,
+        "geometry_updatedate": "2021-09-06",
+        "oslanduse_updatedate": "2021-09-06",
+        "geometry_evidencedate": "2021-09-06",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2021-09-06",
+        "geometry_capturemethod": "Automated Process",
+        "oslanduse_evidencedate": "2021-09-06",
+        "sitetoaddressreference": [
+          {
+            "uprn": 6079867,
+            "siteid": "013728b8-9497-4ea7-a62f-31b5e4dc03e0",
+            "siteversiondate": "2024-09-06",
+            "relationshiptype": "Same As"
+          }
+        ],
+        "versionavailabletodate": null,
+        "addresscount_commercial": 0,
+        "oslanduse_capturemethod": "Automated Process",
+        "addresscount_residential": 1,
+        "description_evidencedate": "2021-09-06",
+        "versionavailablefromdate": "2024-09-07T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_classificationsource": "Matched UPRN",
+        "address_secondarydescription": "Dwelling",
+        "address_classificationcorrelation": "Good"
+      }
+    },
+    {
+      "id": "0174f52b-6aad-4d9b-936c-7e18a5ade634",
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                537842.75,
+                179330.25
+              ],
+              [
+                537841.95,
+                179319.95
+              ],
+              [
+                537847.1,
+                179319.6
+              ],
+              [
+                537847.9,
+                179329.85
+              ],
+              [
+                537842.75,
+                179330.25
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0174f52b-6aad-4d9b-936c-7e18a5ade634",
+        "toid": null,
+        "theme": "Land Use",
+        "status": null,
+        "nlud_code": "U100",
+        "changetype": "Modified Attributes",
+        "name1_text": "7 & 9",
+        "name2_text": null,
+        "description": "Industry And Business Site",
+        "matcheduprn": null,
+        "stakeholder": null,
+        "versiondate": "2025-07-17",
+        "mainbuildingid": "4d0b815e-5d51-443f-b316-3ec9738762b2",
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Commercial Activity: Other",
+        "oslandusetierb": [],
+        "extentdefinition": "Manually Defined Incomplete",
+        "geometry_area_m2": 53.216,
+        "name1_updatedate": "2021-12-16",
+        "name2_updatedate": null,
+        "status_updatedate": "2014-04-30",
+        "addresscount_other": 0,
+        "addresscount_total": 9,
+        "matcheduprn_method": null,
+        "name1_evidencedate": "2021-12-16",
+        "name2_evidencedate": null,
+        "geometry_updatedate": "2022-05-31",
+        "oslanduse_updatedate": "2014-04-30",
+        "geometry_evidencedate": "2022-05-31",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": "INDUSTRY AND BUSINESS",
+        "description_updatedate": "2014-04-30",
+        "geometry_capturemethod": "Desk-Based",
+        "oslanduse_evidencedate": "2014-04-30",
+        "sitetoaddressreference": [
+          {
+            "uprn": 6063650,
+            "siteid": "0174f52b-6aad-4d9b-936c-7e18a5ade634",
+            "siteversiondate": "2025-07-17",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6063802,
+            "siteid": "0174f52b-6aad-4d9b-936c-7e18a5ade634",
+            "siteversiondate": "2025-07-17",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6188129,
+            "siteid": "0174f52b-6aad-4d9b-936c-7e18a5ade634",
+            "siteversiondate": "2025-07-17",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6192429,
+            "siteid": "0174f52b-6aad-4d9b-936c-7e18a5ade634",
+            "siteversiondate": "2025-07-17",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6712836,
+            "siteid": "0174f52b-6aad-4d9b-936c-7e18a5ade634",
+            "siteversiondate": "2025-07-17",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6712837,
+            "siteid": "0174f52b-6aad-4d9b-936c-7e18a5ade634",
+            "siteversiondate": "2025-07-17",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6712838,
+            "siteid": "0174f52b-6aad-4d9b-936c-7e18a5ade634",
+            "siteversiondate": "2025-07-17",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6712839,
+            "siteid": "0174f52b-6aad-4d9b-936c-7e18a5ade634",
+            "siteversiondate": "2025-07-17",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6712840,
+            "siteid": "0174f52b-6aad-4d9b-936c-7e18a5ade634",
+            "siteversiondate": "2025-07-17",
+            "relationshiptype": "Within"
+          }
+        ],
+        "versionavailabletodate": null,
+        "addresscount_commercial": 9,
+        "oslanduse_capturemethod": "Desk-Based",
+        "addresscount_residential": 0,
+        "description_evidencedate": "2014-04-30",
+        "versionavailablefromdate": "2025-07-18T00:00:00Z",
+        "description_capturemethod": "Desk-Based",
+        "address_classificationcode": "C",
+        "address_primarydescription": "Commercial",
+        "address_classificationsource": "Multiple Addresses",
+        "address_secondarydescription": null,
+        "address_classificationcorrelation": "Discrepancy"
+      }
+    },
+    {
+      "id": "018589e7-6179-46e0-9b36-74e612865809",
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                538373.5,
+                179033.85
+              ],
+              [
+                538371.35,
+                179030.75
+              ],
+              [
+                538377.25,
+                179026.65
+              ],
+              [
+                538380.7,
+                179031.8
+              ],
+              [
+                538373.95,
+                179036.5
+              ],
+              [
+                538372.55,
+                179034.5
+              ],
+              [
+                538373.5,
+                179033.85
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "018589e7-6179-46e0-9b36-74e612865809",
+        "toid": null,
+        "theme": "Land Use",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "New",
+        "name1_text": "337",
+        "name2_text": null,
+        "description": "Private Residential Site",
+        "matcheduprn": null,
+        "stakeholder": null,
+        "versiondate": "2024-09-06",
+        "mainbuildingid": "36d7c4ca-fb9f-46a0-97f4-600d4bc714c7",
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "extentdefinition": "Manually Defined Incomplete",
+        "geometry_area_m2": 47.035,
+        "name1_updatedate": "2011-06-25",
+        "name2_updatedate": null,
+        "status_updatedate": "2022-05-31",
+        "addresscount_other": 0,
+        "addresscount_total": 3,
+        "matcheduprn_method": null,
+        "name1_evidencedate": "1988-04-22",
+        "name2_evidencedate": null,
+        "geometry_updatedate": "2022-05-31",
+        "oslanduse_updatedate": "2022-05-31",
+        "geometry_evidencedate": "2022-05-31",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2022-05-31",
+        "geometry_capturemethod": "Desk-Based",
+        "oslanduse_evidencedate": "2022-05-31",
+        "sitetoaddressreference": [
+          {
+            "uprn": 6183654,
+            "siteid": "018589e7-6179-46e0-9b36-74e612865809",
+            "siteversiondate": "2024-09-06",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6355492,
+            "siteid": "018589e7-6179-46e0-9b36-74e612865809",
+            "siteversiondate": "2024-09-06",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6355507,
+            "siteid": "018589e7-6179-46e0-9b36-74e612865809",
+            "siteversiondate": "2024-09-06",
+            "relationshiptype": "Within"
+          }
+        ],
+        "versionavailabletodate": null,
+        "addresscount_commercial": 1,
+        "oslanduse_capturemethod": "Desk-Based",
+        "addresscount_residential": 2,
+        "description_evidencedate": "2022-05-31",
+        "versionavailablefromdate": "2024-09-07T00:00:00Z",
+        "description_capturemethod": "Desk-Based",
+        "address_classificationcode": null,
+        "address_primarydescription": "Mixed",
+        "address_classificationsource": "Multiple Addresses",
+        "address_secondarydescription": null,
+        "address_classificationcorrelation": "Acceptable"
+      }
+    },
+    {
+      "id": "01df00c9-e29c-4369-91ff-0f308490a168",
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                538369.82,
+                179140.39
+              ],
+              [
+                538372.52,
+                179136.34
+              ],
+              [
+                538378.3,
+                179139
+              ],
+              [
+                538388.2,
+                179143.55
+              ],
+              [
+                538394.9,
+                179146.6
+              ],
+              [
+                538399.95,
+                179148.9
+              ],
+              [
+                538398.9,
+                179151.3
+              ],
+              [
+                538396.3,
+                179152.05
+              ],
+              [
+                538386.35,
+                179147.7
+              ],
+              [
+                538376.4,
+                179143.3
+              ],
+              [
+                538369.82,
+                179140.39
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "01df00c9-e29c-4369-91ff-0f308490a168",
+        "toid": null,
+        "theme": "Land Use",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "New",
+        "name1_text": "272C",
+        "name2_text": null,
+        "description": "Private Residential Site",
+        "matcheduprn": 6080621,
+        "stakeholder": null,
+        "versiondate": "2024-09-06",
+        "mainbuildingid": "04c24eaa-18f4-4bd9-8f2f-52036c98bcae",
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "extentdefinition": "Auto-Defined Complete",
+        "geometry_area_m2": 138.201,
+        "name1_updatedate": "2011-06-25",
+        "name2_updatedate": null,
+        "status_updatedate": "2021-09-06",
+        "addresscount_other": 0,
+        "addresscount_total": 1,
+        "matcheduprn_method": "Matched Using Single Address",
+        "name1_evidencedate": "1988-04-22",
+        "name2_evidencedate": null,
+        "geometry_updatedate": "2021-09-06",
+        "oslanduse_updatedate": "2021-09-06",
+        "geometry_evidencedate": "2021-09-06",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2021-09-06",
+        "geometry_capturemethod": "Automated Process",
+        "oslanduse_evidencedate": "2021-09-06",
+        "sitetoaddressreference": [
+          {
+            "uprn": 6080621,
+            "siteid": "01df00c9-e29c-4369-91ff-0f308490a168",
+            "siteversiondate": "2024-09-06",
+            "relationshiptype": "Same As"
+          }
+        ],
+        "versionavailabletodate": null,
+        "addresscount_commercial": 0,
+        "oslanduse_capturemethod": "Automated Process",
+        "addresscount_residential": 1,
+        "description_evidencedate": "2021-09-06",
+        "versionavailablefromdate": "2024-09-07T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_classificationsource": "Matched UPRN",
+        "address_secondarydescription": "Dwelling",
+        "address_classificationcorrelation": "Good"
+      }
+    },
+    {
+      "id": "01f07626-63e6-42a7-8228-84912974aad9",
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                538406.087,
+                178911.753
+              ],
+              [
+                538404.507,
+                178912.192
+              ],
+              [
+                538395.671,
+                178914.647
+              ],
+              [
+                538393.601,
+                178915.222
+              ],
+              [
+                538390.567,
+                178916.065
+              ],
+              [
+                538390.35,
+                178915.25
+              ],
+              [
+                538389.095,
+                178910.832
+              ],
+              [
+                538394.216,
+                178909.41
+              ],
+              [
+                538403.052,
+                178906.956
+              ],
+              [
+                538404.632,
+                178906.517
+              ],
+              [
+                538406.087,
+                178911.753
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "01f07626-63e6-42a7-8228-84912974aad9",
+        "toid": null,
+        "theme": "Land Use",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "Modified Geometry And Attributes",
+        "name1_text": "19",
+        "name2_text": null,
+        "description": "Private Residential Site",
+        "matcheduprn": 6196788,
+        "stakeholder": null,
+        "versiondate": "2026-09-13",
+        "mainbuildingid": "aceb1ed3-6ef3-40e3-a605-171a6cf082ea",
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "extentdefinition": "Manually Defined Complete",
+        "geometry_area_m2": 87.562,
+        "name1_updatedate": "2022-02-08",
+        "name2_updatedate": null,
+        "status_updatedate": "2022-02-08",
+        "addresscount_other": 0,
+        "addresscount_total": 1,
+        "matcheduprn_method": "Matched Using Single Address",
+        "name1_evidencedate": "2022-02-08",
+        "name2_evidencedate": null,
+        "geometry_updatedate": "2026-09-12",
+        "oslanduse_updatedate": "2022-02-08",
+        "geometry_evidencedate": "2026-05-24",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2022-02-08",
+        "geometry_capturemethod": "Remote Sensing Survey",
+        "oslanduse_evidencedate": "2022-02-08",
+        "sitetoaddressreference": [
+          {
+            "uprn": 6196788,
+            "siteid": "01f07626-63e6-42a7-8228-84912974aad9",
+            "siteversiondate": "2026-09-13",
+            "relationshiptype": "Same As"
+          }
+        ],
+        "versionavailabletodate": null,
+        "addresscount_commercial": 0,
+        "oslanduse_capturemethod": "Desk-Based",
+        "addresscount_residential": 1,
+        "description_evidencedate": "2022-02-08",
+        "versionavailablefromdate": "2026-09-14T00:00:00Z",
+        "description_capturemethod": "Desk-Based",
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_classificationsource": "Matched UPRN",
+        "address_secondarydescription": "Dwelling",
+        "address_classificationcorrelation": "Good"
+      }
+    },
+    {
+      "id": "023452e8-c33a-4f88-8f01-9f5694c48d09",
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                538413.25,
+                179152.8
+              ],
+              [
+                538412.35,
+                179152.35
+              ],
+              [
+                538413.65,
+                179149.55
+              ],
+              [
+                538418.7,
+                179151.85
+              ],
+              [
+                538420.667,
+                179152.738
+              ],
+              [
+                538423.15,
+                179153.85
+              ],
+              [
+                538433.05,
+                179158.3
+              ],
+              [
+                538438.05,
+                179160.5
+              ],
+              [
+                538436,
+                179164.85
+              ],
+              [
+                538431.05,
+                179162.65
+              ],
+              [
+                538420.71,
+                179157.986
+              ],
+              [
+                538418.717,
+                179157.087
+              ],
+              [
+                538416.85,
+                179156.3
+              ],
+              [
+                538413.6,
+                179154.9
+              ],
+              [
+                538413.25,
+                179152.8
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "023452e8-c33a-4f88-8f01-9f5694c48d09",
+        "toid": null,
+        "theme": "Land Use",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "New",
+        "name1_text": "9",
+        "name2_text": null,
+        "description": "Private Residential Site",
+        "matcheduprn": 6079932,
+        "stakeholder": null,
+        "versiondate": "2024-09-06",
+        "mainbuildingid": "ccc43c04-791e-4dc3-b105-a930081f91b4",
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "extentdefinition": "Auto-Defined Complete",
+        "geometry_area_m2": 125.513,
+        "name1_updatedate": "2011-06-25",
+        "name2_updatedate": null,
+        "status_updatedate": "2021-09-06",
+        "addresscount_other": 0,
+        "addresscount_total": 1,
+        "matcheduprn_method": "Matched Using Single Address",
+        "name1_evidencedate": "1989-03-01",
+        "name2_evidencedate": null,
+        "geometry_updatedate": "2021-09-06",
+        "oslanduse_updatedate": "2021-09-06",
+        "geometry_evidencedate": "2021-09-06",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2021-09-06",
+        "geometry_capturemethod": "Automated Process",
+        "oslanduse_evidencedate": "2021-09-06",
+        "sitetoaddressreference": [
+          {
+            "uprn": 6079932,
+            "siteid": "023452e8-c33a-4f88-8f01-9f5694c48d09",
+            "siteversiondate": "2024-09-06",
+            "relationshiptype": "Same As"
+          }
+        ],
+        "versionavailabletodate": null,
+        "addresscount_commercial": 0,
+        "oslanduse_capturemethod": "Automated Process",
+        "addresscount_residential": 1,
+        "description_evidencedate": "2021-09-06",
+        "versionavailablefromdate": "2024-09-07T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_classificationsource": "Matched UPRN",
+        "address_secondarydescription": "Dwelling",
+        "address_classificationcorrelation": "Good"
+      }
+    },
+    {
+      "id": "0262f3bc-24df-4b71-9ff2-ad860cb7e2a4",
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                537754.7,
+                178828.15
+              ],
+              [
+                537754.4,
+                178824.8
+              ],
+              [
+                537756.8,
+                178824.5
+              ],
+              [
+                537758.85,
+                178824.35
+              ],
+              [
+                537767.6,
+                178823.6
+              ],
+              [
+                537769.15,
+                178823.5
+              ],
+              [
+                537771.75,
+                178823.35
+              ],
+              [
+                537772.2,
+                178829.05
+              ],
+              [
+                537772.6,
+                178834.45
+              ],
+              [
+                537771.75,
+                178834.5
+              ],
+              [
+                537770.1,
+                178834.55
+              ],
+              [
+                537768.6,
+                178834.7
+              ],
+              [
+                537759.55,
+                178835.5
+              ],
+              [
+                537757.7,
+                178835.65
+              ],
+              [
+                537755.2,
+                178836
+              ],
+              [
+                537754.95,
+                178831.95
+              ],
+              [
+                537754.9,
+                178831.2
+              ],
+              [
+                537754.75,
+                178829.25
+              ],
+              [
+                537754.7,
+                178828.15
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0262f3bc-24df-4b71-9ff2-ad860cb7e2a4",
+        "toid": null,
+        "theme": "Land Use",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "Modified Attributes",
+        "name1_text": "13 to 18",
+        "name2_text": null,
+        "description": "Private Residential Site",
+        "matcheduprn": null,
+        "stakeholder": null,
+        "versiondate": "2025-12-24",
+        "mainbuildingid": "4fa64774-8186-4b4f-91a2-b28e23ede41d",
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "extentdefinition": "Manually Defined Complete",
+        "geometry_area_m2": 194.313,
+        "name1_updatedate": "2025-12-22",
+        "name2_updatedate": null,
+        "status_updatedate": "2021-09-06",
+        "addresscount_other": 0,
+        "addresscount_total": 6,
+        "matcheduprn_method": null,
+        "name1_evidencedate": "2025-12-22",
+        "name2_evidencedate": null,
+        "geometry_updatedate": "2025-12-22",
+        "oslanduse_updatedate": "2021-09-06",
+        "geometry_evidencedate": "2025-12-22",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2021-09-06",
+        "geometry_capturemethod": "Desk-Based",
+        "oslanduse_evidencedate": "2021-09-06",
+        "sitetoaddressreference": [
+          {
+            "uprn": 6060522,
+            "siteid": "0262f3bc-24df-4b71-9ff2-ad860cb7e2a4",
+            "siteversiondate": "2025-12-24",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6060523,
+            "siteid": "0262f3bc-24df-4b71-9ff2-ad860cb7e2a4",
+            "siteversiondate": "2025-12-24",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6060524,
+            "siteid": "0262f3bc-24df-4b71-9ff2-ad860cb7e2a4",
+            "siteversiondate": "2025-12-24",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6060525,
+            "siteid": "0262f3bc-24df-4b71-9ff2-ad860cb7e2a4",
+            "siteversiondate": "2025-12-24",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6060526,
+            "siteid": "0262f3bc-24df-4b71-9ff2-ad860cb7e2a4",
+            "siteversiondate": "2025-12-24",
+            "relationshiptype": "Within"
+          },
+          {
+            "uprn": 6060527,
+            "siteid": "0262f3bc-24df-4b71-9ff2-ad860cb7e2a4",
+            "siteversiondate": "2025-12-24",
+            "relationshiptype": "Within"
+          }
+        ],
+        "versionavailabletodate": null,
+        "addresscount_commercial": 0,
+        "oslanduse_capturemethod": "Automated Process",
+        "addresscount_residential": 6,
+        "description_evidencedate": "2021-09-06",
+        "versionavailablefromdate": "2025-12-25T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_classificationsource": "Multiple Addresses",
+        "address_secondarydescription": "Dwelling",
+        "address_classificationcorrelation": "Good"
+      }
+    },
+    {
+      "id": "02cd58cd-0fbf-4eae-8bd8-5cc0c3c170b1",
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                537814.2,
+                178864.15
+              ],
+              [
+                537813.9,
+                178860.3
+              ],
+              [
+                537817.6,
+                178859.8
+              ],
+              [
+                537818.6,
+                178859.75
+              ],
+              [
+                537826.6,
+                178859.2
+              ],
+              [
+                537827.45,
+                178859.15
+              ],
+              [
+                537828.75,
+                178859.2
+              ],
+              [
+                537829.01,
+                178862.97
+              ],
+              [
+                537826.9,
+                178863.1
+              ],
+              [
+                537817.85,
+                178863.65
+              ],
+              [
+                537814.2,
+                178864.15
+              ]
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "02cd58cd-0fbf-4eae-8bd8-5cc0c3c170b1",
+        "toid": null,
+        "theme": "Land Use",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "New",
+        "name1_text": "30",
+        "name2_text": null,
+        "description": "Private Residential Site",
+        "matcheduprn": 6060480,
+        "stakeholder": null,
+        "versiondate": "2024-09-06",
+        "mainbuildingid": "40cdd4ba-d3ff-427f-bcd8-9da9dacb939d",
+        "name1_language": null,
+        "name2_language": null,
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "extentdefinition": "Auto-Defined Complete",
+        "geometry_area_m2": 57.582,
+        "name1_updatedate": "2011-06-25",
+        "name2_updatedate": null,
+        "status_updatedate": "2021-09-06",
+        "addresscount_other": 0,
+        "addresscount_total": 1,
+        "matcheduprn_method": "Matched Using Single Address",
+        "name1_evidencedate": "1988-04-20",
+        "name2_evidencedate": null,
+        "geometry_updatedate": "2021-09-06",
+        "oslanduse_updatedate": "2021-09-06",
+        "geometry_evidencedate": "2021-09-06",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "2021-09-06",
+        "geometry_capturemethod": "Automated Process",
+        "oslanduse_evidencedate": "2021-09-06",
+        "sitetoaddressreference": [
+          {
+            "uprn": 6060480,
+            "siteid": "02cd58cd-0fbf-4eae-8bd8-5cc0c3c170b1",
+            "siteversiondate": "2024-09-06",
+            "relationshiptype": "Same As"
+          }
+        ],
+        "versionavailabletodate": null,
+        "addresscount_commercial": 0,
+        "oslanduse_capturemethod": "Automated Process",
+        "addresscount_residential": 1,
+        "description_evidencedate": "2021-09-06",
+        "versionavailablefromdate": "2024-09-07T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_classificationsource": "Matched UPRN",
+        "address_secondarydescription": "Dwelling",
+        "address_classificationcorrelation": "Good"
+      }
+    }
+  ]
+}

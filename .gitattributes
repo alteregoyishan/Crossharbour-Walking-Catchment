@@ -1,0 +1,6 @@
+data/raw/** binary
+*.gpkg binary
+*.pdf binary
+*.png binary
+*.webp binary
+*.gz binary

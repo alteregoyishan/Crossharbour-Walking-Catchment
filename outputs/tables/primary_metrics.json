@@ -1,0 +1,22 @@
+{
+  "walking_threshold_min": 10,
+  "walking_speed_kmh": 4.8,
+  "selected_network_buffer_m": 25,
+  "primary_population_method": "standard_areal_weighting",
+  "primary_area_method": "raw_service_area",
+  "catchment_area_ha": 69.4,
+  "estimated_population": 8160,
+  "population_density_per_ha": 117.5,
+  "population_baseline": "ONS Census 2021 population baseline",
+  "land_only_area_ha": 66.7,
+  "land_only_estimated_population": 10130,
+  "land_only_density_per_ha": 151.9,
+  "number_network_accessible_schools": null,
+  "confirmed_network_accessible_schools": 0,
+  "school_destinations_unverified": 42,
+  "school_result_status": "pending_destination_review",
+  "within_land_service_polygon_schools": 2,
+  "water_source_file": "data/processed/OpenStreetMap/water_polygons.gpkg",
+  "water_metadata_file": "data/processed/OpenStreetMap/water_polygons.json",
+  "analysis_date": "2026-10-10"
+}

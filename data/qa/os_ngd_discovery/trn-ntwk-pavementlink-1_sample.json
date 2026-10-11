@@ -1,0 +1,517 @@
+{
+  "type": "FeatureCollection",
+  "links": [
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/trn-ntwk-pavementlink-1/items?limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "self",
+      "type": "application/geo+json",
+      "title": "All features from the 'Pavement Link v1' collection within bounding box: 537642.241,178797.287,538415.757,179565.712"
+    },
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/trn-ntwk-pavementlink-1/items?offset=10&limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "next",
+      "type": "application/geo+json",
+      "title": "Next page"
+    }
+  ],
+  "timeStamp": "2026-10-10T22:03:53.010217783Z",
+  "numberReturned": 10,
+  "features": [
+    {
+      "id": "001c0bcf-7e51-4aa8-8c9b-d14a14478a1e",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            538096,
+            179357
+          ],
+          [
+            538099,
+            179358
+          ],
+          [
+            538100,
+            179359
+          ],
+          [
+            538103.595,
+            179362.856
+          ],
+          [
+            538109.281,
+            179368.956
+          ],
+          [
+            538128.227,
+            179389.28
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "001c0bcf-7e51-4aa8-8c9b-d14a14478a1e",
+        "theme": "Transport",
+        "changetype": "New",
+        "name1_text": "Galbraith Street",
+        "name2_text": null,
+        "roadlinkid": "78298da2-1bb5-4406-a61e-8c9c516b16b5",
+        "description": "Pavement",
+        "versiondate": "2023-09-14",
+        "name1_language": null,
+        "name2_language": null,
+        "routehierarchy": "Local Road",
+        "geometry_length_m": 45.973,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "roadclassificationnumber": null,
+        "versionavailablefromdate": "2023-09-15T00:00:00Z",
+        "presenceofpavement_source": "Ordnance Survey",
+        "presenceofpavement_sideofroad": "Left",
+        "presenceofpavement_updatedate": "2023-09-13",
+        "presenceofpavement_evidencedate": "2013-07-18",
+        "presenceofpavement_capturemethod": "Automated Process",
+        "presenceofpavement_averagewidth_m": 2.25,
+        "presenceofpavement_minimumwidth_m": 1.26
+      }
+    },
+    {
+      "id": "02ca24d3-9528-4cee-973a-ee3c7c0c3d18",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            538398,
+            179083
+          ],
+          [
+            538376.589,
+            179112.484
+          ],
+          [
+            538372.648,
+            179118.939
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "02ca24d3-9528-4cee-973a-ee3c7c0c3d18",
+        "theme": "Transport",
+        "changetype": "Modified Attributes",
+        "name1_text": "Manchester Road",
+        "name2_text": null,
+        "roadlinkid": "4767202c-454e-4bcb-b772-ea16f4a4267c",
+        "description": "Pavement",
+        "versiondate": "2026-10-05",
+        "name1_language": null,
+        "name2_language": null,
+        "routehierarchy": "A Road",
+        "geometry_length_m": 44.001,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "roadclassificationnumber": "A1206",
+        "versionavailablefromdate": "2026-10-06T00:00:00Z",
+        "presenceofpavement_source": "Ordnance Survey",
+        "presenceofpavement_sideofroad": "Right",
+        "presenceofpavement_updatedate": "2026-09-29",
+        "presenceofpavement_evidencedate": "2026-05-24",
+        "presenceofpavement_capturemethod": "Automated Process",
+        "presenceofpavement_averagewidth_m": 3.08,
+        "presenceofpavement_minimumwidth_m": 1.44
+      }
+    },
+    {
+      "id": "04342599-2f3f-4bcc-979d-bfb6fe4a4079",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            538344.029,
+            179513.899
+          ],
+          [
+            538348,
+            179500
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "04342599-2f3f-4bcc-979d-bfb6fe4a4079",
+        "theme": "Transport",
+        "changetype": "Modified Attributes",
+        "name1_text": "Stewart Street",
+        "name2_text": null,
+        "roadlinkid": "2dfc9f30-0426-468b-a0f9-e704680713cc",
+        "description": "Pavement",
+        "versiondate": "2026-10-05",
+        "name1_language": null,
+        "name2_language": null,
+        "routehierarchy": "Local Road",
+        "geometry_length_m": 14.455,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "roadclassificationnumber": null,
+        "versionavailablefromdate": "2026-10-06T00:00:00Z",
+        "presenceofpavement_source": "Ordnance Survey",
+        "presenceofpavement_sideofroad": "Left",
+        "presenceofpavement_updatedate": "2026-09-29",
+        "presenceofpavement_evidencedate": "2026-05-24",
+        "presenceofpavement_capturemethod": "Automated Process",
+        "presenceofpavement_averagewidth_m": 2.74,
+        "presenceofpavement_minimumwidth_m": 0.68
+      }
+    },
+    {
+      "id": "049a902b-b1b8-409e-ae07-7904037d1147",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            537706.747,
+            178911.591
+          ],
+          [
+            537704.987,
+            178888.543
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "049a902b-b1b8-409e-ae07-7904037d1147",
+        "theme": "Transport",
+        "changetype": "New",
+        "name1_text": "Taeping Street",
+        "name2_text": null,
+        "roadlinkid": "874690ba-07e8-485a-a218-07fe7299ab5e",
+        "description": "Pavement",
+        "versiondate": "2023-09-14",
+        "name1_language": null,
+        "name2_language": null,
+        "routehierarchy": "Restricted Local Access Road",
+        "geometry_length_m": 23.115,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "roadclassificationnumber": null,
+        "versionavailablefromdate": "2023-09-15T00:00:00Z",
+        "presenceofpavement_source": "Ordnance Survey",
+        "presenceofpavement_sideofroad": "Left",
+        "presenceofpavement_updatedate": "2023-09-13",
+        "presenceofpavement_evidencedate": "2014-06-30",
+        "presenceofpavement_capturemethod": "Automated Process",
+        "presenceofpavement_averagewidth_m": 0.4,
+        "presenceofpavement_minimumwidth_m": 0.4
+      }
+    },
+    {
+      "id": "04b141a7-9a96-455b-9938-e1c8fe391986",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            538282.458,
+            179059.112
+          ],
+          [
+            538284,
+            179055
+          ],
+          [
+            538286,
+            179043
+          ],
+          [
+            538286.104,
+            179041.539
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "04b141a7-9a96-455b-9938-e1c8fe391986",
+        "theme": "Transport",
+        "changetype": "New",
+        "name1_text": "St James Mews",
+        "name2_text": null,
+        "roadlinkid": "13401799-853b-489b-b1bb-27e8eae38fe8",
+        "description": "Pavement",
+        "versiondate": "2023-09-14",
+        "name1_language": null,
+        "name2_language": null,
+        "routehierarchy": "Local Road",
+        "geometry_length_m": 18.022,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "roadclassificationnumber": null,
+        "versionavailablefromdate": "2023-09-15T00:00:00Z",
+        "presenceofpavement_source": "Ordnance Survey",
+        "presenceofpavement_sideofroad": "Left",
+        "presenceofpavement_updatedate": "2023-09-13",
+        "presenceofpavement_evidencedate": "2002-10-28",
+        "presenceofpavement_capturemethod": "Automated Process",
+        "presenceofpavement_averagewidth_m": 1.84,
+        "presenceofpavement_minimumwidth_m": 1.0
+      }
+    },
+    {
+      "id": "0588625e-9f32-4852-9c76-61224509b1a7",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            538179.089,
+            179272.089
+          ],
+          [
+            538186,
+            179279
+          ],
+          [
+            538196.845,
+            179291.12
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0588625e-9f32-4852-9c76-61224509b1a7",
+        "theme": "Transport",
+        "changetype": "Modified Attributes",
+        "name1_text": "Marshfield Street",
+        "name2_text": null,
+        "roadlinkid": "29adde10-1ce1-437f-922a-eca0c13ef820",
+        "description": "Pavement",
+        "versiondate": "2023-11-10",
+        "name1_language": null,
+        "name2_language": null,
+        "routehierarchy": "Local Road",
+        "geometry_length_m": 26.037,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "roadclassificationnumber": null,
+        "versionavailablefromdate": "2023-11-11T00:00:00Z",
+        "presenceofpavement_source": "Ordnance Survey",
+        "presenceofpavement_sideofroad": "Right",
+        "presenceofpavement_updatedate": "2023-11-07",
+        "presenceofpavement_evidencedate": "2021-04-17",
+        "presenceofpavement_capturemethod": "Automated Process",
+        "presenceofpavement_averagewidth_m": 2.35,
+        "presenceofpavement_minimumwidth_m": 1.44
+      }
+    },
+    {
+      "id": "063ad673-37da-4eaf-bee3-34ccefa55ab7",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            538350.823,
+            179152.714
+          ],
+          [
+            538350,
+            179154
+          ],
+          [
+            538337.581,
+            179171.369
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "063ad673-37da-4eaf-bee3-34ccefa55ab7",
+        "theme": "Transport",
+        "changetype": "Modified Attributes",
+        "name1_text": "Manchester Road",
+        "name2_text": null,
+        "roadlinkid": "fe50001d-62c5-48aa-86fb-8a80277aaac9",
+        "description": "Pavement",
+        "versiondate": "2026-10-05",
+        "name1_language": null,
+        "name2_language": null,
+        "routehierarchy": "A Road",
+        "geometry_length_m": 22.879,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "roadclassificationnumber": "A1206",
+        "versionavailablefromdate": "2026-10-06T00:00:00Z",
+        "presenceofpavement_source": "Ordnance Survey",
+        "presenceofpavement_sideofroad": "Right",
+        "presenceofpavement_updatedate": "2026-09-29",
+        "presenceofpavement_evidencedate": "2026-05-24",
+        "presenceofpavement_capturemethod": "Automated Process",
+        "presenceofpavement_averagewidth_m": 2.97,
+        "presenceofpavement_minimumwidth_m": 1.43
+      }
+    },
+    {
+      "id": "06bd570f-1eac-4297-bc70-792f4e2e63d1",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            537883.663,
+            179080.12
+          ],
+          [
+            537895.361,
+            179079.47
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "06bd570f-1eac-4297-bc70-792f4e2e63d1",
+        "theme": "Transport",
+        "changetype": "New",
+        "name1_text": "Selsdon Way",
+        "name2_text": null,
+        "roadlinkid": "f55021dd-84c9-4f05-9a32-184f0419e4df",
+        "description": "Pavement",
+        "versiondate": "2023-09-14",
+        "name1_language": null,
+        "name2_language": null,
+        "routehierarchy": "Local Road",
+        "geometry_length_m": 11.716,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "roadclassificationnumber": null,
+        "versionavailablefromdate": "2023-09-15T00:00:00Z",
+        "presenceofpavement_source": "Ordnance Survey",
+        "presenceofpavement_sideofroad": "Right",
+        "presenceofpavement_updatedate": "2023-09-13",
+        "presenceofpavement_evidencedate": "2002-10-28",
+        "presenceofpavement_capturemethod": "Automated Process",
+        "presenceofpavement_averagewidth_m": 0.74,
+        "presenceofpavement_minimumwidth_m": 0.74
+      }
+    },
+    {
+      "id": "071ceab6-021a-4ebe-a754-96bfdffcd63c",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            538398.916,
+            179379.778
+          ],
+          [
+            538396,
+            179389
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "071ceab6-021a-4ebe-a754-96bfdffcd63c",
+        "theme": "Transport",
+        "changetype": "New",
+        "name1_text": null,
+        "name2_text": null,
+        "roadlinkid": "9576121f-a9a4-4aaa-bc65-0178daaada92",
+        "description": "Pavement",
+        "versiondate": "2023-09-14",
+        "name1_language": null,
+        "name2_language": null,
+        "routehierarchy": "Restricted Local Access Road",
+        "geometry_length_m": 9.672,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "roadclassificationnumber": null,
+        "versionavailablefromdate": "2023-09-15T00:00:00Z",
+        "presenceofpavement_source": "Ordnance Survey",
+        "presenceofpavement_sideofroad": "Right",
+        "presenceofpavement_updatedate": "2023-09-13",
+        "presenceofpavement_evidencedate": "2013-07-18",
+        "presenceofpavement_capturemethod": "Automated Process",
+        "presenceofpavement_averagewidth_m": 2.07,
+        "presenceofpavement_minimumwidth_m": 0.93
+      }
+    },
+    {
+      "id": "074c7230-f0e2-43ec-8e48-31e8360fea1e",
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            538277.588,
+            179357.066
+          ],
+          [
+            538281.224,
+            179358.015
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "074c7230-f0e2-43ec-8e48-31e8360fea1e",
+        "theme": "Transport",
+        "changetype": "Modified Attributes",
+        "name1_text": "Marshfield Street",
+        "name2_text": null,
+        "roadlinkid": "8f17ac1b-1478-47a3-b88e-c85c4960d790",
+        "description": "Pavement",
+        "versiondate": "2026-10-05",
+        "name1_language": null,
+        "name2_language": null,
+        "routehierarchy": "Local Road",
+        "geometry_length_m": 3.758,
+        "alternatename1_text": null,
+        "alternatename2_text": null,
+        "capturespecification": "Urban",
+        "versionavailabletodate": null,
+        "alternatename1_language": null,
+        "alternatename2_language": null,
+        "roadclassificationnumber": null,
+        "versionavailablefromdate": "2026-10-06T00:00:00Z",
+        "presenceofpavement_source": "Ordnance Survey",
+        "presenceofpavement_sideofroad": "Right",
+        "presenceofpavement_updatedate": "2026-09-29",
+        "presenceofpavement_evidencedate": "2026-05-24",
+        "presenceofpavement_capturemethod": "Automated Process",
+        "presenceofpavement_averagewidth_m": 2.22,
+        "presenceofpavement_minimumwidth_m": 1.03
+      }
+    }
+  ]
+}

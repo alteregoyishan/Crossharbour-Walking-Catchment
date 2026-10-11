@@ -1,0 +1,91 @@
+{
+  "created_at_utc": "2026-10-11T11:51:26.438576+00:00",
+  "primary_method": "P1 standard Census area weighting",
+  "source_population_field": "usual_residents_total",
+  "census_geography": "2021 LSOA",
+  "analysis_crs": "EPSG:27700",
+  "lsoa_denominator": "original full zone area; not water-adjusted",
+  "bridge_corridors_in_population": false,
+  "figure_06_boundary_geometry": "exterior shell of connected display catchment; analytical land geometry remains the fill and population denominator",
+  "direct_floor_coverage_threshold": 0.95,
+  "ngd_download": {
+    "source": "OS NGD API \u2013 Features",
+    "downloaded_at_utc": "2026-10-11T00:37:50.084614+00:00",
+    "query_bbox_epsg27700": [
+      537042.43,
+      178049.047,
+      538917.125,
+      180655.257999999
+    ],
+    "coverage_rule": "bounding box of every 2021 LSOA intersecting the 5/10/15-minute final C1 catchments",
+    "api_key_recorded": false,
+    "downloads": [
+      {
+        "collection_id": "bld-fts-building-4",
+        "endpoint": "https://api.os.uk/features/ngd/ofa/v1/collections/bld-fts-building-4/items",
+        "feature_count": 5874,
+        "page_count": 59,
+        "invalid_geometries_repaired": 0,
+        "family": "building",
+        "layer": "buildings"
+      },
+      {
+        "collection_id": "bld-fts-buildingpart-2",
+        "endpoint": "https://api.os.uk/features/ngd/ofa/v1/collections/bld-fts-buildingpart-2/items",
+        "feature_count": 8036,
+        "page_count": 81,
+        "invalid_geometries_repaired": 0,
+        "family": "building_part",
+        "layer": "building_parts"
+      },
+      {
+        "collection_id": "lus-fts-site-2",
+        "endpoint": "https://api.os.uk/features/ngd/ofa/v1/collections/lus-fts-site-2/items",
+        "feature_count": 4346,
+        "page_count": 44,
+        "invalid_geometries_repaired": 0,
+        "family": "site",
+        "layer": "sites"
+      },
+      {
+        "collection_id": "lus-fts-siteaccesslocation-2",
+        "endpoint": "https://api.os.uk/features/ngd/ofa/v1/collections/lus-fts-siteaccesslocation-2/items",
+        "feature_count": 284,
+        "page_count": 3,
+        "invalid_geometries_repaired": 0,
+        "family": "site_access_location",
+        "layer": "site_access_points"
+      },
+      {
+        "collection_id": "bld-fts-buildingaccesslocation-1",
+        "endpoint": "https://api.os.uk/features/ngd/ofa/v1/collections/bld-fts-buildingaccesslocation-1/items",
+        "feature_count": 85,
+        "page_count": 1,
+        "invalid_geometries_repaired": 0,
+        "family": "building_access_location",
+        "layer": "building_access_points"
+      }
+    ],
+    "sha256": "ba0523c6f91b9180d981e3b0c66147db493ba1419f07fa29fcdaea3886a94e19"
+  },
+  "p4_mixed_use_share_scenarios": {
+    "low": 0.25,
+    "central": 0.5,
+    "high": 0.75
+  },
+  "p5_status": "not_implemented_insufficient_coverage",
+  "outputs": [
+    "outputs/tables/population_sensitivity_c1.csv",
+    "outputs/tables/population_spatial_diagnostics_by_lsoa.csv",
+    "outputs/tables/population_allocation_methods_by_lsoa.csv",
+    "outputs/tables/population_accessibility_p5.csv",
+    "outputs/tables/population_method_feasibility.csv",
+    "outputs/qa/population_ngd_coverage_qa.csv",
+    "outputs/qa/population_spatial_qa_issues.csv",
+    "outputs/gis/population_sensitivity_c1.gpkg",
+    "outputs/maps/figure_06_population_sensitivity_qa.png",
+    "outputs/maps/figure_06_population_sensitivity_qa.pdf",
+    "outputs/methodology/population_sensitivity.md",
+    "outputs/methodology/population_calculation_summary.md"
+  ]
+}

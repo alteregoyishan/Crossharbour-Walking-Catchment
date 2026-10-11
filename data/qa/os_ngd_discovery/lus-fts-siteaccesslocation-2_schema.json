@@ -1,0 +1,260 @@
+{
+  "$id": "lus-fts-siteaccesslocation-2.0",
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "shortName": "SiteAccessLocation",
+  "longName": "Site Access Location",
+  "description": "Feature which has a point geometry and represents the locations where pedestrians and / or vehicles can enter or exit a site.",
+  "majorVersion": 2,
+  "minorVersion": 0,
+  "versionSuffix": null,
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -8.82,
+          49.79,
+          1.92,
+          60.94
+        ]
+      ],
+      "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-02-26T00:00:00Z",
+          null
+        ]
+      ],
+      "trs": "http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"
+    }
+  },
+  "properties": {
+    "osid": {
+      "originalName": "OSID",
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD.",
+      "type": "string",
+      "format": "uuid",
+      "maxLength": 36
+    },
+    "toid": {
+      "originalName": "TOID",
+      "description": "Topographic identifier (TOID) of the feature, as published in the OS MasterMap suite of products.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20
+    },
+    "versiondate": {
+      "originalName": "versionDate",
+      "description": "Date when the version was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "versionavailablefromdate": {
+      "originalName": "versionAvailableFromDate",
+      "description": "The date this version of the feature became the latest version.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "versionavailabletodate": {
+      "originalName": "versionAvailableToDate",
+      "description": "The date this version of the feature was superseded by an update or ceased to exist.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "changetype": {
+      "originalName": "changeType",
+      "description": "The type of change that generated a new version of the feature.",
+      "type": "string",
+      "maxLength": 50,
+      "enum": [
+        "End Of Life",
+        "Modified Attributes",
+        "Modified Geometry",
+        "Modified Geometry And Attributes",
+        "Moved From A Different Feature Type",
+        "Moved To A Different Feature Type",
+        "New"
+      ]
+    },
+    "geometry": {
+      "originalName": "geometry",
+      "description": "Geometry for the feature.",
+      "type": "object",
+      "$ref": "https://geojson.org/schema/Point.json",
+      "precision": 10,
+      "scale": 3
+    },
+    "geometry_evidencedate": {
+      "originalName": "geometry_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "geometry_capturemethod": {
+      "originalName": "geometry_capturemethod",
+      "description": "The source organisation who provided the data.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 25,
+      "enum": [
+        "Automated Process",
+        "Default Value",
+        "Desk-Based",
+        "Field Survey",
+        "Remote Sensing Survey",
+        "Sensor Measurement",
+        "Third Party Unknown"
+      ]
+    },
+    "geometry_updatedate": {
+      "originalName": "geometry_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "theme": {
+      "originalName": "theme",
+      "description": "The OS NGD Theme to which the feature belongs. Multiplicity allows for a primary theme to be assigned along with additional themes. For example, a Verge is primarily in the OS NGD Transport Theme, but it is also in the OS NGD Land Theme.",
+      "type": "string",
+      "maxLength": 40,
+      "enum": [
+        "Address",
+        "Administrative and Statistical Units",
+        "Buildings",
+        "Geographical Names",
+        "Land",
+        "Land Use",
+        "Structures",
+        "Transport",
+        "Water"
+      ]
+    },
+    "description": {
+      "originalName": "description",
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "type": "string",
+      "maxLength": 15,
+      "enum": [
+        "Access Location"
+      ]
+    },
+    "access_mode": {
+      "originalName": "access_mode",
+      "description": "A description of the method(s) of access normally utilised at the Site Access Location (for example, Pedestrian).",
+      "type": "string",
+      "maxLength": 25,
+      "enum": [
+        "Pedestrian",
+        "Pedestrian And Vehicular",
+        "Vehicular"
+      ]
+    },
+    "access_purpose": {
+      "originalName": "access_purpose",
+      "description": "A description of the principal access function at the Site Access Location (for example, Private or Public).",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 30,
+      "enum": [
+        "Emergency",
+        "Primary Public",
+        "Private",
+        "Public"
+      ]
+    },
+    "access_evidencedate": {
+      "originalName": "access_evidenceDate",
+      "description": "The date on which the latest evidence was gathered to make an update if required. For example, the date of collection by a surveyor or third party information received.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "access_updatedate": {
+      "originalName": "access_updateDate",
+      "description": "Date when the attribute was last updated.",
+      "type": "string",
+      "format": "date"
+    },
+    "accessedsiteid": {
+      "originalName": "accessedSiteID",
+      "description": "The unique identifier (OSID) of the site feature to which the SiteAccessLocation feature relates.",
+      "type": "string",
+      "format": "uuid",
+      "maxLength": 36
+    },
+    "accessednetworknodefeaturetype": {
+      "originalName": "accessedNetworkNodeFeatureType",
+      "description": "The OS NGD network that the feature is accessed from (for example, Road Network).",
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20,
+      "enum": [
+        "Road Node",
+        "Path Node",
+        "Railway Node",
+        "Water Node"
+      ]
+    },
+    "accessednetworknodeid": {
+      "originalName": "accessedNetworkNodeID",
+      "description": "The unique identifier (OSID) of the network node that represents the point on that network that provides access to the Site Access Location feature.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uuid",
+      "maxLength": 36
+    },
+    "distancetonetworknode_m": {
+      "originalName": "distanceToNetworkNode_m",
+      "description": "The straight line measure between the accessednetworknodeid and the location of the access feature.",
+      "type": [
+        "number",
+        "null"
+      ],
+      "precision": 5,
+      "scale": 1
+    }
+  },
+  "required": [
+    "osid",
+    "toid",
+    "versiondate",
+    "versionavailablefromdate",
+    "versionavailabletodate",
+    "changetype",
+    "description",
+    "geometry",
+    "geometry_evidencedate",
+    "geometry_capturemethod",
+    "geometry_updatedate",
+    "theme",
+    "access_mode",
+    "access_purpose",
+    "access_evidencedate",
+    "access_capturemethod",
+    "access_updatedate",
+    "accessesiteid",
+    "accessednetworknodefeaturetype",
+    "accessednetworknodeid",
+    "distancetonetworknode_m"
+  ],
+  "additionalProperties": false
+}

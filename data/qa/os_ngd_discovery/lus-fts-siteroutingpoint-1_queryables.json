@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://api.os.uk/features/ngd/ofa/v1/collections/lus-fts-siteroutingpoint-1/queryables",
+  "type": "object",
+  "title": "Queryable attributes for lus-fts-siteroutingpoint-1 collection",
+  "description": "This lists the attributes which can be filtered on and their types for lus-fts-siteroutingpoint-1 collection.",
+  "properties": {
+    "osid": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 36,
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD."
+    },
+    "toid": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 20,
+      "description": "Topographic identifier (TOID) of the feature, as published in the OS MasterMap suite of products."
+    },
+    "description": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 15,
+      "description": "A single descriptive value intended for a quick understanding of what the feature represents.",
+      "enumeration": true,
+      "enum": [
+        "Routing Point"
+      ]
+    }
+  }
+}

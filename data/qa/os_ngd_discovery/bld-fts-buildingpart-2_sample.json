@@ -1,0 +1,1197 @@
+{
+  "type": "FeatureCollection",
+  "links": [
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/bld-fts-buildingpart-2/items?limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "self",
+      "type": "application/geo+json",
+      "title": "All features from the 'Building Part v2' collection within bounding box: 537642.241,178797.287,538415.757,179565.712"
+    },
+    {
+      "href": "https://api.os.uk/features/ngd/ofa/v1/collections/bld-fts-buildingpart-2/items?offset=10&limit=10&bbox=537642.241%2C178797.287%2C538415.757%2C179565.712&bbox-crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700&crs=http%3A%2F%2Fwww.opengis.net%2Fdef%2Fcrs%2FEPSG%2F0%2F27700",
+      "rel": "next",
+      "type": "application/geo+json",
+      "title": "Next page"
+    }
+  ],
+  "timeStamp": "2026-10-10T22:03:48.633663984Z",
+  "numberReturned": 10,
+  "features": [
+    {
+      "id": "00a18814-83d3-43da-9b82-ff8c4c42e34b",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537667.979,
+              178823.354
+            ],
+            [
+              537664.88,
+              178823.61
+            ],
+            [
+              537659.82,
+              178824.33
+            ],
+            [
+              537656.93,
+              178824.57
+            ],
+            [
+              537656.51,
+              178819.49
+            ],
+            [
+              537664.49,
+              178818.83
+            ],
+            [
+              537667.588,
+              178818.573
+            ],
+            [
+              537667.979,
+              178823.354
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00a18814-83d3-43da-9b82-ff8c4c42e34b",
+        "toid": "osgb1000041914663",
+        "theme": "Buildings",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Building",
+        "versiondate": "2025-02-09",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "200951f2-7891-45a7-904e-f22dc2752cd3",
+            "buildingpartid": "00a18814-83d3-43da-9b82-ff8c4c42e34b",
+            "buildingpartversiondate": "2025-02-09"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "geometry_area_m2": 54.941,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Building"
+        ],
+        "height_updatedate": "2025-01-17",
+        "status_updatedate": "1999-03-08",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2014-05-09",
+        "height_evidencedate": "2023-08-23",
+        "smallestsite_siteid": "200951f2-7891-45a7-904e-f22dc2752cd3",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": 11.0,
+        "height_absolutemin_m": 4.3,
+        "height_relativemax_m": 6.7,
+        "oslanduse_updatedate": "1999-03-08",
+        "geometry_evidencedate": "2013-07-18",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "1999-03-08",
+        "geometry_capturemethod": "Remote Sensing Survey",
+        "height_confidencelevel": "Moderate",
+        "oslandcover_updatedate": "1999-03-08",
+        "oslanduse_evidencedate": "1999-03-08",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1999-03-08",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "1999-03-08",
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "1999-03-08",
+        "versionavailablefromdate": "2025-02-10T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": 9.4,
+        "height_relativeroofbase_m": 5.1,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "00d4ad41-e5b0-4fdb-87ff-274790891311",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537783.25,
+              179361.1
+            ],
+            [
+              537777.6,
+              179361.45
+            ],
+            [
+              537777.35,
+              179357.2
+            ],
+            [
+              537772,
+              179357.65
+            ],
+            [
+              537771.35,
+              179348.7
+            ],
+            [
+              537767.65,
+              179349
+            ],
+            [
+              537767.4,
+              179345.7
+            ],
+            [
+              537771.15,
+              179345.4
+            ],
+            [
+              537776.75,
+              179344.95
+            ],
+            [
+              537776.85,
+              179346.1
+            ],
+            [
+              537782,
+              179345.7
+            ],
+            [
+              537781.9,
+              179344.7
+            ],
+            [
+              537793.05,
+              179343.8
+            ],
+            [
+              537793.25,
+              179346.05
+            ],
+            [
+              537798.25,
+              179345.65
+            ],
+            [
+              537798.1,
+              179343.55
+            ],
+            [
+              537803.95,
+              179343.1
+            ],
+            [
+              537804.15,
+              179345.59
+            ],
+            [
+              537804.9,
+              179355.1
+            ],
+            [
+              537799.95,
+              179355.5
+            ],
+            [
+              537800.062,
+              179357.138
+            ],
+            [
+              537800.25,
+              179359.9
+            ],
+            [
+              537783.25,
+              179361.1
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "00d4ad41-e5b0-4fdb-87ff-274790891311",
+        "toid": "osgb1000006509858",
+        "theme": "Buildings",
+        "status": "Unknown",
+        "nlud_code": null,
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Building",
+        "versiondate": "2026-06-10",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "06b5ded4-a25e-4214-8c74-d801bede2451",
+            "buildingpartid": "00d4ad41-e5b0-4fdb-87ff-274790891311",
+            "buildingpartversiondate": "2026-06-10"
+          }
+        ],
+        "oslandusetiera": "Unknown Or Unused Artificial",
+        "oslandusetierb": [],
+        "geometry_area_m2": 495.109,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Building"
+        ],
+        "height_updatedate": "2026-06-10",
+        "status_updatedate": "2005-01-13",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2014-05-06",
+        "height_evidencedate": "2026-05-24",
+        "smallestsite_siteid": "06b5ded4-a25e-4214-8c74-d801bede2451",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": 21.9,
+        "height_absolutemin_m": 1.8,
+        "height_relativemax_m": 20.1,
+        "oslanduse_updatedate": "2005-01-13",
+        "geometry_evidencedate": "2013-07-18",
+        "nlud_groupdescription": null,
+        "nlud_orderdescription": null,
+        "description_updatedate": "2005-01-13",
+        "geometry_capturemethod": "Remote Sensing Survey",
+        "height_confidencelevel": "Moderate",
+        "oslandcover_updatedate": "2005-01-13",
+        "oslanduse_evidencedate": "2005-01-13",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1988-07-14",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "2005-01-13",
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "2005-01-13",
+        "versionavailablefromdate": "2026-06-11T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": 16.3,
+        "height_relativeroofbase_m": 14.5,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Unknown Use",
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "0118a5f4-5495-4eaf-9316-bd9025fd7cb3",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538302.9,
+              179058.65
+            ],
+            [
+              538302.15,
+              179060.45
+            ],
+            [
+              538297.6,
+              179058.55
+            ],
+            [
+              538301.5,
+              179048.8
+            ],
+            [
+              538306.15,
+              179050.75
+            ],
+            [
+              538304.95,
+              179053.667
+            ],
+            [
+              538309.693,
+              179055.618
+            ],
+            [
+              538307.893,
+              179059.994
+            ],
+            [
+              538303.15,
+              179058.043
+            ],
+            [
+              538302.9,
+              179058.65
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0118a5f4-5495-4eaf-9316-bd9025fd7cb3",
+        "toid": "osgb1000041819865",
+        "theme": "Buildings",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Building",
+        "versiondate": "2025-02-09",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "b544a8d1-7005-4ed9-84a2-0f9c913b042e",
+            "buildingpartid": "0118a5f4-5495-4eaf-9316-bd9025fd7cb3",
+            "buildingpartversiondate": "2025-02-09"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "geometry_area_m2": 76.644,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Building"
+        ],
+        "height_updatedate": "2025-01-17",
+        "status_updatedate": "1989-03-01",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "2014-05-06",
+        "height_evidencedate": "2023-08-23",
+        "smallestsite_siteid": "b544a8d1-7005-4ed9-84a2-0f9c913b042e",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": 9.7,
+        "height_absolutemin_m": 2.6,
+        "height_relativemax_m": 7.1,
+        "oslanduse_updatedate": "1989-03-01",
+        "geometry_evidencedate": "2013-07-18",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "1989-03-01",
+        "geometry_capturemethod": "Remote Sensing Survey",
+        "height_confidencelevel": "Moderate",
+        "oslandcover_updatedate": "1989-03-01",
+        "oslanduse_evidencedate": "1989-03-01",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1989-03-01",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "1989-03-01",
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "1989-03-01",
+        "versionavailablefromdate": "2025-02-10T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": 7.7,
+        "height_relativeroofbase_m": 5.1,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "012fd754-168c-4811-a254-693ecd2cba09",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538340.3,
+              179259.4
+            ],
+            [
+              538345.1,
+              179261.5
+            ],
+            [
+              538341.4,
+              179269.5
+            ],
+            [
+              538336.8,
+              179267.4
+            ],
+            [
+              538340.3,
+              179259.4
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "012fd754-168c-4811-a254-693ecd2cba09",
+        "toid": "osgb1000041819237",
+        "theme": "Buildings",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Building",
+        "versiondate": "2025-12-24",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "69eee966-ff59-48a3-88f5-931978995416",
+            "buildingpartid": "012fd754-168c-4811-a254-693ecd2cba09",
+            "buildingpartversiondate": "2025-12-24"
+          },
+          {
+            "siteid": "a642c94c-7fe4-4427-8d58-d94b0c89e672",
+            "buildingpartid": "012fd754-168c-4811-a254-693ecd2cba09",
+            "buildingpartversiondate": "2025-12-24"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "geometry_area_m2": 45.16,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Building"
+        ],
+        "height_updatedate": "2025-01-17",
+        "status_updatedate": "1988-04-22",
+        "associatedstructure": null,
+        "containingsitecount": 2,
+        "geometry_updatedate": "1988-04-22",
+        "height_evidencedate": "2023-08-23",
+        "smallestsite_siteid": "69eee966-ff59-48a3-88f5-931978995416",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": 15.8,
+        "height_absolutemin_m": 2.9,
+        "height_relativemax_m": 12.9,
+        "oslanduse_updatedate": "1988-04-22",
+        "geometry_evidencedate": "1988-04-22",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "1988-04-22",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": "Moderate",
+        "oslandcover_updatedate": "1988-04-22",
+        "oslanduse_evidencedate": "1988-04-22",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1988-04-22",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "1988-04-22",
+        "largestsite_landusetiera": "Residential Accommodation",
+        "largestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "oslandcover_evidencedate": "1988-04-22",
+        "versionavailablefromdate": "2025-12-25T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": 14.9,
+        "height_relativeroofbase_m": 12.0,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "014aedad-dcee-49a8-be81-a17fb8b57c17",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538320.7,
+              179403.85
+            ],
+            [
+              538315.7,
+              179401.65
+            ],
+            [
+              538316.4,
+              179400
+            ],
+            [
+              538321.4,
+              179402.3
+            ],
+            [
+              538320.7,
+              179403.85
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "014aedad-dcee-49a8-be81-a17fb8b57c17",
+        "toid": "osgb1000006615001",
+        "theme": "Buildings",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Building",
+        "versiondate": "2025-02-09",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "48ed7b85-89d3-4481-b74f-fb946f41a020",
+            "buildingpartid": "014aedad-dcee-49a8-be81-a17fb8b57c17",
+            "buildingpartversiondate": "2025-02-09"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "geometry_area_m2": 9.575,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Building"
+        ],
+        "height_updatedate": "2025-01-17",
+        "status_updatedate": "1988-04-22",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "1988-04-22",
+        "height_evidencedate": "2023-08-23",
+        "smallestsite_siteid": "48ed7b85-89d3-4481-b74f-fb946f41a020",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": null,
+        "height_absolutemin_m": 3.1,
+        "height_relativemax_m": null,
+        "oslanduse_updatedate": "1988-04-22",
+        "geometry_evidencedate": "1988-04-22",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "1988-04-22",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": "Incomplete",
+        "oslandcover_updatedate": "1988-04-22",
+        "oslanduse_evidencedate": "1988-04-22",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1988-04-22",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "1988-04-22",
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "1988-04-22",
+        "versionavailablefromdate": "2025-02-10T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": null,
+        "height_relativeroofbase_m": null,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "01577b37-51a8-4fb9-b423-f9978db05270",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538151.6,
+              179560.6
+            ],
+            [
+              538148.65,
+              179556.25
+            ],
+            [
+              538158.7,
+              179549.2
+            ],
+            [
+              538161.6,
+              179553.5
+            ],
+            [
+              538151.6,
+              179560.6
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "01577b37-51a8-4fb9-b423-f9978db05270",
+        "toid": "osgb1000041818664",
+        "theme": "Buildings",
+        "status": null,
+        "nlud_code": "U091",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Building",
+        "versiondate": "2025-02-09",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "39bd86f0-92b0-43c4-b9de-f39251d0f5e3",
+            "buildingpartid": "01577b37-51a8-4fb9-b423-f9978db05270",
+            "buildingpartversiondate": "2025-02-09"
+          },
+          {
+            "siteid": "95c47617-ac2e-4d54-bf75-9bffdb0c05e3",
+            "buildingpartid": "01577b37-51a8-4fb9-b423-f9978db05270",
+            "buildingpartversiondate": "2025-02-09"
+          }
+        ],
+        "oslandusetiera": "Commercial Activity: Retail",
+        "oslandusetierb": [],
+        "geometry_area_m2": 64.053,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Building"
+        ],
+        "height_updatedate": "2025-01-17",
+        "status_updatedate": "1988-04-13",
+        "associatedstructure": null,
+        "containingsitecount": 2,
+        "geometry_updatedate": "1988-04-13",
+        "height_evidencedate": "2023-08-23",
+        "smallestsite_siteid": "39bd86f0-92b0-43c4-b9de-f39251d0f5e3",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": 13.7,
+        "height_absolutemin_m": 1.1,
+        "height_relativemax_m": 12.6,
+        "oslanduse_updatedate": "1988-04-13",
+        "geometry_evidencedate": "1988-04-13",
+        "nlud_groupdescription": "Shops",
+        "nlud_orderdescription": "RETAIL",
+        "description_updatedate": "1988-04-13",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": "Moderate",
+        "oslandcover_updatedate": "1988-04-13",
+        "oslanduse_evidencedate": "1988-04-13",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1988-04-13",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "1988-04-13",
+        "largestsite_landusetiera": "Commercial Activity: Retail",
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "1988-04-13",
+        "versionavailablefromdate": "2025-02-10T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": 9.6,
+        "height_relativeroofbase_m": 8.5,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Commercial Activity: Retail",
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": null,
+        "address_primarydescription": "Mixed",
+        "address_secondarydescription": null,
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "0160be2e-837b-48bd-a04f-877cafb670e7",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538021.75,
+              179288.2
+            ],
+            [
+              538018.5,
+              179279.5
+            ],
+            [
+              538023.4,
+              179277.6
+            ],
+            [
+              538026.7,
+              179286.3
+            ],
+            [
+              538021.75,
+              179288.2
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "0160be2e-837b-48bd-a04f-877cafb670e7",
+        "toid": "osgb1000041819535",
+        "theme": "Buildings",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Building",
+        "versiondate": "2025-02-09",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "00a878e9-813e-4cba-8b3a-16924abaa294",
+            "buildingpartid": "0160be2e-837b-48bd-a04f-877cafb670e7",
+            "buildingpartversiondate": "2025-02-09"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "geometry_area_m2": 49.07,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Building"
+        ],
+        "height_updatedate": "2025-01-17",
+        "status_updatedate": "1988-04-22",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "1988-04-22",
+        "height_evidencedate": "2023-08-23",
+        "smallestsite_siteid": "00a878e9-813e-4cba-8b3a-16924abaa294",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": 12.7,
+        "height_absolutemin_m": 1.3,
+        "height_relativemax_m": 11.4,
+        "oslanduse_updatedate": "1988-04-22",
+        "geometry_evidencedate": "1988-04-22",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "1988-04-22",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": "Moderate",
+        "oslandcover_updatedate": "1988-04-22",
+        "oslanduse_evidencedate": "1988-04-22",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1988-04-22",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "1988-04-22",
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "1988-04-22",
+        "versionavailablefromdate": "2025-02-10T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": 11.6,
+        "height_relativeroofbase_m": 10.3,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "01f86708-e14f-4470-956a-a4308a9e08b4",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538143.7,
+              179393.3
+            ],
+            [
+              538146,
+              179395.75
+            ],
+            [
+              538144.7,
+              179396.9
+            ],
+            [
+              538144.35,
+              179397.25
+            ],
+            [
+              538142.1,
+              179394.8
+            ],
+            [
+              538143.7,
+              179393.3
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "01f86708-e14f-4470-956a-a4308a9e08b4",
+        "toid": "osgb1000041819456",
+        "theme": "Buildings",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Building",
+        "versiondate": "2026-06-19",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "e39ce041-eaf0-469c-92a7-7379e8e66af0",
+            "buildingpartid": "01f86708-e14f-4470-956a-a4308a9e08b4",
+            "buildingpartversiondate": "2026-06-19"
+          },
+          {
+            "siteid": "170111b7-9d89-4749-8318-159f28116518",
+            "buildingpartid": "01f86708-e14f-4470-956a-a4308a9e08b4",
+            "buildingpartversiondate": "2026-06-19"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "geometry_area_m2": 7.368,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Building"
+        ],
+        "height_updatedate": null,
+        "status_updatedate": "1988-04-22",
+        "associatedstructure": null,
+        "containingsitecount": 2,
+        "geometry_updatedate": "1988-04-22",
+        "height_evidencedate": null,
+        "smallestsite_siteid": "e39ce041-eaf0-469c-92a7-7379e8e66af0",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": null,
+        "height_absolutemin_m": null,
+        "height_relativemax_m": null,
+        "oslanduse_updatedate": "1988-04-22",
+        "geometry_evidencedate": "1988-04-22",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "1988-04-22",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": null,
+        "oslandcover_updatedate": "1988-04-22",
+        "oslanduse_evidencedate": "1988-04-22",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1988-04-22",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "1988-04-22",
+        "largestsite_landusetiera": "Residential Accommodation",
+        "largestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "oslandcover_evidencedate": "1988-04-22",
+        "versionavailablefromdate": "2026-06-20T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": null,
+        "height_relativeroofbase_m": null,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "02b072bd-4b9a-4028-847c-489e33f96c4a",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              537872.45,
+              179197
+            ],
+            [
+              537872.8,
+              179201.5
+            ],
+            [
+              537868.1,
+              179201.6
+            ],
+            [
+              537868.2,
+              179203.05
+            ],
+            [
+              537867.7,
+              179203.1
+            ],
+            [
+              537868.2,
+              179209.9
+            ],
+            [
+              537866.25,
+              179210
+            ],
+            [
+              537865.5,
+              179200.45
+            ],
+            [
+              537866.45,
+              179200.4
+            ],
+            [
+              537866.35,
+              179198.9
+            ],
+            [
+              537865.4,
+              179198.95
+            ],
+            [
+              537864.7,
+              179189.75
+            ],
+            [
+              537866.75,
+              179189.75
+            ],
+            [
+              537867.2,
+              179196.3
+            ],
+            [
+              537867.75,
+              179196.25
+            ],
+            [
+              537867.8,
+              179197.35
+            ],
+            [
+              537872.45,
+              179197
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "02b072bd-4b9a-4028-847c-489e33f96c4a",
+        "toid": "osgb1000006509904",
+        "theme": "Buildings",
+        "status": null,
+        "nlud_code": "U083",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Building",
+        "versiondate": "2025-12-24",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "8865c3f4-48bb-460a-a586-76bb8cdccb40",
+            "buildingpartid": "02b072bd-4b9a-4028-847c-489e33f96c4a",
+            "buildingpartversiondate": "2025-12-24"
+          },
+          {
+            "siteid": "972313be-f322-492c-b8f5-b029d702f922",
+            "buildingpartid": "02b072bd-4b9a-4028-847c-489e33f96c4a",
+            "buildingpartversiondate": "2025-12-24"
+          },
+          {
+            "siteid": "c5d7726c-0d0b-4273-b79e-f24b6b8bfde5",
+            "buildingpartid": "02b072bd-4b9a-4028-847c-489e33f96c4a",
+            "buildingpartversiondate": "2025-12-24"
+          }
+        ],
+        "oslandusetiera": "Commercial Activity: Industrial Or Manufacturing",
+        "oslandusetierb": [],
+        "geometry_area_m2": 63.005,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Building"
+        ],
+        "height_updatedate": "2025-01-17",
+        "status_updatedate": "1988-07-14",
+        "associatedstructure": null,
+        "containingsitecount": 3,
+        "geometry_updatedate": "1988-07-14",
+        "height_evidencedate": "2023-08-23",
+        "smallestsite_siteid": "8865c3f4-48bb-460a-a586-76bb8cdccb40",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": 12.0,
+        "height_absolutemin_m": 4.9,
+        "height_relativemax_m": 7.1,
+        "oslanduse_updatedate": "1988-07-14",
+        "geometry_evidencedate": "1988-07-14",
+        "nlud_groupdescription": "Education",
+        "nlud_orderdescription": "COMMUNITY SERVICES",
+        "description_updatedate": "1988-07-14",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": "Moderate",
+        "oslandcover_updatedate": "1988-07-14",
+        "oslanduse_evidencedate": "1988-07-14",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1988-07-14",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "1988-07-14",
+        "largestsite_landusetiera": "Education",
+        "largestsite_landusetierb": [
+          "Further Education",
+          "Secondary School"
+        ],
+        "oslandcover_evidencedate": "1988-07-14",
+        "versionavailablefromdate": "2025-12-25T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": 8.7,
+        "height_relativeroofbase_m": 3.8,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Transport: Road, Track Or Path",
+        "smallestsite_landusetierb": [],
+        "address_classificationcode": "CT",
+        "address_primarydescription": "Commercial",
+        "address_secondarydescription": "Transport",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    },
+    {
+      "id": "02e4c8af-bc2e-4c89-b508-5a8d0de2d469",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              538428.95,
+              179104.05
+            ],
+            [
+              538427.85,
+              179106.6
+            ],
+            [
+              538422.95,
+              179104.4
+            ],
+            [
+              538424.25,
+              179101.8
+            ],
+            [
+              538428.95,
+              179104.05
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "osid": "02e4c8af-bc2e-4c89-b508-5a8d0de2d469",
+        "toid": "osgb1000041819846",
+        "theme": "Buildings",
+        "status": null,
+        "nlud_code": "U071",
+        "changetype": "Modified Attributes",
+        "isobscured": false,
+        "description": "Building",
+        "versiondate": "2025-02-09",
+        "physicallevel": "Surface Level",
+        "sitereference": [
+          {
+            "siteid": "14d329dd-443e-43f9-8015-08573dc0255c",
+            "buildingpartid": "02e4c8af-bc2e-4c89-b508-5a8d0de2d469",
+            "buildingpartversiondate": "2025-02-09"
+          }
+        ],
+        "oslandusetiera": "Residential Accommodation",
+        "oslandusetierb": [
+          "Private Residence"
+        ],
+        "geometry_area_m2": 15.03,
+        "oslandcovertiera": "Constructed",
+        "oslandcovertierb": [
+          "Building"
+        ],
+        "height_updatedate": "2025-01-17",
+        "status_updatedate": "1989-03-01",
+        "associatedstructure": null,
+        "containingsitecount": 1,
+        "geometry_updatedate": "1989-03-01",
+        "height_evidencedate": "2023-08-23",
+        "smallestsite_siteid": "14d329dd-443e-43f9-8015-08573dc0255c",
+        "capturespecification": "Urban",
+        "height_absolutemax_m": 7.1,
+        "height_absolutemin_m": 2.8,
+        "height_relativemax_m": 4.3,
+        "oslanduse_updatedate": "1989-03-01",
+        "geometry_evidencedate": "1989-03-01",
+        "nlud_groupdescription": "Dwellings",
+        "nlud_orderdescription": "RESIDENTIAL",
+        "description_updatedate": "1989-03-01",
+        "geometry_capturemethod": "Automated Process",
+        "height_confidencelevel": "Moderate",
+        "oslandcover_updatedate": "1989-03-01",
+        "oslanduse_evidencedate": "1989-03-01",
+        "versionavailabletodate": null,
+        "firstdigitalcapturedate": "1989-03-01",
+        "oslanduse_capturemethod": "Automated Process",
+        "description_evidencedate": "1989-03-01",
+        "largestsite_landusetiera": null,
+        "largestsite_landusetierb": [],
+        "oslandcover_evidencedate": "1989-03-01",
+        "versionavailablefromdate": "2025-02-10T00:00:00Z",
+        "description_capturemethod": "Automated Process",
+        "height_absoluteroofbase_m": 5.0,
+        "height_relativeroofbase_m": 2.2,
+        "oslandcover_capturemethod": "Automated Process",
+        "smallestsite_landusetiera": "Residential Accommodation",
+        "smallestsite_landusetierb": [
+          "Private Residence"
+        ],
+        "address_classificationcode": "RD",
+        "address_primarydescription": "Residential",
+        "address_secondarydescription": "Dwelling",
+        "lowertierlocalauthority_count": 1,
+        "lowertierlocalauthority_gsscode": "E09000030"
+      }
+    }
+  ]
+}

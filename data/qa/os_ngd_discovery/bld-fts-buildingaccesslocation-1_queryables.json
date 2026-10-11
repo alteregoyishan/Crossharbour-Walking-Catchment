@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://api.os.uk/features/ngd/ofa/v1/collections/bld-fts-buildingaccesslocation-1/queryables",
+  "type": "object",
+  "title": "Queryable attributes for bld-fts-buildingaccesslocation-1 collection",
+  "description": "This lists the attributes which can be filtered on and their types for bld-fts-buildingaccesslocation-1 collection.",
+  "properties": {
+    "osid": {
+      "type": [
+        "string"
+      ],
+      "format": "uuid",
+      "maxLength": 36,
+      "description": "Primary identifier for the feature. The OSID is a Globally Unique Identifier (GUID) and requires no centralised authority to ensure uniqueness. Note that the same OSID can occur in more than one feature type when a single feature is represented multiple times in the OS NGD."
+    },
+    "access_mode": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 25,
+      "description": "A description of the method(s) of access normally utilised at the Building Access Location (for example, Pedestrian).",
+      "enumeration": true,
+      "enum": [
+        "Pedestrian",
+        "Pedestrian And Vehicular",
+        "Vehicular"
+      ]
+    },
+    "access_purpose": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 15,
+      "description": "A description of the principal access function at the Building Access Location (for example, Private or Public).",
+      "enumeration": true,
+      "enum": [
+        "Emergency",
+        "Primary Public",
+        "Private",
+        "Public"
+      ]
+    },
+    "access_obstruction": {
+      "type": [
+        "array"
+      ],
+      "description": "An indicator of possible accessibility obstruction(s) at the Building Access Location (for example, Ramp or Step).",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": [
+          "string"
+        ],
+        "maxLength": 30,
+        "enumeration": true,
+        "enum": [
+          "No Obstruction",
+          "Other Obstruction",
+          "Ramp",
+          "Step"
+        ]
+      }
+    },
+    "access_level": {
+      "type": [
+        "string"
+      ],
+      "maxLength": 20,
+      "description": "An indicator of the relative location of the Building Access Location with respect to surface level upon approach to the Building Access Location (for example, Above Surface Level).",
+      "enumeration": true,
+      "enum": [
+        "Above Surface Level",
+        "Below Surface Level",
+        "Surface Level"
+      ]
+    }
+  }
+}

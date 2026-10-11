@@ -1,0 +1,26 @@
+{
+  "source": "OpenStreetMap via Overpass / OSMnx features_from_polygon",
+  "source_url": "https://www.openstreetmap.org/copyright",
+  "downloaded_at_utc": "2026-10-10T17:57:18.580332+00:00",
+  "osmnx_version": "2.0.1",
+  "endpoint": "https://overpass-api.de/api",
+  "query_tags_union": {
+    "natural": "water",
+    "waterway": [
+      "riverbank",
+      "dock"
+    ],
+    "landuse": "reservoir"
+  },
+  "query_bounds_epsg27700": [
+    535167.624,
+    176354.375,
+    541265.375,
+    182048.0
+  ],
+  "crs": "EPSG:27700",
+  "polygon_count": 120,
+  "processing": "Polygon features; documented make_valid where necessary; retain full returned polygons; dissolve only during overlay.",
+  "coverage": "Complete supplied population-zone bounds plus 300 m; also includes 15-minute reach.",
+  "sha256": "f7eb51461643641f8445b06564034a7daa8a2660c26bc8ecbcce15b0582aba93"
+}

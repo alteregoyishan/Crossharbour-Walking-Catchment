@@ -1,0 +1,3 @@
+origin_id,access_name,status,selection_reason,site_side,site_access_node,matched_edge_u,matched_edge_v,matched_edge_key,osmid,highway,foot,access,service,street_name,point_to_edge_distance_m,nearest_endpoint_distance_m,crossing_angle_degrees,site_access_easting,site_access_northing
+A,north_west_access,selected_existing_network_contact,public footway crosses site boundary at a clear angle,north,-1000000001,9669577249,1993139153,0,188692596,footway,,,,,0.0,0.5613539831460476,87.36196357111308,538002.538781516,179212.60259735706
+B,north_access,selected_existing_network_contact,public footway crosses site boundary at a clear angle,north,-1000000002,229784364,10085791855,0,1102226414,footway,,,,,0.0,0.6209185510661871,82.28088890666636,538037.3651207362,179214.59433718395
