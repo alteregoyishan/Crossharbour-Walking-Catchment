@@ -41,21 +41,26 @@ def delivery_results():
 
 def architect_note(selected, pop, area):
     phases = selected['PhaseOfEducation (name)'].value_counts()
+    def count_word(value):
+        number = int(value)
+        return {0: 'zero', 1: 'one', 2: 'two', 3: 'three'}.get(number, str(number))
     return (
         f'The 10-minute walking catchment around Crossharbour contains an estimated '
         f'{pop.loc["P1", "estimated_residents"]:,.0f} residents, with an average density of '
         f'{pop.loc["P1", "residents_per_hectare"]:.1f} residents per hectare across approximately {area:.0f} '
-        f'hectares of analytical land. {len(selected)} schools are identified within the catchment, including '
-        f'{int(phases.get("Primary", 0))} primary and {int(phases.get("Secondary", 0))} secondary schools. '
+        f'hectares of analytical catchment land. '
+        f'{count_word(len(selected)).capitalize()} schools are identified within the catchment, including '
+        f'{count_word(phases.get("Primary", 0))} primary and '
+        f'{count_word(phases.get("Secondary", 0))} secondary school.\n\n'
         'The catchment follows the pedestrian network rather than extending evenly from the site. '
-        'Docks and the River Thames constrain east–west movement, while connections extend primarily '
-        'north–south through the Isle of Dogs. This highlights the importance '
-        'of connecting the site to surrounding neighbourhoods, schools and community infrastructure. '
-        'Five- and 15-minute catchments provide reference scenarios. Alternative population allocations '
-        'test sensitivity to where residents are located within census areas. '
-        'Population is estimated from Census 2021, not a present-day headcount. The model represents '
-        'existing walking connections from two proxy access points, not confirmed future entrances. '
-        'School locations indicate spatial proximity, not capacity or admissions; pedestrian gates remain unverified.')
+        'Docks and the River Thames constrain east–west movement, while connections extend more strongly '
+        'north–south through the Isle of Dogs. This pattern highlights the role of pedestrian connectivity '
+        'and crossing opportunities in linking the site to surrounding neighbourhoods, schools and community infrastructure.\n\n'
+        'Five- and 15-minute catchments are provided as reference scenarios, while alternative population '
+        'allocation methods test the sensitivity of estimates to where residents are assumed to be located within census areas.\n\n'
+        'Population estimates use Census 2021 data rather than a present-day headcount. The model represents '
+        'existing walking connections from two proxy site access points rather than confirmed future entrances. '
+        'School locations indicate proximity only; capacity and pedestrian gate locations are outside the scope of this analysis.')
 
 
 def render_delivery_maps(selected, schools, summary):
@@ -154,7 +159,8 @@ def build_report():
                             for item in cleaning_items)
     replacements = {'{{SCHOOL_COUNT}}': str(len(selected)), '{{SCHOOL_ROWS}}': school_rows,
                     '{{CLEANED_SCHOOL_COUNT}}': str(len(schools)), '{{CLEANING_ROWS}}': cleaning_rows,
-                    '{{POPULATION_ROWS}}': population_rows, '{{ARCHITECT_NOTE}}': escape(note),
+                    '{{POPULATION_ROWS}}': population_rows,
+                    '{{ARCHITECT_NOTE}}': ''.join(f'<p>{escape(paragraph)}</p>' for paragraph in note.split('\n\n')),
                     '{{NOTE_WORDS}}': str(len(note.split())), '{{AREA}}': f'{area:.1f}',
                     '{{AREA_ROUND}}': f'{area:.0f}',
                     '{{FLOOR_LOW}}': f'{pop.loc[["P4_low", "P4_central", "P4_high"], "estimated_residents"].min():,.0f}',
