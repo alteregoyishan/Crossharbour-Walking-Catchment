@@ -8,7 +8,7 @@ Changed: `src/final_delivery.py`, `scripts/18_build_web_report.py`, `report/web_
 
 ## Reader journey
 
-Hero → Key findings → Overview note → Compact analysis approach, origins and cleaning table → Walking catchment and visible 5/15-minute references → Full school context and selected schools → Population sensitivity → QA → Limitations. Supporting maps are visible rather than collapsed; population figure sits alongside the allocation table on desktop.
+Hero → Key findings → Overview note → Compact analysis approach, origins and cleaning table → Walking catchment and visible 5/15-minute references → Full school context and selected schools → Population sensitivity → Limitations. Data corrections and concise network/model validation are grouped under Analysis approach; the duplicate QA section is removed. Supporting maps are visible rather than collapsed; population figure sits alongside the allocation table on desktop.
 
 ## Findings
 
