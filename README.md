@@ -43,7 +43,7 @@ Census population is allocated proportionally using the intersection area of eac
 - [Schools within the catchment PDF](docs/assets/downloads/schools-within-10min.pdf) and [school list CSV](outputs/tables/schools_within_10min_catchment.csv)
 - [Site/origin map PDF](docs/assets/downloads/origin-selection.pdf)
 - [Population sensitivity PDF](docs/assets/downloads/population-sensitivity.pdf)
-- [Methodology note](docs/assets/downloads/methodology.md) and [architect note](outputs/methodology/architect_note.md)
+- [Methodology note](docs/assets/downloads/methodology.md)
 - `outputs/maps/`: final PNG/PDF series; `outputs/tables/`: source results, cleaning logs and QA tables.
 - `outputs/methodology/` and `outputs/qa/`: detailed technical evidence and sensitivity outputs.
 - `outputs/gis/`: locally generated analytical GIS layers; large intermediates are excluded from Git.
@@ -81,7 +81,7 @@ GitHub Pages publishes `main` → `/docs`. Update local files, run the delivery 
 - OpenStreetMap: © OpenStreetMap contributors, Open Database Licence (ODbL).
 - OS Maps API basemap, OS Places and OS NGD: Contains OS data © Crown copyright and database rights 2026. OS Maps is presentation context; OSM supplies analytical network/water geometry.
 
-Credits appear on the relevant maps and in the website. Raw inputs are preserved separately from cleaned data. See the [AI usage record](outputs/methodology/AI_USAGE.md).
+Credits appear on the relevant maps and in the website. Raw inputs are preserved separately from cleaned data.
 
 ## Detailed Methodology
 

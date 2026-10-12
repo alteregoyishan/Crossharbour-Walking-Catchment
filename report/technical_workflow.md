@@ -433,7 +433,6 @@ outputs/gis/catchment_polygonisation_methods.gpkg  A/B/C 方法、验证网格�
 outputs/tables/catchment_method_comparison.csv 面积、人口、孔洞、水体、路网覆盖和验证指标
 outputs/maps/figure_00a_site_origin_selection.pdf 至 figure_05_c1_combined_2400m_diameter.pdf 最终说明图与 C1 地图
 outputs/maps/figure_06_population_sensitivity_qa.pdf OS NGD 人口分配 QA
-outputs/methodology/AI_USAGE.md AI 辅助范围与人工责任说明
 data/raw/                      原始数据，QA 不修改
 data/cleaned/                  修正后的数据
 tests/test_qa.py               QA 规则测试
