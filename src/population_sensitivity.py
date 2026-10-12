@@ -665,8 +665,6 @@ def _plot_qa(population, catchment, display_outline, water, network, sites,
     # comes from the connected display geometry, whose reviewed bridge corridor
     # avoids a distracting 584 m² satellite polygon without entering the area
     # or population denominator.  Interior rings are never outlined.
-    gpd.GeoSeries([catchment], crs=CRS).plot(
-        ax=ax, facecolor=catchment_colour, edgecolor="none", alpha=.28, zorder=3.5)
     gpd.GeoSeries([_exterior_only_boundary(display_outline)], crs=CRS).plot(
         ax=ax, color=catchment_colour, linewidth=.9, alpha=.92, zorder=4.5)
     sites[sites.population_support_class == "residential_land"].plot(
@@ -682,8 +680,8 @@ def _plot_qa(population, catchment, display_outline, water, network, sites,
         highrise.boundary.plot(ax=ax, color="#241a15", linewidth=.75, zorder=6)
     handles = [
         Patch(facecolor="#f1dfc8", edgecolor="#7d766d", alpha=.5, label="2021 LSOA"),
-        Patch(facecolor=catchment_colour, edgecolor=catchment_colour, linewidth=.9,
-              alpha=.28, label="10 min catchment"),
+        Patch(facecolor="none", edgecolor=catchment_colour, linewidth=.9,
+              label="10 min catchment"),
         Patch(facecolor="#8fc5a5", edgecolor="#4c8061", alpha=.5, label="NGD residential site"),
         Patch(facecolor="#2d7f5e", label="Residential building"),
         Patch(facecolor="#9a6eb1", label="Mixed-use building"),

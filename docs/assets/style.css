@@ -349,3 +349,5 @@ footer { background: var(--ink); color: white; }
 .method-description { display: block; margin-top: 5px; color: var(--muted); font-size: .76rem; font-weight: 400; line-height: 1.45; }
 .coordinate-method { margin-top: 26px; max-width: 850px; }
 .coordinate-method p { color: var(--muted); font-size: .9rem; }
+.weighting-explanation { margin-bottom: 24px; }
+.coordinate-method + h3 { margin-top: 26px; }

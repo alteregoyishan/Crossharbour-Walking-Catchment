@@ -49,7 +49,7 @@ def architect_note(selected, pop, area):
         f'{int(phases.get("Primary", 0))} primary and {int(phases.get("Secondary", 0))} secondary schools. '
         'The catchment follows the pedestrian network rather than extending evenly from the site. '
         'Docks and the River Thames constrain east–west movement, while connections extend primarily '
-        'north–south through the Isle of Dogs. For the emerging masterplan, this highlights the importance '
+        'north–south through the Isle of Dogs. This highlights the importance '
         'of connecting the site to surrounding neighbourhoods, schools and community infrastructure. '
         'Five- and 15-minute catchments provide reference scenarios. Alternative population allocations '
         'test sensitivity to where residents are located within census areas. '
@@ -124,8 +124,8 @@ def build_report():
     methods = [
         ('P1', 'Census area-weighted baseline', 'Allocates each LSOA total by the proportion of its full area inside the catchment.'),
         ('P2', 'Residential land weighting', 'Allocates Census residents by residential-site area inside the catchment.'),
-        ('P3', 'Residential building-footprint weighting', 'Allocates residents by residential-capable building footprint rather than land area.'),
-        ('P4_central', 'Residential floor-space weighting (central)', 'Weights building footprints by recorded floor counts and assumed residential share.'),
+        ('P3', 'Residential building-footprint weighting', 'Weights residential-capable buildings by ground-floor footprint; building height is not included.'),
+        ('P4_central', 'Residential floor-space weighting (central)', 'Weights footprint × recorded floor count × residential share: a floor-space proxy, not measured occupancy.'),
     ]
     population_rows = ''.join(
         f'<tr><td><strong>{name}</strong><span class="method-description">{description}</span></td><td>{"Baseline" if key == "P1" else "Sensitivity"}</td>'
