@@ -5,6 +5,8 @@ from pathlib import Path
 import shutil
 import argparse
 import sys
+import hashlib
+import re
 
 from PIL import Image
 
@@ -49,6 +51,23 @@ def export_webp(source: Path, destination: Path, max_width: int = 2000) -> None:
         image.save(destination, "WEBP", quality=84, method=6)
 
 
+def version_asset_links() -> None:
+    """Change asset URLs when their contents change, avoiding stale browser caches."""
+    page = SITE / 'index.html'
+    def version(match):
+        attribute, url = match.groups()
+        relative = url.split('?', 1)[0]
+        if not relative.startswith('assets/') and relative != 'favicon.svg':
+            return match.group(0)
+        asset = SITE / relative
+        if not asset.is_file():
+            raise FileNotFoundError(f'Report asset is missing: {relative}')
+        digest = hashlib.sha256(asset.read_bytes()).hexdigest()[:12]
+        return f'{attribute}="{relative}?v={digest}"'
+    page.write_text(re.sub(r'\b(src|href)="([^"]+)"', version,
+                           page.read_text(encoding='utf-8')), encoding='utf-8')
+
+
 def main() -> None:
     from src.final_delivery import build_report, render_delivery_maps
     parser = argparse.ArgumentParser(description=__doc__)
@@ -68,6 +87,7 @@ def main() -> None:
         export_webp(MAPS / source_name, IMAGES / destination_name)
     for source_name, destination_name in PDF_SOURCES.items():
         shutil.copy2(MAPS / source_name, DOWNLOADS / destination_name)
+    version_asset_links()
     print(f"Built {len(IMAGE_SOURCES)} images and {len(PDF_SOURCES)} PDFs in {SITE}")
 
 
