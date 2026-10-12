@@ -10,7 +10,7 @@ Census 2021 residents are allocated using population × intersection area / orig
 
 ## Limitations
 
-Access proxies are not future entrances. Census 2021 is not a present-day headcount. The baseline assumes uniform distribution within LSOAs. School locations are not verified gates. Results depend on OSM completeness and fixed walking speed, excluding delays and mobility variation. The polygon is a derived representation rather than an exact physical boundary.
+Access proxies are not future entrances. Census 2021 is not a present-day headcount. The baseline assumes uniform distribution within LSOAs. School locations are not verified gates. Results depend on OSM completeness and fixed walking speed, excluding delays and mobility variation. Separately mapped footways are retained, but pavements on both sides of every road and all crossing locations are not systematically modelled; crossing detours and boundary travel times may differ. The polygon is a derived representation rather than an exact physical boundary.
 
 ## Technical evidence
 
