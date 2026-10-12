@@ -636,8 +636,7 @@ def _figure_01_to_04_bounds():
 
 def _plot_qa(population, catchment, display_outline, water, network, sites,
              buildings, access):
-    from .c1_final_maps import COLOURS
-    catchment_colour = COLOURS[10]
+    catchment_colour = "#202428"
     # Match Figures 01–04 exactly so this QA map can be compared at the same
     # scale and extent.
     bounds = _figure_01_to_04_bounds()

@@ -549,7 +549,7 @@ def _draw_origin_selection_map(ax, site, origins, network_edges, water_frame):
         ax.text(
             row.geometry.x + (-5 if is_left else 5), row.geometry.y + 5,
             str(row.origin_id),
-            ha="right" if is_left else "left", va="bottom", fontsize=9,
+            ha="right" if is_left else "left", va="bottom", fontsize=11,
             color=ORIGIN_COLOUR, weight="bold", zorder=41)
     handles = [
         Line2D([], [], color="#68787C", lw=.9, label="Reviewed pedestrian network"),

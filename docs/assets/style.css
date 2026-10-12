@@ -351,3 +351,4 @@ footer { background: var(--ink); color: white; }
 .coordinate-method p { color: var(--muted); font-size: .9rem; }
 .weighting-explanation { margin-bottom: 24px; }
 .coordinate-method + h3 { margin-top: 26px; }
+.origin-figure figcaption strong { font-size: .92rem; }
