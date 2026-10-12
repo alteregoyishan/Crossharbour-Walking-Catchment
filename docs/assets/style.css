@@ -346,3 +346,6 @@ footer { background: var(--ink); color: white; }
   .kicker { font-size: 1rem; }
   .hero { padding-top: 34px; }
 }
+.method-description { display: block; margin-top: 5px; color: var(--muted); font-size: .76rem; font-weight: 400; line-height: 1.45; }
+.coordinate-method { margin-top: 26px; max-width: 850px; }
+.coordinate-method p { color: var(--muted); font-size: .9rem; }

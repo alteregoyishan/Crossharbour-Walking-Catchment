@@ -40,21 +40,22 @@ def delivery_results():
 
 
 def architect_note(selected, pop, area):
-    names = '; '.join(selected.EstablishmentName.astype(str))
+    phases = selected['PhaseOfEducation (name)'].value_counts()
     return (
-        f'A 10-minute walking catchment was modelled from two plausible pedestrian access points '
-        f'on the northern edge of the Crossharbour development plot. It covers approximately {area:.0f} '
-        f'hectares of analytical land and contains an estimated {pop.loc["P1", "estimated_residents"]:,.0f} '
-        f'residents, or {pop.loc["P1", "residents_per_hectare"]:.1f} residents per hectare. '
-        f'{len(selected)} schools are identified within the catchment: {names}. '
-        'Population is based on Census 2021 totals allocated proportionally by the area of each census zone '
-        'inside the catchment. Alternative residential land, building-footprint and floor-space allocations '
-        'produce higher estimates, demonstrating sensitivity to where residents are located within census areas. '
-        'The two access points are planning proxies rather than confirmed future entrances. School coordinates '
-        'represent cleaned locations rather than verified gates, and the catchment represents modelled pedestrian '
-        'accessibility. These findings provide a useful starting point for early-stage masterplanning: consider '
-        'the surrounding residential population and school context alongside proposed pedestrian connections '
-        'and confirm entrance arrangements as the design develops.')
+        f'The 10-minute walking catchment around Crossharbour contains an estimated '
+        f'{pop.loc["P1", "estimated_residents"]:,.0f} residents, with an average density of '
+        f'{pop.loc["P1", "residents_per_hectare"]:.1f} residents per hectare across approximately {area:.0f} '
+        f'hectares of analytical land. {len(selected)} schools are identified within the catchment, including '
+        f'{int(phases.get("Primary", 0))} primary and {int(phases.get("Secondary", 0))} secondary schools. '
+        'The catchment follows the pedestrian network rather than extending evenly from the site. '
+        'Docks and the River Thames constrain east–west movement, while connections extend primarily '
+        'north–south through the Isle of Dogs. For the emerging masterplan, this highlights the importance '
+        'of connecting the site to surrounding neighbourhoods, schools and community infrastructure. '
+        'Five- and 15-minute catchments provide reference scenarios. Alternative population allocations '
+        'test sensitivity to where residents are located within census areas. '
+        'Population is estimated from Census 2021, not a present-day headcount. The model represents '
+        'existing walking connections from two proxy access points, not confirmed future entrances. '
+        'School locations indicate spatial proximity, not capacity or admissions; pedestrian gates remain unverified.')
 
 
 def render_delivery_maps(selected, schools, summary):
@@ -120,12 +121,16 @@ def build_report():
         f'<td>{escape(str(r.URN))}</td><td>{escape(str(r["PhaseOfEducation (name)"]))}</td>'
         f'<td>{escape(str(r["TypeOfEstablishment (name)"]))}</td></tr>'
         for _, r in selected.iterrows())
-    methods = [('P1', 'Census area-weighted baseline'), ('P2', 'Residential land weighting'),
-               ('P3', 'Residential building-footprint weighting'), ('P4_central', 'Residential floor-space weighting (central)')]
+    methods = [
+        ('P1', 'Census area-weighted baseline', 'Allocates each LSOA total by the proportion of its full area inside the catchment.'),
+        ('P2', 'Residential land weighting', 'Allocates Census residents by residential-site area inside the catchment.'),
+        ('P3', 'Residential building-footprint weighting', 'Allocates residents by residential-capable building footprint rather than land area.'),
+        ('P4_central', 'Residential floor-space weighting (central)', 'Weights building footprints by recorded floor counts and assumed residential share.'),
+    ]
     population_rows = ''.join(
-        f'<tr><td>{name}</td><td>{"Baseline" if key == "P1" else "Sensitivity"}</td>'
+        f'<tr><td><strong>{name}</strong><span class="method-description">{description}</span></td><td>{"Baseline" if key == "P1" else "Sensitivity"}</td>'
         f'<td class="numeric">{pop.loc[key,"estimated_residents"]:,.0f}</td>'
-        f'<td class="numeric">{pop.loc[key,"residents_per_hectare"]:.1f}</td></tr>' for key, name in methods)
+        f'<td class="numeric">{pop.loc[key,"residents_per_hectare"]:.1f}</td></tr>' for key, name, description in methods)
     template = (ROOT / 'report/web_report_template.html').read_text(encoding='utf-8')
     school_log = pd.read_csv(OUTPUTS / 'tables/school_cleaning_log.csv')
     population_log = pd.read_csv(OUTPUTS / 'tables/population_cleaning_log.csv')
