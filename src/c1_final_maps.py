@@ -334,7 +334,7 @@ def _draw_scale_and_north(ax, bounds):
 def _map_base(ax, bounds, water_frame):
     basemap = os_maps_basemap(bounds)
     if basemap:
-        ax.imshow(basemap["image"], extent=basemap["extent"], zorder=0)
+        ax.imshow(basemap["image"], extent=basemap["extent"], alpha=.65, zorder=0)
     else:
         ax.set_facecolor("#f5f4ef")
     clipped_water = water_frame.cx[bounds[0]:bounds[2], bounds[1]:bounds[3]]
@@ -369,6 +369,8 @@ def _plot_site_origins_schools(ax, site, origins, schools, bounds):
 
 def _legend_handles(minutes_list, include_circle=False):
     handles = []
+    handles.append(Line2D([], [], color=SITE_COLOUR, lw=SITE_LINEWIDTH,
+                          linestyle=(0, (5, 3)), label="Development site"))
     for minutes in minutes_list:
         handles.extend([
             Patch(facecolor=COLOURS[minutes], edgecolor=COLOURS[minutes],
@@ -380,9 +382,6 @@ def _legend_handles(minutes_list, include_circle=False):
         Line2D([], [], marker="o", linestyle="none", markerfacecolor=SCHOOL_COLOUR,
                markeredgecolor="white", markeredgewidth=.65,
                markersize=math.sqrt(SCHOOL_MARKER_AREA), label="School"),
-        Line2D([], [], color=SITE_COLOUR, lw=SITE_LINEWIDTH,
-               linestyle=(0, (5, 3)),
-               label="Development site"),
         Line2D([], [], marker="o", linestyle="none", markerfacecolor=ORIGIN_COLOUR,
                markeredgecolor="white", markeredgewidth=.65,
                markersize=math.sqrt(ORIGIN_MARKER_AREA), label="Origin"),
@@ -406,8 +405,8 @@ def _draw_map(ax, results, minutes_list, water_frame, site, origins, schools,
     # visible over shared links in combined maps.
     for minutes in sorted(minutes_list, reverse=True):
         gpd.GeoSeries([results[minutes]["network"]], crs=CRS).plot(
-            ax=ax, color=NETWORK_COLOURS[minutes], linewidth=0.62,
-            alpha=0.94, zorder=8 + (20-minutes)/10)
+            ax=ax, color=NETWORK_COLOURS[minutes], linewidth=0.48,
+            alpha=0.70, zorder=8 + (20-minutes)/10)
     if theoretical_circle is not None:
         gpd.GeoSeries([theoretical_circle.boundary], crs=CRS).plot(
             ax=ax, color="#535b60", linewidth=1.45, linestyle=(0, (7, 4)), zorder=18)
@@ -472,8 +471,8 @@ def _save_a3_pdf(path, results, minutes_list, water_frame, site, origins,
     fig.text(0.035, 0.918, subtitle, ha="left", va="top", fontsize=9.3,
              color="#586970")
     fig.text(0.035, 0.025,
-             "Routing: reviewed OSMnx pedestrian graph, origins A/B, multi-source shortest paths, partial-edge handling, 4.8 km/h. "
-             "The surface uses ordinary-Delaunay interpolation and is not a constrained-Delaunay implementation. School markers are cleaned coordinates, not verified entrances.",
+             "Reviewed pedestrian network; access proxies A/B; 4.8 km/h; shortest travel time from either origin. "
+             "Travel-time contour with analytical water exclusion. School markers represent cleaned location coordinates.",
              ha="left", va="bottom", fontsize=7.2, color="#586970")
     fig.savefig(path, facecolor="white", metadata={
         "Title": title,

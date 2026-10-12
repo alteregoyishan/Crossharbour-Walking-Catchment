@@ -3,11 +3,14 @@ from __future__ import annotations
 
 from pathlib import Path
 import shutil
+import argparse
+import sys
 
 from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 MAPS = ROOT / "outputs" / "maps"
 SITE = ROOT / "docs"
 IMAGES = SITE / "assets" / "images"
@@ -19,6 +22,7 @@ IMAGE_SOURCES = {
     "figure_02_c1_10min.png": "catchment-10min.webp",
     "figure_04_c1_combined.png": "catchments-combined.webp",
     "figure_06_population_sensitivity_qa.png": "population-sensitivity.webp",
+    "figure_07_schools_within_10min.png": "schools-within-10min.webp",
 }
 
 PDF_SOURCES = {
@@ -26,6 +30,10 @@ PDF_SOURCES = {
     "figure_02_c1_10min.pdf": "catchment-10min.pdf",
     "figure_04_c1_combined.pdf": "catchments-combined.pdf",
     "figure_06_population_sensitivity_qa.pdf": "population-sensitivity.pdf",
+    "figure_07_schools_within_10min.pdf": "schools-within-10min.pdf",
+    "figure_01_c1_05min.pdf": "catchment-5min.pdf",
+    "figure_03_c1_15min.pdf": "catchment-15min.pdf",
+    "figure_05_c1_combined_2400m_diameter.pdf": "straight-line-reference.pdf",
 }
 
 
@@ -39,6 +47,14 @@ def export_webp(source: Path, destination: Path, max_width: int = 2000) -> None:
 
 
 def main() -> None:
+    from src.final_delivery import build_report, render_delivery_maps
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--render-maps', action='store_true',
+                        help='Redraw saved final geometries without rerunning analysis')
+    args = parser.parse_args()
+    selected, schools, _, summary, _ = build_report()
+    if args.render_maps or not (MAPS / 'figure_07_schools_within_10min.png').exists():
+        render_delivery_maps(selected, schools, summary)
     IMAGES.mkdir(parents=True, exist_ok=True)
     DOWNLOADS.mkdir(parents=True, exist_ok=True)
     missing = [name for name in [*IMAGE_SOURCES, *PDF_SOURCES]

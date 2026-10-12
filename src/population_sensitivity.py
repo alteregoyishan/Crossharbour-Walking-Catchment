@@ -715,7 +715,7 @@ def _plot_qa(population, catchment, display_outline, water, network, sites,
              fontsize=20, color="#253842", weight="bold")
     fig.text(.035, .918, "ONS Census 2021 baseline with OS NGD residential-site and building sensitivity evidence",
              ha="left", va="top", fontsize=9.3, color="#586970")
-    fig.text(.035, .025, "P1 remains primary. P2–P4 are sensitivity tests; building footprint is a weak proxy for high-rise residential floor space.",
+    fig.text(.035, .025, "Census area weighting remains the baseline. Land, building and floor-space allocations are sensitivity scenarios, not confidence intervals.",
              ha="left", va="bottom", fontsize=7.4, color="#586970")
     fig.savefig(OUT_MAP_PDF, facecolor="white", metadata={"Title":"Crossharbour Population Allocation QA"})
     plt.close(fig)

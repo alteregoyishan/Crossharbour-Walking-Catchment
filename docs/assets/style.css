@@ -116,7 +116,7 @@ h1 {
   width: min(var(--max), calc(100% - 40px));
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 .metric { padding: 28px 26px; border-left: 1px solid var(--line); }
 .metric:first-child { border-left: 0; padding-left: 0; }
@@ -251,6 +251,35 @@ footer { background: var(--ink); color: white; }
   font-size: 0.82rem;
 }
 .footer-inner strong { color: white; }
+.project-subtitle { font-size: clamp(1.3rem, 2.5vw, 2rem); color: var(--teal); margin: 20px 0 0; }
+.note-title { font-size: clamp(1.6rem, 2.7vw, 2.5rem); margin-bottom: 24px; }
+.supporting { margin-top: 30px; border-top: 1px solid var(--line); padding-top: 20px; }
+.supporting summary { cursor: pointer; font-weight: 700; padding: 8px 0 20px; }
+.supporting p { margin-top: 20px; color: var(--muted); }
+.school-table { margin: 24px 0 18px; }
+.sensitivity-note { margin-top: 20px; }
+.workflow { max-width: 760px; margin: auto; }
+.flow-step { padding: 18px 24px; border: 1px solid var(--line); background: white; text-align: center; }
+.flow-step strong, .flow-step span { display: block; }
+.flow-step span { margin-top: 5px; color: var(--muted); font-size: .87rem; }
+.flow-arrow { text-align: center; color: var(--teal); font-size: 1.6rem; line-height: 1.7; }
+.flow-branch, .qa-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.flow-step.final { background: var(--ink); color: white; }
+.flow-step.final span { color: #dce7e2; }
+.method-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 40px; }
+.method-list > div { border-top: 1px solid var(--line); padding-top: 18px; }
+.method-list p { color: var(--muted); font-size: .9rem; }
+@media (max-width: 850px) {
+  .metric:nth-child(5) { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); }
+  .method-list { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .qa-grid { grid-template-columns: 1fr; }
+  .flow-step { padding: 15px 10px; }
+  .metric-value { font-size: 1.7rem; }
+  .hero { min-width: 0; padding: 34px 0 26px; }
+  .hero-note { display: none; }
+}
 
 @media (max-width: 850px) {
   .nav-links { display: none; }
