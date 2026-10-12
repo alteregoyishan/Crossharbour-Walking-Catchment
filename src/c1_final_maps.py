@@ -540,7 +540,7 @@ def _draw_origin_selection_map(ax, site, origins, network_edges, water_frame):
     if not selected_edges.empty:
         selected_edges.plot(ax=ax, color="#17685F", linewidth=2.4,
                             alpha=.98, zorder=20)
-    _plot_site_outline(ax, site, linewidth=1.20, zorder=30)
+    _plot_site_outline(ax, site, linewidth=1.85, zorder=30)
     origins.plot(
         ax=ax, marker="o", color=ORIGIN_COLOUR, edgecolor="white",
         linewidth=.65, markersize=ORIGIN_MARKER_AREA, zorder=40)
@@ -548,14 +548,14 @@ def _draw_origin_selection_map(ax, site, origins, network_edges, water_frame):
         is_left = str(row.origin_id) == "A"
         ax.text(
             row.geometry.x + (-5 if is_left else 5), row.geometry.y + 5,
-            f"{row.origin_id} · {row.crossing_angle_degrees:.0f}°",
+            str(row.origin_id),
             ha="right" if is_left else "left", va="bottom", fontsize=9,
             color=ORIGIN_COLOUR, weight="bold", zorder=41)
     handles = [
         Line2D([], [], color="#68787C", lw=.9, label="Reviewed pedestrian network"),
         Line2D([], [], color="#17685F", lw=2.4,
                label="Selected boundary-crossing footway"),
-        Line2D([], [], color=SITE_COLOUR, lw=1.20, linestyle=(0, (5, 3)),
+        Line2D([], [], color=SITE_COLOUR, lw=1.85, linestyle=(0, (5, 3)),
                label="Development site"),
         Line2D([], [], marker="o", linestyle="none",
                markerfacecolor=ORIGIN_COLOUR, markeredgecolor="white",
@@ -762,7 +762,7 @@ def run_final_c1_maps():
             ax, site, map_origins, network_edges, water_frame),
         "Crossharbour Site Origin Selection",
         "Two existing public footways intersect the site boundary at distinct northern access locations",
-        "A and B are planning proxy origins located directly on reviewed footways. Crossing angles are approximately 87° and 82°; private/service links and tangential contacts are excluded.",
+        "A and B are planning proxy origins at two distinct existing footway crossings of the northern site boundary; private/service links and tangential contacts are excluded.",
     ))
     visible_school_count = int((schools.geometry.notna() & ~schools.geometry.is_empty).sum())
     output_paths.extend(_save_context_map_pair(

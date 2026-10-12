@@ -20,12 +20,15 @@ IMAGE_SOURCES = {
     "figure_00a_site_origin_selection.png": "origin-selection.webp",
     "figure_00b_all_cleaned_schools.png": "schools-overview.webp",
     "figure_02_c1_10min.png": "catchment-10min.webp",
+    "figure_01_c1_05min.png": "catchment-5min.webp",
+    "figure_03_c1_15min.png": "catchment-15min.webp",
     "figure_04_c1_combined.png": "catchments-combined.webp",
     "figure_06_population_sensitivity_qa.png": "population-sensitivity.webp",
     "figure_07_schools_within_10min.png": "schools-within-10min.webp",
 }
 
 PDF_SOURCES = {
+    "figure_00b_all_cleaned_schools.pdf": "schools-overview.pdf",
     "figure_00a_site_origin_selection.pdf": "origin-selection.pdf",
     "figure_02_c1_10min.pdf": "catchment-10min.pdf",
     "figure_04_c1_combined.pdf": "catchments-combined.pdf",

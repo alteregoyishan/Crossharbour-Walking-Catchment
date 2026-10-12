@@ -307,3 +307,42 @@ footer { background: var(--ink); color: white; }
   .hero, .section { padding: 35px 0; }
   .figure, .card, .table-wrap { break-inside: avoid; }
 }
+
+/* Architect-facing report: compact approach and visible supporting maps. */
+.section { padding: 64px 0; scroll-margin-top: 88px; }
+.kicker { font-size: 1.05rem; letter-spacing: .06em; line-height: 1.4; }
+.section-head { grid-template-columns: .43fr 1.57fr; gap: 32px; }
+.workflow-compact { list-style: none; counter-reset: workflow; padding: 0; margin: 0 0 34px; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.workflow-compact li { counter-increment: workflow; background: rgba(255,255,255,.7); border-top: 2px solid var(--teal); padding: 16px 18px; }
+.workflow-compact li::before { content: counter(workflow,decimal-leading-zero); display: block; color: var(--teal); font-size: .76rem; font-weight: 750; margin-bottom: 5px; }
+.workflow-compact strong, .workflow-compact span { display: block; }
+.workflow-compact span { color: var(--muted); font-size: .84rem; margin-top: 5px; }
+.approach-grid, .school-context, .combined-reference { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(0,.75fr); gap: 30px; align-items: start; }
+.approach-copy p, .school-context p, .combined-reference p { font-size: .91rem; color: var(--muted); }
+.approach-copy h3:not(:first-child) { margin-top: 24px; }
+.cleaning-overview, .comparison-context, .subsection-head { margin-top: 38px; }
+.cleaning-table { min-width: 600px; }
+.cleaning-table td:first-child { width: 16%; }
+.cleaning-table td:nth-child(2) { width: 28%; }
+.comparison-context > h3, .subsection-head h3 { font-size: 1.5rem; letter-spacing: -.025em; }
+.combined-reference { margin-top: 28px; }
+.scenario-rationale { margin-top: 18px; }
+.population-layout { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,.95fr); gap: 26px; align-items: start; }
+.population-layout table { min-width: 0; }
+.population-layout th, .population-layout td { padding: 12px 10px; font-size: .78rem; }
+.population-layout th { font-size: .66rem; }
+.qa-summary, .implementation-note { margin-top: 26px; color: var(--muted); font-size: .9rem; }
+@media (max-width: 850px) {
+  .section-head { grid-template-columns: 1fr; gap: 16px; }
+  .workflow-compact { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .approach-grid, .school-context, .combined-reference, .population-layout { grid-template-columns: 1fr; }
+  .section { padding: 44px 0; }
+}
+@media (max-width: 520px) {
+  .workflow-compact { gap: 8px; }
+  .workflow-compact li { padding: 12px; }
+  .workflow-compact strong { font-size: .85rem; }
+  .workflow-compact span { font-size: .78rem; }
+  .kicker { font-size: 1rem; }
+  .hero { padding-top: 34px; }
+}

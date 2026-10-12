@@ -71,6 +71,14 @@ def render_delivery_maps(selected, schools, summary):
     site = gpd.read_file(RAW / 'site_boundary.geojson').to_crs(maps.CRS)
     origins = gpd.read_file(PROCESSED / 'site_origins.gpkg').to_crs(maps.CRS)
     water = gpd.read_file(selected_water_path()).to_crs(maps.CRS)
+    from .paths import OPENSTREETMAP
+    network_edges = gpd.read_file(OPENSTREETMAP / 'pedestrian_network_reviewed.gpkg',
+                                  layer='edges').to_crs(maps.CRS)
+    maps._save_context_map_pair(maps.MAP_BASENAMES['origin_selection'],
+        lambda ax: maps._draw_origin_selection_map(ax, site, origins, network_edges, water),
+        'Crossharbour Site Origin Selection',
+        'Two existing public footways intersect the site boundary at distinct northern access locations',
+        'A and B are planning proxy origins at distinct existing northern boundary crossings; private/service links and tangential contacts are excluded.')
     metadata = json.loads(maps.OUT_METADATA.read_text())
     bounds = tuple(metadata['individual_map_bounds_epsg27700'])
     for minutes, base in [([5], maps.MAP_BASENAMES[5]), ([10], maps.MAP_BASENAMES[10]),
@@ -119,7 +127,28 @@ def build_report():
         f'<td class="numeric">{pop.loc[key,"estimated_residents"]:,.0f}</td>'
         f'<td class="numeric">{pop.loc[key,"residents_per_hectare"]:.1f}</td></tr>' for key, name in methods)
     template = (ROOT / 'report/web_report_template.html').read_text(encoding='utf-8')
+    school_log = pd.read_csv(OUTPUTS / 'tables/school_cleaning_log.csv')
+    population_log = pd.read_csv(OUTPUTS / 'tables/population_cleaning_log.csv')
+    def count(log, action):
+        return int(log.action.eq(action).sum())
+    cleaning_items = [
+        ('Population', f'{count(population_log, "remove_exact_duplicate")} duplicate LSOA record',
+         'Removed the exact duplicate; retained one record and its population attributes.'),
+        ('Population', f'{count(population_log, "repair_invalid_geometry")} self-intersecting polygon',
+         'Repaired with make_valid; checked validity and area change, preserving attributes.'),
+        ('Schools', f'{count(school_log, "exclude_closed_school")} closed establishments',
+         'Excluded before geocoding and school accessibility analysis.'),
+        ('Schools', f'{count(school_log, "exclude_overseas_school")} overseas establishments',
+         'Excluded using the local-authority classification before geocoding.'),
+        ('Schools', f'{count(school_log, "remove_exact_duplicate")} duplicate school record',
+         'Removed duplicate records by school identifier; retained the cleaning audit.'),
+        ('Schools', 'Coordinate confidence and address consistency',
+         'Checked OS Places candidates; used Google geocoding for lower-confidence cases and retained matched addresses.'),
+    ]
+    cleaning_rows = ''.join('<tr>' + ''.join(f'<td>{escape(value)}</td>' for value in item) + '</tr>'
+                            for item in cleaning_items)
     replacements = {'{{SCHOOL_COUNT}}': str(len(selected)), '{{SCHOOL_ROWS}}': school_rows,
+                    '{{CLEANED_SCHOOL_COUNT}}': str(len(schools)), '{{CLEANING_ROWS}}': cleaning_rows,
                     '{{POPULATION_ROWS}}': population_rows, '{{ARCHITECT_NOTE}}': escape(note),
                     '{{NOTE_WORDS}}': str(len(note.split())), '{{AREA}}': f'{area:.1f}',
                     '{{AREA_ROUND}}': f'{area:.0f}',

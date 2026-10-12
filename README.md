@@ -28,6 +28,8 @@ These school locations represent cleaned address/location coordinates rather tha
 
 ## Final Approach
 
+Ten minutes is the primary local planning scenario for the workshop, balancing immediate 5-minute and wider 15-minute context. It is a stated planning choice rather than a prescribed standard or optimised threshold. Five- and 15-minute maps are shown alongside each other as reference scenarios.
+
 Two reviewed northern site-boundary footway crossings are used as access proxies A and B, rather than confirmed future entrances. Multi-source Dijkstra calculates the shortest walking time from either origin, using 4.8 km/h and partial-edge clipping. The reachable pedestrian network is the authoritative travel-time result.
 
 The final workshop-facing walking catchment uses the selected travel-time contour representation, with mapped water excluded from analytical land. The original 25 m network buffer remains a methodological comparison baseline. Display smoothing and evidenced bridge corridors do not enter the analytical land-area or population denominator. The independent validation grid is a model-based consistency check, not observed ground truth.

@@ -8,7 +8,7 @@ Changed: `src/final_delivery.py`, `scripts/18_build_web_report.py`, `report/web_
 
 ## Reader journey
 
-Hero → Key findings → Architect note → Primary walking catchment → Schools → Analysis workflow → Population sensitivity → QA → Methods and limitations. Supporting comparisons and origin/context maps use expandable sections.
+Hero → Key findings → Overview note → Compact analysis approach, origins and cleaning table → Walking catchment and visible 5/15-minute references → Full school context and selected schools → Population sensitivity → QA → Limitations. Supporting maps are visible rather than collapsed; population figure sits alongside the allocation table on desktop.
 
 ## Findings
 
@@ -28,7 +28,7 @@ The table and numbered school map derive from the same selection. The primary 10
 
 Removed assessment branding and internal scenario codes from the primary story. Descriptive names distinguish the Census baseline, residential land, building footprint and floor-space sensitivity. CRS is in Methods. README separates overview, findings, final approach, outputs, reproduction, licensing and detailed methodology; the original 25 m buffer is explicitly a comparison baseline.
 
-Muted the basemap, reduced network stroke dominance, placed the development site first in the legend, retained black dashed site boundary and origins, and added the numbered school map. Individual 5/10/15-minute maps retain common bounds. The straight-line reference circle is supporting context, not a second accessibility model. Architect note: 156 words. Detailed QA, comparisons, logs and tests are preserved.
+Muted the basemap, reduced network stroke dominance, placed the development site first in the legend, retained black dashed site boundary and origins, and added the numbered school map. Individual 5/10/15-minute maps retain common bounds. The straight-line reference circle is supporting context, not a second accessibility model. Overview note retained without a displayed word count. The origin-selection map now has a thicker boundary and A/B labels without crossing angles. Ten minutes is explained as a planning scenario, not a prescribed or optimised threshold. Detailed QA, comparisons, logs and tests are preserved.
 
 ## Checks
 
